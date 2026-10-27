@@ -1,0 +1,23 @@
+{
+  "state": "playing",
+  "player": {
+    "air": 580,
+    "grounded": false,
+    "hovering": false,
+    "lane": 1,
+    "trick": null,
+    "x": 0,
+    "y": 2.3355184934857216
+  },
+  "handling": {
+    "blocked": null,
+    "buffer": 0,
+    "bufferedJumps": 0,
+    "landingSeconds": 0.35200783014866543,
+    "lastImpact": 0,
+    "markerVisible": true,
+    "rejected": 0
+  },
+  "errors": [],
+  "glErrors": []
+}

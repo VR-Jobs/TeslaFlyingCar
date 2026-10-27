@@ -1,0 +1,210 @@
+{
+  "checks": [
+    {
+      "name": "rendered-thick-track-has-distinct-front-and-back",
+      "pass": true,
+      "observed": {
+        "cameraBlocked": false,
+        "carTriangles": 33491,
+        "gapLights": {
+          "active": false,
+          "rows": 3,
+          "state": "off"
+        },
+        "markerVisible": false,
+        "solidTriangles": 23580,
+        "trackFaces": "separate-front-bottom-walls",
+        "trackThickness": 0.45,
+        "trackTriangles": 9400,
+        "wingGap": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "real-run-blocked-by-bottom-without-wrong-side-attachment",
+      "pass": true,
+      "observed": {
+        "active": true,
+        "attached": false,
+        "checkpoint": 0,
+        "falls": 0,
+        "gapCue": null,
+        "gapSounds": {
+          "launches": 0,
+          "pendingTail": false,
+          "tails": 0,
+          "warnings": 0
+        },
+        "jump": false,
+        "lane": 0,
+        "lastTrackContact": {
+          "kind": "bottom",
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "point": [
+            -1.02,
+            -0.44999998807907104,
+            -97.65
+          ],
+          "s": 97.65
+        },
+        "length": 2360.884901332318,
+        "paused": false,
+        "phase": "running",
+        "pressure": 100,
+        "profile": {
+          "bestScore": 0,
+          "bestTime": null,
+          "completions": 0,
+          "tutorialCompleted": true,
+          "tutorialVersion": 1
+        },
+        "rings": 0,
+        "s": 100,
+        "score": 0,
+        "stage": "启航平台",
+        "suction": true,
+        "trackImpacts": 1,
+        "tutorial": null,
+        "view": {
+          "cameraBlocked": false,
+          "carTriangles": 33491,
+          "gapLights": {
+            "active": false,
+            "rows": 3,
+            "state": "off"
+          },
+          "markerVisible": false,
+          "solidTriangles": 23580,
+          "trackFaces": "separate-front-bottom-walls",
+          "trackThickness": 0.45,
+          "trackTriangles": 9400,
+          "wingGap": 4.440892098500626e-16
+        }
+      }
+    },
+    {
+      "name": "fast-descent-lands-on-front-surface",
+      "pass": true,
+      "observed": {
+        "active": true,
+        "attached": true,
+        "checkpoint": 0,
+        "falls": 0,
+        "gapCue": null,
+        "gapSounds": {
+          "launches": 0,
+          "pendingTail": false,
+          "tails": 0,
+          "warnings": 0
+        },
+        "jump": false,
+        "lane": 0,
+        "lastTrackContact": {
+          "kind": "top",
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "point": [
+            0,
+            0,
+            -100
+          ],
+          "s": 100
+        },
+        "length": 2360.884901332318,
+        "paused": false,
+        "phase": "running",
+        "pressure": 97,
+        "profile": {
+          "bestScore": 0,
+          "bestTime": null,
+          "completions": 0,
+          "tutorialCompleted": true,
+          "tutorialVersion": 1
+        },
+        "rings": 0,
+        "s": 100,
+        "score": 133,
+        "stage": "启航平台",
+        "suction": false,
+        "trackImpacts": 0,
+        "tutorial": null,
+        "view": {
+          "cameraBlocked": false,
+          "carTriangles": 33491,
+          "gapLights": {
+            "active": false,
+            "rows": 3,
+            "state": "off"
+          },
+          "markerVisible": false,
+          "solidTriangles": 23580,
+          "trackFaces": "separate-front-bottom-walls",
+          "trackThickness": 0.45,
+          "trackTriangles": 9400,
+          "wingGap": 4.440892098500626e-16
+        }
+      }
+    },
+    {
+      "name": "full-course-and-single-settlement",
+      "pass": true,
+      "observed": {
+        "checks": [
+          {
+            "name": "full-course-completion",
+            "pass": true,
+            "s": 2359.272301835974,
+            "time": 86.0499999999964,
+            "falls": 1,
+            "lands": 4
+          },
+          {
+            "name": "reward-settles-once",
+            "pass": true,
+            "coins": 115
+          },
+          {
+            "name": "paint-unlocked",
+            "pass": true
+          }
+        ],
+        "view": {
+          "trackTriangles": 9400,
+          "solidTriangles": 23580,
+          "trackThickness": 0.45,
+          "trackFaces": "separate-front-bottom-walls",
+          "cameraBlocked": true,
+          "carTriangles": 33491,
+          "markerVisible": false,
+          "gapLights": {
+            "active": false,
+            "state": "off",
+            "rows": 3
+          },
+          "wingGap": 0
+        }
+      }
+    },
+    {
+      "name": "no-solid-track-webgl-or-script-errors",
+      "pass": true,
+      "errors": [],
+      "nativeRendererWarnings": [
+        {
+          "level": "warn",
+          "message": "THREE.WebGLProgram: Program Info Log: (198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(419,1): warning X4000: use of potentially uninitialized variable (f_ApplyFXAA)",
+          "timestamp": "2026-10-26T09:36:11.050Z",
+          "url": "http://127.0.0.1:4182/?iterationQA=1"
+        }
+      ],
+      "note": "Retained native FXAA compiler warnings from the separate native regression are recorded separately; the solid-track scene emitted no such warnings."
+    }
+  ],
+  "transport": "Exact standalone HTML over loopback HTTP; actual solid geometry, body sweep collision, camera and complete-course simulation."
+}

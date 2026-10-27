@@ -1,0 +1,36 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "actual-star-collection-starts-eight-second-power",
+        "pass": true
+      },
+      {
+        "name": "rainbow-car-and-pooled-trails-render",
+        "pass": true
+      },
+      {
+        "name": "countdown-beside-energy-and-double-score",
+        "pass": true
+      }
+    ],
+    "rainbow": {
+      "active": true,
+      "remaining": 6.516666666666672,
+      "grace": 0,
+      "collected": 1,
+      "smashed": 0,
+      "knocked": 0,
+      "multiplier": 2
+    },
+    "view": {
+      "activeVertices": 1584,
+      "history": 45,
+      "capacity": 64,
+      "bands": 6,
+      "meshes": 1,
+      "blackGlassPreserved": true
+    }
+  },
+  "errors": []
+}

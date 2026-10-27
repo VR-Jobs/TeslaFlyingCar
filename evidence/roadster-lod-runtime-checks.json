@@ -1,0 +1,35 @@
+{
+  "sourceSha256": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef",
+  "levels": [
+    {
+      "level": "showroom",
+      "triangles": 145432,
+      "groups": 37,
+      "maxGap": 5.155369359468229e-16,
+      "geometryFinite": true,
+      "normalsUnit": true,
+      "degenerate": 0,
+      "poses": 101
+    },
+    {
+      "level": "driving",
+      "triangles": 38413,
+      "groups": 37,
+      "maxGap": 5.155369359468229e-16,
+      "geometryFinite": true,
+      "normalsUnit": true,
+      "degenerate": 0,
+      "poses": 101
+    },
+    {
+      "level": "distant",
+      "triangles": 21563,
+      "groups": 37,
+      "maxGap": 5.155369359468229e-16,
+      "geometryFinite": true,
+      "normalsUnit": true,
+      "degenerate": 0,
+      "poses": 101
+    }
+  ]
+}

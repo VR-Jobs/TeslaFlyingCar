@@ -1,0 +1,731 @@
+{
+  "format": "online cached scripts and demand-loaded unicode fonts; offline HTML retained",
+  "generatedUTC": "2026-10-27T22:14:37.413Z",
+  "offlineBytes": 11554999,
+  "fontFiles": 118,
+  "htmlBytes": 370435,
+  "htmlGzipBytes": 162325,
+  "htmlSHA256": "8c59d0671979c97ec6604ad992d3b137451b0164d47490d1569cb691c793f41b",
+  "files": [
+    {
+      "path": "assets/font-a46b99781170971e.woff2",
+      "sha256": "a46b99781170971e2c99a87ff7ee9f5cf90a9dfcd18175e1be6300201d030123",
+      "bytes": 10496,
+      "gzipBytes": 10519
+    },
+    {
+      "path": "assets/font-5917871d3cc970d8.woff2",
+      "sha256": "5917871d3cc970d8ce195101cbf65c1f68ec948022eb6070030342bb7edfb3bb",
+      "bytes": 7904,
+      "gzipBytes": 7927
+    },
+    {
+      "path": "assets/font-b7b2732ebc981b30.woff2",
+      "sha256": "b7b2732ebc981b30a5463ffc850407649dba41e625aee124cc63293da4547629",
+      "bytes": 5444,
+      "gzipBytes": 5467
+    },
+    {
+      "path": "assets/font-737c6c91cd60372d.woff2",
+      "sha256": "737c6c91cd60372d30e6540096ada83c89c9b4613cd7472e3366bf2e07ad99f1",
+      "bytes": 7920,
+      "gzipBytes": 7943
+    },
+    {
+      "path": "assets/font-5fafa3829a16d9ea.woff2",
+      "sha256": "5fafa3829a16d9ea5ac3a67c51e54186353122790b604a3e361f96cab188da8b",
+      "bytes": 5104,
+      "gzipBytes": 5127
+    },
+    {
+      "path": "assets/font-143f9504f1377012.woff2",
+      "sha256": "143f9504f1377012aa3e39c90c4354ef429cb0494b9ac0e1437f1a81e5412236",
+      "bytes": 36244,
+      "gzipBytes": 36262
+    },
+    {
+      "path": "assets/font-6f56409fd3d64bb8.woff2",
+      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491",
+      "bytes": 24356,
+      "gzipBytes": 24314
+    },
+    {
+      "path": "assets/font-88b262b8613113cb.woff2",
+      "sha256": "88b262b8613113cbd8dc0d950f653d9cd456cb77d836957c1c48f4cb9336c7d8",
+      "bytes": 2340,
+      "gzipBytes": 2363
+    },
+    {
+      "path": "assets/font-c0882c1acdb4467d.woff2",
+      "sha256": "c0882c1acdb4467d6482e053d017430cf3eb9c22e72e9acd5779d87c8697d4fc",
+      "bytes": 11428,
+      "gzipBytes": 11451
+    },
+    {
+      "path": "assets/font-7cd1a527272d5d6a.woff2",
+      "sha256": "7cd1a527272d5d6a388e6d4449a9d5da4bccb0020c1e839000b2cc537de11234",
+      "bytes": 6648,
+      "gzipBytes": 6671
+    },
+    {
+      "path": "assets/font-48782d601afb6275.woff2",
+      "sha256": "48782d601afb6275bb83af1a16a97df9561918e95161ef8004509b18263b2997",
+      "bytes": 6360,
+      "gzipBytes": 6383
+    },
+    {
+      "path": "assets/font-41fb88a5d5fa2e56.woff2",
+      "sha256": "41fb88a5d5fa2e56aa5b983c211c37b403b09bc7ecd105f6f808fc5f731c3b76",
+      "bytes": 35516,
+      "gzipBytes": 35549
+    },
+    {
+      "path": "assets/font-9328217dfeffa195.woff2",
+      "sha256": "9328217dfeffa1956e9f7f15b67be4b3a6930a4d788a3f8c7b999c9300754813",
+      "bytes": 31256,
+      "gzipBytes": 31284
+    },
+    {
+      "path": "assets/font-300ea2138785bfe6.woff2",
+      "sha256": "300ea2138785bfe6f3e9366c11c20b35a371fb490608283bb29ae81a874dc5b0",
+      "bytes": 34104,
+      "gzipBytes": 34137
+    },
+    {
+      "path": "assets/font-3fbcd5dee401e932.woff2",
+      "sha256": "3fbcd5dee401e93203328da9069658a7640b7d7aa02de1e086d426c2a51c1faf",
+      "bytes": 31852,
+      "gzipBytes": 31880
+    },
+    {
+      "path": "assets/font-a90fdd7cc7051fb5.woff2",
+      "sha256": "a90fdd7cc7051fb5205072b0d1607907846bd07e67ee7c24409e386d5e5f0895",
+      "bytes": 27788,
+      "gzipBytes": 27816
+    },
+    {
+      "path": "assets/font-62941c9fadd135dc.woff2",
+      "sha256": "62941c9fadd135dc730931706fb36e75686e5236a27a3a0864bc7a55ea3007b4",
+      "bytes": 26080,
+      "gzipBytes": 26108
+    },
+    {
+      "path": "assets/font-07d06e175d7ccfdc.woff2",
+      "sha256": "07d06e175d7ccfdc89f81895955190408f5c2876572220e8298f75c1c1b34065",
+      "bytes": 27152,
+      "gzipBytes": 27180
+    },
+    {
+      "path": "assets/font-866efc9a1572c660.woff2",
+      "sha256": "866efc9a1572c660d18bd5efd102e3babf54bbc041c17a9f7872e00318da125a",
+      "bytes": 29360,
+      "gzipBytes": 29388
+    },
+    {
+      "path": "assets/font-7e4af1f0fa803778.woff2",
+      "sha256": "7e4af1f0fa803778c8c69dc8ef692adf2929f327568711e45df9e58b70f7a9e2",
+      "bytes": 29708,
+      "gzipBytes": 29736
+    },
+    {
+      "path": "assets/font-fc187a618a6c3021.woff2",
+      "sha256": "fc187a618a6c3021b2ea1b505021334a1e3ee4921aa17a4b34e97d7170c3a564",
+      "bytes": 25888,
+      "gzipBytes": 25916
+    },
+    {
+      "path": "assets/font-277ff061b1f7ffc6.woff2",
+      "sha256": "277ff061b1f7ffc62bf1d249fed22f31e13116bac328c8494b4e049c0ebd909b",
+      "bytes": 28488,
+      "gzipBytes": 28516
+    },
+    {
+      "path": "assets/font-b0db044be6c4d48c.woff2",
+      "sha256": "b0db044be6c4d48cc666748507ceaba3886b6946762c6ad14944f9263a55909e",
+      "bytes": 26000,
+      "gzipBytes": 26028
+    },
+    {
+      "path": "assets/font-bf19c07f54de2f27.woff2",
+      "sha256": "bf19c07f54de2f27099c05ca9c572d8c49f41f4ced8835edc46b2cec03e258f6",
+      "bytes": 25760,
+      "gzipBytes": 25788
+    },
+    {
+      "path": "assets/font-42bb8021b5214281.woff2",
+      "sha256": "42bb8021b5214281ee93a7f4f0bda532746a91b9d8f7b0c2d8d23f5680683393",
+      "bytes": 27324,
+      "gzipBytes": 27352
+    },
+    {
+      "path": "assets/font-7b3adbdfe301a8ad.woff2",
+      "sha256": "7b3adbdfe301a8adcd60f8e4b6602fd472e7f3d92cb1021579141ece2be14c25",
+      "bytes": 23000,
+      "gzipBytes": 23028
+    },
+    {
+      "path": "assets/font-8df0b1a574705770.woff2",
+      "sha256": "8df0b1a574705770b37b3510e8f912b0ada9ae61da5f9bf1508c7d766ecdc2f7",
+      "bytes": 28908,
+      "gzipBytes": 28936
+    },
+    {
+      "path": "assets/font-4a08bf05fea2a6e1.woff2",
+      "sha256": "4a08bf05fea2a6e1b7898c9066d7e464fa48dbf1d18c836c0aaa456367f8c010",
+      "bytes": 29748,
+      "gzipBytes": 29776
+    },
+    {
+      "path": "assets/font-6a6b4b777ff21daa.woff2",
+      "sha256": "6a6b4b777ff21daaef4212878deee6f5103d44d1899a507ed76a95cbdf26e05b",
+      "bytes": 28264,
+      "gzipBytes": 28292
+    },
+    {
+      "path": "assets/font-578e16e11dfe421f.woff2",
+      "sha256": "578e16e11dfe421f3f3b39df255071b96d065d3938bb27d6c6cd8badc7635f9a",
+      "bytes": 25324,
+      "gzipBytes": 25352
+    },
+    {
+      "path": "assets/font-5535f582156d0a4f.woff2",
+      "sha256": "5535f582156d0a4f25b92605a5b2d114d9539b2985d3fb6e3b7418f400bcbae5",
+      "bytes": 19920,
+      "gzipBytes": 19948
+    },
+    {
+      "path": "assets/font-04ea3198b9505361.woff2",
+      "sha256": "04ea3198b950536124fb3a910c432cdf15749bf91ff672126687d019eca0d528",
+      "bytes": 24964,
+      "gzipBytes": 24992
+    },
+    {
+      "path": "assets/font-45e93cfec4921151.woff2",
+      "sha256": "45e93cfec4921151ed9b2779ff1c0ab0ca71c51d3e3f73dfa06705aab060c438",
+      "bytes": 25568,
+      "gzipBytes": 25596
+    },
+    {
+      "path": "assets/font-a8e2a0dd1999c5c2.woff2",
+      "sha256": "a8e2a0dd1999c5c27ec0bd52100f1a372696a30e3fab700e04cdf4b772250126",
+      "bytes": 29572,
+      "gzipBytes": 29600
+    },
+    {
+      "path": "assets/font-fb3b4b1a59e8b065.woff2",
+      "sha256": "fb3b4b1a59e8b0653e1e5e474bbea117ddd6df69a13982f5d7cbf387bf42174a",
+      "bytes": 38420,
+      "gzipBytes": 38453
+    },
+    {
+      "path": "assets/font-f9c6dbcc36814ff0.woff2",
+      "sha256": "f9c6dbcc36814ff0168e838c4bc43c507b6f6909aa2771f81f5d429c33b0f6ca",
+      "bytes": 33756,
+      "gzipBytes": 33789
+    },
+    {
+      "path": "assets/font-c2d6db650bc5e782.woff2",
+      "sha256": "c2d6db650bc5e782eb773a9129d20ab5faac2e9759296f43c9f1741c61af3e9f",
+      "bytes": 30376,
+      "gzipBytes": 30404
+    },
+    {
+      "path": "assets/font-d5207d9bffce561b.woff2",
+      "sha256": "d5207d9bffce561ba9a698fbebe9c9548d0d5e98a12def0a96d48a243218f9b7",
+      "bytes": 27308,
+      "gzipBytes": 27336
+    },
+    {
+      "path": "assets/font-16a55634d1951c42.woff2",
+      "sha256": "16a55634d1951c42594e1dba2d465f86408c1f98e0dd0b230b2f62590518b44f",
+      "bytes": 28816,
+      "gzipBytes": 28844
+    },
+    {
+      "path": "assets/font-a382161414caa021.woff2",
+      "sha256": "a382161414caa021d67e4d42d03ab3af1cea4b4370b68126b38addd81e894fe0",
+      "bytes": 25300,
+      "gzipBytes": 25328
+    },
+    {
+      "path": "assets/font-fa94d54722d9c277.woff2",
+      "sha256": "fa94d54722d9c277885a8c181bf48d3675e475caccacb1fa1c8dea3916cffce3",
+      "bytes": 22964,
+      "gzipBytes": 22992
+    },
+    {
+      "path": "assets/font-5db36314da0acf1d.woff2",
+      "sha256": "5db36314da0acf1dc4aedafcf5370e1fbd5b218a6e87868a79753170ebd79971",
+      "bytes": 28068,
+      "gzipBytes": 28096
+    },
+    {
+      "path": "assets/font-fbc61ed2c778c859.woff2",
+      "sha256": "fbc61ed2c778c859c5760c77d34e956887d7bdd40072c8fa8ead60b730891f30",
+      "bytes": 23836,
+      "gzipBytes": 23864
+    },
+    {
+      "path": "assets/font-c17cabf245762097.woff2",
+      "sha256": "c17cabf245762097894bdc9663019f6d38b94d3ee7938f55fab793ada0a3ac8e",
+      "bytes": 28464,
+      "gzipBytes": 28492
+    },
+    {
+      "path": "assets/font-8afde58903e90d7b.woff2",
+      "sha256": "8afde58903e90d7bf79e851e2079e00deb639ae3e90dde0390d4b5953e97fc37",
+      "bytes": 26444,
+      "gzipBytes": 26472
+    },
+    {
+      "path": "assets/font-95539ba6ee514a88.woff2",
+      "sha256": "95539ba6ee514a88f78f9fbc7152cd52ccab6fc473e357a2928883c078446b85",
+      "bytes": 29236,
+      "gzipBytes": 29264
+    },
+    {
+      "path": "assets/font-5eb478c8b0b8938d.woff2",
+      "sha256": "5eb478c8b0b8938df0915f008248d7692eb9fc61a9cb8c2d0ead251d2f245462",
+      "bytes": 30344,
+      "gzipBytes": 30372
+    },
+    {
+      "path": "assets/font-968333f48d173ac4.woff2",
+      "sha256": "968333f48d173ac4d1210b99c7fb582eab22c8ba68f1c983cf3f5c3952fd8e58",
+      "bytes": 31316,
+      "gzipBytes": 31344
+    },
+    {
+      "path": "assets/font-89699e5a9b14d714.woff2",
+      "sha256": "89699e5a9b14d71495fc3e6165420be843495987880596bdeb11766cc2de5cd5",
+      "bytes": 25828,
+      "gzipBytes": 25856
+    },
+    {
+      "path": "assets/font-bfc1f9dfa15eb157.woff2",
+      "sha256": "bfc1f9dfa15eb1572967627cdffd173989f7291d5a5a581a54f17953aec7fa2e",
+      "bytes": 23012,
+      "gzipBytes": 23040
+    },
+    {
+      "path": "assets/font-be2abf8e92067a69.woff2",
+      "sha256": "be2abf8e92067a69b52138a88fb2f2a28c9fcdc66eddec0aa9c40e65e458573d",
+      "bytes": 24928,
+      "gzipBytes": 24956
+    },
+    {
+      "path": "assets/font-a2b630fd14236eec.woff2",
+      "sha256": "a2b630fd14236eec2dc95abdf4c0e53a93093b5b8342c8a4f39dfdef1b21f489",
+      "bytes": 31840,
+      "gzipBytes": 31868
+    },
+    {
+      "path": "assets/font-f1ad5df0d9e3f19b.woff2",
+      "sha256": "f1ad5df0d9e3f19b90d96ab837f115e1cff7b04970bc1ed8f25a25078e8c6689",
+      "bytes": 26376,
+      "gzipBytes": 26404
+    },
+    {
+      "path": "assets/font-b0d9391a6ddfd8c1.woff2",
+      "sha256": "b0d9391a6ddfd8c1cf5737ad2a01fbf82a78f653e60c8acce6e0f264408126bb",
+      "bytes": 22160,
+      "gzipBytes": 22188
+    },
+    {
+      "path": "assets/font-f5ad07b8681d2500.woff2",
+      "sha256": "f5ad07b8681d2500cba9df472a13aa86bf34732c376e0c9a18efaf988e76c33f",
+      "bytes": 22724,
+      "gzipBytes": 22752
+    },
+    {
+      "path": "assets/font-c265e7f0897d55cd.woff2",
+      "sha256": "c265e7f0897d55cd50c92e8beeb18855caa4bd133de02a7dcf3fb3408766c891",
+      "bytes": 28376,
+      "gzipBytes": 28404
+    },
+    {
+      "path": "assets/font-67c2a4c62aefb27f.woff2",
+      "sha256": "67c2a4c62aefb27fba9ec1f8d1cb2aab2838c2ebc1ff8ec73f418033daa782c7",
+      "bytes": 28456,
+      "gzipBytes": 28484
+    },
+    {
+      "path": "assets/font-9f051ed064edea14.woff2",
+      "sha256": "9f051ed064edea14f1469e8235379c814155abad10ca7b9d86ed3f3f71a16ddd",
+      "bytes": 22716,
+      "gzipBytes": 22744
+    },
+    {
+      "path": "assets/font-17e17c8cad017617.woff2",
+      "sha256": "17e17c8cad0176176067801b47f3e40176d425c0933056da64bd91eff2952d00",
+      "bytes": 30616,
+      "gzipBytes": 30644
+    },
+    {
+      "path": "assets/font-26ba73eadfc4987d.woff2",
+      "sha256": "26ba73eadfc4987d00b24dffc293b80371d148448ed8061d8dee3cc5a524a81e",
+      "bytes": 23368,
+      "gzipBytes": 23396
+    },
+    {
+      "path": "assets/font-b7c53ba42ff386cb.woff2",
+      "sha256": "b7c53ba42ff386cbad4537506ca1820f88bc046de2c8aaf73abff48e4278dff8",
+      "bytes": 26020,
+      "gzipBytes": 26048
+    },
+    {
+      "path": "assets/font-53ce2904cb2234aa.woff2",
+      "sha256": "53ce2904cb2234aaa6b0c7b628d1ddb7ad46ea92ebda52a3b78464143f9c3d51",
+      "bytes": 25600,
+      "gzipBytes": 25628
+    },
+    {
+      "path": "assets/font-44c71b14c255c552.woff2",
+      "sha256": "44c71b14c255c552ce122d3bfe438112794d62cd428155126491925c567e47f9",
+      "bytes": 21264,
+      "gzipBytes": 21292
+    },
+    {
+      "path": "assets/font-7705d297ef91495b.woff2",
+      "sha256": "7705d297ef91495b9a1f93e73d5cd7f1316ae25069b095a42e571995e212b3ef",
+      "bytes": 30848,
+      "gzipBytes": 30876
+    },
+    {
+      "path": "assets/font-e65307d9d2f38294.woff2",
+      "sha256": "e65307d9d2f382948b7c81373ebf20ff28ecdbd85f3c12a27198122f0666253d",
+      "bytes": 24428,
+      "gzipBytes": 24456
+    },
+    {
+      "path": "assets/font-dedbb151e672ae80.woff2",
+      "sha256": "dedbb151e672ae805e9b5fe1457c00e5e859936193ff1e9ff2105070ae8ff312",
+      "bytes": 26392,
+      "gzipBytes": 26420
+    },
+    {
+      "path": "assets/font-2d79f911a811dbaa.woff2",
+      "sha256": "2d79f911a811dbaa63abe72aeab3920156be818076f8c56a530c0f4502e8e515",
+      "bytes": 20196,
+      "gzipBytes": 20224
+    },
+    {
+      "path": "assets/font-18217d249762456d.woff2",
+      "sha256": "18217d249762456d8b30770b17a0cd4ef7d1b97012b9c1b7e3261c61ef621e10",
+      "bytes": 26720,
+      "gzipBytes": 26748
+    },
+    {
+      "path": "assets/font-2efdd0d614ba675a.woff2",
+      "sha256": "2efdd0d614ba675aa354dc9582157e62d6b2c553a8d147f02854e7b0efc7250c",
+      "bytes": 22452,
+      "gzipBytes": 22480
+    },
+    {
+      "path": "assets/font-5e453ea69551aa70.woff2",
+      "sha256": "5e453ea69551aa70d1ca4a3e4356ac82f5f2d32d0bbd35dd3950c04aafd9d99c",
+      "bytes": 17684,
+      "gzipBytes": 17712
+    },
+    {
+      "path": "assets/font-b4521b9ae2ddb433.woff2",
+      "sha256": "b4521b9ae2ddb4330a6300a8bf47d314d1ed0ab0f3d958346689738bc973defa",
+      "bytes": 25696,
+      "gzipBytes": 25724
+    },
+    {
+      "path": "assets/font-fc415fad15b667e9.woff2",
+      "sha256": "fc415fad15b667e94214052bd1822c5c4f78536a8c91815fb3b257ada0095919",
+      "bytes": 24892,
+      "gzipBytes": 24920
+    },
+    {
+      "path": "assets/font-4fb9327b31a8d063.woff2",
+      "sha256": "4fb9327b31a8d06331134f6783efd8d199bf898a4040b84580e7570d3506c07b",
+      "bytes": 23616,
+      "gzipBytes": 23644
+    },
+    {
+      "path": "assets/font-9a46179978fc7d94.woff2",
+      "sha256": "9a46179978fc7d94553f8a3c3432d4150f80b2c0369711d65427f377c4b9bbf3",
+      "bytes": 17808,
+      "gzipBytes": 17836
+    },
+    {
+      "path": "assets/font-46a5c3c98875f173.woff2",
+      "sha256": "46a5c3c98875f173676d1be064e3da205cc7a18c9738929ce3d6864aa9c959fa",
+      "bytes": 14892,
+      "gzipBytes": 14915
+    },
+    {
+      "path": "assets/font-5df6a0fbe30f86d0.woff2",
+      "sha256": "5df6a0fbe30f86d0076853404bad104da121234d9f5a1f7a9826d2cb28123ceb",
+      "bytes": 18532,
+      "gzipBytes": 18560
+    },
+    {
+      "path": "assets/font-3eb8763f2ab65564.woff2",
+      "sha256": "3eb8763f2ab65564b798a034fddc8257e119d3b4d0438c1c52638e5f0b8653ca",
+      "bytes": 5268,
+      "gzipBytes": 5291
+    },
+    {
+      "path": "assets/font-1017aa517f0c2d75.woff2",
+      "sha256": "1017aa517f0c2d75dd7c0f1e0ad6cb8479bc6708926877a16faa8f0fcc5a567b",
+      "bytes": 6292,
+      "gzipBytes": 6315
+    },
+    {
+      "path": "assets/font-a53a80f64e9e01cb.woff2",
+      "sha256": "a53a80f64e9e01cb013aed8ba0773d0d737be7b2216a5a3c9ac8bb8bb3da0475",
+      "bytes": 6240,
+      "gzipBytes": 6263
+    },
+    {
+      "path": "assets/font-9eb7d69c95334b39.woff2",
+      "sha256": "9eb7d69c95334b3946acae7d1a36b2fe93d018aa3b4f199a690fc6caf9ef5a46",
+      "bytes": 5256,
+      "gzipBytes": 5279
+    },
+    {
+      "path": "assets/font-525d35faca2f807e.woff2",
+      "sha256": "525d35faca2f807e013347d77867b3f43019ce96c4bd9a0e9ca3637835277e58",
+      "bytes": 4772,
+      "gzipBytes": 4795
+    },
+    {
+      "path": "assets/font-d4cde5ed3ee528d0.woff2",
+      "sha256": "d4cde5ed3ee528d0adac19d924ca11a364f70d940737e317b060658c8fe2500d",
+      "bytes": 1444,
+      "gzipBytes": 1467
+    },
+    {
+      "path": "assets/font-59107eaed9a1ce2d.woff2",
+      "sha256": "59107eaed9a1ce2d39ae75c54c592022aeaf6c7c8360e7ab47a71bc6047de09f",
+      "bytes": 2128,
+      "gzipBytes": 2151
+    },
+    {
+      "path": "assets/font-00414aa062197d68.woff2",
+      "sha256": "00414aa062197d68f3f972a62669fda35b4a470191a193d861ecac5bd0f311c4",
+      "bytes": 5284,
+      "gzipBytes": 5307
+    },
+    {
+      "path": "assets/font-b37d5317a03a4f42.woff2",
+      "sha256": "b37d5317a03a4f428809a6947f1f5bf9574f9749d7fecd836dce5ce37496cc57",
+      "bytes": 35148,
+      "gzipBytes": 35181
+    },
+    {
+      "path": "assets/font-5af6f060bb79b8a9.woff2",
+      "sha256": "5af6f060bb79b8a9940f5e4fac134eb42a2a250ae18e0b079f8721c0294f00da",
+      "bytes": 31848,
+      "gzipBytes": 31876
+    },
+    {
+      "path": "assets/font-2945fe1d8f283f6f.woff2",
+      "sha256": "2945fe1d8f283f6f90c408ef88212682f8bc2e4cd2586a9f63216ed97409b5f8",
+      "bytes": 32832,
+      "gzipBytes": 32863
+    },
+    {
+      "path": "assets/font-d390ff6170ffe551.woff2",
+      "sha256": "d390ff6170ffe55148c276b994ac3548919ea0fd6a856587c9fd86c52bea04fd",
+      "bytes": 34584,
+      "gzipBytes": 34617
+    },
+    {
+      "path": "assets/font-b39a4deeab6e7e3f.woff2",
+      "sha256": "b39a4deeab6e7e3f1a808542a0dfb8f30168462c4a58cbab69051c9ec2eb87bd",
+      "bytes": 33300,
+      "gzipBytes": 33333
+    },
+    {
+      "path": "assets/font-92bf6e80b589ea11.woff2",
+      "sha256": "92bf6e80b589ea1189ebdda3ae40fe8cf31b51dbecc1443bb59db36198e5c744",
+      "bytes": 33528,
+      "gzipBytes": 33561
+    },
+    {
+      "path": "assets/font-282af6ef4039704c.woff2",
+      "sha256": "282af6ef4039704c1c3213e410b58b4331982e45b9e5953793cf3baec8796200",
+      "bytes": 34060,
+      "gzipBytes": 34093
+    },
+    {
+      "path": "assets/font-0d0dcdbd720ca991.woff2",
+      "sha256": "0d0dcdbd720ca99102ae0929f4e572abe12009f688576ab6f83a72fa5382171a",
+      "bytes": 33108,
+      "gzipBytes": 33141
+    },
+    {
+      "path": "assets/font-b174de19ae761d32.woff2",
+      "sha256": "b174de19ae761d328d56b39abdcff5b6262e0c7e981dbf223c345e34c5d3450d",
+      "bytes": 34912,
+      "gzipBytes": 34945
+    },
+    {
+      "path": "assets/font-02784e2c9ca9777d.woff2",
+      "sha256": "02784e2c9ca9777d486a5bec3f3c6869c5f9dde2d549d8d59fa77cf98a7fdeed",
+      "bytes": 32620,
+      "gzipBytes": 32648
+    },
+    {
+      "path": "assets/font-aa44730a67693ce8.woff2",
+      "sha256": "aa44730a67693ce8d7bd7f50b096b0b136012fa372c6eeedd6f03d553fba7a94",
+      "bytes": 33496,
+      "gzipBytes": 33529
+    },
+    {
+      "path": "assets/font-199b75f6e9ffa5a7.woff2",
+      "sha256": "199b75f6e9ffa5a768f25004d67b0eec0f8e2c740c88decb53e203046df29acc",
+      "bytes": 34000,
+      "gzipBytes": 34033
+    },
+    {
+      "path": "assets/font-56359a7f99c6ba91.woff2",
+      "sha256": "56359a7f99c6ba91fb3b3d33ae644477456760c4590153c7bc7c7aa296b13b34",
+      "bytes": 31196,
+      "gzipBytes": 31224
+    },
+    {
+      "path": "assets/font-3396a5f5a7e270e6.woff2",
+      "sha256": "3396a5f5a7e270e6a636d958714a9805de2820556bf7ab97e4145fade559ef94",
+      "bytes": 31752,
+      "gzipBytes": 31780
+    },
+    {
+      "path": "assets/font-23af60391af82920.woff2",
+      "sha256": "23af60391af82920c14b896725999c34f0663217abfedfceddc4687fd9499228",
+      "bytes": 31436,
+      "gzipBytes": 31464
+    },
+    {
+      "path": "assets/font-ba5e95b3786aa13b.woff2",
+      "sha256": "ba5e95b3786aa13b7a7ad90ee7a3180f910bf2f53e77344d4a231aed1673dca6",
+      "bytes": 30644,
+      "gzipBytes": 30672
+    },
+    {
+      "path": "assets/font-71f3d3380143882f.woff2",
+      "sha256": "71f3d3380143882f3cb4e278ca8bc38c760e3b6659c29622017a125a361595ed",
+      "bytes": 28680,
+      "gzipBytes": 28708
+    },
+    {
+      "path": "assets/font-a7d3c9efad2e11df.woff2",
+      "sha256": "a7d3c9efad2e11df9964db65d870c02f2ea6adda03f519d5dbf41677298ee5ae",
+      "bytes": 28524,
+      "gzipBytes": 28552
+    },
+    {
+      "path": "assets/font-66da04f1046b31db.woff2",
+      "sha256": "66da04f1046b31db6b5e6a76d1dc165c3409f752a429f93a942e5cfe1db140c7",
+      "bytes": 25144,
+      "gzipBytes": 25172
+    },
+    {
+      "path": "assets/font-fd4c16cb69550d16.woff2",
+      "sha256": "fd4c16cb69550d16cb1365f9de64b234198d9bee10001ea0a423c69a4e6b9bbc",
+      "bytes": 42748,
+      "gzipBytes": 42781
+    },
+    {
+      "path": "assets/font-0fad97e53cc15e54.woff2",
+      "sha256": "0fad97e53cc15e54321ac288564dbdbf86583efac39214b3af5bce52b7b2031c",
+      "bytes": 5376,
+      "gzipBytes": 5399
+    },
+    {
+      "path": "assets/font-579910f01035f552.woff2",
+      "sha256": "579910f01035f552fb471eb9556ce9b62215b77a1eb7b2b7f85a7ab82c50580a",
+      "bytes": 4804,
+      "gzipBytes": 4827
+    },
+    {
+      "path": "assets/font-b519c0582c907dd8.woff2",
+      "sha256": "b519c0582c907dd8a877410ea1bbb4248f59bbfc41711299e095e92b0e0b2fa3",
+      "bytes": 4564,
+      "gzipBytes": 4587
+    },
+    {
+      "path": "assets/font-9dfe7cbc7dcf9b99.woff2",
+      "sha256": "9dfe7cbc7dcf9b992ef2e290800072b292b433cf9b091864d71feb09a2463e2d",
+      "bytes": 13424,
+      "gzipBytes": 13447
+    },
+    {
+      "path": "assets/font-b1d1cb6385a9d5ce.woff2",
+      "sha256": "b1d1cb6385a9d5cece76e1a11935cd3a0d94f8cc6b2a95c6075387113dd1bcc7",
+      "bytes": 77440,
+      "gzipBytes": 77483
+    },
+    {
+      "path": "assets/font-16fd373954f7569a.woff2",
+      "sha256": "16fd373954f7569ad294444531caa2e7e5ffd1a6798c6df3f56b9faf691190c2",
+      "bytes": 12380,
+      "gzipBytes": 12403
+    },
+    {
+      "path": "assets/font-23afdb9b5b89b878.woff2",
+      "sha256": "23afdb9b5b89b878fab04d80cc30bf41bb4f3f7e8be88e5f16a7cc7671cdb2dc",
+      "bytes": 15084,
+      "gzipBytes": 15107
+    },
+    {
+      "path": "assets/font-93328dcb323f55b8.woff2",
+      "sha256": "93328dcb323f55b8d7feb192ebf969bbd4674e52d3a5a47c5cb1bce7ab266426",
+      "bytes": 79344,
+      "gzipBytes": 79387
+    },
+    {
+      "path": "assets/font-f57c2b379ba92460.woff2",
+      "sha256": "f57c2b379ba92460d25730ef1f7b8745afb4eadb401d652900f2059f8ee2f2b6",
+      "bytes": 13124,
+      "gzipBytes": 13147
+    },
+    {
+      "path": "assets/font-433a7007e4747a02.woff2",
+      "sha256": "433a7007e4747a02a790167a6efa2625855f013970ba49b9b739a5d3db8b2601",
+      "bytes": 15732,
+      "gzipBytes": 15755
+    },
+    {
+      "path": "assets/font-52dd95964b4141bd.woff2",
+      "sha256": "52dd95964b4141bdacd5b785e68079fd40ef2c4b2483bc0eb0b1a3190cedf2bc",
+      "bytes": 77136,
+      "gzipBytes": 77179
+    },
+    {
+      "path": "assets/font-c6b9df58743ccca1.woff2",
+      "sha256": "c6b9df58743ccca1236e9521720b135138309bc4149d5d027a9bd10183cc8ed5",
+      "bytes": 12964,
+      "gzipBytes": 12987
+    },
+    {
+      "path": "assets/font-5b7e4a6f97163c26.woff2",
+      "sha256": "5b7e4a6f97163c2636724d4de90304fc895653dcfe64c67a7a22f26331ca5c5f",
+      "bytes": 15688,
+      "gzipBytes": 15711
+    },
+    {
+      "path": "assets/font-41e6b9f297f7d9a2.woff2",
+      "sha256": "41e6b9f297f7d9a2df2aaa274092f76d2f72711a15ca455f7f4f4f92caf16b72",
+      "bytes": 13500,
+      "gzipBytes": 13523
+    },
+    {
+      "path": "assets/fonts-bd583016b7293ecc.css",
+      "sha256": "bd583016b7293ecc2304e08b0844d8baba16a4200b23ffa7c70715fcab4e0bf0",
+      "bytes": 111214,
+      "gzipBytes": 33208
+    },
+    {
+      "path": "assets/game-f5991bfb42c81884.js",
+      "sha256": "f5991bfb42c818845178203db1147ff1813ec5c284f88f176f2b0dd415c3d10a",
+      "bytes": 7200784,
+      "gzipBytes": 2978668
+    }
+  ]
+}

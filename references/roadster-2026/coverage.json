@@ -1,0 +1,26 @@
+{
+  "scope": "Homepage exterior only",
+  "implementedApproximate": [
+    "body.shell",
+    "glass.canopy",
+    "glass.side",
+    "wheels.tires",
+    "wheels.spokes",
+    "lighting.front",
+    "lighting.rear",
+    "exterior.rear.fans",
+    "aero.wing",
+    "aero.mounts",
+    "aero.telescopic.pylons"
+  ],
+  "deferred": [
+    "detailed.cabin",
+    "hidden.chassis",
+    "engineering.actuator.internals"
+  ],
+  "precisionGaps": [
+    "No OEM CAD or complete measured dimensions",
+    "No solved per-photo camera calibration",
+    "Global self-intersection and factory mechanical validation outside this working exterior pass"
+  ]
+}

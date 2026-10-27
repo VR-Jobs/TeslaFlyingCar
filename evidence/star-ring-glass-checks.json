@@ -1,0 +1,82 @@
+{
+  "checks": [
+    {
+      "name": "transparent-glass-uses-exact-solid-collision-faces",
+      "pass": true,
+      "detail": {
+        "triangles": 23580,
+        "batches": 78
+      }
+    },
+    {
+      "name": "all-glass-batches-preserve-background-depth",
+      "pass": true
+    },
+    {
+      "name": "rendering-does-not-mutate-solid-collision-data",
+      "pass": true
+    },
+    {
+      "name": "chassis-keeps-solid-hardware-outside-driving-corridor",
+      "pass": true
+    },
+    {
+      "name": "no-visible-crossbars-or-under-glass-crossframes",
+      "pass": true
+    },
+    {
+      "name": "hardware-never-bridges-a-missing-track-section",
+      "pass": true
+    },
+    {
+      "name": "modular-chassis-has-low-fixed-geometry-budget",
+      "pass": true,
+      "detail": {
+        "style": "magnetic-modular-chassis",
+        "ribs": 0,
+        "fins": 126,
+        "terminals": 8,
+        "sectionMarkers": 430,
+        "cradles": 0,
+        "beacons": 22,
+        "triangles": 34388,
+        "batches": 60,
+        "clearDrivingWidth": 11.4
+      }
+    },
+    {
+      "name": "distant-chassis-batches-are-culled",
+      "pass": true
+    },
+    {
+      "name": "track-sections-have-distinct-lighting",
+      "pass": true
+    },
+    {
+      "name": "detail-rendering-preserves-the-same-solid",
+      "pass": true
+    },
+    {
+      "name": "ice-ring-plane-stays-below-level-driving-surface",
+      "pass": true
+    },
+    {
+      "name": "gas-giant-is-behind-playable-route",
+      "pass": true,
+      "detail": {
+        "distance": 4522.404129608643
+      }
+    },
+    {
+      "name": "ice-particles-stay-below-or-beside-driving-corridor",
+      "pass": true,
+      "detail": {
+        "points": 2200
+      }
+    },
+    {
+      "name": "low-quality-reduces-particles",
+      "pass": true
+    }
+  ]
+}

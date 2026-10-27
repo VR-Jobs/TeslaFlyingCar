@@ -1,0 +1,151 @@
+{
+  "checks": [
+    {
+      "name": "loop-entry-exit-no-longer-share-same-space",
+      "pass": true,
+      "detail": [
+        {
+          "title": "第一星环",
+          "meters": 19.99999999928175
+        },
+        {
+          "title": "极光星环",
+          "meters": 19.999999999515364
+        }
+      ]
+    },
+    {
+      "name": "all-three-lanes-clear-unrelated-track-faces",
+      "pass": true,
+      "detail": {
+        "sweptPathSections": 1707,
+        "foreign": []
+      }
+    },
+    {
+      "name": "rendered-front-and-bottom-have-opposite-outward-normals",
+      "pass": true,
+      "detail": {
+        "minTop": 0.9711287822585529,
+        "minBottom": 0.9709151133626609
+      }
+    },
+    {
+      "name": "render-and-collision-share-float32-triangle-data",
+      "pass": true,
+      "detail": {
+        "triangles": 23580,
+        "thickness": 0.45
+      }
+    },
+    {
+      "name": "no-collision-tops-across-missing-track",
+      "pass": true
+    },
+    {
+      "name": "visible-gap-ends-and-physical-caps-match-exactly",
+      "pass": true
+    },
+    {
+      "name": "top-bottom-and-side-block-sweeps-on-curved-track",
+      "pass": true
+    },
+    {
+      "name": "landing-search-refines-between-old-coarse-samples",
+      "pass": true
+    },
+    {
+      "name": "upward-suction-cannot-pass-or-attach-through-bottom",
+      "pass": true,
+      "detail": {
+        "upwardSpeeds": [
+          35,
+          400
+        ]
+      }
+    },
+    {
+      "name": "fast-descent-cannot-tunnel-through-thin-track",
+      "pass": true,
+      "detail": {
+        "pos": [
+          0,
+          0,
+          -100
+        ],
+        "last": {
+          "kind": "top",
+          "s": 100,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "point": [
+            0,
+            0,
+            -100
+          ]
+        }
+      }
+    },
+    {
+      "name": "car-body-is-blocked-by-track-side-wall",
+      "pass": true,
+      "detail": {
+        "pos": [
+          6.747652587042914,
+          -0.20092933164551066,
+          -100
+        ],
+        "contact": {
+          "kind": "wall",
+          "s": 102.35,
+          "normal": [
+            0.9999999999999999,
+            0,
+            0
+          ],
+          "point": [
+            5.699999809265137,
+            -0.08093822053439956,
+            -102.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "rotation-itself-cannot-cut-car-body-through-track",
+      "pass": true,
+      "detail": {
+        "contact": {
+          "kind": "top",
+          "s": 102.35,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "point": [
+            -0.8655239399962137,
+            1.3877787807814457e-17,
+            -102.35
+          ]
+        },
+        "feedback": "高度不足，触碰轨道"
+      }
+    },
+    {
+      "name": "safe-high-altitude-barrel-still-completes",
+      "pass": true
+    },
+    {
+      "name": "camera-sightline-keeps-to-visible-side-of-solid-track",
+      "pass": true,
+      "detail": {
+        "cameraSamples": 591,
+        "cameraCorrections": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "transport": "Exact standalone HTML over loopback. All gameplay assets embedded; play does not need this QA server.",
+  "checks": [
+    {
+      "name": "selective-five-mip-hdr-bloom-active",
+      "pass": true,
+      "observed": {
+        "post": {
+          "emitters": 90,
+          "enabled": true,
+          "frames": 1806,
+          "height": 1080,
+          "mips": 5,
+          "occlusion": true,
+          "radius": 0.05,
+          "selective": true,
+          "strength": 0.7,
+          "threshold": 0.6,
+          "type": "selective-hdr-bloom",
+          "width": 1920
+        },
+        "drawCalls": 187,
+        "triangles": 105375
+      }
+    },
+    {
+      "name": "launch-cue-and-bloom-active-together",
+      "pass": true,
+      "observed": {
+        "action": "release",
+        "distance": 7,
+        "eligible": true,
+        "end": 1518,
+        "eta": 0.25,
+        "flight": false,
+        "high": 10.30946236395311,
+        "index": 1,
+        "jetSeconds": 0.35,
+        "label": "松 E · 短喷",
+        "low": 3.945596707191931,
+        "ready": true,
+        "reason": null,
+        "start": 1490,
+        "state": "ready",
+        "strength": 0.903846153846154,
+        "zoneEnd": 1486.054403292808,
+        "zoneStart": 1479.6905376360469
+      }
+    },
+    {
+      "name": "full-course-completion",
+      "pass": true,
+      "s": 2359.272301835974,
+      "time": 86.0499999999964,
+      "falls": 1,
+      "lands": 4
+    },
+    {
+      "name": "reward-settles-once",
+      "pass": true,
+      "coins": 115
+    },
+    {
+      "name": "paint-unlocked",
+      "pass": true
+    },
+    {
+      "name": "leaving-mode-restores-four-button-home-and-releases-large-targets",
+      "pass": true,
+      "observed": {
+        "active": false,
+        "homeButtons": 4,
+        "post": {
+          "emitters": 86,
+          "enabled": true,
+          "frames": 2431,
+          "height": 0,
+          "mips": 5,
+          "occlusion": true,
+          "radius": 0.05,
+          "selective": true,
+          "strength": 0.7,
+          "threshold": 0.6,
+          "type": "selective-hdr-bloom",
+          "width": 0
+        }
+      }
+    },
+    {
+      "name": "bloom-resumes-after-returning-from-home",
+      "pass": true,
+      "observed": {
+        "emitters": 90,
+        "enabled": true,
+        "frames": 4265,
+        "height": 1080,
+        "mips": 5,
+        "occlusion": true,
+        "radius": 0.05,
+        "selective": true,
+        "strength": 0.7,
+        "threshold": 0.6,
+        "type": "selective-hdr-bloom",
+        "width": 1920
+      }
+    },
+    {
+      "name": "no-browser-shader-warnings-or-errors",
+      "pass": true,
+      "logs": []
+    }
+  ]
+}

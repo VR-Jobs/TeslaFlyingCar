@@ -1,0 +1,81 @@
+{
+  "identity": "Tesla Roadster Thrust prototype exterior, user-reference game adaptation",
+  "phase": "exterior",
+  "sources": [
+    {
+      "id": "user-1",
+      "source": "C:\\Users\\jings\\AppData\\Local\\Temp\\codex-clipboard-7825197e-0c58-4960-8e66-f12c64308688.png",
+      "sourceSha256": "5581788fc49a5e4a6e5a9bb4092b34ded3f815866d588091dc1ddfb6dbecc267",
+      "originalSize": [
+        454,
+        393
+      ],
+      "preview": "references\\roadster-2026\\user-20261026\\reference-1.jpg",
+      "previewSha256": "4d8dccf95c6d2672ed1627c6da811b0b355fca5b3a2269e0ee0df8ff1a1db51d",
+      "reviewed": true,
+      "kind": "game issue screenshot"
+    },
+    {
+      "id": "user-2",
+      "source": "C:\\Users\\jings\\AppData\\Local\\Temp\\codex-clipboard-fea77385-cf90-428c-9276-236723012071.png",
+      "sourceSha256": "23c8806e0b74d8a25dc1ab4f5fa1ebb834ba6c655992d09f6a194bc9f40e6e7a",
+      "originalSize": [
+        6000,
+        4000
+      ],
+      "preview": "references\\roadster-2026\\user-20261026\\reference-2.jpg",
+      "previewSha256": "9557927341a073a16cdd54d25b33b5d82ebaf710fb7d9ae3f3f85d7b8ceeb66b",
+      "reviewed": true,
+      "kind": "user-provided prototype exterior photo"
+    },
+    {
+      "id": "user-3",
+      "source": "C:\\Users\\jings\\AppData\\Local\\Temp\\codex-clipboard-10614e83-63de-432b-8734-2014ea346449.png",
+      "sourceSha256": "540746b6b911786e56a30b489a15136d82b8a9ff61db215fa0fd3f88da887613",
+      "originalSize": [
+        1080,
+        810
+      ],
+      "preview": "references\\roadster-2026\\user-20261026\\reference-3.jpg",
+      "previewSha256": "d6dc4e68bc7a75cfd74119446b10cb8bf065a846b1a3266cf146f8d6d1ed7eb5",
+      "reviewed": true,
+      "kind": "user-provided prototype exterior photo"
+    },
+    {
+      "id": "user-4",
+      "source": "C:\\Users\\jings\\AppData\\Local\\Temp\\codex-clipboard-58f3092b-128f-4200-9343-4ee4d8a29edc.png",
+      "sourceSha256": "710817e6d152a8d8f5f3ef1bcd7c1187393ca0ae0cb27ec362f889b93a2855d3",
+      "originalSize": [
+        2048,
+        1536
+      ],
+      "preview": "references\\roadster-2026\\user-20261026\\reference-4.jpg",
+      "previewSha256": "0c7ecdecda1ef1a4e7426a647b72d1f87751e43b7ea1021bdc0f0f73b80b67dd",
+      "reviewed": true,
+      "kind": "user-provided prototype exterior photo"
+    }
+  ],
+  "onlineVerified": [
+    {
+      "url": "https://petersen.org/pages/petersen-vehicle/tesla-roadster-thrust-prototype",
+      "supports": "Prototype identity and active aero; not measured dimensions"
+    },
+    {
+      "url": "https://www.tesla.com/roadster",
+      "supports": "Roadster Thrust augment identity; dynamically served body limited in text extraction"
+    }
+  ],
+  "scope": "Exterior geometry and black glass requested by user; no interior reconstruction or OEM CAD claim",
+  "gaps": [
+    "No orthographic drawings or manufacturer measurements",
+    "User requested neutral-black glass even when reference photographs show warm reflected tint",
+    "Hidden detailed engineering and full vehicle self-intersection not verified"
+  ],
+  "targets": [
+    "Neutral-black panoramic glass in Blender and game",
+    "Shorter rear glazing with broad white rear shoulders",
+    "Hinged full-width flush-stowing active rear panel instead of a narrow lift-only spoiler",
+    "Rear carbon fascia and recessed thrusters instead of exposed external fan row",
+    "Brighter silver aero wheel surfaces; wheel centers, tires and driving envelope preserved"
+  ]
+}

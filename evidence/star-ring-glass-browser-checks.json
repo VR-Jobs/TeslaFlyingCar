@@ -1,0 +1,127 @@
+{
+  "transport": "Exact standalone HTML served over loopback; all play assets embedded.",
+  "checks": [
+    {
+      "name": "segmented-chassis-and-glass-joints-render-in-game",
+      "pass": true,
+      "observed": {
+        "drawCalls": 92,
+        "triangles": 54473,
+        "view": {
+          "cameraBlocked": false,
+          "carTriangles": 33491,
+          "gapLights": {
+            "active": false,
+            "rows": 3,
+            "state": "off"
+          },
+          "glass": {
+            "baseOpacity": 0.06,
+            "batches": 78,
+            "depthWrite": false,
+            "panelColumns": 3,
+            "panelJoints": "staggered-inset-corners",
+            "panelLength": 6,
+            "sectionAccents": true,
+            "sourceTriangles": 23580,
+            "style": "rim-lit-glass"
+          },
+          "markerVisible": false,
+          "saturn": {
+            "dustCount": 2200,
+            "planetRadius": 900,
+            "ringInner": 1116,
+            "ringOuter": 4800,
+            "ringPlaneBelowStraight": 20,
+            "style": "saturn-inspired"
+          },
+          "solidTriangles": 23580,
+          "trackDetail": {
+            "batches": 60,
+            "beacons": 22,
+            "clearDrivingWidth": 11.4,
+            "cradles": 31,
+            "fins": 126,
+            "ribs": 190,
+            "sectionMarkers": 430,
+            "style": "magnetic-modular-chassis",
+            "terminals": 8,
+            "triangles": 37364
+          },
+          "trackFaces": "separate-front-bottom-walls",
+          "trackThickness": 0.45,
+          "trackTriangles": 9400,
+          "wingGap": 4.440892098500626e-16
+        }
+      }
+    },
+    {
+      "name": "launch-window-survives-new-endcaps",
+      "pass": true,
+      "observed": {
+        "action": "release",
+        "distance": 7,
+        "eligible": true,
+        "end": 1518,
+        "eta": 0.25,
+        "flight": false,
+        "high": 10.30946236395311,
+        "index": 1,
+        "jetSeconds": 0.35,
+        "label": "松 E · 短喷",
+        "low": 3.945596707191931,
+        "ready": true,
+        "reason": null,
+        "start": 1490,
+        "state": "ready",
+        "strength": 0.903846153846154,
+        "zoneEnd": 1486.054403292808,
+        "zoneStart": 1479.6905376360469
+      }
+    },
+    {
+      "name": "new-chassis-keeps-one-sided-track-contact",
+      "pass": true,
+      "observed": {
+        "attached": false,
+        "impacts": 1,
+        "contact": {
+          "kind": "bottom",
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "point": [
+            -1.02,
+            -0.44999998807907104,
+            -97.65
+          ],
+          "s": 97.65
+        }
+      }
+    },
+    {
+      "name": "full-course-completion",
+      "pass": true,
+      "s": 2359.272301835974,
+      "time": 86.0499999999964,
+      "falls": 1,
+      "lands": 4
+    },
+    {
+      "name": "reward-settles-once",
+      "pass": true,
+      "coins": 115
+    },
+    {
+      "name": "paint-unlocked",
+      "pass": true
+    },
+    {
+      "name": "track-shaders-no-browser-warnings-or-errors",
+      "pass": true,
+      "logs": []
+    }
+  ]
+}

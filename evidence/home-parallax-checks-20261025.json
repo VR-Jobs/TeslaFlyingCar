@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "before": {
+    "yaw": 2.75,
+    "pitch": 0,
+    "parallax": {
+      "x": 0,
+      "y": 0,
+      "targetX": 0,
+      "targetY": 0,
+      "shiftX": 0,
+      "shiftY": 0,
+      "roll": 0,
+      "reducedMotion": false
+    },
+    "entry": {
+      "requestedDelay": 1,
+      "firstDemoDelay": 1.0291000000000003
+    }
+  },
+  "afterPointerMove": {
+    "yaw": 2.75,
+    "pitch": 0,
+    "parallax": {
+      "x": 0.8017421610646144,
+      "y": -0.6466726895829812,
+      "targetX": 0.84375,
+      "targetY": -0.6805555555555556,
+      "shiftX": 0.20845296187679974,
+      "shiftY": 0.07113399585412793,
+      "roll": -0.004008710805323072,
+      "reducedMotion": false
+    }
+  },
+  "afterDrag": {
+    "yaw": 2.75,
+    "pitch": 0,
+    "dragging": false,
+    "parallax": {
+      "x": 0.7056906014719377,
+      "y": -0.05924329751116217,
+      "targetX": 0.703125,
+      "targetY": -0.02777777777777779,
+      "shiftX": 0.18347955638270383,
+      "shiftY": 0.006516762726227839,
+      "roll": -0.003528453007359689,
+      "reducedMotion": false
+    }
+  },
+  "whileSettingsOpen": {
+    "x": 0.7043678323686262,
+    "y": -0.04302035026927254,
+    "targetX": 0,
+    "targetY": 0,
+    "shiftX": 0.18313563641584282,
+    "shiftY": 0.0047322385296199795,
+    "roll": -0.003521839161843131,
+    "reducedMotion": false
+  },
+  "settingsButtonWorks": true,
+  "consoleErrors": []
+}

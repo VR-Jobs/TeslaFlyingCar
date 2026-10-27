@@ -1,0 +1,251 @@
+{
+  "checks": [
+    {
+      "name": "original-scene-plumes-reused-with-RCS-and-floor-clipping",
+      "pass": true,
+      "observed": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0,
+        "jet": 0.9999997617630333,
+        "boost": 0,
+        "levels": {
+          "L1": 0.9999997617630333,
+          "L2": 0.9999997617630333,
+          "L3": 0.9999997617630333,
+          "L4": 0.9999997617630333,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0,
+          "R4": 0,
+          "S1": 0.72,
+          "S2": 0.05
+        },
+        "intakeRibbons": 12,
+        "particles": 128,
+        "particleCapacity": 512
+      }
+    },
+    {
+      "name": "held-E-draws-visible-converging-intake",
+      "pass": true,
+      "observed": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0.9999938557876467,
+        "jet": 0,
+        "boost": 0,
+        "levels": {
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0,
+          "R4": 0,
+          "S1": 0,
+          "S2": 0
+        },
+        "intakeRibbons": 12,
+        "particles": 144,
+        "particleCapacity": 512
+      }
+    },
+    {
+      "name": "real-missing-E-warns-before-loss",
+      "pass": true,
+      "level": 0.7333333333333325
+    },
+    {
+      "name": "real-drift-leads-to-space-tumble-and-original-crash-grayscale",
+      "pass": true,
+      "observed": {
+        "death": {
+          "elapsed": 1.9166666666666647,
+          "duration": 2.3,
+          "reason": "未按 E 吸附，车辆失去抓地",
+          "origin": [
+            20.502078720401673,
+            0.010030918253472222,
+            -238.0600709299198
+          ],
+          "velocity": [
+            17.86570303705062,
+            0.1391321406249999,
+            -21.29088287453324
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            0.7648663352825835,
+            0,
+            0.6441890166336205
+          ],
+          "tangent": [
+            0.6441890166336204,
+            0,
+            -0.7648663352825833
+          ],
+          "roll": 0,
+          "pitch": 0,
+          "side": -1
+        },
+        "view": {
+          "active": true,
+          "progress": 0.8333333333333326,
+          "gray": 1,
+          "pitch": 2.129629629629628,
+          "roll": -3.1481481481481457,
+          "yaw": -0.46296296296296263
+        }
+      }
+    },
+    {
+      "name": "checkpoint-retry-restores-color-and-vehicle-without-double-counting-death",
+      "pass": true
+    }
+  ],
+  "view": {
+    "trackTriangles": 15592,
+    "glass": {
+      "style": "rim-lit-glass",
+      "baseOpacity": 0.06,
+      "gripWarning": 0,
+      "laneCount": 3,
+      "longitudinalEdges": 3,
+      "transverseLines": 0,
+      "sectionAccents": true,
+      "sourceTriangles": 39044,
+      "batches": 126,
+      "depthWrite": false
+    },
+    "pickups": {
+      "types": {
+        "air": "pressure-cylinder",
+        "ring": "navigation-energy-core",
+        "sky": "segmented-jump-gate"
+      },
+      "models": 95,
+      "particles": 25,
+      "activeBursts": 0,
+      "collectedEffects": 0,
+      "burstPool": 8,
+      "openSkyCenter": true,
+      "physicalScale": {
+        "air": 1.8,
+        "core": 1.8,
+        "gateInnerDiameter": 4.2
+      },
+      "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+      "cycle": 0
+    },
+    "postprocessing": {
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 5,
+      "crash": 0,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 154,
+      "cachedMasks": 22,
+      "selective": true,
+      "occlusion": true
+    },
+    "trackDetail": {
+      "style": "magnetic-modular-chassis",
+      "ribs": 0,
+      "fins": 214,
+      "terminals": 10,
+      "sectionMarkers": 518,
+      "cradles": 0,
+      "beacons": 26,
+      "triangles": 56492,
+      "batches": 100,
+      "clearDrivingWidth": 11.4
+    },
+    "saturn": {
+      "style": "saturn-inspired",
+      "planetRadius": 900,
+      "ringInner": 1116,
+      "ringOuter": 4800,
+      "dustCount": 2200,
+      "ringPlaneBelowStraight": 20
+    },
+    "solidTriangles": 39044,
+    "trackThickness": 0.45,
+    "trackFaces": "separate-front-bottom-walls",
+    "cameraBlocked": false,
+    "carTriangles": 38365,
+    "localCycle": 0,
+    "boundedWindow": [
+      -80,
+      3858.866044632793
+    ],
+    "streaming": {
+      "layout": "11:0",
+      "liveWindows": 1,
+      "preload": {
+        "completed": 0,
+        "aborted": 0,
+        "maximumSliceMs": 0
+      },
+      "created": 4,
+      "retired": 3,
+      "prepared": null
+    },
+    "markerVisible": false,
+    "gapLights": {
+      "active": false,
+      "state": "off",
+      "rows": 3,
+      "layout": "longitudinal-edges-only"
+    },
+    "wingGap": 0,
+    "flightEffects": {
+      "style": "original-three-layer-turbulent-cold-gas",
+      "nativePlumes": 10,
+      "sharedNativeGeometry": true,
+      "sharedNativeNoise": true,
+      "curvedSurfaceClip": true,
+      "suction": 0,
+      "jet": 0,
+      "boost": 0,
+      "levels": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "S1": 0,
+        "S2": 0
+      },
+      "intakeRibbons": 12,
+      "particles": 0,
+      "particleCapacity": 512
+    },
+    "death": {
+      "active": false,
+      "progress": 0,
+      "gray": 0,
+      "pitch": 0,
+      "roll": 0
+    }
+  }
+}

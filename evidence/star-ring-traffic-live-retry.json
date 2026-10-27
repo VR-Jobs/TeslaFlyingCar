@@ -1,0 +1,15 @@
+{
+  "before": {
+    "phase": "dead",
+    "gray": 1,
+    "falls": 1
+  },
+  "after": {
+    "phase": "running",
+    "gray": 0,
+    "falls": 1,
+    "paused": true,
+    "pressure": 99.7000000000001
+  },
+  "pass": true
+}

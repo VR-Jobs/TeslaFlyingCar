@@ -1,0 +1,50 @@
+{
+  "createdUTC": "2026-10-27T11:26:27.958059+00:00",
+  "entry": "D:\\0.Unity20242024\\Tesla-Car-Game\\RoadsterDash.html",
+  "url": "https://maniengine.com/examples/tesla/",
+  "bytes": 11468771,
+  "sha256": "30d9c6d767af86b9ba27c7dd18e83668abeb0488feb1ac7ecee860066ba9ca53",
+  "features": [
+    "Physical optional glass shortcut with manual E transfer and return",
+    "Jump, barrel/frontflip, E recapture three-gate sequences on main and shortcut",
+    "One-time segment rewards and bounded state",
+    "Primary route and existing vehicles retained"
+  ],
+  "checks": {
+    "adventurePhysics": {
+      "passed": 14,
+      "report": "star-ring-adventure-checks.json"
+    },
+    "adventureWebGL": {
+      "passed": 3,
+      "report": "star-ring-adventure-browser-checks.json"
+    },
+    "endlessWebGL": {
+      "passed": 4,
+      "report": "star-ring-adventure-endless-browser.json"
+    },
+    "onlineWebGL": {
+      "passed": 3,
+      "report": "star-ring-adventure-online-checks.json"
+    },
+    "randomRoute": {
+      "passed": 9,
+      "report": "star-ring-random-checks.json"
+    },
+    "streaming": {
+      "passed": 3,
+      "report": "star-ring-random-streaming-checks.json"
+    }
+  },
+  "offlineCheck": "3 inline classic scripts parse; no external runtime dependencies",
+  "coreChecks": 7,
+  "onlineErrors": 0,
+  "backup": "revisions/20261027-fork-chain",
+  "onlineRollback": "/var/www/tesla-deploy/20261027-fork-chain-30d9c6d7/previous-index.html",
+  "screenshots": [
+    "star-ring-shortcut-driving.png",
+    "star-ring-chain-preview.png",
+    "star-ring-adventure-online.png"
+  ],
+  "temporaryCFiles": "Copied with SHA256 checks and removed"
+}

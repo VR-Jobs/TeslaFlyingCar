@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25",
+  "browser_ui_checks": [
+    "Seven modes render in Chinese and English",
+    "Free-drive feedback toggle retained across Original mode and back",
+    "Original menu board and result board open categorized local board",
+    "Built production page loads with no remote bootstrap",
+    "First lesson completed with real keyboard inputs in production build; reward and next lesson persisted",
+    "Academy practice history shows the actual lesson record separately from competitive boards",
+    "Chinese and English cards checked in production; checkbox preference retained across Original/Free drive"
+  ],
+  "mode_count": 7,
+  "features": [
+    "progressive coaching",
+    "landing and failure feedback",
+    "fair traffic",
+    "three driving challenges",
+    "daily fixed course",
+    "categorized local boards"
+  ],
+  "limitations": [
+    "Local boards only",
+    "Collision suppression used only for the three automated completion-contract tests; see browser evidence scope"
+  ]
+}

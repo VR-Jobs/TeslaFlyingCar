@@ -1,0 +1,25 @@
+{
+  "observed": "2026-10-24",
+  "checks": [
+    {
+      "name": "parameter-edit",
+      "status": "PASS",
+      "detail": "Gravity changed from 28 to 32 via developer form and read back from DOM-backed diagnostics; reset restored 28"
+    },
+    {
+      "name": "pause-resume",
+      "status": "PASS",
+      "detail": "Browser showed paused / intro, then game / intro after resume"
+    },
+    {
+      "name": "local-item-purchase",
+      "status": "PASS",
+      "detail": "Head start item purchased: 10015 -> 10000 coins, inventory 0 -> 1"
+    },
+    {
+      "name": "production-launch-and-settlement",
+      "status": "PASS",
+      "detail": "Built dist independently served on 4174, launched and settled a 194 m / 183 point run; savedRuns 1, runtime errors and console warnings/errors empty"
+    }
+  ]
+}

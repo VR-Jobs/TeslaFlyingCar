@@ -1,0 +1,215 @@
+{
+  "status": {
+    "screen": "over",
+    "state": "over",
+    "score": 184,
+    "distance": 195,
+    "speed": 1.7653073421164085,
+    "runId": "32401d0d-728c-487e-a882-7423989ff797",
+    "player": {
+      "lane": 1,
+      "x": 0.8295128260096697,
+      "y": 0.04672941684722898,
+      "air": 600,
+      "grounded": true,
+      "hovering": false,
+      "trick": null
+    },
+    "coins": 1,
+    "savedRuns": 1,
+    "drawCalls": 1,
+    "triangles": 1,
+    "config": {
+      "AIR": {
+        "capacity": 600,
+        "laneShift": 3,
+        "airLaneShift": 15,
+        "jump": 20,
+        "hoverPerSec": 120,
+        "trick": 40,
+        "flipMin": 20,
+        "slam": 20,
+        "boostPerSec": 40,
+        "cell": 15,
+        "can": 150,
+        "kickflipReward": 10,
+        "rollReward": 40,
+        "lowRatio": 0.2
+      },
+      "PHYSICS": {
+        "gravity": 28,
+        "jumpHeight": 2.5,
+        "maxHeight": 6.2,
+        "hoverExtraAccel": 7,
+        "holdDelay": 0.12,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "trickTime": 0.55,
+        "flipApex": 5,
+        "flipMinLift": 2.5,
+        "flipGravity": 0.55,
+        "flipTime": 0.7,
+        "slamSpeed": -22
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ],
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "scoreAfter": 3,
+        "scoreEvery": 1,
+        "score": 10
+      },
+      "SCORE": {
+        "nearMiss": 10,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "trick": 20,
+        "perfect": 10,
+        "stuntExtra": 10,
+        "multiPerCar": 30,
+        "rammed": 50,
+        "cell": 5
+      },
+      "ROAD": {
+        "widenStart": 5000,
+        "widenEnd": 5200,
+        "width": 12,
+        "extraWidth": 6.8
+      },
+      "ROCKET": {
+        "duration": 8,
+        "chargeRequired": 1.5,
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6,
+        "gain": {
+          "trick": 0.03,
+          "nearMiss": 0.05,
+          "cleared": 0.04,
+          "perfect": 0.02,
+          "cell": 0.015,
+          "can": 0.15
+        }
+      },
+      "STARMAN": {
+        "duration": 8,
+        "speedMult": 1.6,
+        "scoreMult": 2,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "smash": 80
+      }
+    },
+    "errors": [],
+    "gameplayChecks": null
+  },
+  "logs": []
+}

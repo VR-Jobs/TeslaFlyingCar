@@ -1,0 +1,124 @@
+{
+  "revision": "20261026-blackglass-photo-exterior",
+  "transport": "Exact self-contained HTML over QA loopback; file:// execution covered by no-external/module dependency checks, not automated file navigation.",
+  "checks": [
+    {
+      "name": "homepage-uses-new-black-glass-model",
+      "pass": true,
+      "observed": {
+        "asset": "roadster-blender-exterior-v1",
+        "revision": "20261026-blackglass-photo-exterior",
+        "glassColor": "05070a",
+        "groups": 37,
+        "triangles": 145384,
+        "extension": 0,
+        "maximumAttachmentGap": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "driving-lods-use-matching-black-glass-model",
+      "pass": true,
+      "observed": {
+        "level": "medium",
+        "medium": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 38365,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        },
+        "low": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 21515,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        }
+      }
+    },
+    {
+      "name": "four-home-buttons-and-three-embedded-real-screenshots",
+      "pass": true,
+      "observed": {
+        "homeButtons": 4,
+        "images": [
+          {
+            "complete": true,
+            "height": 540,
+            "inline": true,
+            "scene": "space",
+            "width": 960,
+            "sha256": "e63bd33d07764412c662e728913772c2973514b7d4ef1a42487b6f1cfe097599"
+          },
+          {
+            "complete": true,
+            "height": 540,
+            "inline": true,
+            "scene": "coast",
+            "width": 960,
+            "sha256": "750182a0577f7dd30d57832600b010384590c0915f3b955409e51eb29eb1dae8"
+          },
+          {
+            "complete": true,
+            "height": 540,
+            "inline": true,
+            "scene": "starRing",
+            "width": 960,
+            "sha256": "57f527b3d7ef209a7ffbf049b4ff161873aa12d9b18e7c285ffce8f925c142c3"
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "four-full-motion-clearance-cases",
+      "pass": true,
+      "report": "roadster-blackglass-showroom-checks.json"
+    },
+    {
+      "name": "star-ring-full-course-and-reward-checks",
+      "pass": true,
+      "observed": [
+        {
+          "name": "full-course-completion",
+          "pass": true,
+          "s": 2359.272301835974,
+          "time": 86.0499999999964,
+          "falls": 1,
+          "lands": 4
+        },
+        {
+          "name": "reward-settles-once",
+          "pass": true,
+          "coins": 115
+        },
+        {
+          "name": "paint-unlocked",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "independent-standalone-runtime-clean",
+      "pass": true,
+      "homeErrors": [],
+      "homeConsole": [],
+      "starRingErrors": [],
+      "starRingConsole": []
+    }
+  ],
+  "qaDashboardNavigation": {
+    "console": [
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-26T12:11:55.360Z"
+      }
+    ],
+    "note": "MutationObserver null-Node exception occurred while navigating to the iframe developer dashboard; not reproduced in the independent standalone homepage or star-ring run. Actual dashboard model/motion checks completed with errors=[]."
+  }
+}

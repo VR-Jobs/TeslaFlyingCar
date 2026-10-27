@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "artifactSha256": "cba3169211bf107a1bdbbc814afa73d6efc7e54757bd7d5f5a7db2e5155634ca",
+  "samples": {
+    "before": {
+      "animation": "idle",
+      "animationTime": 0,
+      "containersVisible": false,
+      "dragging": false,
+      "elapsed": 4.436999999999993,
+      "height": 0,
+      "inspecting": false,
+      "nextDemo": 4.5,
+      "pitch": 0,
+      "roll": 0
+    },
+    "lift": {
+      "animation": "frontflip",
+      "animationTime": 0.36259999999999853,
+      "containersVisible": false,
+      "dragging": false,
+      "elapsed": 4.84959999999999,
+      "height": 0.6083976608445033,
+      "inspecting": false,
+      "nextDemo": 4.5,
+      "pitch": 0,
+      "roll": 0
+    },
+    "midFlip": {
+      "primary": "rgb(227, 25, 55)",
+      "scene": {
+        "animation": "frontflip",
+        "animationTime": 1.562700000000005,
+        "containersVisible": false,
+        "dragging": false,
+        "elapsed": 6.0496999999999925,
+        "height": 1.5119531391848464,
+        "inspecting": false,
+        "nextDemo": 4.5,
+        "pitch": -3.9878859714407864,
+        "roll": 0
+      },
+      "title": "rgb(227, 25, 55)"
+    },
+    "landed": {
+      "elapsed": 8.378999999999994,
+      "height": 0,
+      "pitch": 0,
+      "roll": 0,
+      "animation": "idle",
+      "nextDemo": 17.565855601838226
+    }
+  },
+  "checks": [
+    "Primary button and DASH title computed RGB 227/25/55",
+    "Original containers hidden",
+    "Actual native nozzle exhaust visible during lift",
+    "Complete car visible during vertical front flip",
+    "Car returned to platform; rotation reset; next performance scheduled",
+    "Garage cancels performance; inspect state height and rotation zero (source preview)",
+    "Academy red/white palette and 14 lessons visible",
+    "Chinese-English-Chinese switch"
+  ],
+  "console": [],
+  "limitations": "Same self-contained HTML verified via localhost. Automated file:// navigation blocked; actual file double-click was not automated."
+}

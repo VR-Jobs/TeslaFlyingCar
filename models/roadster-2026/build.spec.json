@@ -1,0 +1,42 @@
+{
+  "workflowState": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\phase-state.json",
+  "tasks": [
+    {
+      "id": "roadster.exterior",
+      "stage": "exterior",
+      "operation": "build",
+      "command": [
+        "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\work\\vehicle-library-20261017\\repair\\tools\\blender-4.3.2-windows-x64\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\tools\\blender-roadster.py",
+        "--",
+        "--out",
+        "{workspace}",
+        "--render"
+      ],
+      "inputs": [
+        "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\tools\\blender-roadster.py",
+        "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\references\\roadster-2026\\index.json",
+        "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\tools\\roadster_export.py"
+      ],
+      "versionFingerprint": "Blender-4.3.2-photo-exterior-v1",
+      "timeoutSeconds": 900,
+      "outputs": {
+        "blend": "roadster-exterior.blend",
+        "glb": "roadster-exterior.glb",
+        "runtime": "roadster-exterior.json",
+        "geometry": "geometry-checks.json",
+        "cameras": "review-cameras.json",
+        "front": "front.png",
+        "side": "side.png",
+        "rear": "rear.png",
+        "wing": "wing.png"
+      }
+    }
+  ]
+}

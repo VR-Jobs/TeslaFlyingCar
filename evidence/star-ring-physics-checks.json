@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "true-3d-loops-and-inverted-surfaces",
+      "pass": true,
+      "detail": {
+        "inverted": 257,
+        "loop": 854,
+        "length": 2360.884901332318
+      }
+    },
+    {
+      "name": "continuous-track-joins",
+      "pass": true
+    },
+    {
+      "name": "three-actual-missing-track-spans",
+      "pass": true
+    },
+    {
+      "name": "jump-releases-with-world-momentum",
+      "pass": true,
+      "detail": {
+        "velocity": [
+          0,
+          8,
+          -27.999863800210715
+        ]
+      }
+    },
+    {
+      "name": "manual-jump-event-survives-next-tick",
+      "pass": true
+    },
+    {
+      "name": "manual-event-is-not-replayed",
+      "pass": true
+    },
+    {
+      "name": "free-flight-integrates-position",
+      "pass": true
+    },
+    {
+      "name": "fall-restores-checkpoint",
+      "pass": true,
+      "detail": {
+        "s": 457.3543378082866,
+        "falls": 1
+      }
+    },
+    {
+      "name": "authored-course-can-be-cleared",
+      "pass": true,
+      "detail": {
+        "s": 2359.272301835974,
+        "time": 84.9333333333298,
+        "penalty": 10,
+        "falls": 1,
+        "pressure": 89.0890311751336,
+        "lands": 4,
+        "rings": 20,
+        "visits": [
+          "启航平台",
+          "贴壁与倒挂",
+          "星环入口",
+          "第一星环",
+          "弹射航道",
+          "外环补给",
+          "切弯航道",
+          "接轨走廊",
+          "深空飞跃",
+          "极光星环",
+          "螺旋归航",
+          "终点冲刺"
+        ]
+      }
+    },
+    {
+      "name": "leaps-reconnect-to-track",
+      "pass": true,
+      "detail": {
+        "lands": 4
+      }
+    }
+  ]
+}

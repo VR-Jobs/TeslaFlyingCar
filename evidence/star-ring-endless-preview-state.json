@@ -1,0 +1,132 @@
+{
+  "selected": "starRing",
+  "state": {
+    "active": true,
+    "paused": false,
+    "phase": "running",
+    "s": 1533.026524130261,
+    "length": 2360.884901332318,
+    "challenge": {
+      "mode": "endless",
+      "distance": 1533.026524130261,
+      "laps": 0,
+      "level": 1,
+      "localDistance": 1533.026524130261,
+      "localLimit": 2360.884901332318
+    },
+    "attached": true,
+    "pressure": 100,
+    "checkpoint": 0,
+    "falls": 0,
+    "score": 0,
+    "rings": 0,
+    "trackImpacts": 0,
+    "lastTrackContact": null,
+    "suction": false,
+    "jump": false,
+    "lane": 0,
+    "stage": "深空飞跃",
+    "tutorial": null,
+    "gapCue": null,
+    "gapSounds": {
+      "warnings": 0,
+      "launches": 0,
+      "tails": 0,
+      "pendingTail": false
+    },
+    "view": {
+      "trackTriangles": 11992,
+      "glass": {
+        "style": "rim-lit-glass",
+        "baseOpacity": 0.06,
+        "laneCount": 3,
+        "longitudinalEdges": 3,
+        "transverseLines": 0,
+        "sectionAccents": true,
+        "sourceTriangles": 30044,
+        "batches": 96,
+        "depthWrite": false
+      },
+      "pickups": {
+        "types": {
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 15,
+        "activeBursts": 0,
+        "collectedEffects": 0,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 0
+      },
+      "postprocessing": {
+        "type": "selective-hdr-bloom",
+        "enabled": true,
+        "frames": 64,
+        "width": 1920,
+        "height": 1080,
+        "mips": 5,
+        "strength": 0.7,
+        "radius": 0.05,
+        "threshold": 0.6,
+        "emitters": 114,
+        "selective": true,
+        "occlusion": true
+      },
+      "trackDetail": {
+        "style": "magnetic-modular-chassis",
+        "ribs": 0,
+        "fins": 166,
+        "terminals": 8,
+        "sectionMarkers": 430,
+        "cradles": 0,
+        "beacons": 22,
+        "triangles": 43704,
+        "batches": 77,
+        "clearDrivingWidth": 11.4
+      },
+      "saturn": {
+        "style": "saturn-inspired",
+        "planetRadius": 900,
+        "ringInner": 1116,
+        "ringOuter": 4800,
+        "dustCount": 2200,
+        "ringPlaneBelowStraight": 20
+      },
+      "solidTriangles": 30044,
+      "trackThickness": 0.45,
+      "trackFaces": "separate-front-bottom-walls",
+      "cameraBlocked": false,
+      "carTriangles": 38365,
+      "localCycle": 0,
+      "boundedWindow": [
+        -80,
+        2960.884901332318
+      ],
+      "markerVisible": false,
+      "gapLights": {
+        "active": false,
+        "state": "off",
+        "rows": 3,
+        "layout": "longitudinal-edges-only"
+      },
+      "wingGap": 0
+    },
+    "profile": {
+      "completions": 0,
+      "bestScore": 0,
+      "bestTime": null,
+      "tutorialVersion": 1,
+      "tutorialCompleted": true
+    }
+  },
+  "errors": []
+}

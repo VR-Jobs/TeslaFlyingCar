@@ -1,0 +1,308 @@
+{
+  "testedURL": "http://127.0.0.1:4182/",
+  "scope": "Single self-contained HTML served alone for browser QA. The automation browser prohibits file:// navigation, so direct file-origin operation was not observed.",
+  "checks": [
+    "Transparent shallows show actual sand and submerged rocks",
+    "Golden dry sand and darker wet swash zone",
+    "Clustered mature and juvenile palms, ageing fronds and bark",
+    "Shrubs, flowering ground cover, shells, driftwood and sparse tidal rocks",
+    "Viewer drag and wheel zoom",
+    "Wave clock advanced during viewer interaction",
+    "English scene description and return to Chinese",
+    "Actual academy drive beyond 323 m; lane change, pause and return to menu"
+  ],
+  "waveClock": {
+    "before": 19.77520000000098,
+    "after": 20.74050000000172
+  },
+  "drive": {
+    "coins": 0,
+    "config": {
+      "AIR": {
+        "airLaneShift": 15,
+        "boostPerSec": 40,
+        "can": 150,
+        "capacity": 600,
+        "cell": 15,
+        "flipMin": 20,
+        "hoverPerSec": 120,
+        "jump": 20,
+        "kickflipReward": 10,
+        "laneShift": 3,
+        "lowRatio": 0.2,
+        "rollReward": 40,
+        "slam": 20,
+        "trick": 40
+      },
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "score": 10,
+        "scoreAfter": 3,
+        "scoreEvery": 1
+      },
+      "PHYSICS": {
+        "flipApex": 5,
+        "flipGravity": 0.55,
+        "flipMinLift": 2.5,
+        "flipTime": 0.7,
+        "gravity": 28,
+        "holdDelay": 0.12,
+        "hoverExtraAccel": 7,
+        "jumpHeight": 2.5,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "maxHeight": 6.2,
+        "slamSpeed": -22,
+        "trickTime": 0.55
+      },
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "ROAD": {
+        "extraWidth": 6.8,
+        "widenEnd": 5200,
+        "widenStart": 5000,
+        "width": 12
+      },
+      "ROCKET": {
+        "chargeRequired": 1.5,
+        "duration": 8,
+        "gain": {
+          "can": 0.15,
+          "cell": 0.015,
+          "cleared": 0.04,
+          "nearMiss": 0.05,
+          "perfect": 0.02,
+          "trick": 0.03
+        },
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6
+      },
+      "SCORE": {
+        "cell": 5,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "multiPerCar": 30,
+        "nearMiss": 10,
+        "perfect": 10,
+        "rammed": 50,
+        "stuntExtra": 10,
+        "trick": 20
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "STARMAN": {
+        "duration": 8,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "scoreMult": 2,
+        "smash": 80,
+        "speedMult": 1.6
+      },
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ]
+    },
+    "distance": 324,
+    "drawCalls": 1,
+    "driving": {
+      "completion": {
+        "finished": false,
+        "progress": 0.35,
+        "success": false,
+        "target": 150
+      },
+      "lastReview": null,
+      "metrics": {
+        "airSpent": 2.6774445974314176,
+        "airTime": 0,
+        "barrels": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "cleared": 0,
+        "collisions": 0,
+        "comboBreak": "none",
+        "distance": 323.721256275542,
+        "duration": 14.333333333333623,
+        "flips": 0,
+        "hoverTime": 0,
+        "jumps": 0,
+        "landings": 0,
+        "laneChanges": 1,
+        "maxCombo": 0,
+        "maxHeight": 0,
+        "perfectLandings": 0,
+        "tricks": 0
+      },
+      "options": {
+        "features": {
+          "coaching": true,
+          "fairTraffic": true,
+          "feedback": true
+        },
+        "lesson": 0,
+        "mode": "academy",
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "profile": {
+        "lesson": 0,
+        "preferences": {
+          "features": {
+            "coaching": true,
+            "fairTraffic": true,
+            "feedback": true
+          },
+          "freeFeatures": {
+            "coaching": true,
+            "fairTraffic": true,
+            "feedback": true
+          },
+          "lesson": 0,
+          "mode": "academy",
+          "ruleset": "driving-v1-f1-t1"
+        },
+        "trainingClaims": []
+      },
+      "runId": "615c8068-bad7-44eb-b223-2d77359e2877",
+      "traffic": {
+        "fixedRows": 2,
+        "guardedSpawns": 0
+      }
+    },
+    "drivingChecks": null,
+    "errors": [],
+    "gameplayChecks": null,
+    "player": {
+      "air": 597.3225554025686,
+      "grounded": true,
+      "hovering": false,
+      "lane": 0,
+      "trick": null,
+      "x": -0.8057071245914413,
+      "y": 0
+    },
+    "runId": "615c8068-bad7-44eb-b223-2d77359e2877",
+    "savedRuns": 0,
+    "scenery": {
+      "palms": 62,
+      "selected": "coast",
+      "travel": 323.721256275542,
+      "waveTime": 56.48230000000056
+    },
+    "score": 324,
+    "screen": "paused",
+    "speed": 22.99999999999997,
+    "state": "playing",
+    "triangles": 1
+  },
+  "console": [],
+  "requests": [
+    "/",
+    "/qa-requests"
+  ],
+  "extraAssetRequests": [],
+  "htmlSha256": "6ac363fec2342006a76bd7aa528a45e3581243dcf05175762a76b211c800c6f5"
+}

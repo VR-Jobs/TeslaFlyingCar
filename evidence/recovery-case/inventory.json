@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "captured_at": "2026-10-24T20:52:30.936947+00:00",
+  "source": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-source-inspection-20261024",
+  "scope": "Bounded names and first 64 bytes only; no package extraction or execution",
+  "truncated": false,
+  "entry_budget": 10000,
+  "max_depth": 12,
+  "files": [
+    {
+      "path": "assets/auth-client-BoJN4b5B.js",
+      "size": 219868
+    },
+    {
+      "path": "assets/game-Da4QmlDf.js",
+      "size": 1360404
+    },
+    {
+      "path": "assets/legal-aZhVeMA7.js",
+      "size": 3861
+    },
+    {
+      "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "size": 670
+    },
+    {
+      "path": "download-manifest.json",
+      "size": 554
+    },
+    {
+      "path": "how-to-play.html",
+      "size": 14243
+    },
+    {
+      "path": "index.html",
+      "size": 64217
+    },
+    {
+      "path": "inspection-report.txt",
+      "size": 4122
+    },
+    {
+      "path": "legal.html",
+      "size": 29637
+    },
+    {
+      "path": "manifest.webmanifest",
+      "size": 819
+    },
+    {
+      "path": "old-domain.html",
+      "size": 64217
+    },
+    {
+      "path": "public-metadata-checks.json",
+      "size": 4544
+    },
+    {
+      "path": "string-findings.json",
+      "size": 3524
+    },
+    {
+      "path": "supplemental-checks.json",
+      "size": 660
+    },
+    {
+      "path": "third-party-notices.txt",
+      "size": 155797
+    }
+  ],
+  "candidate_engines": [],
+  "signals": [],
+  "errors": []
+}

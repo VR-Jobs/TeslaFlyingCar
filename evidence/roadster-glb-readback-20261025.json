@@ -1,0 +1,19 @@
+{
+  "file": "models\\roadster-2026\\current\\roadster-exterior.glb",
+  "sha256": "728ae917f606952c07b1a50dbb3db4a770804c4a36ab02a8f580da9f5e29ecee",
+  "geometries": 253,
+  "triangles": 151016,
+  "bounds": [
+    [
+      -1.0484999874606729,
+      -0.0020000000949949026,
+      -2.339999884366989
+    ],
+    [
+      1.0484999874606729,
+      1.2109816074371338,
+      2.27500007301569
+    ]
+  ],
+  "scope": "Independent GLB parse, finite geometry and bounds; static stowed exterior."
+}

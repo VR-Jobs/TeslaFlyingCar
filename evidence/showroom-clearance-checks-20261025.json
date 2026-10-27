@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "kind": "frontflip",
+      "dir": 1,
+      "minimumY": 0.05300000000000005,
+      "plane": 0.045,
+      "maximumHeight": 2.05,
+      "peakRotation": 6.283185307179586,
+      "landed": true,
+      "verticesChecked": 6733788,
+      "status": "PASS"
+    },
+    {
+      "kind": "barrel",
+      "dir": 1,
+      "minimumY": 0.05300000000000005,
+      "plane": 0.045,
+      "maximumHeight": 1.2,
+      "peakRotation": 6.283185307179586,
+      "landed": true,
+      "verticesChecked": 6024948,
+      "status": "PASS"
+    },
+    {
+      "kind": "barrel",
+      "dir": -1,
+      "minimumY": 0.05300000000000005,
+      "plane": 0.045,
+      "maximumHeight": 1.2,
+      "peakRotation": 6.283185307179586,
+      "landed": true,
+      "verticesChecked": 6024948,
+      "status": "PASS"
+    },
+    {
+      "kind": "hover",
+      "dir": 1,
+      "minimumY": 0.05300000000000005,
+      "plane": 0.045,
+      "maximumHeight": 0.55,
+      "peakRotation": 0,
+      "landed": true,
+      "verticesChecked": 7678908,
+      "status": "PASS"
+    }
+  ]
+}

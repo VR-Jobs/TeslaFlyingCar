@@ -1,0 +1,332 @@
+{
+  "checks": [
+    {
+      "name": "eight-different-random-sections-continue-without-finishing",
+      "pass": true,
+      "laps": 8,
+      "distance": 26055.67436312629,
+      "time": 803.9499999995975,
+      "layouts": [
+        "42:0",
+        "42:1",
+        "42:2",
+        "42:3",
+        "42:4",
+        "42:5",
+        "42:6",
+        "42:7",
+        "42:8"
+      ]
+    },
+    {
+      "name": "random-window-gpu-and-bloom-caches-remain-bounded",
+      "pass": true,
+      "maximumGeometry": 513,
+      "maximumMasks": 21,
+      "maximumLiveWindows": 2,
+      "samples": [
+        {
+          "layout": "42:0",
+          "geometries": 410,
+          "resources": {
+            "objects": 3428,
+            "geometries": 308,
+            "materials": 55
+          },
+          "streaming": {
+            "layout": "42:0",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 3,
+            "retired": 2,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:1",
+          "geometries": 409,
+          "resources": {
+            "objects": 2980,
+            "geometries": 301,
+            "materials": 54
+          },
+          "streaming": {
+            "layout": "42:1",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 4,
+            "retired": 3,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:2",
+          "geometries": 415,
+          "resources": {
+            "objects": 3435,
+            "geometries": 311,
+            "materials": 54
+          },
+          "streaming": {
+            "layout": "42:2",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 5,
+            "retired": 4,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:3",
+          "geometries": 412,
+          "resources": {
+            "objects": 2943,
+            "geometries": 306,
+            "materials": 54
+          },
+          "streaming": {
+            "layout": "42:3",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 6,
+            "retired": 5,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:4",
+          "geometries": 417,
+          "resources": {
+            "objects": 3232,
+            "geometries": 313,
+            "materials": 55
+          },
+          "streaming": {
+            "layout": "42:4",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 7,
+            "retired": 6,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:5",
+          "geometries": 415,
+          "resources": {
+            "objects": 3286,
+            "geometries": 314,
+            "materials": 55
+          },
+          "streaming": {
+            "layout": "42:5",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 8,
+            "retired": 7,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:6",
+          "geometries": 420,
+          "resources": {
+            "objects": 3352,
+            "geometries": 316,
+            "materials": 54
+          },
+          "streaming": {
+            "layout": "42:6",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 9,
+            "retired": 8,
+            "prepared": null
+          }
+        },
+        {
+          "layout": "42:7",
+          "geometries": 417,
+          "resources": {
+            "objects": 3080,
+            "geometries": 311,
+            "materials": 54
+          },
+          "streaming": {
+            "layout": "42:7",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 1,
+              "aborted": 7,
+              "maximumSliceMs": 20.600000001490116
+            },
+            "created": 10,
+            "retired": 9,
+            "prepared": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "random-generated-routes-require-no-fall-or-bottom-impact",
+      "pass": true,
+      "falls": 0,
+      "trackImpacts": 0
+    },
+    {
+      "name": "random-route-settlement-and-distance-save-once",
+      "pass": true,
+      "reward": 282
+    }
+  ],
+  "challenge": {
+    "mode": "endless",
+    "distance": 26055.67436312629,
+    "laps": 8,
+    "level": 9,
+    "localDistance": 0.5237086714864745,
+    "localLimit": 3147.720288087548
+  },
+  "randomness": {
+    "seed": 42,
+    "section": 9,
+    "layout": "42:8",
+    "kinds": [
+      "turn",
+      "twist",
+      "wave",
+      "twist",
+      "loop"
+    ],
+    "gaps": 3,
+    "rows": 19,
+    "previewReady": false
+  },
+  "view": {
+    "trackTriangles": 15096,
+    "glass": {
+      "style": "rim-lit-glass",
+      "baseOpacity": 0.06,
+      "laneCount": 3,
+      "longitudinalEdges": 3,
+      "transverseLines": 0,
+      "sectionAccents": true,
+      "sourceTriangles": 37820,
+      "batches": 123,
+      "depthWrite": false
+    },
+    "pickups": {
+      "types": {
+        "air": "pressure-cylinder",
+        "ring": "navigation-energy-core",
+        "sky": "segmented-jump-gate"
+      },
+      "models": 98,
+      "particles": 20,
+      "activeBursts": 0,
+      "collectedEffects": 0,
+      "burstPool": 8,
+      "openSkyCenter": true,
+      "physicalScale": {
+        "air": 1.8,
+        "core": 1.8,
+        "gateInnerDiameter": 4.2
+      },
+      "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+      "cycle": 8
+    },
+    "postprocessing": {
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 3194,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 145,
+      "cachedMasks": 7,
+      "selective": true,
+      "occlusion": true
+    },
+    "trackDetail": {
+      "style": "magnetic-modular-chassis",
+      "ribs": 0,
+      "fins": 208,
+      "terminals": 10,
+      "sectionMarkers": 504,
+      "cradles": 0,
+      "beacons": 26,
+      "triangles": 54778,
+      "batches": 96,
+      "clearDrivingWidth": 11.4
+    },
+    "saturn": {
+      "style": "saturn-inspired",
+      "planetRadius": 900,
+      "ringInner": 1116,
+      "ringOuter": 4800,
+      "dustCount": 2200,
+      "ringPlaneBelowStraight": 20
+    },
+    "solidTriangles": 37820,
+    "trackThickness": 0.45,
+    "trackFaces": "separate-front-bottom-walls",
+    "cameraBlocked": false,
+    "carTriangles": 38365,
+    "localCycle": 8,
+    "boundedWindow": [
+      -80,
+      3747.720288087548
+    ],
+    "streaming": {
+      "layout": "42:8",
+      "liveWindows": 1,
+      "preload": {
+        "completed": 1,
+        "aborted": 7,
+        "maximumSliceMs": 20.600000001490116
+      },
+      "created": 11,
+      "retired": 10,
+      "prepared": null
+    },
+    "markerVisible": false,
+    "gapLights": {
+      "active": false,
+      "state": "off",
+      "rows": 3,
+      "layout": "longitudinal-edges-only"
+    },
+    "wingGap": 0
+  }
+}

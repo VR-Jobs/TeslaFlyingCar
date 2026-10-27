@@ -1,0 +1,104 @@
+{
+  "asset": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\current\\roadster-exterior.blend",
+  "sha256": "6701a50bcb314287f1d8b389d7e037d06466a97af6d1a7b3b11fe6501bdcda73",
+  "exteriorObjects": 253,
+  "workingDimensions": [
+    2.0969998836517334,
+    4.614999771118164,
+    1.2129815816879272
+  ],
+  "maximumWingMountGap": 0.0027250051843905687,
+  "poses": [
+    {
+      "frame": 1,
+      "side": -1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 1,
+      "side": 1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 11,
+      "side": -1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 11,
+      "side": 1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 21,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 21,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 31,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 31,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 41,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 41,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 51,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 51,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 61,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 61,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 71,
+      "side": -1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 71,
+      "side": 1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 81,
+      "side": -1,
+      "gap": 0.0027250051843905687
+    },
+    {
+      "frame": 81,
+      "side": 1,
+      "gap": 0.0027250051843905687
+    }
+  ],
+  "scope": "Independent saved Blender source inspection. Units are inferred game-scale metres, not measured OEM specifications."
+}

@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "formal-picker-starts-ring-mode",
+      "pass": true
+    },
+    {
+      "name": "jump-detaches-from-surface",
+      "pass": true,
+      "state": "离轨飞行"
+    },
+    {
+      "name": "pause-opens-ring-menu",
+      "pass": true
+    },
+    {
+      "name": "home-still-has-four-buttons",
+      "pass": true
+    },
+    {
+      "name": "manual-checkpoint-recovers",
+      "pass": true,
+      "observed": {
+        "active": true,
+        "paused": false,
+        "phase": "running",
+        "s": 519.5895127811322,
+        "length": 2360.884901332318,
+        "attached": true,
+        "pressure": 100,
+        "checkpoint": 455,
+        "falls": 1,
+        "score": 434.3460538669739,
+        "rings": 4,
+        "suction": false,
+        "jump": false,
+        "lane": 0,
+        "stage": "星环入口",
+        "view": {
+          "trackTriangles": 9144,
+          "carTriangles": 33491,
+          "markerVisible": false,
+          "wingGap": 0
+        },
+        "profile": {
+          "completions": 0,
+          "bestScore": 0,
+          "bestTime": null
+        }
+      }
+    },
+    {
+      "name": "music-beat-jump-feedback",
+      "pass": true,
+      "observed": "踩拍起跳 +30 shown during the keyboard play test"
+    },
+    {
+      "name": "native-coast-run-and-settlement-after-ring",
+      "pass": true,
+      "observed": {
+        "errors": [],
+        "ringActive": false,
+        "scene": "coast",
+        "screen": "over",
+        "state": "over"
+      },
+      "note": "Formal coast launch was observed at 0 m, then native collision settlement at 78 m while left unattended."
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true,
+      "logs": []
+    }
+  ],
+  "transport": "Exact standalone HTML served on loopback; fixed keyboard controls and formal scene picker."
+}

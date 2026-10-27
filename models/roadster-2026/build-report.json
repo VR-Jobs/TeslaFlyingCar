@@ -1,0 +1,130 @@
+{
+  "schema": "carbuilder.build-report.2",
+  "passed": true,
+  "tasks": [
+    {
+      "taskId": "roadster.exterior",
+      "generator": null,
+      "stage": "exterior",
+      "status": "passed",
+      "cacheHit": false,
+      "corruptCacheRebuilt": false,
+      "hashingAndCacheReadMs": 0.6177,
+      "generationMs": 0.0,
+      "exportMs": 0.0,
+      "key": "ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533",
+      "returnCode": 0,
+      "stdoutTail": "84M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device\nFra:41 Mem:49.57M (Peak 69.84M) | Time:00:00.02 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Objects | Applying Static Transformations\nFra:41 Mem:49.57M (Peak 69.84M) | Time:00:00.02 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Particle Systems\nFra:41 Mem:49.57M (Peak 69.84M) | Time:00:00.02 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device\nFra:41 Mem:49.57M (Peak 69.84M) | Time:00:00.02 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Meshes\nFra:41 Mem:51.88M (Peak 69.84M) | Time:00:00.02 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Mesh | Computing attributes\nFra:41 Mem:52.92M (Peak 69.84M) | Time:00:00.02 | Mem:0.08M, Peak:0.08M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device\nFra:41 Mem:52.89M (Peak 69.84M) | Time:00:00.02 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Scene BVH | Building\nFra:41 Mem:52.89M (Peak 69.84M) | Time:00:00.02 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Scene BVH | Building BVH\nFra:41 Mem:52.89M (Peak 69.84M) | Time:00:00.02 | Mem:5.68M, Peak:5.68M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%\nFra:41 Mem:52.89M (Peak 69.84M) | Time:00:00.02 | Mem:10.22M, Peak:14.83M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device\nFra:41 Mem:52.89M (Peak 69.84M) | Time:00:00.02 | Mem:10.22M, Peak:14.83M | Scene, ViewLayer | Updating Mesh | Computing normals\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:10.22M, Peak:14.83M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.75M, Peak:15.75M | Scene, ViewLayer | Updating Objects Flags\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.75M, Peak:15.75M | Scene, ViewLayer | Updating Primitive Offsets\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.75M, Peak:15.75M | Scene, ViewLayer | Updating Images\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.75M, Peak:15.75M | Scene, ViewLayer | Updating Camera Volume\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.75M, Peak:15.75M | Scene, ViewLayer | Updating Lookup Tables\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.83M, Peak:15.83M | Scene, ViewLayer | Updating Lights\nFra:41 Mem:58.42M (Peak 69.84M) | Time:00:00.02 | Mem:15.83M, Peak:15.83M | Scene, ViewLayer | Updating Lights | Computing tree\nFra:41 Mem:58.56M (Peak 69.84M) | Time:00:00.02 | Mem:15.97M, Peak:15.97M | Scene, ViewLayer | Updating Integrator\nFra:41 Mem:58.56M (Peak 69.84M) | Time:00:00.02 | Mem:15.97M, Peak:15.97M | Scene, ViewLayer | Updating Film\nFra:41 Mem:58.57M (Peak 69.84M) | Time:00:00.02 | Mem:15.89M, Peak:15.97M | Scene, ViewLayer | Updating Lookup Tables\nFra:41 Mem:58.57M (Peak 69.84M) | Time:00:00.02 | Mem:15.98M, Peak:15.98M | Scene, ViewLayer | Updating Baking\nFra:41 Mem:58.57M (Peak 69.84M) | Time:00:00.02 | Mem:15.98M, Peak:15.98M | Scene, ViewLayer | Updating Device | Writing constant memory\nFra:41 Mem:58.57M (Peak 69.84M) | Time:00:00.02 | Mem:15.98M, Peak:15.98M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)\nFra:41 Mem:58.57M (Peak 69.84M) | Time:00:00.02 | Mem:15.98M, Peak:15.98M | Scene, ViewLayer | Sample 0/24\nFra:41 Mem:119.30M (Peak 119.30M) | Time:00:00.15 | Remaining:00:02.92 | Mem:76.57M, Peak:76.57M | Scene, ViewLayer | Sample 1/24\nFra:41 Mem:144.82M (Peak 183.09M) | Time:00:04.42 | Mem:76.57M, Peak:76.57M | Scene, ViewLayer | Sample 24/24\nFra:41 Mem:144.82M (Peak 183.09M) | Time:00:04.42 | Mem:76.57M, Peak:76.57M | Scene, ViewLayer | Finished\nSaved: 'C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\.candidate-78b773cef81443ee9915dafb91f69d4d\\wing.png'\nTime: 00:04.50 (Saving: 00:00.08)\n\n\nROADSTER_BUILD_COMPLETE {\"objects\": 253, \"elapsedSeconds\": 19.892118499999924}\n\nBlender quit\n",
+      "stderrTail": "",
+      "commandMs": 20361.1322,
+      "outputs": {
+        "blend": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\roadster-exterior.blend",
+        "glb": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\roadster-exterior.glb",
+        "runtime": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\roadster-exterior.json",
+        "geometry": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\geometry-checks.json",
+        "cameras": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\review-cameras.json",
+        "front": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\front.png",
+        "side": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\side.png",
+        "rear": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\rear.png",
+        "wing": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\cache\\ab3fb2c6013a4aabb853f9dcb52b26f1a1fd3cdd5f49d8b7012243b30aadc533\\wing.png"
+      },
+      "taskMs": 20416.6932
+    }
+  ],
+  "selectedTasks": [
+    "roadster.exterior"
+  ],
+  "includedTasks": [
+    "roadster.exterior"
+  ],
+  "skippedTasks": [],
+  "blockedTasks": [],
+  "totalMs": 20420.3514,
+  "sourceDecodeAndSignatureMs": 0.0,
+  "cacheHits": 0,
+  "timing": {
+    "clock": "perf_counter_ns",
+    "startedUtc": "2026-10-25T18:52:42.060659+00:00",
+    "totalMs": 20420.3514,
+    "stages": [
+      {
+        "stage": "planning",
+        "taskId": null,
+        "startOffsetMs": 0.1862,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 3.4595,
+        "exclusiveMs": 3.4595
+      },
+      {
+        "stage": "inputHashing",
+        "taskId": "roadster.exterior",
+        "startOffsetMs": 3.6553,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 0.5701,
+        "exclusiveMs": 0.5701
+      },
+      {
+        "stage": "cacheValidation",
+        "taskId": "roadster.exterior",
+        "startOffsetMs": 4.2305,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 0.0355,
+        "exclusiveMs": 0.0355
+      },
+      {
+        "stage": "commandExecution",
+        "taskId": "roadster.exterior",
+        "startOffsetMs": 5.2314,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 20361.1322,
+        "exclusiveMs": 20361.1322
+      },
+      {
+        "stage": "outputValidation",
+        "taskId": "roadster.exterior",
+        "startOffsetMs": 20366.3858,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 51.6851,
+        "exclusiveMs": 51.6851
+      },
+      {
+        "stage": "cacheCommit",
+        "taskId": "roadster.exterior",
+        "startOffsetMs": 20418.0846,
+        "depth": 0,
+        "status": "passed",
+        "elapsedMs": 0.9329,
+        "exclusiveMs": 0.9329
+      }
+    ],
+    "stageTotalsMs": {
+      "planning": 3.4595,
+      "inputHashing": 0.5701,
+      "cacheValidation": 0.0355,
+      "commandExecution": 20361.1322,
+      "outputValidation": 51.6851,
+      "cacheCommit": 0.9329
+    },
+    "stageTotalsDefinition": "Sum of exclusiveMs per stage, excluding nested stages",
+    "scope": "Observed local work and explicitly executed subprocesses. No AI reasoning, network, UI waiting or work outside this process is inferred. Task wall times include stages; do not sum both."
+  },
+  "phaseGate": {
+    "enforced": true,
+    "phase": "exterior",
+    "vehicleId": "tesla-roadster-2026-official-exterior"
+  },
+  "refinementGate": null,
+  "machine": {
+    "python": "3.13.0",
+    "system": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "trimesh": "4.4.1"
+  },
+  "timingScope": "Observed local work and explicitly executed subprocesses. No AI reasoning, network, UI waiting or work outside this process is inferred. Task wall times include stages; do not sum both.",
+  "validatedOutputsPreserved": true
+}

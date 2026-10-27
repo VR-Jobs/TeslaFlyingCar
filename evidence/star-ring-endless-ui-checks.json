@@ -1,0 +1,51 @@
+{
+  "picker": {
+    "homeButtons": 4,
+    "images": [
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "scene": "space",
+        "width": 960
+      },
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "scene": "coast",
+        "width": 960
+      },
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "scene": "starRing",
+        "width": 960
+      }
+    ]
+  },
+  "startedMode": "endless",
+  "finishedPhase": "finished",
+  "summary": {
+    "mode": "endless",
+    "distance": 403.35752698829214,
+    "laps": 0,
+    "level": 1,
+    "localDistance": 403.35752698829214,
+    "localLimit": 2360.884901332318
+  },
+  "profile": {
+    "completions": 0,
+    "bestScore": 0,
+    "bestTime": null,
+    "tutorialVersion": 1,
+    "tutorialCompleted": true,
+    "endlessRuns": 1,
+    "bestEndlessScore": 251,
+    "bestEndlessDistance": 403.35752698829214,
+    "longestEndlessTime": 14.600000000000305
+  },
+  "errors": [],
+  "console": []
+}

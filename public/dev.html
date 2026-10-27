@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Roadster Dash · 本地开发台</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #101115;
+        color: #edf0f5;
+        font:
+          14px/1.5 system-ui,
+          sans-serif;
+      }
+      header {
+        height: 66px;
+        padding: 12px 24px;
+        border-bottom: 1px solid #31333b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: 0.04em;
+      }
+      header p {
+        margin: 2px 0 0;
+        color: #959aa7;
+        font-size: 12px;
+      }
+      a {
+        color: #b7d6ff;
+      }
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        height: calc(100vh - 66px);
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #000;
+      }
+      aside {
+        padding: 20px;
+        overflow: auto;
+        border-left: 1px solid #31333b;
+      }
+      section {
+        border-bottom: 1px solid #30323b;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #aeb4c2;
+        margin: 0 0 12px;
+      }
+      button {
+        background: #252832;
+        border: 1px solid #404550;
+        border-radius: 6px;
+        color: #edf0f5;
+        padding: 9px 12px;
+        cursor: pointer;
+        font: inherit;
+      }
+      button:hover {
+        background: #343946;
+      }
+      button.primary {
+        background: #d21b38;
+        border-color: #d21b38;
+      }
+      button:disabled {
+        opacity: 0.4;
+        cursor: wait;
+      }
+      .row {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .stat {
+        background: #191c23;
+        padding: 10px;
+        border-radius: 6px;
+      }
+      .stat strong {
+        display: block;
+        font:
+          22px ui-monospace,
+          monospace;
+      }
+      .stat span {
+        color: #9da5b4;
+        font-size: 11px;
+      }
+      .state {
+        font:
+          12px ui-monospace,
+          monospace;
+        color: #a3e0ba;
+        margin-bottom: 10px;
+      }
+      .field {
+        display: grid;
+        grid-template-columns: 1fr 88px;
+        align-items: center;
+        gap: 12px;
+        margin: 10px 0;
+      }
+      input[type="number"] {
+        width: 88px;
+        background: #191c23;
+        border: 1px solid #404550;
+        border-radius: 4px;
+        padding: 7px;
+        color: #fff;
+        font:
+          14px ui-monospace,
+          monospace;
+      }
+      .note {
+        color: #969ead;
+        font-size: 12px;
+      }
+      #errors {
+        color: #ff9aa8;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        font-size: 12px;
+      }
+      footer {
+        font-size: 11px;
+        color: #7f8797;
+      }
+      @media (max-width: 850px) {
+        main {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+        iframe {
+          height: 72vh;
+          min-height: 520px;
+        }
+        aside {
+          border-left: 0;
+        }
+        header {
+          height: auto;
+          padding: 12px;
+        }
+        main {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>ROADSTER DASH / 本地开发台</h1>
+        <p>原版公开前端恢复 · 独立本地存档 · 参数编辑</p>
+      </div>
+      <a href="/?lang=zh" target="_blank">打开纯游戏窗口 ↗</a>
+    </header>
+    <main>
+      <iframe
+        id="game"
+        src="/"
+        title="Roadster Dash 原版游戏画面"
+        allow="autoplay; fullscreen"
+      ></iframe>
+      <aside>
+        <section>
+          <h2>运行状态</h2>
+          <div id="state" class="state">加载中…</div>
+          <div class="stats">
+            <div class="stat">
+              <strong id="distance">0</strong><span>距离 / m</span>
+            </div>
+            <div class="stat">
+              <strong id="score">0</strong><span>分数</span>
+            </div>
+            <div class="stat">
+              <strong id="air">600</strong><span>压缩空气 / L</span>
+            </div>
+            <div class="stat">
+              <strong id="coins">0</strong><span>本地金币</span>
+            </div>
+          </div>
+          <p id="details" class="note"></p>
+          <div class="row">
+            <button class="primary" data-command="start">开始游戏</button
+            ><button data-command="pause">暂停 / 继续</button
+            ><button data-command="menu">主菜单</button>
+          </div>
+        </section>
+        <section>
+          <h2>物理参数</h2>
+          <label class="field"
+            >重力<input
+              id="gravity"
+              type="number"
+              min="1"
+              max="100"
+              step="1"
+              value="28"
+          /></label>
+          <label class="field"
+            >跳跃高度<input
+              id="jump"
+              type="number"
+              min="0.1"
+              max="20"
+              step="0.1"
+              value="2.5"
+          /></label>
+          <label class="field"
+            >最大高度<input
+              id="height"
+              type="number"
+              min="1"
+              max="50"
+              step="0.1"
+              value="6.2"
+          /></label>
+          <label class="field"
+            >空中悬停耗气 / 秒<input
+              id="hover"
+              type="number"
+              min="0"
+              max="600"
+              step="10"
+              value="120"
+          /></label>
+          <label class="field"
+            >推进加速倍数<input
+              id="boost"
+              type="number"
+              min="1"
+              max="5"
+              step="0.1"
+              value="1.4"
+          /></label>
+          <div class="row">
+            <button id="apply">应用参数</button
+            ><button id="reset">恢复原版值</button>
+          </div>
+          <p class="note">
+            应用后立即生效。刷新恢复源码中的设置；长期修改请编辑
+            src/config/gameplay.js。
+          </p>
+        </section>
+        <section>
+          <h2>本地调试</h2>
+          <div class="row">
+            <button data-command="grantCoins">+10,000 测试金币</button
+            ><button data-command="exportSave">导出存档</button
+            ><button id="import">导入存档</button
+            ><button data-command="exportConfig">导出参数</button>
+          </div>
+          <input
+            id="save-file"
+            type="file"
+            accept="application/json,.json"
+            hidden
+          />
+          <p class="note">
+            存档只在本机浏览器保存。测试金币与本地排行榜独立于原网站；付款、Google
+            登录和联网好友不连接原服务。
+          </p>
+        </section>
+        <section>
+          <h2>操作测试</h2>
+          <div class="row">
+            <button data-input="left">←</button
+            ><button data-input="right">→</button
+            ><button id="jump-test">跳跃</button
+            ><button id="fly-test">悬停 1 秒</button
+            ><button id="boost-test">加速 1 秒</button>
+          </div>
+          <p class="note">
+            点击游戏画面后，可用方向键、空格、Shift、Z、P 操作。
+          </p>
+        </section>
+        <section>
+          <h2>运行错误</h2>
+          <pre id="errors">无</pre>
+          <button data-command="gameplayChecks">运行玩法回归</button>
+          <button data-command="drivingChecks">运行增强回归</button>
+          <button data-command="showroomChecks">检查展台穿模</button>
+          <pre id="checks" class="note"></pre>
+        </section>
+        <footer>
+          原始变量名与恢复名称的对应表：evidence/symbol-map.json。保留的原始部署文件位于
+          original/。
+        </footer>
+      </aside>
+    </main>
+    <script type="module">
+      const frame = document.querySelector("#game");
+      const send = (command, payload) =>
+        frame.contentWindow.postMessage(
+          { type: "roadster:command", command, payload },
+          location.origin,
+        );
+      let baseline;
+      addEventListener("message", (event) => {
+        if (
+          event.origin !== location.origin ||
+          event.source !== frame.contentWindow ||
+          event.data?.type !== "roadster:status"
+        )
+          return;
+        const s = event.data.state;
+        if (!baseline) {
+          baseline = structuredClone(s.config);
+          fill(baseline);
+        }
+        document.querySelector("#state").textContent =
+          `${s.screen} / ${s.state}`;
+        for (const key of ["distance", "score", "coins"])
+          document.querySelector("#" + key).textContent =
+            s[key].toLocaleString();
+        document.querySelector("#air").textContent = Math.round(s.player.air);
+        document.querySelector("#details").textContent = document.documentElement.lang === 'en'
+          ? `Lane ${s.player.lane + 1} · Height ${s.player.y.toFixed(2)} m · ${Math.round(s.speed * 3.6)} km/h · ${s.savedRuns} saved runs`
+          : `车道 ${s.player.lane + 1} · 高度 ${s.player.y.toFixed(2)} m · ${Math.round(s.speed * 3.6)} km/h · ${s.savedRuns} 条记录`;
+        document.querySelector("#errors").textContent = s.errors.length
+          ? s.errors.join("\n")
+          : document.documentElement.lang === 'en' ? 'None' : '无';
+        document.body.dataset.status = JSON.stringify(s);
+        if(s.gameplayChecks)document.querySelector('#checks').textContent=s.gameplayChecks.results.map(r=>`${r.status} ${r.name}`).join('\n');
+        if(s.drivingChecks)document.querySelector('#checks').textContent=s.drivingChecks.results.map(r=>`${r.status} ${r.name}`).join('\n');
+        if(s.showroomChecks)document.querySelector('#checks').textContent=JSON.stringify(s.showroomChecks,null,2);
+      });
+      function fill(c) {
+        for (const [id, value] of Object.entries({
+          gravity: c.PHYSICS.gravity,
+          jump: c.PHYSICS.jumpHeight,
+          height: c.PHYSICS.maxHeight,
+          hover: c.AIR.hoverPerSec,
+          boost: c.BOOST.mult,
+        }))
+          document.querySelector("#" + id).value = value;
+      }
+      document
+        .querySelectorAll("[data-command]")
+        .forEach((b) => (b.onclick = () => send(b.dataset.command)));
+      document
+        .querySelectorAll("[data-input]")
+        .forEach((b) => (b.onclick = () => send("input", b.dataset.input)));
+      document.querySelector("#apply").onclick = () =>
+        send("config", {
+          PHYSICS: {
+            gravity: +document.querySelector("#gravity").value,
+            jumpHeight: +document.querySelector("#jump").value,
+            maxHeight: +document.querySelector("#height").value,
+          },
+          AIR: { hoverPerSec: +document.querySelector("#hover").value },
+          BOOST: { mult: +document.querySelector("#boost").value },
+        });
+      document.querySelector("#reset").onclick = () => {
+        fill(baseline);
+        send("config", baseline);
+      };
+      function hold(action, ms) {
+        send("input", action + "Press");
+        setTimeout(() => send("input", action + "Release"), ms);
+      }
+      document.querySelector("#jump-test").onclick = () => hold("jump", 40);
+      document.querySelector("#fly-test").onclick = () => hold("jump", 1000);
+      document.querySelector("#boost-test").onclick = () => hold("boost", 1000);
+      document.querySelector("#import").onclick = () =>
+        document.querySelector("#save-file").click();
+      document.querySelector("#save-file").onchange = async (event) => {
+        try {
+          send("importSave", JSON.parse(await event.target.files[0].text()));
+        } catch {
+          document.querySelector("#errors").textContent =
+            document.documentElement.lang === 'en' ? 'The save file is not valid JSON' : "存档文件不是有效 JSON";
+        }
+      };
+    </script>
+    <script type="module" src="/assets/developer-language.js"></script>
+  </body>
+</html>

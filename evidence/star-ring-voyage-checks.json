@@ -1,0 +1,142 @@
+{
+  "checks": [
+    {
+      "name": "fragments-require-E",
+      "pass": true
+    },
+    {
+      "name": "E-collects-three-stars-and-leaves-the-fourth",
+      "pass": true,
+      "detail": {
+        "count": 3,
+        "collected": 3,
+        "released": 0,
+        "cleared": 0,
+        "activeWaves": 0
+      }
+    },
+    {
+      "name": "accidental-grip-loss-does-not-fire-escort",
+      "pass": true
+    },
+    {
+      "name": "jump-releases-all-charges-without-an-extra-key",
+      "pass": true
+    },
+    {
+      "name": "expanding-pulse-clears-devices-but-never-cars",
+      "pass": true,
+      "detail": {
+        "hit": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "a-cleared-obstacle-pays-only-once",
+      "pass": true
+    },
+    {
+      "name": "shockwaves-expire",
+      "pass": true
+    },
+    {
+      "name": "the-uncollected-fragment-is-still-available",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-clears-charges-without-respawning-collected-fragments",
+      "pass": true
+    },
+    {
+      "name": "wave-pool-is-bounded",
+      "pass": true
+    },
+    {
+      "name": "core-tutorial-does-not-require-escort-mechanics",
+      "pass": true
+    },
+    {
+      "name": "320-sections-keep-the-reserved-lane-clear-during-entire-convoy-movements",
+      "pass": true,
+      "detail": {
+        "cells": 780,
+        "merges": 320
+      }
+    },
+    {
+      "name": "voyage-generation-includes-all-four-short-event-types",
+      "pass": true,
+      "detail": [
+        "supply",
+        "meteor",
+        "convoy",
+        "gravity"
+      ]
+    },
+    {
+      "name": "merge-signals-start-before-lateral-motion",
+      "pass": true
+    },
+    {
+      "name": "unreasonably-fast-approach-cancels-the-merge",
+      "pass": true
+    },
+    {
+      "name": "relative-sweep-detects-a-car-moving-across-player",
+      "pass": true
+    },
+    {
+      "name": "safe-close-pass-replenishes-air-and-pays-once",
+      "pass": true
+    },
+    {
+      "name": "event-warns-before-arrival",
+      "pass": true
+    },
+    {
+      "name": "event-activates-on-arrival",
+      "pass": true
+    },
+    {
+      "name": "clean-event-completion-rewards-exactly-once",
+      "pass": true
+    },
+    {
+      "name": "collision-cancels-clean-passage-bonus",
+      "pass": true
+    },
+    {
+      "name": "gravity-event-gently-changes-unprotected-hop-physics",
+      "pass": true
+    },
+    {
+      "name": "gravity-does-not-change-authored-chain-or-gap-trajectories",
+      "pass": true
+    },
+    {
+      "name": "gravity-does-not-change-shortcut-physics",
+      "pass": true
+    },
+    {
+      "name": "menu-status-is-valid-before-a-run-exists",
+      "pass": true
+    },
+    {
+      "name": "moving-car-renderer-exposes-real-wheel-and-indicator-state",
+      "pass": true
+    },
+    {
+      "name": "convoy-wheels-roll-with-actual-travel",
+      "pass": true
+    },
+    {
+      "name": "voyage-window-retirement-disposes-every-owned-geometry",
+      "pass": true,
+      "detail": {
+        "disposed": 275
+      }
+    }
+  ]
+}

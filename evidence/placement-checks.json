@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "name": "768-random-sections-have-no-traffic-pickup-gate-or-fragment-overlap",
+      "pass": true,
+      "detail": {
+        "sections": 768,
+        "moved": 4009,
+        "fragments": 3622,
+        "adjusted": 0,
+        "maximumRemoved": 3
+      }
+    },
+    {
+      "name": "red-obstacle-remains-and-optional-pickup-moves-to-a-free-lane",
+      "pass": true
+    },
+    {
+      "name": "required-air-keeps-its-location-and-moving-car-stops-before-it",
+      "pass": true
+    },
+    {
+      "name": "merge-crossing-a-required-pickup-is-cancelled-without-removing-the-car",
+      "pass": true
+    },
+    {
+      "name": "escort-fragment-separates-from-gas-cylinder-within-suction-reach",
+      "pass": true
+    },
+    {
+      "name": "required-air-is-retained-outside-authored-stunt-gate-frame",
+      "pass": true
+    },
+    {
+      "name": "actual-car-motion-and-lane-change-snapshots-remain-clear",
+      "pass": true,
+      "detail": {
+        "snapshots": 128
+      }
+    },
+    {
+      "name": "placement-is-deterministic-for-personal-ghost-replay",
+      "pass": true
+    },
+    {
+      "name": "next-section-preview-uses-the-same-safe-placement",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "artifact": "RoadsterDash.html",
+  "firstEntry": {
+    "elapsed": 6.945800000000005,
+    "nextDemo": 19.08251047367416,
+    "entry": {
+      "requestedDelay": 1,
+      "firstDemoDelay": 1.0291
+    },
+    "yaw": 2.75,
+    "cameraPitch": 0,
+    "parallax": {
+      "x": 0,
+      "y": 0,
+      "targetX": 0,
+      "targetY": 0,
+      "shiftX": 0,
+      "shiftY": 0,
+      "roll": 0,
+      "reducedMotion": false
+    },
+    "exterior": {
+      "asset": "roadster-blender-exterior-v1",
+      "groups": 37,
+      "triangles": 150968,
+      "extension": 0,
+      "maximumAttachmentGap": 0.0027249999999999774
+    },
+    "animation": "idle",
+    "animationTime": 0,
+    "height": 0.0549999933242798,
+    "pitch": 0,
+    "roll": 0,
+    "inspecting": false,
+    "dragging": false,
+    "containersVisible": false,
+    "clearance": {
+      "minimumY": 0.053,
+      "gap": 0.008,
+      "correction": 0.0549999933242798,
+      "meshes": 41
+    },
+    "audio": {
+      "state": "locked",
+      "muted": false,
+      "active": false,
+      "rms": 0,
+      "peakRms": 0,
+      "plays": 0,
+      "landings": 0,
+      "profile": {
+        "phase": "idle",
+        "hover": 0,
+        "thrust": 0,
+        "spin": 0
+      },
+      "masterGain": 0,
+      "hoverGain": 0,
+      "thrustGain": 0
+    },
+    "jetLevel": 0,
+    "motion": {
+      "phase": "idle",
+      "progress": 1,
+      "suspension": 0,
+      "power": 0,
+      "landings": 1
+    },
+    "landing": {
+      "active": true,
+      "age": 1.533399999999999,
+      "emitted": 1,
+      "maximumRadius": 3.6427281416044375,
+      "particles": 72
+    }
+  },
+  "jet": {
+    "elapsed": 81.6582999999994,
+    "nextDemo": 80.32434036347505,
+    "entry": {
+      "requestedDelay": 1,
+      "firstDemoDelay": 1.0291
+    },
+    "yaw": 2.75,
+    "cameraPitch": 0,
+    "parallax": {
+      "x": 0,
+      "y": 0,
+      "targetX": 0,
+      "targetY": 0,
+      "shiftX": 0,
+      "shiftY": 0,
+      "roll": 0,
+      "reducedMotion": false
+    },
+    "exterior": {
+      "asset": "roadster-blender-exterior-v1",
+      "groups": 37,
+      "triangles": 150968,
+      "extension": 1,
+      "maximumAttachmentGap": 4.440892098500626e-16
+    },
+    "animation": "barrel",
+    "animationTime": 1.3666000000000058,
+    "height": 1.4208471243835485,
+    "pitch": 0,
+    "roll": 0,
+    "inspecting": false,
+    "dragging": false,
+    "containersVisible": false,
+    "clearance": {
+      "minimumY": 1.4188471310592687,
+      "gap": 1.3738471310592688,
+      "correction": 0,
+      "meshes": 41
+    },
+    "audio": {
+      "state": "locked",
+      "muted": false,
+      "active": false,
+      "rms": 0,
+      "peakRms": 0,
+      "plays": 0,
+      "landings": 0,
+      "profile": {
+        "phase": "takeoff",
+        "hover": 0.5883044704819917,
+        "thrust": 0.5208341295925358,
+        "spin": 0
+      },
+      "masterGain": 0,
+      "hoverGain": 0,
+      "thrustGain": 0
+    },
+    "jetLevel": 0.7937333248278134,
+    "motion": {
+      "phase": "takeoff",
+      "progress": 0.28470833333333456,
+      "suspension": 0,
+      "power": 0.8400550477298965,
+      "landings": 5
+    },
+    "landing": {
+      "active": false,
+      "age": 13.037400000000007,
+      "emitted": 5,
+      "maximumRadius": 3.806366537390328,
+      "particles": 72
+    }
+  },
+  "gameCanStart": true,
+  "consoleErrors": [],
+  "errors": [],
+  "notes": [
+    "Exact standalone HTML served locally for QA.",
+    "Body, glazing, wheels, lamps and raised-wing mounts inspected in native renders and actual homepage.",
+    "High-detail exterior is installed on the homepage; original driving model and physics are preserved."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "completedUTC": "2026-10-27T20:27:05.149666+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "onlineSHA256": "fde24f38dca0b87e04a1afbd9a629b5032bf72667cfffcbbefc8e501d83f49c7",
+  "offlineSHA256": "2c83cb4a2b3a3b02af87aeb62db3a1e6733059f74713a06305b2cd139384c3e5",
+  "features": [
+    "compact-priority-HUD",
+    "pressure-responsive-intake-exhaust-and-audio",
+    "musical-three-action-phrase-and-layer",
+    "directed-recovery-and-rhythm-sections",
+    "meaningful-forks-and-local-best-ghost",
+    "independent-visual-preferences",
+    "adaptive-quality-with-hysteresis"
+  ],
+  "passedChecks": {
+    "experience-checks.json": 27,
+    "star-ring-random-checks.json": 9,
+    "star-ring-adventure-checks.json": 14,
+    "star-ring-voyage-checks.json": 28,
+    "star-ring-traffic-checks.json": 17,
+    "star-ring-rainbow-checks.json": 24,
+    "exhaust-wake-checks.json": 11,
+    "star-ring-flight-effect-checks.json": 8,
+    "loading-performance-checks.json": 9
+  },
+  "localWebGL": 9,
+  "onlineWebGL": 9,
+  "settingsPersistence": true,
+  "realGhostSaveAndReplay": true,
+  "endlessSections": 8,
+  "maximumGeometry": 634,
+  "maximumBloomMasks": 50,
+  "maximumLiveWindows": 2,
+  "backup": "D:\\0.Unity20242024\\Tesla-Car-Game\\revisions\\20261027-experience",
+  "rollback": "/var/www/tesla-deploy/20261027-experience-2c83cb4a/previous-index.html",
+  "evidence": {
+    "experience-local-browser.json": {
+      "bytes": 12124,
+      "sha256": "a2d57b6fc51cb7d125b293fe52475c71ea3f6f711f7ca68c7afdef9734bcba25"
+    },
+    "experience-online-browser.json": {
+      "bytes": 12087,
+      "sha256": "fe5777cbc0ff9e5ed3abda03dd9e2ac1506ef2a4b4408d4fc1ca4354cf5221fc"
+    },
+    "experience-endless-browser.json": {
+      "bytes": 13883,
+      "sha256": "284ff2a3827e5048f28ae8c8d21a1d25808454a758f6f6587ad7f6436b499075"
+    },
+    "experience-ghost-flow-browser.json": {
+      "bytes": 371,
+      "sha256": "5bc5620101aa21c278adf0ea9d39accc23d05482fa29973593c067d8e5cf964d"
+    },
+    "experience-settings-browser.json": {
+      "bytes": 90,
+      "sha256": "566ac184ee83de5e53558dcb2620e137960250182720009ce7e7f27232f9bbd4"
+    },
+    "experience-local.png": {
+      "bytes": 87729,
+      "sha256": "34422b58ab9f970ff667cd6bbe3de3e25a515be4c557cf5cb9ad490578e70742"
+    },
+    "experience-online.png": {
+      "bytes": 87649,
+      "sha256": "8ff1f3fa0a162f76fda2717261ff31e367bc9169d355eb5dca064b8006db3d11"
+    }
+  }
+}

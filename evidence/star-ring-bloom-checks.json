@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "name": "only-registered-track-shader-is-an-hdr-emitter",
+      "pass": true
+    },
+    {
+      "name": "white-car-remains-a-black-depth-occluder",
+      "pass": true
+    },
+    {
+      "name": "ordinary-glass-and-stars-cannot-wash-out-bloom",
+      "pass": true
+    },
+    {
+      "name": "selection-restores-beauty-materials-and-visibility",
+      "pass": true
+    },
+    {
+      "name": "selection-restores-render-target-background-and-clear-state",
+      "pass": true
+    },
+    {
+      "name": "only-registered-track-shader-is-an-hdr-emitter",
+      "pass": true
+    },
+    {
+      "name": "white-car-remains-a-black-depth-occluder",
+      "pass": true
+    },
+    {
+      "name": "ordinary-glass-and-stars-cannot-wash-out-bloom",
+      "pass": true
+    },
+    {
+      "name": "failed-source-render-cannot-leak-black-materials",
+      "pass": true
+    },
+    {
+      "name": "4k-and-higher-hdr-budget-tier-0",
+      "pass": true,
+      "detail": {
+        "width": 1131,
+        "height": 636,
+        "scale": 0.4,
+        "pixels": 719316
+      }
+    },
+    {
+      "name": "4k-and-higher-hdr-budget-tier-1",
+      "pass": true,
+      "detail": {
+        "width": 1520,
+        "height": 855,
+        "scale": 0.5,
+        "pixels": 1299600
+      }
+    },
+    {
+      "name": "4k-and-higher-hdr-budget-tier-2",
+      "pass": true,
+      "detail": {
+        "width": 1932,
+        "height": 1087,
+        "scale": 0.5,
+        "pixels": 2100084
+      }
+    }
+  ]
+}

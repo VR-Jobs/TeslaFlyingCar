@@ -1,0 +1,32 @@
+{
+  "createdUTC": "2026-10-27T13:02:19.920907+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "offlineEntry": "D:\\0.Unity20242024\\Tesla-Car-Game\\RoadsterDash.html",
+  "offlineSHA256": "101605d38f29e811e0b5dec4695adec047e8d42257fa6f92a0f23d1cfd183aae",
+  "onlineSHA256": "c87e80d91f1c50b09877e68a5ce14b1870f06abde7d02d06bcc6369a080432ff",
+  "localSwapRenderMs": {
+    "before": 252.3999999994412,
+    "after": 13.099999999627471
+  },
+  "onlineSwapRenderMs": 19.5,
+  "firstAssetTransferBytes": 3288311,
+  "cachedAssetTransferBytes": 0,
+  "cachedAssetCount": 14,
+  "fontSubsetsRequested": 12,
+  "htmlCompressedBytes": 161530,
+  "immutableAssetsVerified": 120,
+  "checks": {
+    "loading": 9,
+    "onlineBuild": 4,
+    "core": 7,
+    "offline": "3 classic scripts, no runtime external assets",
+    "longRun": "8 sections, no fall or underside impact; bounded GPU and masks"
+  },
+  "fixedFullEmitterMaskBudget": 64,
+  "earlierFullWarmObservedPeak": 53,
+  "backup": "revisions/20261027-loading-performance",
+  "serverRollback": "/var/www/tesla-deploy/20261027-loading-c87e80d9/previous-index.html",
+  "nginxRollback": "/var/www/tesla-deploy/20261027-loading-c87e80d9/previous-nginx.conf",
+  "screenshot": "evidence/loading-performance-online.png",
+  "onlineErrors": 0
+}

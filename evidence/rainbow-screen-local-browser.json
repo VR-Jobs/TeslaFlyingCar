@@ -1,0 +1,53 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "actual-collection-enables-border-score-and-meter",
+        "pass": true
+      },
+      {
+        "name": "border-shares-original-gradient-center-mask-and-opacity",
+        "pass": true
+      },
+      {
+        "name": "screen-effects-do-not-intercept-controls",
+        "pass": true
+      },
+      {
+        "name": "last-two-seconds-have-ending-cue-and-pause-freezes-colors",
+        "pass": true
+      },
+      {
+        "name": "expiry-removes-border-score-flash-and-meter",
+        "pass": true
+      },
+      {
+        "name": "new-star-restarts-acquisition-flash",
+        "pass": true
+      },
+      {
+        "name": "leaving-mode-clears-screen-effects",
+        "pass": true
+      }
+    ],
+    "screen": {
+      "edge": true,
+      "ending": false,
+      "paused": false,
+      "score": true,
+      "flash": 0,
+      "meter": true,
+      "sharedStyle": "ordinary-scene-starman"
+    },
+    "rainbow": {
+      "active": true,
+      "remaining": 6.5,
+      "grace": 0,
+      "collected": 2,
+      "smashed": 0,
+      "knocked": 0,
+      "multiplier": 2
+    }
+  },
+  "errors": []
+}

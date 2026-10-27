@@ -1,0 +1,33 @@
+{
+  "homeButtons": 4,
+  "images": [
+    {
+      "complete": true,
+      "height": 540,
+      "inline": true,
+      "scene": "space",
+      "width": 960,
+      "sha256": "e63bd33d07764412c662e728913772c2973514b7d4ef1a42487b6f1cfe097599",
+      "matchesScreenshotAsset": true
+    },
+    {
+      "complete": true,
+      "height": 540,
+      "inline": true,
+      "scene": "coast",
+      "width": 960,
+      "sha256": "750182a0577f7dd30d57832600b010384590c0915f3b955409e51eb29eb1dae8",
+      "matchesScreenshotAsset": true
+    },
+    {
+      "complete": true,
+      "height": 540,
+      "inline": true,
+      "scene": "starRing",
+      "width": 960,
+      "sha256": "57f527b3d7ef209a7ffbf049b4ff161873aa12d9b18e7c285ffce8f925c142c3",
+      "matchesScreenshotAsset": true
+    }
+  ],
+  "errors": []
+}

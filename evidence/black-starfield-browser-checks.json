@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "preview": "http://127.0.0.1:4182/",
+  "checks": [
+    "Original industrial showroom visible with black sky and white stars",
+    "No sunset disc, orange sky, planet or nebula in actual screenshot",
+    "Chinese to English to Chinese language toggle",
+    "Garage opened and closed with original platform retained",
+    "Free drive entered; pause and return to menu"
+  ],
+  "console": [],
+  "fileProtocol": "Not exercised: browser automation policy blocks file navigation; same standalone HTML rendered over localhost and statically verified to have no external dependencies."
+}

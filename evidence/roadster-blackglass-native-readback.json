@@ -1,0 +1,305 @@
+{
+  "asset": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\revisions\\20261026-blackglass\\cache\\09d85aaa14c586bbd05a93988d76af42e4942ca0f13af072e9c26ada7dd52502\\roadster-exterior.blend",
+  "assetSha256": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef",
+  "checks": [
+    {
+      "name": "protected-side-shell-hood-and-four-tires-unchanged",
+      "pass": true,
+      "detail": [
+        "body.side.left",
+        "body.side.right",
+        "body.hood",
+        "wheel_FL.tire",
+        "wheel_RL.tire",
+        "wheel_FR.tire",
+        "wheel_RR.tire"
+      ]
+    },
+    {
+      "name": "wheel-centers-retain-the-same-driving-envelope",
+      "pass": true,
+      "detail": {
+        "body": [
+          0,
+          0,
+          0
+        ],
+        "wing": [
+          0,
+          0.945,
+          1.65
+        ],
+        "wheel_FL": [
+          -0.875,
+          0.355,
+          -1.43
+        ],
+        "wheel_RL": [
+          -0.875,
+          0.355,
+          1.62
+        ],
+        "wheel_FR": [
+          0.875,
+          0.355,
+          -1.43
+        ],
+        "wheel_RR": [
+          0.875,
+          0.355,
+          1.62
+        ]
+      }
+    },
+    {
+      "name": "saved-blender-glass-is-neutral-black",
+      "pass": true,
+      "detail": {
+        "before": [
+          0.03500000014901161,
+          0.023000000044703484,
+          0.012000000104308128
+        ],
+        "after": [
+          0.003000000026077032,
+          0.004000000189989805,
+          0.006000000052154064
+        ]
+      }
+    },
+    {
+      "name": "wheel_FL-barrel-is-hollow-not-a-face-occluder",
+      "pass": true,
+      "detail": {
+        "minimumTriangleRadius": 0.2578770736286118
+      }
+    },
+    {
+      "name": "wheel_RL-barrel-is-hollow-not-a-face-occluder",
+      "pass": true,
+      "detail": {
+        "minimumTriangleRadius": 0.25787702716891314
+      }
+    },
+    {
+      "name": "wheel_FR-barrel-is-hollow-not-a-face-occluder",
+      "pass": true,
+      "detail": {
+        "minimumTriangleRadius": 0.2578770736286118
+      }
+    },
+    {
+      "name": "wheel_RR-barrel-is-hollow-not-a-face-occluder",
+      "pass": true,
+      "detail": {
+        "minimumTriangleRadius": 0.25787702716891314
+      }
+    },
+    {
+      "name": "evaluated-exterior-has-no-new-zero-area-triangles",
+      "pass": true,
+      "detail": {
+        "triangles": 145384,
+        "degenerateParts": []
+      }
+    },
+    {
+      "name": "rear-glass-finishes-before-the-rear-haunch",
+      "pass": true,
+      "detail": {
+        "rearGlassZ": 1.2001569271087646,
+        "rearAxleZ": 1.62,
+        "basis": "Photo-guided working scale, not a measured OEM dimension"
+      }
+    },
+    {
+      "name": "native-wing-supports-remain-attached-during-deployment-and-car-flips",
+      "pass": true,
+      "detail": {
+        "maxGap": 2.425733297482089e-07,
+        "poses": [
+          {
+            "frame": 1,
+            "side": -1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 1,
+            "side": 1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 6,
+            "side": -1,
+            "upperStrutGap": 6.006850114687196e-08
+          },
+          {
+            "frame": 6,
+            "side": 1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 11,
+            "side": -1,
+            "upperStrutGap": 2.425733297482089e-07
+          },
+          {
+            "frame": 11,
+            "side": 1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 16,
+            "side": -1,
+            "upperStrutGap": 3.332000937312528e-08
+          },
+          {
+            "frame": 16,
+            "side": 1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 21,
+            "side": -1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 21,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 26,
+            "side": -1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 26,
+            "side": 1,
+            "upperStrutGap": 1.6858739404357614e-07
+          },
+          {
+            "frame": 31,
+            "side": -1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 31,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 36,
+            "side": -1,
+            "upperStrutGap": 5.960464477539063e-08
+          },
+          {
+            "frame": 36,
+            "side": 1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 41,
+            "side": -1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 41,
+            "side": 1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 46,
+            "side": -1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 46,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 51,
+            "side": -1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 51,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 56,
+            "side": -1,
+            "upperStrutGap": 2.0489096641540527e-08
+          },
+          {
+            "frame": 56,
+            "side": 1,
+            "upperStrutGap": 1.2128666487410446e-07
+          },
+          {
+            "frame": 61,
+            "side": -1,
+            "upperStrutGap": 1.4901161193847656e-08
+          },
+          {
+            "frame": 61,
+            "side": 1,
+            "upperStrutGap": 1.4901161193847656e-08
+          },
+          {
+            "frame": 66,
+            "side": -1,
+            "upperStrutGap": 2.9802322387695312e-08
+          },
+          {
+            "frame": 66,
+            "side": 1,
+            "upperStrutGap": 0.0
+          },
+          {
+            "frame": 71,
+            "side": -1,
+            "upperStrutGap": 5.960464477539063e-08
+          },
+          {
+            "frame": 71,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 76,
+            "side": -1,
+            "upperStrutGap": 2.4027400458748785e-07
+          },
+          {
+            "frame": 76,
+            "side": 1,
+            "upperStrutGap": 1.1920928955078125e-07
+          },
+          {
+            "frame": 81,
+            "side": -1,
+            "upperStrutGap": 1.4901161193847656e-08
+          },
+          {
+            "frame": 81,
+            "side": 1,
+            "upperStrutGap": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "new-leading-hinge-remains-fixed-throughout-opening",
+      "pass": true,
+      "detail": {
+        "maxGap": 2.384185791015625e-07,
+        "lift": 0.0,
+        "pitch": -0.62
+      }
+    }
+  ],
+  "scope": "Actual saved native exterior and motion. Photo-guided game proportions; no OEM dimensional or complete self-intersection certification. Cabin reconstruction remains deferred."
+}

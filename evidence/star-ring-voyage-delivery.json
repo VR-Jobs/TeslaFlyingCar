@@ -1,0 +1,51 @@
+{
+  "createdUTC": "2026-10-27T12:09:36.980850+00:00",
+  "entry": "D:\\0.Unity20242024\\Tesla-Car-Game\\RoadsterDash.html",
+  "url": "https://maniengine.com/examples/tesla/",
+  "sha256": "20fed42b6a9ac0cde79ef713e2f8248ec08968431ba1778c75155aee2e608e54",
+  "bytes": 11488959,
+  "features": {
+    "escortStars": 3,
+    "shockwaveRangesMeters": [
+      12,
+      20,
+      28
+    ],
+    "convoyMergingLeadSeconds": 1.8,
+    "nearMissAirPercent": [
+      8,
+      12
+    ],
+    "events": [
+      "supply",
+      "meteor",
+      "gravity",
+      "convoy"
+    ]
+  },
+  "checks": {
+    "newGameplay": 28,
+    "localWebGL": 6,
+    "onlineWebGL": 4,
+    "endlessWebGL": 4,
+    "randomRoutes": 9,
+    "traffic": 17,
+    "adventures": 14,
+    "coreFingerprints": 7,
+    "offline": "3 classic inline scripts; no external runtime dependencies"
+  },
+  "longRun": {
+    "sections": 8,
+    "maximumGeometry": 569,
+    "maximumBloomMasks": 40,
+    "falls": 0,
+    "bottomImpacts": 0,
+    "gameplayBuildSHA": "0699d2fdfbfc5a85cea76afb688823cac1903e0ffe5a06d6cc445ecb75caa26f",
+    "finalVisualOnlyChange": "Meteor flight positions moved into forward vista; same seven meshes and materials"
+  },
+  "localBackup": "revisions/20261027-escort-convoy",
+  "onlineRollback": "/var/www/tesla-deploy/20261027-escort-voyage-20fed42b/previous-index.html",
+  "screenshot": "evidence/star-ring-escort-supply-online.png",
+  "docs": "docs/star-ring-voyage.md",
+  "onlineErrors": 0
+}

@@ -1,0 +1,256 @@
+{
+  "checks": {
+    "results": [
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 25.33384444444448,
+            "airTime": 0.8166666666666675,
+            "barrels": 0,
+            "bestAction": "none",
+            "bestActionPoints": 0,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "none",
+            "distance": 150,
+            "duration": 6.5333333333333155,
+            "flips": 0,
+            "hoverTime": 0,
+            "jumps": 1,
+            "landings": 1,
+            "laneChanges": 2,
+            "lastLandComplete": false,
+            "maxCombo": 0,
+            "maxHeight": 2.402288708138568,
+            "perfectLandings": 0,
+            "tricks": 0
+          },
+          "mode": "academy",
+          "reward": 0
+        },
+        "name": "academy-lesson-1",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 226,
+            "airTime": 2.4833333333333294,
+            "barrels": 0,
+            "bestAction": "none",
+            "bestActionPoints": 0,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "none",
+            "distance": 200,
+            "duration": 8.700000000000012,
+            "flips": 0,
+            "hoverTime": 1.7166666666666657,
+            "jumps": 1,
+            "landings": 1,
+            "laneChanges": 0,
+            "lastLandComplete": false,
+            "maxCombo": 0,
+            "maxHeight": 6.3495539547117525,
+            "perfectLandings": 0,
+            "tricks": 0
+          },
+          "mode": "academy",
+          "reward": 0
+        },
+        "name": "academy-lesson-2",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 60,
+            "airTime": 0.8166666666666675,
+            "barrels": 1,
+            "bestAction": "perfect",
+            "bestActionPoints": 20,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "timeout",
+            "distance": 220,
+            "duration": 9.56666666666672,
+            "flips": 0,
+            "hoverTime": 0,
+            "jumps": 1,
+            "landings": 1,
+            "laneChanges": 0,
+            "lastLandComplete": true,
+            "maxCombo": 2,
+            "maxHeight": 2.402288708138568,
+            "perfectLandings": 1,
+            "tricks": 1
+          },
+          "mode": "academy",
+          "reward": 0
+        },
+        "name": "academy-lesson-3",
+        "status": "PASS"
+      },
+      {
+        "detail": [
+          {
+            "cars": [
+              {
+                "D": 180,
+                "type": "sedan",
+                "x": -3.4
+              },
+              {
+                "D": 180,
+                "type": "sedan",
+                "x": 0
+              },
+              {
+                "D": 258,
+                "type": "sedan",
+                "x": -3.4
+              },
+              {
+                "D": 336,
+                "type": "sedan",
+                "x": -3.4
+              }
+            ],
+            "seed": 2630458711
+          },
+          {
+            "cars": [
+              {
+                "D": 180,
+                "type": "sedan",
+                "x": -3.4
+              },
+              {
+                "D": 180,
+                "type": "sedan",
+                "x": 0
+              },
+              {
+                "D": 258,
+                "type": "sedan",
+                "x": -3.4
+              },
+              {
+                "D": 336,
+                "type": "sedan",
+                "x": -3.4
+              }
+            ],
+            "seed": 2630458711
+          }
+        ],
+        "name": "daily-layout-independent-of-boost",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 0,
+            "airTime": 0,
+            "barrels": 0,
+            "bestAction": "none",
+            "bestActionPoints": 0,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "none",
+            "distance": 800,
+            "duration": 28.98333333333297,
+            "flips": 0,
+            "hoverTime": 0,
+            "jumps": 0,
+            "landings": 0,
+            "laneChanges": 0,
+            "maxCombo": 0,
+            "maxHeight": 0,
+            "perfectLandings": 0,
+            "tricks": 0
+          },
+          "mode": "precision"
+        },
+        "name": "precision-completion-contract",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 360,
+            "airTime": 4.7499999999999885,
+            "barrels": 6,
+            "bestAction": "barrel",
+            "bestActionPoints": 20.000000000000018,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "timeout",
+            "distance": 280,
+            "duration": 10.85000000000012,
+            "flips": 0,
+            "hoverTime": 0,
+            "jumps": 6,
+            "landings": 5,
+            "laneChanges": 0,
+            "lastLandComplete": true,
+            "maxCombo": 2,
+            "maxHeight": 2.402288708138568,
+            "perfectLandings": 5,
+            "tricks": 6
+          },
+          "mode": "stunt"
+        },
+        "name": "stunt-completion-contract",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "metrics": {
+            "airSpent": 0,
+            "airTime": 0,
+            "barrels": 0,
+            "bestAction": "none",
+            "bestActionPoints": 0,
+            "cleared": 0,
+            "collisions": 0,
+            "comboBreak": "none",
+            "distance": 1660,
+            "duration": 45.016666666665394,
+            "flips": 0,
+            "hoverTime": 0,
+            "jumps": 0,
+            "landings": 0,
+            "laneChanges": 0,
+            "maxCombo": 0,
+            "maxHeight": 0,
+            "perfectLandings": 0,
+            "tricks": 0
+          },
+          "mode": "escape"
+        },
+        "name": "escape-completion-contract",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "height": 0.18942488165887608,
+          "options": {
+            "features": {
+              "coaching": false,
+              "fairTraffic": false,
+              "feedback": false
+            },
+            "lesson": 2,
+            "mode": "classic",
+            "ruleset": "original-v1"
+          }
+        },
+        "name": "original-mode-opt-out",
+        "status": "PASS"
+      }
+    ],
+    "scope": "Actual recovered simulation with enhancement hooks, fixed 60 Hz, intro skipped. The three challenge completion-contract tests temporarily suppress collisions to isolate end conditions; lesson and daily-layout tests keep collision checks. Records are local to this test origin."
+  },
+  "errors": []
+}

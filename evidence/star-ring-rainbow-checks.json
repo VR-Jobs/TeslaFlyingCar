@@ -1,0 +1,141 @@
+{
+  "checks": [
+    {
+      "name": "256-seeded-sections-have-an-early-and-a-later-star-on-solid-track",
+      "pass": true
+    },
+    {
+      "name": "touching-a-star-automatically-starts-eight-second-power",
+      "pass": true,
+      "detail": {
+        "active": true,
+        "remaining": 8,
+        "grace": 0,
+        "collected": 1,
+        "smashed": 0,
+        "knocked": 0,
+        "multiplier": 2
+      }
+    },
+    {
+      "name": "star-provides-double-score-and-full-air",
+      "pass": true
+    },
+    {
+      "name": "the-same-star-cannot-refresh-itself",
+      "pass": true
+    },
+    {
+      "name": "expiry-ends-x2-and-starts-a-short-collision-buffer",
+      "pass": true
+    },
+    {
+      "name": "expiry-buffer-ends",
+      "pass": true
+    },
+    {
+      "name": "core-tutorial-does-not-trigger-power",
+      "pass": true
+    },
+    {
+      "name": "pickup-and-distance-awards-both-double",
+      "pass": true,
+      "detail": {
+        "normal": 39.12368864401928,
+        "powered": 78.24737728803856
+      }
+    },
+    {
+      "name": "a-powered-car-strike-knocks-the-obstacle-aside-without-death",
+      "pass": true,
+      "detail": {
+        "active": true,
+        "remaining": 6.750000000000004,
+        "grace": 0,
+        "collected": 1,
+        "smashed": 1,
+        "knocked": 1,
+        "multiplier": 2
+      }
+    },
+    {
+      "name": "a-knocked-car-cannot-pay-again",
+      "pass": true
+    },
+    {
+      "name": "ending-inside-traffic-does-not-cause-an-instant-crash",
+      "pass": true
+    },
+    {
+      "name": "small-device-contact-is-protected",
+      "pass": true
+    },
+    {
+      "name": "powered-car-stays-attached-to-curved-track-without-a-new-key",
+      "pass": true
+    },
+    {
+      "name": "authored-gap-approaches-keep-the-original-speed",
+      "pass": true
+    },
+    {
+      "name": "shortcut-speed-is-preserved",
+      "pass": true
+    },
+    {
+      "name": "R-removes-power-but-preserves-consumed-star",
+      "pass": true
+    },
+    {
+      "name": "power-carries-over-an-endless-seam-without-stale-knock-positions",
+      "pass": true
+    },
+    {
+      "name": "exhaust-wake-is-a-fixed-four-port-two-draw-pool",
+      "pass": true,
+      "detail": {
+        "style": "four-nozzle-volumetric-cold-gas",
+        "activeVertices": 1728,
+        "history": 10,
+        "capacity": 32,
+        "ports": 4,
+        "bands": 0,
+        "meshes": 2,
+        "particles": 192,
+        "particleCapacity": 192,
+        "maximumAge": 0.31666666666667,
+        "lifetime": 0.32,
+        "throttle": 0.7499999999999998,
+        "pressureResponsive": true,
+        "softErodedEdges": true,
+        "sharedNativeNoise": true,
+        "historicalFloorClip": true,
+        "blackGlassPreserved": true
+      }
+    },
+    {
+      "name": "rainbow-look-leaves-glass-black",
+      "pass": true
+    },
+    {
+      "name": "reset-restores-original-material-and-clears-the-tail",
+      "pass": true
+    },
+    {
+      "name": "inactive-rainbow-does-not-overwrite-selected-paint",
+      "pass": true
+    },
+    {
+      "name": "expiry-restores-the-paint-present-when-power-started",
+      "pass": true
+    },
+    {
+      "name": "knock-animation-moves-the-whole-existing-vehicle",
+      "pass": true
+    },
+    {
+      "name": "physical-star-model-is-present-in-route-window",
+      "pass": true
+    }
+  ]
+}

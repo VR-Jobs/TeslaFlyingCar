@@ -1,0 +1,8 @@
+{
+  "routeBatches": 96,
+  "deferred": 60,
+  "landingPrediction": true,
+  "flipConditions": true,
+  "continuousJourney": true,
+  "scope": "Conservative sampled 4.2-second ground-route forecast; current speed, lateral sweep, reaction/animation allowance and air-dependent lane duration. Not a guarantee against arbitrary later player inputs or speed changes."
+}

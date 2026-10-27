@@ -1,0 +1,39 @@
+{
+  "completedUTC": "2026-10-27T16:34:16.571100+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "onlineSHA256": "99fc26bd1ebe473e3d8f07cee726fce018d73e72ab515fa3c8b07a3455a67d73",
+  "offlineSHA256": "29d89f8dd66e22c1c968b09e88a2ac9b3acb844c2b79a30b6c71e6556a302948",
+  "passedChecks": {
+    "exhaust-wake-checks.json": 11,
+    "star-ring-rainbow-checks.json": 24,
+    "star-ring-flight-effect-checks.json": 8
+  },
+  "localWebGL": 5,
+  "onlineWebGL": 5,
+  "prewarmedSwap": true,
+  "swapMs": 4,
+  "backup": "D:\\0.Unity20242024\\Tesla-Car-Game\\revisions\\20261027-volumetric-exhaust",
+  "rollback": "/var/www/tesla-deploy/20261027-exhaust-29d89f8d/previous-index.html",
+  "evidence": {
+    "exhaust-local-browser.json": {
+      "sha256": "4d21b0c1bf95a5376fb32ba31cffd2715be9221808f5de886cd1ea24d6523e9e",
+      "bytes": 2330
+    },
+    "exhaust-warm-browser.json": {
+      "sha256": "afb5cc03c7845b4fcf9e9c3b31022df0627a04d2aa1105792ac252b505b10a27",
+      "bytes": 3001
+    },
+    "exhaust-online-browser.json": {
+      "sha256": "c6761a54d6a5e91a0ecbf59981da6f60cfe8e7304ea85ed6f7e2f53346f24c5f",
+      "bytes": 2329
+    },
+    "exhaust-local.png": {
+      "sha256": "4c12bc980340c10c291079d28a316a1048fbd9e682225d6f1e21e23ab7ecc80e",
+      "bytes": 102159
+    },
+    "exhaust-online.png": {
+      "sha256": "17ac0e2d533867b0b18e17c0fa32a24529cd2a9699197dd211c21c5c7e1693fb",
+      "bytes": 114377
+    }
+  }
+}

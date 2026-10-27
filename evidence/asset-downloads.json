@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/assets/auth-client-BoJN4b5B.js",
+    "status": 200,
+    "bytes": 219868
+  },
+  {
+    "path": "/assets/game-Ck26lq_b.css",
+    "status": 200,
+    "bytes": 86648
+  },
+  {
+    "path": "/assets/game-Da4QmlDf.js",
+    "status": 200,
+    "bytes": 1360404
+  },
+  {
+    "path": "/assets/module.no-external-BhkPp4Sv.js",
+    "status": 200,
+    "bytes": 351829
+  },
+  {
+    "path": "/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "status": 200,
+    "bytes": 670
+  },
+  {
+    "path": "/icons/roadster-model-192.png",
+    "status": 200,
+    "bytes": 64317
+  },
+  {
+    "path": "/icons/roadster-model-512.png",
+    "status": 200,
+    "bytes": 370699
+  },
+  {
+    "path": "/icons/roadster-model-apple-touch.png",
+    "status": 200,
+    "bytes": 57613
+  },
+  {
+    "path": "/icons/roadster-model-maskable-512.png",
+    "status": 200,
+    "bytes": 351552
+  },
+  {
+    "path": "/items/ludicrous.png",
+    "status": 200,
+    "bytes": 36055
+  },
+  {
+    "path": "/items/shockwave.png",
+    "status": 200,
+    "bytes": 34155
+  },
+  {
+    "path": "/manifest.webmanifest",
+    "status": 200,
+    "bytes": 819
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25",
+  "checks": [
+    {
+      "name": "Chinese default",
+      "status": "PASS",
+      "detail": "Root URL without language query showed zh and Chinese menu"
+    },
+    {
+      "name": "English switch",
+      "status": "PASS",
+      "detail": "Game button changed html lang to en, Play label to PLAY SPACE, toggle to Chinese"
+    },
+    {
+      "name": "Refresh persistence",
+      "status": "PASS",
+      "detail": "English stayed selected after browser reload"
+    },
+    {
+      "name": "Studio synchronization",
+      "status": "PASS",
+      "detail": "Studio button switched both studio and iframe to en; game button switched both back to zh"
+    }
+  ]
+}

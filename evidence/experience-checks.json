@@ -1,0 +1,130 @@
+{
+  "checks": [
+    {
+      "name": "32-seeded-routes-have-clear-recovery-air-and-rhythm-notes",
+      "pass": true
+    },
+    {
+      "name": "recovery-replenishes-low-air-while-progressing",
+      "pass": true
+    },
+    {
+      "name": "standing-still-cannot-farm-recovery-air",
+      "pass": true
+    },
+    {
+      "name": "critical-HUD-prioritizes-suction-over-secondary-notices",
+      "pass": true
+    },
+    {
+      "name": "critical-HUD-retains-gap-cue",
+      "pass": true
+    },
+    {
+      "name": "forks-describe-a-safe-main-route-and-a-reward-route",
+      "pass": true
+    },
+    {
+      "name": "holding-suction-on-beat-arms-a-musical-phrase",
+      "pass": true
+    },
+    {
+      "name": "on-beat-launch-progresses-phrase-and-awards-once",
+      "pass": true
+    },
+    {
+      "name": "duplicate-step-events-do-not-double-score",
+      "pass": true
+    },
+    {
+      "name": "on-beat-landing-completes-three-stage-phrase",
+      "pass": true
+    },
+    {
+      "name": "musical-layer-advances-through-different-notes",
+      "pass": true
+    },
+    {
+      "name": "off-beat-input-never-causes-death-or-score-deduction",
+      "pass": true
+    },
+    {
+      "name": "timing-calibration-adjusts-scoring-window",
+      "pass": true
+    },
+    {
+      "name": "sustained-slow-frames-lower-quality",
+      "pass": true,
+      "detail": {
+        "level": 1,
+        "scale": 0.84,
+        "particles": 0.65,
+        "frames": 300,
+        "emaMs": 33.99895586294802,
+        "p95Ms": 34,
+        "peakMs": 34,
+        "changes": 1
+      }
+    },
+    {
+      "name": "short-fast-burst-does-not-oscillate-quality",
+      "pass": true
+    },
+    {
+      "name": "sustained-headroom-restores-quality",
+      "pass": true
+    },
+    {
+      "name": "manual-quality-ceiling-and-disabled-auto-are-respected",
+      "pass": true
+    },
+    {
+      "name": "personal-best-ghost-saves-locally",
+      "pass": true
+    },
+    {
+      "name": "ghost-interpolates-a-matching-seed",
+      "pass": true
+    },
+    {
+      "name": "ghost-never-appears-on-a-different-random-route",
+      "pass": true
+    },
+    {
+      "name": "shorter-runs-do-not-overwrite-personal-best",
+      "pass": true
+    },
+    {
+      "name": "long-endless-recordings-decimate-within-fixed-capacity",
+      "pass": true,
+      "detail": {
+        "available": true,
+        "seed": 11,
+        "distance": 174,
+        "matching": false,
+        "recorded": 3250,
+        "capacity": 4800
+      }
+    },
+    {
+      "name": "corrupt-local-ghost-is-ignored-without-breaking-start",
+      "pass": true
+    },
+    {
+      "name": "ghost-reuses-geometry-and-has-no-collider",
+      "pass": true
+    },
+    {
+      "name": "overlapping-ghost-fades-away-from-player",
+      "pass": true
+    },
+    {
+      "name": "ghost-can-be-disabled-independently",
+      "pass": true
+    },
+    {
+      "name": "rhythm-markers-preserve-longitudinal-only-track",
+      "pass": true
+    }
+  ]
+}

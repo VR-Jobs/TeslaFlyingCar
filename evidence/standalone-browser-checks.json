@@ -1,0 +1,292 @@
+{
+  "testedURL": "http://127.0.0.1:4182/",
+  "scope": "Single self-contained HTML served in isolation; file:// navigation prohibited by automation browser URL policy, so direct file-origin behavior was not observed.",
+  "checks": [
+    "Chinese first launch",
+    "English switch",
+    "Language preference persisted on reload",
+    "Seven modes present",
+    "Academy run rendered and advanced beyond 294 metres",
+    "Keyboard pause and return to menu",
+    "Local info and save import/export controls rendered"
+  ],
+  "state": {
+    "coins": 0,
+    "config": {
+      "AIR": {
+        "airLaneShift": 15,
+        "boostPerSec": 40,
+        "can": 150,
+        "capacity": 600,
+        "cell": 15,
+        "flipMin": 20,
+        "hoverPerSec": 120,
+        "jump": 20,
+        "kickflipReward": 10,
+        "laneShift": 3,
+        "lowRatio": 0.2,
+        "rollReward": 40,
+        "slam": 20,
+        "trick": 40
+      },
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "score": 10,
+        "scoreAfter": 3,
+        "scoreEvery": 1
+      },
+      "PHYSICS": {
+        "flipApex": 5,
+        "flipGravity": 0.55,
+        "flipMinLift": 2.5,
+        "flipTime": 0.7,
+        "gravity": 28,
+        "holdDelay": 0.12,
+        "hoverExtraAccel": 7,
+        "jumpHeight": 2.5,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "maxHeight": 6.2,
+        "slamSpeed": -22,
+        "trickTime": 0.55
+      },
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "ROAD": {
+        "extraWidth": 6.8,
+        "widenEnd": 5200,
+        "widenStart": 5000,
+        "width": 12
+      },
+      "ROCKET": {
+        "chargeRequired": 1.5,
+        "duration": 8,
+        "gain": {
+          "can": 0.15,
+          "cell": 0.015,
+          "cleared": 0.04,
+          "nearMiss": 0.05,
+          "perfect": 0.02,
+          "trick": 0.03
+        },
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6
+      },
+      "SCORE": {
+        "cell": 5,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "multiPerCar": 30,
+        "nearMiss": 10,
+        "perfect": 10,
+        "rammed": 50,
+        "stuntExtra": 10,
+        "trick": 20
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "STARMAN": {
+        "duration": 8,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "scoreMult": 2,
+        "smash": 80,
+        "speedMult": 1.6
+      },
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ]
+    },
+    "distance": 295,
+    "drawCalls": 1,
+    "driving": {
+      "completion": {
+        "finished": false,
+        "progress": 0.8499999999999999,
+        "success": false,
+        "target": 150
+      },
+      "lastReview": null,
+      "metrics": {
+        "airSpent": 22.666931462720413,
+        "airTime": 0.8166666666666675,
+        "barrels": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "cleared": 0,
+        "collisions": 0,
+        "comboBreak": "none",
+        "distance": 294.5879229422092,
+        "duration": 13.066666666666896,
+        "flips": 0,
+        "hoverTime": 0,
+        "jumps": 1,
+        "landings": 1,
+        "laneChanges": 1,
+        "lastLandComplete": false,
+        "maxCombo": 0,
+        "maxHeight": 2.402288708138568,
+        "perfectLandings": 0,
+        "tricks": 0
+      },
+      "options": {
+        "features": {
+          "coaching": true,
+          "fairTraffic": true,
+          "feedback": true
+        },
+        "lesson": 0,
+        "mode": "academy",
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "profile": {
+        "lesson": 0,
+        "preferences": {
+          "features": {
+            "coaching": true,
+            "fairTraffic": true,
+            "feedback": true
+          },
+          "freeFeatures": {
+            "coaching": true,
+            "fairTraffic": true,
+            "feedback": true
+          },
+          "lesson": 0,
+          "mode": "academy",
+          "ruleset": "driving-v1-f1-t1"
+        },
+        "trainingClaims": []
+      },
+      "runId": "8013e761-a47c-4b67-9b17-d448f6d1dee0",
+      "traffic": {
+        "fixedRows": 2,
+        "guardedSpawns": 0
+      }
+    },
+    "drivingChecks": null,
+    "errors": [],
+    "gameplayChecks": null,
+    "player": {
+      "air": 600,
+      "grounded": true,
+      "hovering": false,
+      "lane": 0,
+      "trick": null,
+      "x": -3.4,
+      "y": 0
+    },
+    "runId": "8013e761-a47c-4b67-9b17-d448f6d1dee0",
+    "savedRuns": 0,
+    "score": 295,
+    "screen": "menu",
+    "speed": 22.99999999999997,
+    "state": "playing",
+    "triangles": 1
+  },
+  "console": []
+}

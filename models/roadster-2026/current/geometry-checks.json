@@ -1,0 +1,1345 @@
+{
+  "parts": [
+    {
+      "part": "body.side.left",
+      "vertices": 4194,
+      "triangles": 8384,
+      "degenerate": 0
+    },
+    {
+      "part": "body.arch_lip.left.front",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.wheel_tub.left.front",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.arch_lip.left.rear",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.wheel_tub.left.rear",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.rocker_trim.left",
+      "vertices": 40,
+      "triangles": 64,
+      "degenerate": 0
+    },
+    {
+      "part": "body.side.right",
+      "vertices": 4194,
+      "triangles": 8384,
+      "degenerate": 0
+    },
+    {
+      "part": "body.arch_lip.right.front",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.wheel_tub.right.front",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.arch_lip.right.rear",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.wheel_tub.right.rear",
+      "vertices": 130,
+      "triangles": 128,
+      "degenerate": 0
+    },
+    {
+      "part": "body.rocker_trim.right",
+      "vertices": 40,
+      "triangles": 64,
+      "degenerate": 0
+    },
+    {
+      "part": "body.hood",
+      "vertices": 3050,
+      "triangles": 6096,
+      "degenerate": 0
+    },
+    {
+      "part": "body.front_shoulder.-1",
+      "vertices": 1342,
+      "triangles": 2680,
+      "degenerate": 0
+    },
+    {
+      "part": "body.hood_shutline.-1",
+      "vertices": 48,
+      "triangles": 80,
+      "degenerate": 0
+    },
+    {
+      "part": "body.front_shoulder.1",
+      "vertices": 1342,
+      "triangles": 2680,
+      "degenerate": 0
+    },
+    {
+      "part": "body.hood_shutline.1",
+      "vertices": 48,
+      "triangles": 80,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.panoramic_canopy",
+      "vertices": 6262,
+      "triangles": 12520,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.side.-1",
+      "vertices": 2626,
+      "triangles": 5244,
+      "degenerate": 0
+    },
+    {
+      "part": "body.shoulder_rail.-1",
+      "vertices": 1010,
+      "triangles": 2016,
+      "degenerate": 0
+    },
+    {
+      "part": "body.c_pillar.-1",
+      "vertices": 266,
+      "triangles": 528,
+      "degenerate": 0
+    },
+    {
+      "part": "body.roof_rail.-1",
+      "vertices": 808,
+      "triangles": 1600,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.belt_seal.-1",
+      "vertices": 808,
+      "triangles": 1600,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.quarter_division.-1",
+      "vertices": 16,
+      "triangles": 16,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.rear_division.-1",
+      "vertices": 16,
+      "triangles": 16,
+      "degenerate": 0
+    },
+    {
+      "part": "body.door_shutline.-1",
+      "vertices": 56,
+      "triangles": 96,
+      "degenerate": 0
+    },
+    {
+      "part": "body.flush_handle.-1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.side_marker.-1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.side_marker_glow.-1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.side.1",
+      "vertices": 2626,
+      "triangles": 5244,
+      "degenerate": 0
+    },
+    {
+      "part": "body.shoulder_rail.1",
+      "vertices": 1010,
+      "triangles": 2016,
+      "degenerate": 0
+    },
+    {
+      "part": "body.c_pillar.1",
+      "vertices": 266,
+      "triangles": 528,
+      "degenerate": 0
+    },
+    {
+      "part": "body.roof_rail.1",
+      "vertices": 808,
+      "triangles": 1600,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.belt_seal.1",
+      "vertices": 808,
+      "triangles": 1600,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.quarter_division.1",
+      "vertices": 16,
+      "triangles": 16,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.rear_division.1",
+      "vertices": 16,
+      "triangles": 16,
+      "degenerate": 0
+    },
+    {
+      "part": "body.door_shutline.1",
+      "vertices": 56,
+      "triangles": 96,
+      "degenerate": 0
+    },
+    {
+      "part": "body.flush_handle.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.side_marker.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.side_marker_glow.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "body.rear_deck",
+      "vertices": 2604,
+      "triangles": 5204,
+      "degenerate": 0
+    },
+    {
+      "part": "body.rear_glass_return",
+      "vertices": 124,
+      "triangles": 244,
+      "degenerate": 0
+    },
+    {
+      "part": "glass.rear_seal",
+      "vertices": 248,
+      "triangles": 480,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.lightbar",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.dark_fascia",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.intake_recess",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.corner_bumper.-1",
+      "vertices": 12,
+      "triangles": 20,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.front_housing.-1",
+      "vertices": 6,
+      "triangles": 8,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.front_lens.-1",
+      "vertices": 6,
+      "triangles": 8,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.corner_bumper.1",
+      "vertices": 12,
+      "triangles": 20,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.front_housing.1",
+      "vertices": 6,
+      "triangles": 8,
+      "degenerate": 0
+    },
+    {
+      "part": "lamp.front_lens.1",
+      "vertices": 6,
+      "triangles": 8,
+      "degenerate": 0
+    },
+    {
+      "part": "nose.splitter",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.upper_fascia",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.light_recess",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.full_width_taillight",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.carbon_diffuser",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.diffuser_vane.-0.63",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.diffuser_vane.-0.32",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.diffuser_vane.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.diffuser_vane.0.32",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.diffuser_vane.0.63",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.thruster_crossmember",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.recessed_carbon_valance",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.vent_slat.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.vent_slat.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.vent_slat.2",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.vent_slat.3",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.vent_slat.4",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_recess.0",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_lip.0",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_recess.1",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_lip.1",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_recess.2",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_lip.2",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_recess.3",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.coldgas_lip.3",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.plate_mount",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.sculpted_bumper_return.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.sculpted_bumper_return.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "rear.plate_lettering",
+      "vertices": 744,
+      "triangles": 1478,
+      "degenerate": 0
+    },
+    {
+      "part": "underbody.exterior_guard",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "exterior.lift_nozzle.-1.-1.82",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "exterior.lift_nozzle.-1.2.14",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "exterior.lift_nozzle.1.-1.82",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "exterior.lift_nozzle.1.2.14",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.tire",
+      "vertices": 1164,
+      "triangles": 2112,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.tread_groove.-0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.tread_groove.-0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.tread_groove.0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.tread_groove.0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.inner_barrel",
+      "vertices": 485,
+      "triangles": 768,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.rotor",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.machined_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.inner_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.0.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.0.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.aero_sector.0",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.1.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.1.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.aero_sector.1",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.2.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.2.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.aero_sector.2",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.3.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.3.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.aero_sector.3",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.4.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.spoke.4.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.aero_sector.4",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.centre_cap",
+      "vertices": 320,
+      "triangles": 636,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.lug.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.lug.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.lug.2",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.lug.3",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.lug.4",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FL.visible_caliper",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.tire",
+      "vertices": 1164,
+      "triangles": 2112,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.tread_groove.-0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.tread_groove.-0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.tread_groove.0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.tread_groove.0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.inner_barrel",
+      "vertices": 485,
+      "triangles": 768,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.rotor",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.machined_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.inner_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.0.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.0.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.aero_sector.0",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.1.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.1.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.aero_sector.1",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.2.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.2.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.aero_sector.2",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.3.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.3.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.aero_sector.3",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.4.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.spoke.4.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.aero_sector.4",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.centre_cap",
+      "vertices": 320,
+      "triangles": 636,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.lug.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.lug.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.lug.2",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.lug.3",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.lug.4",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RL.visible_caliper",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.tire",
+      "vertices": 1164,
+      "triangles": 2112,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.tread_groove.-0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.tread_groove.-0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.tread_groove.0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.tread_groove.0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.inner_barrel",
+      "vertices": 485,
+      "triangles": 768,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.rotor",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.machined_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.inner_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.0.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.0.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.aero_sector.0",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.1.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.1.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.aero_sector.1",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.2.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.2.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.aero_sector.2",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.3.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.3.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.aero_sector.3",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.4.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.spoke.4.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.aero_sector.4",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.centre_cap",
+      "vertices": 320,
+      "triangles": 636,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.lug.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.lug.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.lug.2",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.lug.3",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.lug.4",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_FR.visible_caliper",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.tire",
+      "vertices": 1164,
+      "triangles": 2112,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.tread_groove.-0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.tread_groove.-0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.tread_groove.0.023",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.tread_groove.0.072",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.inner_barrel",
+      "vertices": 485,
+      "triangles": 768,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.rotor",
+      "vertices": 512,
+      "triangles": 1020,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.machined_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.inner_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.0.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.0.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.aero_sector.0",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.1.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.1.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.aero_sector.1",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.2.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.2.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.aero_sector.2",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.3.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.3.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.aero_sector.3",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.4.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.spoke.4.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.aero_sector.4",
+      "vertices": 60,
+      "triangles": 116,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.centre_cap",
+      "vertices": 320,
+      "triangles": 636,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.lug.0",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.lug.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.lug.2",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.lug.3",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.lug.4",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wheel_RR.visible_caliper",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.airfoil",
+      "vertices": 392,
+      "triangles": 682,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.endplate.-1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.underside_hinge.-1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.deck_mount.-1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.upper_pivot.-1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.lower_pivot.-1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.leading_hinge.-1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.endplate.1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.underside_hinge.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.deck_mount.1",
+      "vertices": 96,
+      "triangles": 188,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.upper_pivot.1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.lower_pivot.1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    },
+    {
+      "part": "wing.leading_hinge.1",
+      "vertices": 256,
+      "triangles": 508,
+      "degenerate": 0
+    }
+  ],
+  "triangles": 145384,
+  "scope": "Evaluated exterior geometry. Hidden engineering dimensions and complete self-intersection analysis not verified.",
+  "elapsedSeconds": 2.2168500999996468
+}

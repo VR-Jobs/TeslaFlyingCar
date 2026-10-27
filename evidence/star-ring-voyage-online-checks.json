@@ -1,0 +1,23 @@
+{
+  "url": "https://maniengine.com/examples/tesla/",
+  "sha256": "20fed42b6a9ac0cde79ef713e2f8248ec08968431ba1778c75155aee2e608e54",
+  "checks": [
+    {
+      "name": "online-three-escort-stars-and-supply-ship",
+      "pass": true
+    },
+    {
+      "name": "online-moving-cars-and-turn-signals",
+      "pass": true
+    },
+    {
+      "name": "online-meteor-event-renders-seven-meteors",
+      "pass": true
+    },
+    {
+      "name": "online-ejection-pulse-clears-small-obstacles",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

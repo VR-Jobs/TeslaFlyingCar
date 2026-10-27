@@ -1,0 +1,81 @@
+{
+  "source": "https://roadsterdash.com/",
+  "captured": "2026-10-24",
+  "files": [
+    {
+      "path": "original/assets/auth-client-BoJN4b5B.js",
+      "bytes": 219868,
+      "sha256": "61448c2313c32f6a60384d4534e3727d26d4e513421dab75a6ffb43eeddbf512"
+    },
+    {
+      "path": "original/assets/game-Ck26lq_b.css",
+      "bytes": 86648,
+      "sha256": "fba78f879c64781e39c107953f74f81b2e7a60a861fae250c767336b01765407"
+    },
+    {
+      "path": "original/assets/game-Da4QmlDf.js",
+      "bytes": 1360404,
+      "sha256": "c882337b1fbe500f8416f6ee7a2d97cca143d583be5170e8e3492b417b277b53"
+    },
+    {
+      "path": "original/assets/legal-aZhVeMA7.js",
+      "bytes": 3861,
+      "sha256": "a40c9b607ba6120ffdf99849e8edd41810e224869325b5e5566412c34f412488"
+    },
+    {
+      "path": "original/assets/module.no-external-BhkPp4Sv.js",
+      "bytes": 351829,
+      "sha256": "5ba81a91bacfc1427ea212a87ffaa65d056d16773211fcfe9b134e767c9c81d3"
+    },
+    {
+      "path": "original/assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "bytes": 670,
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+    },
+    {
+      "path": "original/icons/roadster-model-192.png",
+      "bytes": 64317,
+      "sha256": "ad64a9b2c64aedf4e0a016eddf1cbaa2c57f314965bd468a3f253511ef3a9be3"
+    },
+    {
+      "path": "original/icons/roadster-model-512.png",
+      "bytes": 370699,
+      "sha256": "f6ad6604b76604475f0d575874c17e34ae0fe401e4117abdf9789291adf7a8fa"
+    },
+    {
+      "path": "original/icons/roadster-model-apple-touch.png",
+      "bytes": 57613,
+      "sha256": "05764f0aff949e869fe14557dea52d063642bb8388162bf3af77e80b782e1977"
+    },
+    {
+      "path": "original/icons/roadster-model-maskable-512.png",
+      "bytes": 351552,
+      "sha256": "630713e0ba80f5cb5582963f6f1deebd05cf242b9770880454de8ca6e753d1ba"
+    },
+    {
+      "path": "original/index.html",
+      "bytes": 64217,
+      "sha256": "32ef841d964aeb063bbb5e96a53614928a2f4599bf3b5221b5b80d6110c505d8"
+    },
+    {
+      "path": "original/items/ludicrous.png",
+      "bytes": 36055,
+      "sha256": "4cf8686e53c37afc3ac7b8a7eb48e4b62eda6c2e98ea13080ef9d609cc895ab2"
+    },
+    {
+      "path": "original/items/shockwave.png",
+      "bytes": 34155,
+      "sha256": "378f29624804ce669c625a6a033158911d303b48d7de6c505c0e404b1e2d286c"
+    },
+    {
+      "path": "original/manifest.webmanifest",
+      "bytes": 819,
+      "sha256": "87831d413ac49ae6d9f9f83d5d277c71dd2784a0a3ae04ee5f52e40a0823ac27"
+    },
+    {
+      "path": "original/third-party-notices.txt",
+      "bytes": 155797,
+      "sha256": "aa8a1e68476a2914a5916aabb166568fc8a1d8e2fda3270aa724ad8d815eaaa6"
+    }
+  ]
+}

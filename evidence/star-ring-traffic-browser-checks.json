@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "name": "actual-Blender-traffic-visible-with-lights-and-shared-geometry",
+      "pass": true,
+      "observed": {
+        "style": "blender-roadster-stranded-cars",
+        "total": 23,
+        "visible": 3,
+        "draws": 42,
+        "rendering": "shared-geometry-meshes",
+        "batches": 7,
+        "blackGlass": true,
+        "tailLights": true,
+        "hazardBlinkers": true,
+        "sharedModel": "20261026-blackglass-photo-exterior",
+        "trianglesPerCar": 21515,
+        "collider": {
+          "halfWidth": 1.06,
+          "halfLength": 2.35,
+          "height": 1.25,
+          "rideHeight": 0.035
+        },
+        "impacts": 0,
+        "sparkPool": 32
+      }
+    },
+    {
+      "name": "actual-vehicle-contact-triggers-space-crash",
+      "pass": true,
+      "reason": "撞到前方车辆",
+      "sparks": 1
+    },
+    {
+      "name": "vehicle-crash-uses-original-gray-postprocessing",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-retry-restores-color-without-extra-failure",
+      "pass": true
+    }
+  ],
+  "traffic": {
+    "style": "blender-roadster-stranded-cars",
+    "total": 23,
+    "visible": 1,
+    "draws": 56,
+    "rendering": "shared-geometry-meshes",
+    "batches": 7,
+    "blackGlass": true,
+    "tailLights": true,
+    "hazardBlinkers": true,
+    "sharedModel": "20261026-blackglass-photo-exterior",
+    "trianglesPerCar": 21515,
+    "collider": {
+      "halfWidth": 1.06,
+      "halfLength": 2.35,
+      "height": 1.25,
+      "rideHeight": 0.035
+    },
+    "impacts": 1,
+    "sparkPool": 32
+  }
+}

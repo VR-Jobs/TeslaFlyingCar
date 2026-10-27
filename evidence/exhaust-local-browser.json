@@ -1,0 +1,100 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "real-star-renders-four-volumetric-nozzle-streams-without-flat-bands",
+        "pass": true
+      },
+      {
+        "name": "mist-and-history-use-bounded-pools",
+        "pass": true
+      },
+      {
+        "name": "gas-uses-shared-native-noise-and-historical-road-clip",
+        "pass": true
+      },
+      {
+        "name": "original-layered-jets-and-rainbow-screen-remain-active",
+        "pass": true
+      },
+      {
+        "name": "selective-bloom-remains-within-mask-budget",
+        "pass": true
+      }
+    ],
+    "wake": {
+      "style": "four-nozzle-volumetric-cold-gas",
+      "activeVertices": 1728,
+      "history": 10,
+      "capacity": 32,
+      "ports": 4,
+      "bands": 0,
+      "meshes": 2,
+      "particles": 192,
+      "particleCapacity": 192,
+      "maximumAge": 0.31666666666666554,
+      "lifetime": 0.32,
+      "softErodedEdges": true,
+      "sharedNativeNoise": true,
+      "historicalFloorClip": true,
+      "blackGlassPreserved": true
+    },
+    "flight": {
+      "style": "original-three-layer-turbulent-cold-gas",
+      "nativePlumes": 10,
+      "sharedNativeGeometry": true,
+      "sharedNativeNoise": true,
+      "curvedSurfaceClip": true,
+      "suction": 0.9999999979388463,
+      "jet": 0,
+      "boost": 0.5488116340328727,
+      "levels": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "R1": 0.62,
+        "R2": 0.62,
+        "R3": 0.62,
+        "R4": 0.62,
+        "S1": 0,
+        "S2": 0
+      },
+      "intakeRibbons": 12,
+      "particles": 272,
+      "particleCapacity": 512
+    },
+    "screen": {
+      "edge": true,
+      "ending": false,
+      "paused": false,
+      "score": true,
+      "flash": 0,
+      "meter": true,
+      "sharedStyle": "ordinary-scene-starman"
+    },
+    "bloom": {
+      "maskBudget": 64,
+      "timings": {
+        "beautyMs": 847.4000000022352,
+        "maskMs": 367.5,
+        "bloomMs": 0.6999999992549419
+      },
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 1,
+      "crash": 0,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 119,
+      "cachedMasks": 22,
+      "selective": true,
+      "occlusion": true
+    }
+  },
+  "errors": []
+}

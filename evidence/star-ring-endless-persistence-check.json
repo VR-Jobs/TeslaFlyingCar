@@ -1,0 +1,15 @@
+{
+  "persisted": true,
+  "profile": {
+    "completions": 0,
+    "bestScore": 0,
+    "bestTime": null,
+    "tutorialVersion": 1,
+    "tutorialCompleted": true,
+    "endlessRuns": 1,
+    "bestEndlessScore": 251,
+    "bestEndlessDistance": 403.35752698829214,
+    "longestEndlessTime": 14.600000000000305
+  },
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "TeslaFlyingCar · 在线游戏开发",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "remoteUser": "node",
+  "postCreateCommand": "npm ci --ignore-scripts --no-audit --no-fund",
+  "postAttachCommand": {
+    "game": "npm run start:codespaces"
+  },
+  "forwardPorts": [
+    4173
+  ],
+  "portsAttributes": {
+    "4173": {
+      "label": "TeslaFlyingCar 游戏预览",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md",
+        "src/star-ring/ui.js"
+      ]
+    }
+  }
+}

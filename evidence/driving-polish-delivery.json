@@ -1,0 +1,188 @@
+{
+  "createdAt": "2026-10-26T12:13:49.030082+00:00",
+  "html": {
+    "format": "self-contained HTML; classic JavaScript; file://",
+    "file": "RoadsterDash.html",
+    "bytes": 11408500,
+    "sha256": "80cbb88f6a9a6892dd158f018dc54ea8c20f10d1dae53e9695f9e6b92b3e3ab6",
+    "fontFiles": 118,
+    "esbuild": "0.25.12",
+    "generatedAt": "2026-10-26T12:11:35.672Z"
+  },
+  "previousHtmlBytes": 20645146,
+  "browserChecks": {
+    "passed": 69,
+    "failed": 0,
+    "transport": "Exact standalone HTML over loopback HTTP. file:// navigation blocked by test browser policy."
+  },
+  "starRingChecks": {
+    "checks": [
+      {
+        "name": "full-course-completion",
+        "pass": true,
+        "s": 2359.272301835974,
+        "time": 86.0499999999964,
+        "falls": 1,
+        "lands": 4
+      },
+      {
+        "name": "reward-settles-once",
+        "pass": true,
+        "coins": 115
+      },
+      {
+        "name": "paint-unlocked",
+        "pass": true
+      }
+    ],
+    "view": {
+      "trackTriangles": 9400,
+      "glass": {
+        "style": "rim-lit-glass",
+        "baseOpacity": 0.06,
+        "laneCount": 3,
+        "longitudinalEdges": 3,
+        "transverseLines": 0,
+        "sectionAccents": true,
+        "sourceTriangles": 23580,
+        "batches": 78,
+        "depthWrite": false
+      },
+      "pickups": {
+        "types": {
+          "air": "compressed-air-capsule",
+          "ring": "orbital-crystal",
+          "sky": "open-golden-gate"
+        },
+        "models": 41,
+        "particles": 10,
+        "activeBursts": 0,
+        "collectedEffects": 1,
+        "burstPool": 8,
+        "openSkyCenter": true
+      },
+      "postprocessing": {
+        "type": "selective-hdr-bloom",
+        "enabled": true,
+        "frames": 18,
+        "width": 1920,
+        "height": 1080,
+        "mips": 5,
+        "strength": 0.7,
+        "radius": 0.05,
+        "threshold": 0.6,
+        "emitters": 93,
+        "selective": true,
+        "occlusion": true
+      },
+      "trackDetail": {
+        "style": "magnetic-modular-chassis",
+        "ribs": 0,
+        "fins": 126,
+        "terminals": 8,
+        "sectionMarkers": 430,
+        "cradles": 0,
+        "beacons": 22,
+        "triangles": 34388,
+        "batches": 60,
+        "clearDrivingWidth": 11.4
+      },
+      "saturn": {
+        "style": "saturn-inspired",
+        "planetRadius": 900,
+        "ringInner": 1116,
+        "ringOuter": 4800,
+        "dustCount": 2200,
+        "ringPlaneBelowStraight": 20
+      },
+      "solidTriangles": 23580,
+      "trackThickness": 0.45,
+      "trackFaces": "separate-front-bottom-walls",
+      "cameraBlocked": true,
+      "carTriangles": 38365,
+      "markerVisible": false,
+      "gapLights": {
+        "active": false,
+        "state": "off",
+        "rows": 3,
+        "layout": "longitudinal-edges-only"
+      },
+      "wingGap": 0
+    }
+  },
+  "checks": {
+    "iteration-browser-checks.json": "e0d4f6bffe936d840283f4bb962b799639fbe8c6b4ad37db29df952b18168782",
+    "handling-route-checks.json": "c304439344069a1d03bdc57a6ec70ccdc588dc5ed31b60241c1701554574596c",
+    "roadster-lod-runtime-checks.json": "ab8fa0f3e4dddf5b0a98d56a394f0c3bd53510aa31e82c9d86212fce540ad2d6",
+    "lod-driving-native-readback.json": "d87f92878c4f5fd90759f1d9e42cec366c7b7c45a5f53dfa0a87db21a362b5b2",
+    "lod-distant-native-readback.json": "3dae37d064d45c2b743bd2fc2d7880e4fbceec1819d2d133c6dc2a916b9a5041",
+    "normal-play-check.json": "cfd1e2cd32726e1aaee494e52c0ff0003ef3c3e81937bf190cba3b54e5145d67",
+    "landing-rim-check.json": "13755c5865b09b8f42ff50b1432c60eb97f625c861da25296d2be52e97d84279",
+    "landing-rim-geometry.json": "67a8dbb15e452f6312749a646663e088e8b5cf7005a4c6932f8abd6c983742c4",
+    "scene-picker-checks.json": "13773452eaf743824bb8869f68b7ff67d9f36e503ceb3cae8a83869eac67aed2",
+    "scene-preview-capture.json": "253a58c2a968af41097391213ffef74376be8b7c4ade318d69c9bf4d7e3c315c",
+    "scene-preview-assets.json": "6945a32b7f4537ed9268bf9eec12303db9fb48be26109ada5fa6e8d89c8962b4",
+    "scene-preview-ui-checks.json": "21f344cb3713f70fc0140df57a10307f1249fc5b83635243b9b03e786e0365b8",
+    "star-ring-physics-checks.json": "86d42d52c020d6ee474171a4ec8fe6fba8a0ee4726cdc41db8d383f5868dba70",
+    "star-ring-browser-checks.json": "daea8c18385f9e5123767e4b6a260ad3653002e5a7123c4a89c03336d41865bb",
+    "star-ring-ui-checks.json": "1e492a83aebe90f21fed590294b2df464508f8e46606b5fb457fddac380bb118",
+    "star-ring-tutorial-checks.json": "82eb35ed3d163536d6b4cb0b080a02491792412e36e79a4c10736fe3916a6925",
+    "star-ring-tutorial-browser-checks.json": "3e79b52752830eefe8033ad113627ee47b3f1f0fb74a612d6d134aced5b9000c",
+    "star-ring-gap-checks.json": "11e6403f2216de7c2bfeae79127056f9e23a3fa1133e8115377f5d10f03be33c",
+    "star-ring-gap-browser-checks.json": "4011db227420953208542b1205532de8076f40eecfe76056b194d65decffc1ca",
+    "star-ring-surface-checks.json": "29b9b4b80f18067628a3c293f3f24b92adb9760c49721b07b063745130f54b0f",
+    "star-ring-surface-browser-checks.json": "bf7ef42275393e439b795f510bbc1a00618e8583eddad4cec0805066e9d8e024",
+    "star-ring-glass-checks.json": "94451a26d78a9ba68f525586dc260a5fffbb672af98bf96ecaaa0d350ce56945",
+    "star-ring-glass-browser-checks.json": "36abcb16d8e54b67d565f32b06521631235addb3296a6c34ef5e446a6eef2f18",
+    "star-ring-bloom-checks.json": "db0c50db84596a19204b94c455f4e6b609b211f7dd6c90b1d63c80c92ad5b0af",
+    "star-ring-bloom-browser-checks.json": "abff3faba6d489635a17bb25b8e1fb33aa16f28c826b0c4041278da218749958",
+    "star-ring-bloom-image-checks.json": "09397009dcb789bcdc445d1a68605fb8c68dca67d5609ee83529343c3992a850",
+    "star-ring-pickup-checks.json": "4c7c27cad891532809c6b71950810317d8c35010c8207c7c12002742d060b44e",
+    "star-ring-pickup-browser-checks.json": "5634cfc250e383bdd2dc632cb99b2a86a87b5601cca8b37795b99ff106113e9c",
+    "roadster-blackglass-native-readback.json": "7f8db4204edd9c544f9ed88152d42e3b88dae682ff10ce6cc67c5530f2dbfcd5",
+    "roadster-blackglass-showroom-checks.json": "3fc3c2e38070e2a78838f80ee37188f5bb4f4306f3d5f6f442cbce1caccc0a31",
+    "roadster-blackglass-browser-checks.json": "5726d6606f1c923f22ed2f070161dccc5bd9c2c030a8a0a959702e4bcf4d0eae"
+  },
+  "screenshots": {
+    "space-journey-orbit-20261025.png": "d503859de4d6368ce1c08391d76e9417cd55c96b62ffe715b1926b8af8bfa7e7",
+    "space-journey-backlight-20261025.png": "744e936e3b3a94a7afaec1265eeb308e52d71cc2abc09f7ea4ad0582f8ee5984",
+    "teaching-core-optional-20261025.png": "752ba26d11de5286691ef8c0837e320ac339ddd8683784f7ebbc609829072a68",
+    "normal-play-jump.png": "c520156e8140d941267a5b82377b5947664672d8fa93d49b5fef0e64964c1c06",
+    "landing-rim-preview.png": "33bdd83a0006faa29f58e10e4679c914d26a175b6273d761f79f43e7d42de7cc",
+    "start-scene-picker.png": "47a6f57b0bd8008920b0fdecabdc8bcc0a342262a4c6b3a20bc9b8070c0197c4",
+    "scene-picker-real-previews.png": "06ca8d1f9b15e1047f86d7e39fb8727b198623db838541dfd1ce644fdaac18ae",
+    "star-ring-inverted.png": "7fbea54e63783d5f14a1621fa3a7118fa0cedf4c17f25fbb8f26b8062e8ed7ef",
+    "star-ring-mode-picker.png": "5be0dfb1ed6e21a35c542d047dba88451ffb464019e2aace35b2f8e9f90f367a",
+    "scene-preview-starRing-source.png": "047b4a2a5c52ec2329b123b19d4640ac50b943fc89c96d41920e7bc9420b2f0f",
+    "star-ring-tutorial-step1.png": "694388370fb017e00cc65483650b1310bcc7b96f7c09290c942828e53f036542",
+    "star-ring-tutorial-step2.png": "15875df9912c0f218c90d1632514ec8436d1b5549eef4ab08e29703cf5a3e8ff",
+    "star-ring-tutorial-step3.png": "fd52e31305e5c5ee7c395335b341ef36d08826694ef8120c5ab00ab11cb20d25",
+    "star-ring-gap-warning.png": "028a2e5c2cec84929a3837147e0c21f29b3f6c01746175a624238f84e50cb88f",
+    "star-ring-gap-ready.png": "3c3b6a523658c4ebfe279edf56c2a539102541b0916cacc45374408acf08ebde",
+    "star-ring-surface-fixed.png": "4e3b45962a55de2ef8c9cb49d91cc004dc3a1b4d89882799f92b987efc9a4fd8",
+    "star-ring-bottom-blocked.png": "30e06df5d9e78b815ca1e6dfde02f8fd59370e3590311468c8cc03bb9fc1fcbb",
+    "star-ring-glass-saturn.png": "b8260cca35c9b159b6564e33a679a1c1a116ca2f28204be725385bc0b46739dc",
+    "star-ring-glass-inverted.png": "651e340ba7c756fde51919af7554d31a025bebcf4059227e2ef0fefddc7d137a",
+    "star-ring-track-detailed.png": "7ca2d6deb97f0f5b9bb77a91ccad72dc46dd8d3adaf89d2e47e76a6a44eba527",
+    "star-ring-track-curve.png": "1620e7ed2066ba7933216255c3cac3ff90f72802ef13bd1c24aa25ad363ff0ce",
+    "star-ring-track-inverted.png": "997b8519892ec7b1b8e9f80ea64cc93fedd4317d1c901244bd63b82f467c7cca",
+    "star-ring-track-gap.png": "4b1f321c775944b1444549bb35846e3221be9cd3f65d6c36856109b8d7704c10",
+    "star-ring-bloom-on.png": "2effea4e1d05c54c0c112432ca8aa6284fc4bbf2aacc3f308cc0bfbf76845730",
+    "star-ring-bloom-off.png": "196d63942ee0ade136e5992a11a599ef57dc4896b5bd61a4647db97d1bf99d3a",
+    "star-ring-bloom-preview.png": "3aeec4dfbfea206d4766b7b07a167b322b97ae05304995c9f197033a4e58ec56",
+    "star-ring-bloom-gap.png": "d27642aaaf63503efa7ea3d88f7c3adcea5a4246612f07d4253a728d6adad544",
+    "star-ring-three-rails.png": "978b297c0a3c697531e164fab0dabfb7c79ce691601075f93fb8f2e028c85af7",
+    "star-ring-pickup-air.png": "9c02c8f910408228ca9314fd42ebe160703a4e39954345837a1edec673ec805b",
+    "star-ring-pickup-crystal.png": "f53b21dfced8355990e3a0acf7e2f96c1b2c6c252fda92f11845e3674175fd9e",
+    "star-ring-pickup-gold.png": "6b3e935d1abfa5274d6459c3eafa945b028950f0b11165d08a3ebed64275aead",
+    "star-ring-pickup-collect.png": "a21fb80aca015341320191a9f88649b82c5ca305f29fcb0e171ea4697d4c78b1",
+    "roadster-blackglass-front.png": "2e03e28b3e95064205ba6927a78ce3bb8b6da903b2eca785326337c353785e0f",
+    "roadster-blackglass-rear.png": "5f9ac1279330e15510a1ab2c89f7142fddeb60ce276dc72f162a154e538d2dad",
+    "roadster-blackglass-wing.png": "de02443e7cef635f60dacbb145d5191eb572fd6622d6a7d36fec6ce1bc975e69",
+    "roadster-blackglass-driving.png": "047b4a2a5c52ec2329b123b19d4640ac50b943fc89c96d41920e7bc9420b2f0f",
+    "roadster-blackglass-showroom.png": "6bf465084b395953502a92745335d814b34e5a48f025bf974553b0e2b21f14ea",
+    "scene-preview-space-source.png": "7576e74ff48c24d6fc89aeea186e219fa5cf501f30d029634d6da4b5fe30988b",
+    "scene-preview-coast-source.png": "752793cd0b4ef9af6e57c11c37de01800e82c5b1010e58b4dc81e11400361aa9"
+  },
+  "modelScope": "Photo-guided Blender exterior revision 20261026-blackglass-photo-exterior; black glazing and hinged rear flap shared by all three LODs. Previous native model and scripts preserved in revisions/20261026-blackglass/baseline. Original traffic meshes retained. Exterior only; no OEM CAD or engineering-accuracy claim."
+}

@@ -1,0 +1,26 @@
+{
+  "handling": {
+    "beacon": {
+      "height": 1.65,
+      "layout": "rim",
+      "position": [
+        3.4,
+        0.055,
+        -18.109693622397945
+      ],
+      "radiusX": 1.17,
+      "radiusZ": 2.145,
+      "visible": true
+    },
+    "blocked": null,
+    "buffer": 0,
+    "bufferedJumps": 0,
+    "landingSeconds": 0.7243877448959178,
+    "lastImpact": 0,
+    "markerVisible": true,
+    "rejected": 0
+  },
+  "errors": [],
+  "renderErrors": [],
+  "view": "Fixed airborne visual preview of the production landing marker and open rim curtain"
+}

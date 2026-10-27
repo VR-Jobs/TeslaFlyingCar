@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "name": "advance-warning-is-about-time-not-fixed-distance",
+      "pass": true
+    },
+    {
+      "name": "tutorial-and-nonrunning-suppress-guide",
+      "pass": true
+    },
+    {
+      "name": "low-speed-and-low-air-never-show-ready",
+      "pass": true
+    },
+    {
+      "name": "boost-flight-reserves-extra-energy",
+      "pass": true
+    },
+    {
+      "name": "recommended-window-clears-real-gap-physics",
+      "pass": true,
+      "detail": {
+        "validatedLaunches": 48,
+        "recipe": "Short jet .35 s, regrip at far lip minus 3 m; no boost/steering changes after release."
+      }
+    },
+    {
+      "name": "warning-escalates-and-double-cue-plays-once",
+      "pass": true,
+      "detail": [
+        {
+          "type": "gapWarning",
+          "level": 0
+        },
+        {
+          "type": "gapWarning",
+          "level": 1
+        },
+        {
+          "type": "gapWarning",
+          "level": 2
+        },
+        {
+          "type": "gapLaunch"
+        },
+        {
+          "type": "gapLaunchTail"
+        }
+      ]
+    },
+    {
+      "name": "recovery-discards-outdated-window-tone",
+      "pass": true
+    },
+    {
+      "name": "pause-cancels-pending-second-note",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-return-rearms-window-cue",
+      "pass": true
+    },
+    {
+      "name": "quiet-distinct-audio-without-scheduled-timers",
+      "pass": true,
+      "detail": [
+        {
+          "freq": 280,
+          "freqEnd": 240,
+          "dur": 0.075,
+          "gain": 0.09
+        },
+        {
+          "freq": 345,
+          "freqEnd": 305,
+          "dur": 0.075,
+          "gain": 0.09
+        },
+        {
+          "freq": 410,
+          "freqEnd": 370,
+          "dur": 0.075,
+          "gain": 0.09
+        },
+        {
+          "freq": 740,
+          "freqEnd": 820,
+          "dur": 0.07,
+          "gain": 0.12
+        },
+        {
+          "freq": 1100,
+          "freqEnd": 1280,
+          "dur": 0.09,
+          "gain": 0.1
+        }
+      ]
+    },
+    {
+      "name": "automatic-pad-is-labelled-separately",
+      "pass": true
+    },
+    {
+      "name": "guidance-does-not-change-score-energy-or-position",
+      "pass": true
+    }
+  ]
+}

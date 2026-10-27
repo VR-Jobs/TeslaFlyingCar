@@ -1,0 +1,167 @@
+{
+  "transport": "Exact standalone HTML over loopback for QA. Play assets are embedded; no server required to play.",
+  "checks": [
+    {
+      "name": "actual-air-pickup-renders-one-particle-burst-and-refills-pressure",
+      "pass": true,
+      "observed": {
+        "taken": true,
+        "pressure": 67.95000000000006,
+        "events": [
+          {
+            "type": "pickup",
+            "index": 1,
+            "kind": "air"
+          }
+        ],
+        "view": {
+          "types": {
+            "air": "compressed-air-capsule",
+            "ring": "orbital-crystal",
+            "sky": "open-golden-gate"
+          },
+          "models": 41,
+          "particles": 35,
+          "activeBursts": 1,
+          "collectedEffects": 1,
+          "burstPool": 8,
+          "openSkyCenter": true
+        }
+      }
+    },
+    {
+      "name": "launch-window-uses-longitudinal-side-lights-with-open-gold-ring",
+      "pass": true,
+      "observed": {
+        "cue": {
+          "action": "release",
+          "distance": 7,
+          "eligible": true,
+          "end": 1518,
+          "eta": 0.25,
+          "flight": false,
+          "high": 10.30946236395311,
+          "index": 1,
+          "jetSeconds": 0.35,
+          "label": "松 E · 短喷",
+          "low": 3.945596707191931,
+          "ready": true,
+          "reason": null,
+          "start": 1490,
+          "state": "ready",
+          "strength": 0.903846153846154,
+          "zoneEnd": 1486.054403292808,
+          "zoneStart": 1479.6905376360469
+        },
+        "lights": {
+          "active": true,
+          "layout": "longitudinal-edges-only",
+          "rows": 3,
+          "state": "ready",
+          "zoneEnd": 1486.054403292808,
+          "zoneStart": 1479.6905376360469
+        }
+      }
+    },
+    {
+      "name": "three-longitudinal-edges-without-transverse-bars",
+      "pass": true,
+      "observed": {
+        "cameraBlocked": false,
+        "carTriangles": 33491,
+        "gapLights": {
+          "active": false,
+          "layout": "longitudinal-edges-only",
+          "rows": 3,
+          "state": "off"
+        },
+        "glass": {
+          "baseOpacity": 0.06,
+          "batches": 78,
+          "depthWrite": false,
+          "laneCount": 3,
+          "longitudinalEdges": 3,
+          "sectionAccents": true,
+          "sourceTriangles": 23580,
+          "style": "rim-lit-glass",
+          "transverseLines": 0
+        },
+        "markerVisible": false,
+        "pickups": {
+          "activeBursts": 0,
+          "burstPool": 8,
+          "collectedEffects": 0,
+          "models": 41,
+          "openSkyCenter": true,
+          "particles": 15,
+          "types": {
+            "air": "compressed-air-capsule",
+            "ring": "orbital-crystal",
+            "sky": "open-golden-gate"
+          }
+        },
+        "postprocessing": {
+          "emitters": 98,
+          "enabled": true,
+          "frames": 13847,
+          "height": 1080,
+          "mips": 5,
+          "occlusion": true,
+          "radius": 0.05,
+          "selective": true,
+          "strength": 0.7,
+          "threshold": 0.6,
+          "type": "selective-hdr-bloom",
+          "width": 1920
+        },
+        "saturn": {
+          "dustCount": 2200,
+          "planetRadius": 900,
+          "ringInner": 1116,
+          "ringOuter": 4800,
+          "ringPlaneBelowStraight": 20,
+          "style": "saturn-inspired"
+        },
+        "solidTriangles": 23580,
+        "trackDetail": {
+          "batches": 60,
+          "beacons": 22,
+          "clearDrivingWidth": 11.4,
+          "cradles": 0,
+          "fins": 126,
+          "ribs": 0,
+          "sectionMarkers": 430,
+          "style": "magnetic-modular-chassis",
+          "terminals": 8,
+          "triangles": 34388
+        },
+        "trackFaces": "separate-front-bottom-walls",
+        "trackThickness": 0.45,
+        "trackTriangles": 9400,
+        "wingGap": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "full-course-completion",
+      "pass": true,
+      "s": 2359.272301835974,
+      "time": 86.0499999999964,
+      "falls": 1,
+      "lands": 4
+    },
+    {
+      "name": "reward-settles-once",
+      "pass": true,
+      "coins": 115
+    },
+    {
+      "name": "paint-unlocked",
+      "pass": true
+    },
+    {
+      "name": "no-new-shader-warnings-or-errors",
+      "pass": true,
+      "logs": []
+    }
+  ]
+}

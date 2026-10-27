@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "sha256": "50f2e333bd6f6e3e90858c703ed408f79ebb88521354436904f8199e4ffaa57b",
+  "home": {
+    "buttons": [
+      "开始游戏",
+      "教学引导",
+      "操作指南",
+      "设置"
+    ],
+    "heading": "特斯拉音乐跑酷",
+    "lang": "zh",
+    "loading": "特斯拉音乐跑酷\n          正在加载\n          \n            \n          \n          100%",
+    "loadingLabel": "加载进度",
+    "title": "特斯拉音乐跑酷"
+  },
+  "start": {
+    "errors": [],
+    "mode": "free",
+    "screen": "game"
+  },
+  "keyboardStart": {
+    "errors": [],
+    "mode": "free",
+    "screen": "game"
+  },
+  "checks": [
+    "Loading title and progress label are Chinese and no translation attribute reintroduces English",
+    "Homepage exposes exactly four buttons in requested order",
+    "English query is normalized to Chinese on entry",
+    "Teaching guide opens all 14 courses",
+    "Controls and settings open correctly",
+    "Settings source/author and embedded licenses remain accessible",
+    "Play always selects free driving even after opening teaching",
+    "Space begins driving; pause/menu return preserves four-button layout"
+  ],
+  "console": [],
+  "limitations": "Same standalone HTML verified over localhost; file:// automation not available. Interface changes do not establish copyright clearance."
+}

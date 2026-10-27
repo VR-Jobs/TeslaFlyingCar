@@ -1,0 +1,487 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "compact-HUD-releases-the-car-and-tail-view",
+        "pass": true
+      },
+      {
+        "name": "one-critical-cue-and-directed-recovery-air",
+        "pass": true
+      },
+      {
+        "name": "rhythm-edge-markers-and-meaningful-fork-choice",
+        "pass": true
+      },
+      {
+        "name": "suction-launch-landing-unlocks-musical-layer",
+        "pass": true
+      },
+      {
+        "name": "personal-ghost-renders-with-shared-geometry-and-no-collider",
+        "pass": true
+      },
+      {
+        "name": "bloom-slider-can-fully-disable-light-halo",
+        "pass": true
+      },
+      {
+        "name": "automatic-quality-reduces-render-target-and-particles",
+        "pass": true
+      },
+      {
+        "name": "independent-visual-and-ghost-settings-are-available",
+        "pass": true
+      },
+      {
+        "name": "fixed-resource-pools-stay-within-bloom-budget",
+        "pass": true
+      }
+    ],
+    "view": {
+      "loading": {
+        "initialRouteMs": 407.80000000447035,
+        "lastSwapMs": 0,
+        "lastDisposeMs": 0,
+        "usedPrepared": false,
+        "swapRenderPeakMs": 0
+      },
+      "quality": {
+        "level": 2,
+        "scale": 1,
+        "particles": 1,
+        "frames": 0,
+        "emaMs": 16.7,
+        "p95Ms": 16.7,
+        "peakMs": 0,
+        "changes": 0
+      },
+      "ghost": {
+        "visible": false,
+        "opacity": 0.18000000000000002,
+        "collision": false,
+        "sharedGeometry": true
+      },
+      "rhythmMarkers": {
+        "notes": 6,
+        "transverseLines": 0
+      },
+      "trackTriangles": 15592,
+      "glass": {
+        "style": "rim-lit-glass",
+        "baseOpacity": 0.06,
+        "gripWarning": 0,
+        "laneCount": 3,
+        "longitudinalEdges": 3,
+        "transverseLines": 0,
+        "sectionAccents": true,
+        "sourceTriangles": 39044,
+        "batches": 126,
+        "depthWrite": false
+      },
+      "pickups": {
+        "types": {
+          "star": "rainbow-invincibility-star",
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 111,
+        "particles": 30,
+        "activeBursts": 0,
+        "collectedEffects": 0,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 0
+      },
+      "traffic": {
+        "style": "blender-roadster-dynamic-convoys",
+        "total": 18,
+        "visible": 0,
+        "draws": 0,
+        "rendering": "shared-geometry-meshes",
+        "batches": 15,
+        "materialCategories": 7,
+        "moving": 0,
+        "signaling": 0,
+        "rollingWheels": true,
+        "turnSignalLead": 1.8,
+        "blackGlass": true,
+        "tailLights": true,
+        "hazardBlinkers": true,
+        "sharedModel": "20261026-blackglass-photo-exterior",
+        "trianglesPerCar": 21515,
+        "collider": {
+          "halfWidth": 1.06,
+          "halfLength": 2.35,
+          "height": 1.25,
+          "rideHeight": 0.035
+        },
+        "impacts": 0,
+        "sparkPool": 32
+      },
+      "escort": {
+        "stars": 0,
+        "waves": 0,
+        "collections": 0,
+        "clearBursts": 0,
+        "streamPool": 6,
+        "burstPool": 8,
+        "sharedGlow": true
+      },
+      "rainbow": {
+        "style": "four-nozzle-volumetric-cold-gas",
+        "activeVertices": 0,
+        "history": 0,
+        "capacity": 32,
+        "ports": 4,
+        "bands": 0,
+        "meshes": 2,
+        "particles": 0,
+        "particleCapacity": 192,
+        "maximumAge": 0,
+        "lifetime": 0.32,
+        "throttle": 0,
+        "pressureResponsive": true,
+        "softErodedEdges": true,
+        "sharedNativeNoise": true,
+        "historicalFloorClip": true,
+        "blackGlassPreserved": true
+      },
+      "voyage": {
+        "visibleFragments": 2,
+        "totalFragments": 39,
+        "event": "",
+        "supplyVisible": false,
+        "meteors": 0,
+        "eventOutsideRoad": true,
+        "meteorPool": 7
+      },
+      "adventures": {
+        "branches": 1,
+        "gates": 6,
+        "visibleGates": 0,
+        "style": "glass-shortcut-and-three-stage-stunt-gates",
+        "gateSequence": [
+          "jump",
+          "spin",
+          "suction"
+        ],
+        "branchPhysicalLengths": [
+          {
+            "route": "fork-0",
+            "span": 310.0234638084038,
+            "metric": 0.8418318623033135
+          }
+        ]
+      },
+      "postprocessing": {
+        "maskBudget": 64,
+        "timings": {
+          "beautyMs": 1.1000000014901161,
+          "maskMs": 1.5,
+          "bloomMs": 0
+        },
+        "type": "selective-hdr-bloom",
+        "enabled": true,
+        "frames": 4,
+        "effectiveStrength": 0.7,
+        "renderScale": 1,
+        "crash": 0,
+        "width": 1920,
+        "height": 1080,
+        "mips": 5,
+        "strength": 0.7,
+        "radius": 0.05,
+        "threshold": 0.6,
+        "emitters": 67,
+        "cachedMasks": 10,
+        "selective": true,
+        "occlusion": true
+      },
+      "trackDetail": {
+        "style": "magnetic-modular-chassis",
+        "ribs": 0,
+        "fins": 214,
+        "terminals": 10,
+        "sectionMarkers": 518,
+        "cradles": 0,
+        "beacons": 26,
+        "triangles": 56492,
+        "batches": 100,
+        "clearDrivingWidth": 11.4
+      },
+      "saturn": {
+        "style": "saturn-inspired",
+        "planetRadius": 900,
+        "ringInner": 1116,
+        "ringOuter": 4800,
+        "dustCount": 2200,
+        "ringPlaneBelowStraight": 20
+      },
+      "solidTriangles": 39044,
+      "trackThickness": 0.45,
+      "trackFaces": "separate-front-bottom-walls",
+      "cameraBlocked": false,
+      "carTriangles": 38365,
+      "localCycle": 0,
+      "boundedWindow": [
+        -80,
+        3858.866044632793
+      ],
+      "streaming": {
+        "layout": "11:0",
+        "liveWindows": 1,
+        "preload": {
+          "completed": 0,
+          "aborted": 0,
+          "maximumSliceMs": 0,
+          "gpuWarm": null
+        },
+        "created": 1,
+        "retired": 0,
+        "prepared": null
+      },
+      "markerVisible": false,
+      "gapLights": {
+        "active": false,
+        "state": "off",
+        "rows": 3,
+        "layout": "longitudinal-edges-only"
+      },
+      "wingGap": 0,
+      "flightEffects": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0.18126924692201818,
+        "jet": 0,
+        "boost": 0,
+        "levels": {
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0,
+          "R4": 0,
+          "S1": 0,
+          "S2": 0
+        },
+        "intakeRibbons": 12,
+        "particles": 144,
+        "particleCapacity": 512,
+        "pressureResponsive": true,
+        "convergingIntake": true
+      },
+      "death": {
+        "active": false,
+        "progress": 0,
+        "gray": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    "director": {
+      "version": "experience-1",
+      "phases": [
+        {
+          "start": 180,
+          "end": 235,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 235,
+          "end": 269.5058659521009,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 269.5058659521009,
+          "end": 324.5058659521009,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 324.5058659521009,
+          "end": 448.5175978563028,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 448.5175978563028,
+          "end": 503.5175978563028,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 503.5175978563028,
+          "end": 538.0234638084038,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 541.0234638084038,
+          "end": 599.0234638084038,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 827.014294568853,
+          "end": 882.014294568853,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 882.014294568853,
+          "end": 1129.6100216376017,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 1132.6100216376017,
+          "end": 1196.6100216376017,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 1400.3148573132585,
+          "end": 1455.3148573132585,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 1455.3148573132585,
+          "end": 1687.0286681976522,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 1690.0286681976522,
+          "end": 1753.0286681976522,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 1942.6694157410766,
+          "end": 1997.6694157410766,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 1997.6694157410766,
+          "end": 2243.742669789056,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 2246.742669789056,
+          "end": 2306.742669789056,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 2528.824100254039,
+          "end": 2583.824100254039,
+          "kind": "learn",
+          "title": "观察与准备"
+        },
+        {
+          "start": 2583.824100254039,
+          "end": 2842.1564226371056,
+          "kind": "challenge",
+          "title": "连续挑战"
+        },
+        {
+          "start": 2845.1564226371056,
+          "end": 2906.1564226371056,
+          "kind": "recover",
+          "title": "补气缓冲"
+        }
+      ],
+      "recoveries": [
+        {
+          "start": 541.0234638084038,
+          "end": 599.0234638084038,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 1132.6100216376017,
+          "end": 1196.6100216376017,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 1690.0286681976522,
+          "end": 1753.0286681976522,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 2246.742669789056,
+          "end": 2306.742669789056,
+          "kind": "recover",
+          "title": "补气缓冲"
+        },
+        {
+          "start": 2845.1564226371056,
+          "end": 2906.1564226371056,
+          "kind": "recover",
+          "title": "补气缓冲"
+        }
+      ],
+      "notes": [
+        {
+          "s": 1261.6100216376017,
+          "beat": 0,
+          "period": 0.46875
+        },
+        {
+          "s": 1274.7350216376017,
+          "beat": 1,
+          "period": 0.46875
+        },
+        {
+          "s": 1287.8600216376017,
+          "beat": 2,
+          "period": 0.46875
+        },
+        {
+          "s": 1300.9850216376017,
+          "beat": 3,
+          "period": 0.46875
+        },
+        {
+          "s": 1314.1100216376017,
+          "beat": 4,
+          "period": 0.46875
+        },
+        {
+          "s": 1327.2350216376017,
+          "beat": 5,
+          "period": 0.46875
+        }
+      ]
+    },
+    "ghost": {
+      "available": false,
+      "seed": null,
+      "distance": 0,
+      "matching": false,
+      "recorded": 0,
+      "capacity": 4800
+    }
+  },
+  "errors": []
+}

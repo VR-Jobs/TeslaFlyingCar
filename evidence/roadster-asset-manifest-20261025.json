@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roadster-exterior.blend": {
+      "bytes": 5549840,
+      "sha256": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef"
+    },
+    "roadster-exterior.glb": {
+      "bytes": 3427212,
+      "sha256": "739cfbb5ff1e325ccca0d84b27914ba6453cbb7d6761f300908dda88de3279b0"
+    },
+    "roadster-exterior.json": {
+      "bytes": 5098075,
+      "sha256": "f1025bca44a508475ce22bac73e849675474b37f58ac3db44376347680107a26"
+    }
+  },
+  "consumer": "Homepage showroom and derived driving LODs; embedded in standalone HTML",
+  "precision": "User-photo-guided game exterior; black glass requested by user; working scale inferred, not OEM CAD"
+}

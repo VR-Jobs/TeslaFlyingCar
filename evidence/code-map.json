@@ -1,0 +1,82 @@
+{
+  "GameSession": {
+    "file": "src/game.js",
+    "line": 26146
+  },
+  "PlayerController": {
+    "file": "src/game.js",
+    "line": 23529
+  },
+  "createRoadster": {
+    "file": "src/game.js",
+    "line": 23008
+  },
+  "WorldEnvironment": {
+    "file": "src/game.js",
+    "line": 6315
+  },
+  "RoadSurface": {
+    "file": "src/game.js",
+    "line": 1450
+  },
+  "TrafficSystem": {
+    "file": "src/game.js",
+    "line": 9000
+  },
+  "TrafficSpawner": {
+    "file": "src/game.js",
+    "line": 9369
+  },
+  "ShowroomScene": {
+    "file": "src/game.js",
+    "line": 29049
+  },
+  "InputController": {
+    "file": "src/game.js",
+    "line": 29709
+  },
+  "GameHud": {
+    "file": "src/game.js",
+    "line": 29349
+  },
+  "WalletManager": {
+    "file": "src/game.js",
+    "line": 32255
+  },
+  "DailyQuestManager": {
+    "file": "src/game.js",
+    "line": 32523
+  },
+  "AchievementTracker": {
+    "file": "src/game.js",
+    "line": 24925
+  },
+  "AdaptiveQuality": {
+    "file": "src/game.js",
+    "line": 31747
+  },
+  "animationFrame": {
+    "file": "src/game.js",
+    "line": 36980
+  },
+  "beginRun": {
+    "file": "src/game.js",
+    "line": 34946
+  },
+  "playFromMenu": {
+    "file": "src/game.js",
+    "line": 35177
+  },
+  "translate": {
+    "file": "src/game.js",
+    "line": 22026
+  },
+  "DamageSystem": {
+    "file": "src/game.js",
+    "line": 23375
+  },
+  "ParticleEffects": {
+    "file": "src/game.js",
+    "line": 11841
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "checks": [
+    {
+      "name": "four-visually-distinct-pickup-types",
+      "pass": true
+    },
+    {
+      "name": "golden-ring-has-an-open-center-for-the-car",
+      "pass": true
+    },
+    {
+      "name": "actual-physics-identifies-air",
+      "pass": true
+    },
+    {
+      "name": "actual-collection-creates-one-air-burst",
+      "pass": true,
+      "detail": {
+        "types": {
+          "star": "rainbow-invincibility-star",
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 35,
+        "activeBursts": 1,
+        "collectedEffects": 1,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 0
+      }
+    },
+    {
+      "name": "air-particles-write-the-uploaded-gpu-buffers",
+      "pass": true
+    },
+    {
+      "name": "same-air-pickup-cannot-replay-effect",
+      "pass": true
+    },
+    {
+      "name": "air-burst-fully-expires",
+      "pass": true
+    },
+    {
+      "name": "air-particles-remain-finite",
+      "pass": true
+    },
+    {
+      "name": "actual-physics-identifies-ring",
+      "pass": true
+    },
+    {
+      "name": "actual-collection-creates-one-ring-burst",
+      "pass": true,
+      "detail": {
+        "types": {
+          "star": "rainbow-invincibility-star",
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 35,
+        "activeBursts": 1,
+        "collectedEffects": 1,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 0
+      }
+    },
+    {
+      "name": "ring-particles-write-the-uploaded-gpu-buffers",
+      "pass": true
+    },
+    {
+      "name": "same-ring-pickup-cannot-replay-effect",
+      "pass": true
+    },
+    {
+      "name": "ring-burst-fully-expires",
+      "pass": true
+    },
+    {
+      "name": "ring-particles-remain-finite",
+      "pass": true
+    },
+    {
+      "name": "actual-physics-identifies-sky",
+      "pass": true
+    },
+    {
+      "name": "actual-collection-creates-one-sky-burst",
+      "pass": true,
+      "detail": {
+        "types": {
+          "star": "rainbow-invincibility-star",
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 35,
+        "activeBursts": 1,
+        "collectedEffects": 1,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 0
+      }
+    },
+    {
+      "name": "sky-particles-write-the-uploaded-gpu-buffers",
+      "pass": true
+    },
+    {
+      "name": "same-sky-pickup-cannot-replay-effect",
+      "pass": true
+    },
+    {
+      "name": "sky-burst-fully-expires",
+      "pass": true
+    },
+    {
+      "name": "sky-particles-remain-finite",
+      "pass": true
+    },
+    {
+      "name": "simultaneous-effects-use-a-bounded-eight-slot-pool",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-reset-does-not-replay-previously-collected-items",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-disables-idle-particle-orbits",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "periodic-seam-0",
+      "pass": true
+    },
+    {
+      "name": "periodic-seam-2361",
+      "pass": true
+    },
+    {
+      "name": "periodic-seam-4722",
+      "pass": true
+    },
+    {
+      "name": "seam-solid-top-2360.5",
+      "pass": true,
+      "detail": "top"
+    },
+    {
+      "name": "seam-solid-top-2360.9",
+      "pass": true,
+      "detail": "top"
+    },
+    {
+      "name": "seam-solid-top-2361.3",
+      "pass": true,
+      "detail": "top"
+    },
+    {
+      "name": "twelve-real-continuous-sectors-complete-without-finish",
+      "pass": true,
+      "detail": {
+        "laps": 12,
+        "seconds": 846.9333333328917,
+        "steps": 50816,
+        "distance": 28331.18494036397,
+        "falls": 0,
+        "lands": 36,
+        "score": 34711.355482109466
+      }
+    },
+    {
+      "name": "rebase-preserves-world-position-at-running-speed",
+      "pass": true,
+      "detail": {
+        "maximumSeamStep": 0.6016663494810928
+      }
+    },
+    {
+      "name": "runtime-sets-stay-bounded",
+      "pass": true,
+      "detail": {
+        "maxSets": 26
+      }
+    },
+    {
+      "name": "pickup-geometries-materials-and-scene-objects-do-not-grow",
+      "pass": true,
+      "detail": {
+        "before": {
+          "objects": 1202,
+          "geometries": 21,
+          "materials": 18
+        },
+        "after": {
+          "objects": 1202,
+          "geometries": 21,
+          "materials": 18
+        }
+      }
+    },
+    {
+      "name": "speed-increases-with-a-fair-upper-limit",
+      "pass": true,
+      "detail": {
+        "cruise": 36,
+        "boost": 48
+      }
+    },
+    {
+      "name": "cycle-lane-variation-preserves-track-clearance",
+      "pass": true
+    },
+    {
+      "name": "endless-records-use-distance-and-score",
+      "pass": true,
+      "detail": {
+        "profile": {
+          "endlessRuns": 1,
+          "bestEndlessScore": 34711,
+          "bestEndlessDistance": 28331.18494036397,
+          "longestEndlessTime": 846.9333333328917
+        },
+        "reward": 270
+      }
+    },
+    {
+      "name": "next-sector-replenishes-items-and-checkpoints",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-recovery-preserves-infinite-challenge-progress",
+      "pass": true
+    },
+    {
+      "name": "extended-track-window-is-fixed-size",
+      "pass": true,
+      "detail": {
+        "triangles": 30044,
+        "window": [
+          -80,
+          2960.884901332318
+        ]
+      }
+    }
+  ],
+  "scope": "12 complete authored sectors using actual collision, suction, launches, pickups and rescue at 60 Hz; roughly 15 minutes of simulated play. Static geometry counts checked separately from WebGL."
+}

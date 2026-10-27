@@ -1,0 +1,71 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "all-main-pickups-fragments-and-gates-have-clearance",
+        "pass": true
+      },
+      {
+        "name": "cars-and-red-obstacles-remain-in-the-challenge",
+        "pass": true
+      },
+      {
+        "name": "required-air-and-both-rainbow-stars-are-preserved",
+        "pass": true
+      },
+      {
+        "name": "nearby-obstacle-and-pickup-have-separate-physical-space",
+        "pass": true
+      }
+    ],
+    "issues": [],
+    "placement": {
+      "movedPickups": 6,
+      "movedFragments": 2,
+      "adjustedTraffic": 0,
+      "removedHazards": 0,
+      "droppedOptional": 0
+    },
+    "example": {
+      "obstacle": {
+        "s": 1400.1414984380826,
+        "lane": 3.2,
+        "type": "device",
+        "paint": 1,
+        "cluster": 1406.1414984380826
+      },
+      "pickup": {
+        "s": 1397.4743524210062,
+        "lane": 0,
+        "type": "ring"
+      }
+    },
+    "traffic": {
+      "style": "blender-roadster-dynamic-convoys",
+      "total": 19,
+      "visible": 1,
+      "draws": 30,
+      "rendering": "shared-geometry-meshes",
+      "batches": 15,
+      "materialCategories": 7,
+      "moving": 0,
+      "signaling": 0,
+      "rollingWheels": true,
+      "turnSignalLead": 1.8,
+      "blackGlass": true,
+      "tailLights": true,
+      "hazardBlinkers": true,
+      "sharedModel": "20261026-blackglass-photo-exterior",
+      "trianglesPerCar": 21515,
+      "collider": {
+        "halfWidth": 1.06,
+        "halfLength": 2.35,
+        "height": 1.25,
+        "rideHeight": 0.035
+      },
+      "impacts": 0,
+      "sparkPool": 32
+    }
+  },
+  "errors": []
+}

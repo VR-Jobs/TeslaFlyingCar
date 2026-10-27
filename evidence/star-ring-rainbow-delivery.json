@@ -1,0 +1,45 @@
+{
+  "completedUTC": "2026-10-27T16:11:17.916207+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "release": "/var/www/tesla-deploy/20261027-rainbow-4f985ab3",
+  "onlineSHA256": "4f985ab32baf72164750aaf4c4c87f8c696c329bc3597430ff4ad8d9e90cb28f",
+  "offlineSHA256": "2b74bab8fb96bf770f8533be14fa8bd5a24f4bf748ab8f79d2e6fc3ef35bb380",
+  "passedChecks": {
+    "rainbow": 24,
+    "onlineWebGL": 3,
+    "endlessWebGL": 4,
+    "randomRoutes": 9,
+    "loading": 9,
+    "traffic": 17,
+    "adventures": 14,
+    "voyage": 28,
+    "flight": 18
+  },
+  "endlessSections": 8,
+  "seededPlacementSections": 256,
+  "maximumGeometry": 633,
+  "maximumCachedMasks": 49,
+  "maximumLiveWindows": 2,
+  "onlineErrors": 0,
+  "backup": "D:\\0.Unity20242024\\Tesla-Car-Game\\revisions\\20261027-rainbow-star",
+  "rollback": "/var/www/tesla-deploy/20261027-rainbow-4f985ab3/previous-index.html",
+  "evidence": {
+    "star-ring-rainbow-browser.json": {
+      "bytes": 611,
+      "sha256": "16dd470c86854cb21896720f7ee509f3e78061dbbd432ca95d7e376782a097f7"
+    },
+    "star-ring-rainbow-endless-browser.json": {
+      "bytes": 12912,
+      "sha256": "33d7bb044271fa4770d3b73192bbb9674c786b98a8b0eda60eb3f020c962bae2"
+    },
+    "star-ring-rainbow-online-browser.json": {
+      "bytes": 707,
+      "sha256": "9b2933059b357b4faecb313b5716a55040568225f8c6612a40cf4e5071aee7fe"
+    },
+    "star-ring-rainbow-online.png": {
+      "bytes": 110630,
+      "sha256": "e14b4645ad43c884f9b99aa49b3a618243c4b4d1cb76c5781db19e62789c24d4"
+    }
+  },
+  "verificationNote": "Final build passed 24 gameplay checks and the deployed WebGL 3 checks. Eight-section WebGL run predates only the final paint-preservation guard, covered by the final gameplay checks. Existing original-game fingerprints and HTML/online bundle checks passed before deployment."
+}

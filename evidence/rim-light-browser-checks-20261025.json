@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "start": {
+    "animation": "idle",
+    "animationTime": 0,
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.05566385642209047,
+      "plays": 1,
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "clearance": {
+      "correction": 0.05300000357627872,
+      "gap": 0.008,
+      "meshes": 50,
+      "minimumY": 0.053
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 9.733400000000016,
+    "height": 0.05300000357627872,
+    "inspecting": false,
+    "jetLevel": 0,
+    "nextDemo": 18.246293660553068,
+    "pitch": 0,
+    "roll": 0
+  },
+  "firing": {
+    "animation": "frontflip",
+    "animationTime": 1.966700000000004,
+    "audio": {
+      "active": true,
+      "hoverGain": 0.4499749541282654,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.05816712669058939,
+      "plays": 4,
+      "rms": 0.030865938552678125,
+      "state": "running",
+      "thrustGain": 0.20160000026226044
+    },
+    "clearance": {
+      "correction": 0,
+      "gap": 0.5540641421362774,
+      "meshes": 50,
+      "minimumY": 0.5990641421362775
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 48.22109999999997,
+    "height": 1.6493799192809413,
+    "inspecting": false,
+    "jetLevel": 1,
+    "nextDemo": 46.27300059373532,
+    "pitch": -5.724648219095269,
+    "roll": 0
+  },
+  "muted": {
+    "animation": "barrel",
+    "animationTime": 0.4001000000000058,
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "masterGain": 0,
+      "muted": true,
+      "peakRms": 0.05816712669058939,
+      "plays": 4,
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "clearance": {
+      "correction": 0,
+      "gap": 0.5332365447150692,
+      "meshes": 50,
+      "minimumY": 0.5782365447150692
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 108.18799999999888,
+    "height": 0.578236548291348,
+    "inspecting": false,
+    "jetLevel": 1,
+    "nextDemo": 107.81922004291197,
+    "pitch": 0,
+    "roll": 0
+  },
+  "garage": {
+    "animation": "idle",
+    "animationTime": 0,
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.05816712669058939,
+      "plays": 5,
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "clearance": {
+      "correction": 0.05300000357627872,
+      "gap": 0.008,
+      "meshes": 50,
+      "minimumY": 0.053
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 128.5669999999985,
+    "height": 0.05300000357627872,
+    "inspecting": true,
+    "jetLevel": 0,
+    "nextDemo": 136.53379999999848,
+    "pitch": 0,
+    "roll": 0
+  },
+  "driving": {
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.05816712669058939,
+      "plays": 5,
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "errors": [],
+    "screen": "game"
+  },
+  "clearanceRegression": {
+    "status": "PASS",
+    "cases": [
+      {
+        "kind": "frontflip",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 2.05,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 6733788,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 1.2,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 6024948,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": -1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 1.2,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 6024948,
+        "status": "PASS"
+      },
+      {
+        "kind": "hover",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 0.55,
+        "peakRotation": 0,
+        "landed": true,
+        "verticesChecked": 7678908,
+        "status": "PASS"
+      }
+    ]
+  },
+  "console": [
+    {
+      "level": "warn",
+      "message": "THREE.WebGLProgram: Program Info Log: (198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(419,1): warning X4000: use of potentially uninitialized variable (f_ApplyFXAA)",
+      "timestamp": "2026-10-25T12:17:55.630Z",
+      "url": "http://127.0.0.1:4182/?lang=zh"
+    }
+  ],
+  "validation": "Same standalone HTML previewed via localhost; file:// automation not available."
+}

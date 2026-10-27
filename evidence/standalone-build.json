@@ -1,0 +1,9 @@
+{
+  "format": "self-contained HTML; classic JavaScript; file://",
+  "file": "RoadsterDash.html",
+  "bytes": 11554999,
+  "sha256": "7d57c1e03effc0370cb763ca909a7740ecbfdc25d3817b8aa1e6df2e2cfa5074",
+  "fontFiles": 118,
+  "esbuild": "0.25.12",
+  "generatedAt": "2026-10-27T22:14:37.050Z"
+}

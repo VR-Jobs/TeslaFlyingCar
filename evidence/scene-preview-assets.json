@@ -1,0 +1,32 @@
+{
+  "space": {
+    "source": "evidence\\scene-preview-space-source.png",
+    "sourceSha256": "7576e74ff48c24d6fc89aeea186e219fa5cf501f30d029634d6da4b5fe30988b",
+    "preview": "public\\previews\\space-gameplay.webp",
+    "previewSha256": "e63bd33d07764412c662e728913772c2973514b7d4ef1a42487b6f1cfe097599",
+    "bytes": 23556,
+    "width": 960,
+    "height": 540,
+    "processing": "Resize and WebP compression only; game content and colors unchanged."
+  },
+  "coast": {
+    "source": "evidence\\scene-preview-coast-source.png",
+    "sourceSha256": "752793cd0b4ef9af6e57c11c37de01800e82c5b1010e58b4dc81e11400361aa9",
+    "preview": "public\\previews\\coast-gameplay.webp",
+    "previewSha256": "750182a0577f7dd30d57832600b010384590c0915f3b955409e51eb29eb1dae8",
+    "bytes": 59058,
+    "width": 960,
+    "height": 540,
+    "processing": "Resize and WebP compression only; game content and colors unchanged."
+  },
+  "starRing": {
+    "source": "evidence\\scene-preview-starRing-source.png",
+    "sourceSha256": "3748427225a50ac91b7630a4f75262375346facfdec56c4a696e9fa6eecaa457",
+    "preview": "public\\previews\\starRing-gameplay.webp",
+    "previewSha256": "c5f5861c0ba3757d644e55085f3569518299038d4c60075b96cf8d554e883659",
+    "bytes": 48904,
+    "width": 960,
+    "height": 540,
+    "processing": "Resize and WebP compression only; game content and colors unchanged."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "name": "four-streams-start-at-real-rear-nozzle-positions",
+      "pass": true
+    },
+    {
+      "name": "long-flight-reuses-buffers-and-two-batches",
+      "pass": true
+    },
+    {
+      "name": "history-and-mist-stay-bounded",
+      "pass": true,
+      "detail": {
+        "style": "four-nozzle-volumetric-cold-gas",
+        "activeVertices": 1728,
+        "history": 10,
+        "capacity": 32,
+        "ports": 4,
+        "bands": 0,
+        "meshes": 2,
+        "particles": 192,
+        "particleCapacity": 192,
+        "maximumAge": 0.31666666666667,
+        "lifetime": 0.32,
+        "throttle": 0.7499999999999998,
+        "pressureResponsive": true,
+        "softErodedEdges": true,
+        "sharedNativeNoise": true,
+        "historicalFloorClip": true
+      }
+    },
+    {
+      "name": "rotated-and-curving-nozzle-streams-stay-finite",
+      "pass": true
+    },
+    {
+      "name": "turbulent-edges-use-original-noise-and-registered-bloom",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-lowers-mist-count",
+      "pass": true
+    },
+    {
+      "name": "released-boost-dissipates-instead-of-leaving-a-ribbon",
+      "pass": true
+    },
+    {
+      "name": "historical-road-plane-tags-under-track-vapor-for-clipping",
+      "pass": true
+    },
+    {
+      "name": "death-removes-all-emission-without-new-resources",
+      "pass": true
+    },
+    {
+      "name": "world-origin-change-does-not-bridge-old-and-new-sections",
+      "pass": true
+    },
+    {
+      "name": "reset-clears-both-draw-ranges",
+      "pass": true
+    }
+  ]
+}

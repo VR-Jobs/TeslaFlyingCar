@@ -1,0 +1,20 @@
+{
+  "source": "models/roadster-2026/current/roadster-exterior.blend",
+  "sourceSha256": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef",
+  "levels": [
+    {
+      "level": "driving",
+      "ratio": 0.16,
+      "bodyGlassRatio": 0.24,
+      "triangles": 38365,
+      "degenerate": 0
+    },
+    {
+      "level": "distant",
+      "ratio": 0.045,
+      "bodyGlassRatio": 0.06,
+      "triangles": 21515,
+      "degenerate": 0
+    }
+  ]
+}

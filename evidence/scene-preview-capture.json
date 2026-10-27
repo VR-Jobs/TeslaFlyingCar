@@ -1,0 +1,301 @@
+{
+  "method": "Actual standalone game screenshots; star-ring recaptured from a seeded random course, HUD and QA tools hidden. Space and coast retain their actual captures.",
+  "revision": "20261026-blackglass-photo-exterior",
+  "frames": {
+    "space": {
+      "selected": "space",
+      "distance": 350,
+      "player": {
+        "lane": 1,
+        "x": 0,
+        "y": 0,
+        "air": 600,
+        "grounded": true,
+        "hovering": false,
+        "trick": null
+      },
+      "scenery": {
+        "selected": "space",
+        "stars": 8690,
+        "asteroids": 48,
+        "travel": 350,
+        "journey": {
+          "chapter": "近地轨道",
+          "moon": 0,
+          "belt": 0,
+          "night": 0,
+          "orbit": 1,
+          "progress": 0.07446808510638298,
+          "planetRadius": 210.90000000000003,
+          "planetPosition": [
+            -390,
+            -100,
+            -1030
+          ]
+        },
+        "coast": {
+          "selected": "original",
+          "palms": 54,
+          "waveTime": 0,
+          "travel": 0.3852777777777778,
+          "initialized": true
+        },
+        "moon": true,
+        "steadyStars": true,
+        "roadPreserved": true,
+        "terrestrialVisible": 0
+      },
+      "drivingExterior": {
+        "level": "medium",
+        "medium": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 38365,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        },
+        "low": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 21515,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        }
+      }
+    },
+    "coast": {
+      "selected": "coast",
+      "distance": 350,
+      "player": {
+        "lane": 1,
+        "x": 0,
+        "y": 0,
+        "air": 600,
+        "grounded": true,
+        "hovering": false,
+        "trick": null
+      },
+      "scenery": {
+        "selected": "coast",
+        "stars": 8690,
+        "asteroids": 48,
+        "travel": 0,
+        "journey": {
+          "chapter": "近地轨道",
+          "moon": 0,
+          "belt": 0,
+          "night": 0,
+          "orbit": 1,
+          "progress": 0,
+          "planetRadius": 185,
+          "planetPosition": [
+            -390,
+            -100,
+            -1030
+          ]
+        },
+        "coast": {
+          "selected": "coast",
+          "palms": 61,
+          "waveTime": 0.21666666666666665,
+          "travel": 350,
+          "initialized": true
+        },
+        "moon": true,
+        "steadyStars": true,
+        "roadPreserved": true,
+        "terrestrialVisible": null
+      },
+      "drivingExterior": {
+        "level": "medium",
+        "medium": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 38365,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        },
+        "low": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 21515,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        }
+      }
+    },
+    "starRing": {
+      "selected": "starRing",
+      "state": {
+        "active": true,
+        "paused": false,
+        "phase": "running",
+        "s": 805.014294568853,
+        "length": 3258.866044632793,
+        "challenge": {
+          "mode": "endless",
+          "distance": 805.014294568853,
+          "laps": 0,
+          "level": 1,
+          "localDistance": 805.014294568853,
+          "localLimit": 3258.866044632793
+        },
+        "randomness": {
+          "seed": 11,
+          "section": 1,
+          "layout": "11:0",
+          "kinds": [
+            "turn",
+            "loop",
+            "twist",
+            "loop",
+            "wave"
+          ],
+          "gaps": 3,
+          "rows": 20,
+          "previewReady": true
+        },
+        "attached": true,
+        "pressure": 100,
+        "checkpoint": 0,
+        "falls": 0,
+        "score": 0,
+        "rings": 0,
+        "trackImpacts": 0,
+        "lastTrackContact": null,
+        "suction": false,
+        "jump": false,
+        "lane": 0,
+        "stage": "弹射与补给",
+        "tutorial": null,
+        "gapCue": null,
+        "gapSounds": {
+          "warnings": 0,
+          "launches": 0,
+          "tails": 0,
+          "pendingTail": false
+        },
+        "view": {
+          "trackTriangles": 15568,
+          "glass": {
+            "style": "rim-lit-glass",
+            "baseOpacity": 0.06,
+            "laneCount": 3,
+            "longitudinalEdges": 3,
+            "transverseLines": 0,
+            "sectionAccents": true,
+            "sourceTriangles": 38984,
+            "batches": 126,
+            "depthWrite": false
+          },
+          "pickups": {
+            "types": {
+              "air": "pressure-cylinder",
+              "ring": "navigation-energy-core",
+              "sky": "segmented-jump-gate"
+            },
+            "models": 95,
+            "particles": 40,
+            "activeBursts": 0,
+            "collectedEffects": 0,
+            "burstPool": 8,
+            "openSkyCenter": true,
+            "physicalScale": {
+              "air": 1.8,
+              "core": 1.8,
+              "gateInnerDiameter": 4.2
+            },
+            "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+            "cycle": 0
+          },
+          "postprocessing": {
+            "type": "selective-hdr-bloom",
+            "enabled": true,
+            "frames": 2,
+            "width": 1920,
+            "height": 1080,
+            "mips": 5,
+            "strength": 0.7,
+            "radius": 0.05,
+            "threshold": 0.6,
+            "emitters": 163,
+            "cachedMasks": 8,
+            "selective": true,
+            "occlusion": true
+          },
+          "trackDetail": {
+            "style": "magnetic-modular-chassis",
+            "ribs": 0,
+            "fins": 214,
+            "terminals": 10,
+            "sectionMarkers": 516,
+            "cradles": 0,
+            "beacons": 26,
+            "triangles": 56418,
+            "batches": 100,
+            "clearDrivingWidth": 11.4
+          },
+          "saturn": {
+            "style": "saturn-inspired",
+            "planetRadius": 900,
+            "ringInner": 1116,
+            "ringOuter": 4800,
+            "dustCount": 2200,
+            "ringPlaneBelowStraight": 20
+          },
+          "solidTriangles": 38984,
+          "trackThickness": 0.45,
+          "trackFaces": "separate-front-bottom-walls",
+          "cameraBlocked": false,
+          "carTriangles": 38365,
+          "localCycle": 0,
+          "boundedWindow": [
+            -80,
+            3858.866044632793
+          ],
+          "streaming": {
+            "layout": "11:0",
+            "liveWindows": 2,
+            "preload": {
+              "completed": 0,
+              "aborted": 0,
+              "maximumSliceMs": 9.100000001490116
+            },
+            "created": 1,
+            "retired": 0,
+            "prepared": null
+          },
+          "markerVisible": false,
+          "gapLights": {
+            "active": false,
+            "state": "off",
+            "rows": 3,
+            "layout": "longitudinal-edges-only"
+          },
+          "wingGap": 0
+        },
+        "profile": {
+          "completions": 0,
+          "bestScore": 0,
+          "bestTime": null,
+          "tutorialVersion": 1,
+          "tutorialCompleted": true,
+          "endlessRuns": 1,
+          "bestEndlessScore": 251,
+          "bestEndlessDistance": 403.35752698829214,
+          "longestEndlessTime": 14.600000000000305
+        }
+      },
+      "errors": []
+    }
+  },
+  "errors": []
+}

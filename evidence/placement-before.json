@@ -1,0 +1,75 @@
+{
+  "sections": 64,
+  "issues": 739,
+  "traffic": 437,
+  "pairs": 231,
+  "example": {
+    "seed": 1,
+    "issues": [
+      {
+        "kind": "traffic",
+        "i": 8,
+        "j": 0,
+        "type": "ring",
+        "hazard": "car",
+        "s": 261.0730337186251,
+        "lane": -3.2
+      },
+      {
+        "kind": "traffic",
+        "i": 8,
+        "j": 2,
+        "type": "ring",
+        "hazard": "car",
+        "s": 261.0730337186251,
+        "lane": -3.2
+      },
+      {
+        "kind": "traffic",
+        "i": 10,
+        "j": 0,
+        "type": "ring",
+        "hazard": "car",
+        "s": 300.7093352121301,
+        "lane": -3.2
+      },
+      {
+        "kind": "traffic",
+        "i": 10,
+        "j": 2,
+        "type": "ring",
+        "hazard": "car",
+        "s": 300.7093352121301,
+        "lane": -3.2
+      },
+      {
+        "kind": "traffic",
+        "i": 11,
+        "j": 2,
+        "type": "ring",
+        "hazard": "car",
+        "s": 317.7093352121301,
+        "lane": -3.2
+      },
+      {
+        "kind": "gate",
+        "i": 74,
+        "s": 2290.128790828865
+      },
+      {
+        "kind": "gate",
+        "i": 75,
+        "s": 2311.7802730919793
+      },
+      {
+        "kind": "traffic",
+        "i": 105,
+        "j": 25,
+        "type": "ring",
+        "hazard": "car",
+        "s": 3023.4755840906873,
+        "lane": -3.2
+      }
+    ]
+  }
+}

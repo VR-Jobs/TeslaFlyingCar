@@ -1,0 +1,71 @@
+{
+  "clock": "perf_counter_ns",
+  "startedUtc": "2026-10-25T18:52:42.060659+00:00",
+  "totalMs": 20420.3514,
+  "stages": [
+    {
+      "stage": "planning",
+      "taskId": null,
+      "startOffsetMs": 0.1862,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 3.4595,
+      "exclusiveMs": 3.4595
+    },
+    {
+      "stage": "inputHashing",
+      "taskId": "roadster.exterior",
+      "startOffsetMs": 3.6553,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 0.5701,
+      "exclusiveMs": 0.5701
+    },
+    {
+      "stage": "cacheValidation",
+      "taskId": "roadster.exterior",
+      "startOffsetMs": 4.2305,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 0.0355,
+      "exclusiveMs": 0.0355
+    },
+    {
+      "stage": "commandExecution",
+      "taskId": "roadster.exterior",
+      "startOffsetMs": 5.2314,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 20361.1322,
+      "exclusiveMs": 20361.1322
+    },
+    {
+      "stage": "outputValidation",
+      "taskId": "roadster.exterior",
+      "startOffsetMs": 20366.3858,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 51.6851,
+      "exclusiveMs": 51.6851
+    },
+    {
+      "stage": "cacheCommit",
+      "taskId": "roadster.exterior",
+      "startOffsetMs": 20418.0846,
+      "depth": 0,
+      "status": "passed",
+      "elapsedMs": 0.9329,
+      "exclusiveMs": 0.9329
+    }
+  ],
+  "stageTotalsMs": {
+    "planning": 3.4595,
+    "inputHashing": 0.5701,
+    "cacheValidation": 0.0355,
+    "commandExecution": 20361.1322,
+    "outputValidation": 51.6851,
+    "cacheCommit": 0.9329
+  },
+  "stageTotalsDefinition": "Sum of exclusiveMs per stage, excluding nested stages",
+  "scope": "Observed local work and explicitly executed subprocesses. No AI reasoning, network, UI waiting or work outside this process is inferred. Task wall times include stages; do not sum both."
+}

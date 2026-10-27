@@ -1,0 +1,20 @@
+{
+  "saved": {
+    "available": true,
+    "seed": 1062454121,
+    "distance": 1506.3620216895015,
+    "matching": true,
+    "recorded": 245,
+    "capacity": 4800
+  },
+  "replay": {
+    "available": true,
+    "seed": 1062454121,
+    "distance": 1506.3620216895015,
+    "matching": true,
+    "recorded": 235,
+    "capacity": 4800
+  },
+  "seed": 1062454121,
+  "pass": true
+}

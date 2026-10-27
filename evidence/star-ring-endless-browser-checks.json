@@ -1,0 +1,180 @@
+{
+  "checks": [
+    {
+      "name": "eight-continuous-sectors-no-automatic-finish",
+      "pass": true,
+      "laps": 8,
+      "distance": 18887.247812074296,
+      "time": 639.3833333330805
+    },
+    {
+      "name": "gpu-geometry-count-plateaus-after-first-use-uploads",
+      "pass": true,
+      "cold": 399,
+      "warmSamples": [
+        {
+          "lap": 1,
+          "geometries": 485
+        },
+        {
+          "lap": 2,
+          "geometries": 490
+        },
+        {
+          "lap": 3,
+          "geometries": 490
+        },
+        {
+          "lap": 4,
+          "geometries": 490
+        },
+        {
+          "lap": 5,
+          "geometries": 490
+        },
+        {
+          "lap": 6,
+          "geometries": 490
+        },
+        {
+          "lap": 7,
+          "geometries": 490
+        }
+      ],
+      "after": 490,
+      "sceneResourcesBefore": {
+        "objects": 1497,
+        "geometries": 272,
+        "materials": 75
+      },
+      "sceneResourcesAfter": {
+        "objects": 1497,
+        "geometries": 272,
+        "materials": 75
+      }
+    },
+    {
+      "name": "pickup-and-effect-pool-remain-fixed",
+      "pass": true,
+      "view": {
+        "types": {
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 15,
+        "activeBursts": 0,
+        "collectedEffects": 31,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 8
+      }
+    },
+    {
+      "name": "endless-settlement-is-once-and-records-distance",
+      "pass": true,
+      "reward": 161
+    }
+  ],
+  "challenge": {
+    "mode": "endless",
+    "distance": 18887.247812074296,
+    "laps": 8,
+    "level": 9,
+    "localDistance": 0.16860141575125454,
+    "localLimit": 2360.884901332318
+  },
+  "view": {
+    "trackTriangles": 11992,
+    "glass": {
+      "style": "rim-lit-glass",
+      "baseOpacity": 0.06,
+      "laneCount": 3,
+      "longitudinalEdges": 3,
+      "transverseLines": 0,
+      "sectionAccents": true,
+      "sourceTriangles": 30044,
+      "batches": 96,
+      "depthWrite": false
+    },
+    "pickups": {
+      "types": {
+        "air": "pressure-cylinder",
+        "ring": "navigation-energy-core",
+        "sky": "segmented-jump-gate"
+      },
+      "models": 41,
+      "particles": 15,
+      "activeBursts": 0,
+      "collectedEffects": 31,
+      "burstPool": 8,
+      "openSkyCenter": true,
+      "physicalScale": {
+        "air": 1.8,
+        "core": 1.8,
+        "gateInnerDiameter": 4.2
+      },
+      "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+      "cycle": 8
+    },
+    "postprocessing": {
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 689,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 114,
+      "selective": true,
+      "occlusion": true
+    },
+    "trackDetail": {
+      "style": "magnetic-modular-chassis",
+      "ribs": 0,
+      "fins": 166,
+      "terminals": 8,
+      "sectionMarkers": 430,
+      "cradles": 0,
+      "beacons": 22,
+      "triangles": 43704,
+      "batches": 77,
+      "clearDrivingWidth": 11.4
+    },
+    "saturn": {
+      "style": "saturn-inspired",
+      "planetRadius": 900,
+      "ringInner": 1116,
+      "ringOuter": 4800,
+      "dustCount": 2200,
+      "ringPlaneBelowStraight": 20
+    },
+    "solidTriangles": 30044,
+    "trackThickness": 0.45,
+    "trackFaces": "separate-front-bottom-walls",
+    "cameraBlocked": false,
+    "carTriangles": 38365,
+    "localCycle": 8,
+    "boundedWindow": [
+      -80,
+      2960.884901332318
+    ],
+    "markerVisible": false,
+    "gapLights": {
+      "active": false,
+      "state": "off",
+      "rows": 3,
+      "layout": "longitudinal-edges-only"
+    },
+    "wingGap": 0
+  }
+}

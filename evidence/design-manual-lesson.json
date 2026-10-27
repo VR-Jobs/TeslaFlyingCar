@@ -1,0 +1,98 @@
+{
+  "driving": {
+    "completion": {
+      "finished": false,
+      "progress": 0.4601525805425712,
+      "success": false,
+      "target": 200
+    },
+    "lastReview": {
+      "advice": "tip.trick",
+      "metrics": {
+        "airSpent": 25.362210861529547,
+        "airTime": 0.8166666666666675,
+        "barrels": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "cleared": 0,
+        "collisions": 0,
+        "comboBreak": "none",
+        "distance": 522,
+        "duration": 22.98333333333331,
+        "flips": 0,
+        "hoverTime": 0,
+        "jumps": 1,
+        "landings": 1,
+        "laneChanges": 2,
+        "lastLandComplete": false,
+        "maxCombo": 0,
+        "maxHeight": 2.402288708138568,
+        "perfectLandings": 0,
+        "tricks": 0
+      },
+      "mode": "academy",
+      "success": true,
+      "trainingReward": 10
+    },
+    "metrics": {
+      "airSpent": 25.362210861529547,
+      "airTime": 0.8166666666666675,
+      "barrels": 0,
+      "bestAction": "none",
+      "bestActionPoints": 0,
+      "cleared": 0,
+      "collisions": 0,
+      "comboBreak": "none",
+      "distance": 522.6712562755381,
+      "duration": 22.98333333333331,
+      "flips": 0,
+      "hoverTime": 0,
+      "jumps": 1,
+      "landings": 1,
+      "laneChanges": 2,
+      "lastLandComplete": false,
+      "maxCombo": 0,
+      "maxHeight": 2.402288708138568,
+      "perfectLandings": 0,
+      "tricks": 0
+    },
+    "options": {
+      "features": {
+        "coaching": true,
+        "fairTraffic": true,
+        "feedback": true
+      },
+      "lesson": 1,
+      "mode": "academy",
+      "ruleset": "driving-v1-f1-t1"
+    },
+    "profile": {
+      "lesson": 1,
+      "preferences": {
+        "features": {
+          "coaching": true,
+          "fairTraffic": true,
+          "feedback": true
+        },
+        "freeFeatures": {
+          "coaching": true,
+          "fairTraffic": true,
+          "feedback": true
+        },
+        "lesson": 1,
+        "mode": "academy",
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "trainingClaims": [
+        0
+      ]
+    },
+    "runId": "d973aa38-3f0f-43d7-9171-4a8d4e9e4ea2",
+    "traffic": {
+      "fixedRows": 3,
+      "guardedSpawns": 0
+    }
+  },
+  "errors": [],
+  "state": "over"
+}

@@ -1,0 +1,98 @@
+{
+  "checks": [
+    {
+      "name": "normal-straight-driving-does-not-demand-E",
+      "pass": true
+    },
+    {
+      "name": "curve-gives-warning-before-detaching",
+      "pass": true,
+      "detail": {
+        "level": 0.4799999999999996
+      }
+    },
+    {
+      "name": "E-during-warning-restores-grip-without-a-fall",
+      "pass": true
+    },
+    {
+      "name": "releasing-E-on-a-curve-starts-warning-rather-than-instant-jump",
+      "pass": true
+    },
+    {
+      "name": "ignored-warning-detaches-and-enters-space-death",
+      "pass": true,
+      "detail": {
+        "falls": 1,
+        "phase": "dead",
+        "reason": "未按 E 吸附，车辆失去抓地"
+      }
+    },
+    {
+      "name": "death-flight-moves-away-from-track-and-desaturates",
+      "pass": true,
+      "detail": {
+        "distance": 60.70509735640501,
+        "gray": 1
+      }
+    },
+    {
+      "name": "gray-death-screen-does-not-keep-scoring-or-moving-the-clock",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-retry-clears-death-and-grip-state",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-retry-refills-air-to-avoid-repeat-death",
+      "pass": true
+    },
+    {
+      "name": "empty-air-death-has-accurate-reason",
+      "pass": true
+    },
+    {
+      "name": "drift-is-recoverable-before-death",
+      "pass": true
+    },
+    {
+      "name": "prompt-E-can-recapture-an-early-drift",
+      "pass": true,
+      "detail": {
+        "phase": "running",
+        "airTime": 0.4333333333333333,
+        "height": 0.2282518774221184
+      }
+    },
+    {
+      "name": "second-Space-at-safe-height-starts-frontflip",
+      "pass": true
+    },
+    {
+      "name": "frontflip-finishes-with-an-upright-car",
+      "pass": true,
+      "detail": {
+        "maximumPitch": 6.28315341500472,
+        "phase": "running",
+        "tricks": 1
+      }
+    },
+    {
+      "name": "low-height-frontflip-is-rejected-with-feedback",
+      "pass": true
+    },
+    {
+      "name": "spin-envelope-has-soft-start-and-finish",
+      "pass": true
+    },
+    {
+      "name": "collision-probes-rotate-with-frontflip-pitch",
+      "pass": true
+    },
+    {
+      "name": "held-E-keeps-normal-cornering-secure",
+      "pass": true
+    }
+  ]
+}

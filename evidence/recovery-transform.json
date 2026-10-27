@@ -1,0 +1,13 @@
+{
+  "rendererExports": 656,
+  "renamedBindings": 69,
+  "tuningModules": 16,
+  "changes": [
+    "LocalBackend replaces original backend factory",
+    "LocalAccount replaces remote identity controller",
+    "Local shop client replaces Supabase client at coin-store boundary",
+    "Analytics initializer and dynamic font loader become local no-ops",
+    "Developer bridge appended"
+  ],
+  "sourceMapRecovered": false
+}

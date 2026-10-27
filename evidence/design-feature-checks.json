@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-25T23:01:13.753Z",
+  "checks": [
+    {
+      "name": "Fixed daily layouts and reachable ground corridors",
+      "status": "PASS",
+      "detail": "100 seeds; identical layouts repeat, adjacent safe lanes remain open"
+    },
+    {
+      "name": "Reaction distance and recovery waves",
+      "status": "PASS",
+      "detail": "New hazards get >=1.8 s relative-speed lead; recovery and low-air spacing increase"
+    },
+    {
+      "name": "Landing grades",
+      "status": "PASS",
+      "detail": "Full, aligned, moderate-impact landings qualify; partial rotations and steep impacts do not"
+    },
+    {
+      "name": "Lesson and challenge objectives",
+      "status": "PASS",
+      "detail": "Each lesson and all four challenges have explicit pass/fail and end conditions"
+    },
+    {
+      "name": "Training progression and one-time rewards",
+      "status": "PASS",
+      "detail": "Progress survives saves; duplicate submissions and replayed lessons cannot duplicate the first-completion award"
+    },
+    {
+      "name": "Daily seed, restricted items and dated boards",
+      "status": "PASS",
+      "detail": "Same UTC day repeats the seed; start items and revives rejected; only same-day successful results enter daily board"
+    },
+    {
+      "name": "Category and ruleset separation",
+      "status": "PASS",
+      "detail": "Legacy, practice, assisted and pure runs remain distinct; original mode disables all enhancements"
+    }
+  ]
+}

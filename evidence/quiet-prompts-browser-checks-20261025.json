@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "gameplayObservation": {
+    "errors": [],
+    "feedback": "",
+    "screen": "over",
+    "storyDisplay": "none"
+  },
+  "pause": {
+    "pauseStory": "none",
+    "pauseText": "M\n已暂停\n画质\n自动（推荐）\n极高\n高\n中\n低\n继续 Space\n重试\n主菜单",
+    "story": "none"
+  },
+  "changes": [
+    "Combo-loss feedback generation removed; combo metrics/scoring retained",
+    "Intro and pause flavor-story cards suppressed",
+    "Ordinary result flavor story suppressed; academy result objectives retained"
+  ],
+  "console": [],
+  "validation": "Same standalone HTML previewed over localhost. User file tab was left untouched; refresh/reopen to load the update."
+}

@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "name": "warning-has-started-before-launch-window",
+      "pass": true,
+      "observed": {
+        "launches": 0,
+        "pendingTail": false,
+        "tails": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "name": "actual-amber-warning-and-light-geometry",
+      "pass": true,
+      "observed": {
+        "action": "release",
+        "distance": 48,
+        "eligible": true,
+        "end": 1518,
+        "eta": 1.7142857142857142,
+        "flight": false,
+        "high": 10.30946236395311,
+        "index": 1,
+        "jetSeconds": 0.35,
+        "label": "断轨将至",
+        "low": 3.945596707191931,
+        "ready": false,
+        "reason": null,
+        "start": 1490,
+        "state": "warning",
+        "strength": 0.34065934065934067,
+        "zoneEnd": 1486.054403292808,
+        "zoneStart": 1479.6905376360469
+      }
+    },
+    {
+      "name": "actual-launch-window-aligns-road-and-small-label",
+      "pass": true,
+      "observed": {
+        "action": "release",
+        "distance": 7,
+        "eligible": true,
+        "end": 1518,
+        "eta": 0.25,
+        "flight": false,
+        "high": 10.30946236395311,
+        "index": 1,
+        "jetSeconds": 0.35,
+        "label": "松 E · 短喷",
+        "low": 3.945596707191931,
+        "ready": true,
+        "reason": null,
+        "start": 1490,
+        "state": "ready",
+        "strength": 0.903846153846154,
+        "zoneEnd": 1486.054403292808,
+        "zoneStart": 1479.6905376360469
+      }
+    },
+    {
+      "name": "low-energy-shows-amber-without-launch-recommendation",
+      "pass": true,
+      "observed": {
+        "action": "release",
+        "distance": 7,
+        "eligible": false,
+        "end": 1518,
+        "eta": 0.25,
+        "flight": false,
+        "high": 10.30946236395311,
+        "index": 1,
+        "jetSeconds": 0.35,
+        "label": "断轨 · 需要补气",
+        "low": 3.945596707191931,
+        "ready": false,
+        "reason": "air",
+        "start": 1490,
+        "state": "blocked",
+        "strength": 0.903846153846154,
+        "zoneEnd": 1486.054403292808,
+        "zoneStart": 1479.6905376360469
+      }
+    },
+    {
+      "name": "mute-keeps-visual-cues-with-audio-muted",
+      "pass": true,
+      "observed": {
+        "cue": {
+          "action": "release",
+          "distance": 6.999999999995907,
+          "eligible": true,
+          "end": 1518,
+          "eta": 0.24999999999985384,
+          "flight": false,
+          "high": 10.30946236395311,
+          "index": 1,
+          "jetSeconds": 0.35,
+          "label": "松 E · 短喷",
+          "low": 3.945596707191931,
+          "ready": true,
+          "reason": null,
+          "start": 1490,
+          "state": "ready",
+          "strength": 0.90384615384621,
+          "zoneEnd": 1486.054403292808,
+          "zoneStart": 1479.6905376360469
+        },
+        "gap": {
+          "launches": 1,
+          "pendingTail": false,
+          "tails": 1,
+          "warnings": 3
+        },
+        "muted": true
+      }
+    },
+    {
+      "name": "three-warnings-and-one-double-cue-per-approach",
+      "pass": true,
+      "observed": {
+        "launches": 1,
+        "pendingTail": false,
+        "tails": 1,
+        "warnings": 3
+      }
+    },
+    {
+      "name": "no-webgl-or-script-errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "whole-course-and-settlement-regression",
+      "pass": true
+    }
+  ],
+  "transport": "Exact self-contained HTML over loopback HTTP; authored preview frames and real-time approach audio events."
+}

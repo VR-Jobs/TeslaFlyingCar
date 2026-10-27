@@ -1,0 +1,36 @@
+# Dependencies and regenerable caches
+node_modules/
+.npm-cache/
+.cache/
+__pycache__/
+*.pyc
+dist/
+*.log
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# Historical copies and modelling caches; active sources and Blender files stay tracked
+/revisions/
+/models/roadster-2026/cache/
+/models/roadster-2026/revisions/
+/models/roadster-2026/export-check/
+*.blend1
+*.blend2
+/models/roadster-2026/*.failed-*.json
+/models/roadster-2026/*.candidate-*.json
+/evidence/*before*/
+/evidence/*deployment*.json
+/migration-*.json
+
+# Per-machine GitHub publishing evidence
+/evidence/github-publish*.json

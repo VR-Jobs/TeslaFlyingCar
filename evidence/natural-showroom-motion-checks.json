@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "kind": "frontflip",
+      "duration": 5.2,
+      "status": "PASS",
+      "peakHeight": 2.65,
+      "suspensionRange": [
+        -0.033418076766206235,
+        0.006942003559959487
+      ]
+    },
+    {
+      "kind": "barrel",
+      "duration": 4.8,
+      "status": "PASS",
+      "peakHeight": 1.65,
+      "suspensionRange": [
+        -0.03340735909093699,
+        0.006947934804186157
+      ]
+    },
+    {
+      "kind": "hover",
+      "duration": 4.6,
+      "status": "PASS",
+      "peakHeight": 0.95,
+      "suspensionRange": [
+        -0.033422687381427216,
+        0.006944256072375332
+      ]
+    }
+  ]
+}

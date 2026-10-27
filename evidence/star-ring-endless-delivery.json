@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-10-26T13:18:09.542726+00:00",
+  "html": {
+    "format": "self-contained HTML; classic JavaScript; file://",
+    "file": "RoadsterDash.html",
+    "bytes": 11416764,
+    "sha256": "c75ca50a189facec4d088709e67741525051088d3864c408135e5a2998e1ad5b",
+    "fontFiles": 118,
+    "esbuild": "0.25.12",
+    "generatedAt": "2026-10-26T13:12:35.553Z"
+  },
+  "nodeChecks": 16,
+  "browserChecks": [
+    {
+      "name": "eight-continuous-sectors-no-automatic-finish",
+      "pass": true,
+      "laps": 8,
+      "distance": 18887.247812074296,
+      "time": 639.3833333330805
+    },
+    {
+      "name": "gpu-geometry-count-plateaus-after-first-use-uploads",
+      "pass": true,
+      "cold": 399,
+      "warmSamples": [
+        {
+          "lap": 1,
+          "geometries": 485
+        },
+        {
+          "lap": 2,
+          "geometries": 490
+        },
+        {
+          "lap": 3,
+          "geometries": 490
+        },
+        {
+          "lap": 4,
+          "geometries": 490
+        },
+        {
+          "lap": 5,
+          "geometries": 490
+        },
+        {
+          "lap": 6,
+          "geometries": 490
+        },
+        {
+          "lap": 7,
+          "geometries": 490
+        }
+      ],
+      "after": 490,
+      "sceneResourcesBefore": {
+        "objects": 1497,
+        "geometries": 272,
+        "materials": 75
+      },
+      "sceneResourcesAfter": {
+        "objects": 1497,
+        "geometries": 272,
+        "materials": 75
+      }
+    },
+    {
+      "name": "pickup-and-effect-pool-remain-fixed",
+      "pass": true,
+      "view": {
+        "types": {
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 41,
+        "particles": 15,
+        "activeBursts": 0,
+        "collectedEffects": 31,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 8
+      }
+    },
+    {
+      "name": "endless-settlement-is-once-and-records-distance",
+      "pass": true,
+      "reward": 161
+    }
+  ],
+  "originalGameRegression": {
+    "passed": 69,
+    "failed": 0
+  },
+  "uiAndPersistence": "Natural Start->scene picker->star-ring->pause->end settlement and reload checked; next sector crossed in live renderer.",
+  "runtimeErrors": [],
+  "screenshots": {
+    "star-ring-large-air.png": "5106cf81717ebb22b9abb1a1a2d76deb533ec6ce8cf5d513ce8b2ea213c4eb3b",
+    "star-ring-large-core.png": "52e87846f8beec7113dfa5237df37b41fc177982ccc12b39bad54cd9128c8191",
+    "star-ring-large-gate.png": "3f0fdfa9874dbad43efe4e36fe333383b79b7de77e67b7e16cc663e6320d7885",
+    "star-ring-endless-second-sector.png": "ade3d0880ce98592ec04696e663a6bbc884f4e71c4a63b3313062dc07919d5df",
+    "star-ring-endless-summary.png": "8fb4e7e1e8c98bf9b2271e07a1bed9b65f31fbbf6c041bfd262fdd029403724a"
+  },
+  "offlineVerification": "Three classic inline scripts; no external script, module, style, font or image needed. Exact HTML tested over QA loopback; browser policy does not allow automated file:// navigation."
+}

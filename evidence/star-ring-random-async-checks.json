@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "name": "cooperative-preload-yields-and-clears-temporary-sampling-cache",
+      "pass": true,
+      "yields": 46,
+      "heartbeats": 46,
+      "elapsed": 712.5959,
+      "triangles": 38284
+    },
+    {
+      "name": "cancelled-preload-can-be-rebuilt-with-valid-solid-collision",
+      "pass": true,
+      "slices": 3,
+      "triangles": 38820
+    }
+  ]
+}

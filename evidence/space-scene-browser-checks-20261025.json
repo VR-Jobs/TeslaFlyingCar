@@ -1,0 +1,746 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "transport": "Exact standalone HTML served at localhost; file tab not automated",
+  "homeButtons": [
+    "开始游戏",
+    "教学引导",
+    "操作指南",
+    "设置"
+  ],
+  "defaultSpace": true,
+  "spaceRun": {
+    "screen": "paused",
+    "state": "playing",
+    "score": 14,
+    "distance": 14,
+    "speed": 24.971154508500124,
+    "runId": "f7514ad6-23e5-4aa8-b735-3ca0df7939ef",
+    "player": {
+      "lane": 0,
+      "x": -3.4,
+      "y": 2.399530493146359,
+      "air": 577.3332047719499,
+      "grounded": false,
+      "hovering": false,
+      "trick": null
+    },
+    "coins": 33,
+    "savedRuns": 8,
+    "drawCalls": 1,
+    "triangles": 1,
+    "config": {
+      "AIR": {
+        "capacity": 600,
+        "laneShift": 3,
+        "airLaneShift": 15,
+        "jump": 20,
+        "hoverPerSec": 120,
+        "trick": 40,
+        "flipMin": 20,
+        "slam": 20,
+        "boostPerSec": 40,
+        "cell": 15,
+        "can": 150,
+        "kickflipReward": 10,
+        "rollReward": 40,
+        "lowRatio": 0.2
+      },
+      "PHYSICS": {
+        "gravity": 28,
+        "jumpHeight": 2.5,
+        "maxHeight": 6.2,
+        "hoverExtraAccel": 7,
+        "holdDelay": 0.12,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "trickTime": 0.55,
+        "flipApex": 5,
+        "flipMinLift": 2.5,
+        "flipGravity": 0.55,
+        "flipTime": 0.7,
+        "slamSpeed": -22
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ],
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "scoreAfter": 3,
+        "scoreEvery": 1,
+        "score": 10
+      },
+      "SCORE": {
+        "nearMiss": 10,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "trick": 20,
+        "perfect": 10,
+        "stuntExtra": 10,
+        "multiPerCar": 30,
+        "rammed": 50,
+        "cell": 5
+      },
+      "ROAD": {
+        "widenStart": 5000,
+        "widenEnd": 5200,
+        "width": 12,
+        "extraWidth": 6.8
+      },
+      "ROCKET": {
+        "duration": 8,
+        "chargeRequired": 1.5,
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6,
+        "gain": {
+          "trick": 0.03,
+          "nearMiss": 0.05,
+          "cleared": 0.04,
+          "perfect": 0.02,
+          "cell": 0.015,
+          "can": 0.15
+        }
+      },
+      "STARMAN": {
+        "duration": 8,
+        "speedMult": 1.6,
+        "scoreMult": 2,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "smash": 80
+      }
+    },
+    "errors": [],
+    "showroom": {
+      "elapsed": 7.629100000000004,
+      "nextDemo": 4.5,
+      "animation": "frontflip",
+      "animationTime": 3.149900000000001,
+      "height": 2.5065734800247363,
+      "pitch": -6.1138419090506,
+      "roll": 0,
+      "inspecting": false,
+      "dragging": false,
+      "containersVisible": false,
+      "clearance": {
+        "minimumY": 2.1828246149519974,
+        "gap": 2.1378246149519975,
+        "correction": 0,
+        "meshes": 50
+      },
+      "audio": {
+        "state": "suspended",
+        "muted": false,
+        "active": false,
+        "rms": 0,
+        "peakRms": 0,
+        "plays": 1,
+        "landings": 0,
+        "profile": {
+          "phase": "flip",
+          "hover": 0.20881284671865832,
+          "thrust": 0.1834888579950671,
+          "spin": 0.20787516718128096
+        },
+        "masterGain": 0.800000011920929,
+        "hoverGain": 0,
+        "thrustGain": 0
+      },
+      "jetLevel": 0.4877558193922925,
+      "motion": {
+        "phase": "flip",
+        "progress": 0.6057500000000002,
+        "suspension": 0,
+        "power": 0.4881936525559975,
+        "landings": 0
+      },
+      "landing": {
+        "active": false,
+        "age": 3,
+        "emitted": 0,
+        "maximumRadius": 0,
+        "particles": 72
+      }
+    },
+    "gameplayChecks": null,
+    "drivingChecks": null,
+    "showroomChecks": null,
+    "driving": {
+      "options": {
+        "mode": "free",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 1,
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "metrics": {
+        "jumps": 1,
+        "laneChanges": 1,
+        "tricks": 0,
+        "barrels": 0,
+        "flips": 0,
+        "landings": 0,
+        "perfectLandings": 0,
+        "airTime": 0.39999999999999997,
+        "hoverTime": 0,
+        "airSpent": 22.66679522805009,
+        "maxHeight": 2.399530493146359,
+        "collisions": 0,
+        "cleared": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "comboBreak": "none",
+        "distance": 13.56756920483487,
+        "duration": 0.8000000000000008,
+        "maxCombo": 0
+      },
+      "runId": "f7514ad6-23e5-4aa8-b735-3ca0df7939ef",
+      "profile": {
+        "lesson": 1,
+        "trainingClaims": [
+          0
+        ],
+        "preferences": {
+          "mode": "free",
+          "features": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          },
+          "lesson": 1,
+          "ruleset": "driving-v1-f1-t1",
+          "freeFeatures": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          }
+        }
+      },
+      "traffic": {
+        "guardedSpawns": 0,
+        "fixedRows": 0
+      },
+      "completion": {
+        "success": false,
+        "finished": false,
+        "target": 0,
+        "progress": 0
+      },
+      "lastReview": null
+    },
+    "scenery": {
+      "selected": "space",
+      "stars": 8690,
+      "asteroids": 48,
+      "travel": 13.56756920483487,
+      "moon": true,
+      "steadyStars": true,
+      "roadPreserved": true,
+      "terrestrialVisible": 0
+    }
+  },
+  "lowQualityRun": {
+    "screen": "over",
+    "state": "over",
+    "score": 126,
+    "distance": 111,
+    "speed": 1.726278853384871,
+    "runId": "3adfd6fc-78dc-4ece-80fb-d71088d12c49",
+    "player": {
+      "lane": 1,
+      "x": -0.8295128260096697,
+      "y": 0.04707077264785764,
+      "air": 600,
+      "grounded": true,
+      "hovering": false,
+      "trick": null
+    },
+    "coins": 34,
+    "savedRuns": 9,
+    "drawCalls": 1,
+    "triangles": 1,
+    "config": {
+      "AIR": {
+        "capacity": 600,
+        "laneShift": 3,
+        "airLaneShift": 15,
+        "jump": 20,
+        "hoverPerSec": 120,
+        "trick": 40,
+        "flipMin": 20,
+        "slam": 20,
+        "boostPerSec": 40,
+        "cell": 15,
+        "can": 150,
+        "kickflipReward": 10,
+        "rollReward": 40,
+        "lowRatio": 0.2
+      },
+      "PHYSICS": {
+        "gravity": 28,
+        "jumpHeight": 2.5,
+        "maxHeight": 6.2,
+        "hoverExtraAccel": 7,
+        "holdDelay": 0.12,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "trickTime": 0.55,
+        "flipApex": 5,
+        "flipMinLift": 2.5,
+        "flipGravity": 0.55,
+        "flipTime": 0.7,
+        "slamSpeed": -22
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ],
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "scoreAfter": 3,
+        "scoreEvery": 1,
+        "score": 10
+      },
+      "SCORE": {
+        "nearMiss": 10,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "trick": 20,
+        "perfect": 10,
+        "stuntExtra": 10,
+        "multiPerCar": 30,
+        "rammed": 50,
+        "cell": 5
+      },
+      "ROAD": {
+        "widenStart": 5000,
+        "widenEnd": 5200,
+        "width": 12,
+        "extraWidth": 6.8
+      },
+      "ROCKET": {
+        "duration": 8,
+        "chargeRequired": 1.5,
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6,
+        "gain": {
+          "trick": 0.03,
+          "nearMiss": 0.05,
+          "cleared": 0.04,
+          "perfect": 0.02,
+          "cell": 0.015,
+          "can": 0.15
+        }
+      },
+      "STARMAN": {
+        "duration": 8,
+        "speedMult": 1.6,
+        "scoreMult": 2,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "smash": 80
+      }
+    },
+    "errors": [],
+    "showroom": {
+      "elapsed": 8.745800000000052,
+      "nextDemo": 4.5,
+      "animation": "frontflip",
+      "animationTime": 4.266600000000041,
+      "height": 0.05594812512225705,
+      "pitch": -6.283185307179586,
+      "roll": 0,
+      "inspecting": false,
+      "dragging": false,
+      "containersVisible": false,
+      "clearance": {
+        "minimumY": 0.05594812154597789,
+        "gap": 0.010948121545977893,
+        "correction": 0.036104999332021215,
+        "meshes": 50
+      },
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "active": false,
+        "rms": 0,
+        "peakRms": 0.00023632482407227886,
+        "plays": 5,
+        "landings": 0,
+        "profile": {
+          "phase": "air-brake",
+          "hover": 0.3830285777342953,
+          "thrust": 0.20671900018198536,
+          "spin": 1.4997597826618576e-32
+        },
+        "masterGain": 0.800000011920929,
+        "hoverGain": 0,
+        "thrustGain": 0
+      },
+      "jetLevel": 0.48317816870085817,
+      "motion": {
+        "phase": "air-brake",
+        "progress": 0.8205000000000079,
+        "suspension": 0,
+        "power": 0.5107047703123937,
+        "landings": 0
+      },
+      "landing": {
+        "active": false,
+        "age": 3,
+        "emitted": 0,
+        "maximumRadius": 0,
+        "particles": 72
+      }
+    },
+    "gameplayChecks": null,
+    "drivingChecks": null,
+    "showroomChecks": null,
+    "driving": {
+      "options": {
+        "mode": "free",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 1,
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "metrics": {
+        "jumps": 0,
+        "laneChanges": 0,
+        "tricks": 0,
+        "barrels": 0,
+        "flips": 0,
+        "landings": 0,
+        "perfectLandings": 0,
+        "airTime": 0,
+        "hoverTime": 0,
+        "airSpent": 0,
+        "maxHeight": 0,
+        "collisions": 1,
+        "cleared": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "comboBreak": "none",
+        "distance": 111.35572246960255,
+        "duration": 4.233333333333324,
+        "maxCombo": 0
+      },
+      "runId": "3adfd6fc-78dc-4ece-80fb-d71088d12c49",
+      "profile": {
+        "lesson": 1,
+        "trainingClaims": [
+          0
+        ],
+        "preferences": {
+          "mode": "free",
+          "features": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          },
+          "lesson": 1,
+          "ruleset": "driving-v1-f1-t1",
+          "freeFeatures": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          }
+        }
+      },
+      "traffic": {
+        "guardedSpawns": 0,
+        "fixedRows": 0
+      },
+      "completion": {
+        "success": false,
+        "finished": false,
+        "target": 0,
+        "progress": 0
+      },
+      "lastReview": {
+        "mode": "free",
+        "lesson": 1,
+        "nextLesson": 1,
+        "success": false,
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 1,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 111,
+          "duration": 4.233333333333324,
+          "maxCombo": 0
+        },
+        "advice": "tip.collision",
+        "trainingReward": 0
+      }
+    },
+    "scenery": {
+      "selected": "space",
+      "stars": 8690,
+      "asteroids": 24,
+      "travel": 111.35572246960255,
+      "moon": true,
+      "steadyStars": true,
+      "roadPreserved": true,
+      "terrestrialVisible": 0
+    }
+  },
+  "visualChecks": {
+    "originalEnvironmentRestored": true,
+    "coastSwitch": true,
+    "spaceReturned": true,
+    "roadAndVehicleReadable": true,
+    "blackBackground": true,
+    "moonAndStarsVisible": true,
+    "nativeSceneryHidden": true
+  },
+  "console": [
+    {
+      "level": "warn",
+      "message": "THREE.WebGLProgram: Program Info Log: (198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(198,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(419,1): warning X4000: use of potentially uninitialized variable (f_ApplyFXAA)",
+      "timestamp": "2026-10-25T17:44:10.089Z",
+      "url": "http://127.0.0.1:4182/"
+    }
+  ],
+  "standaloneRequests": [
+    "/"
+  ],
+  "htmlSha256": "8498713f4a15876440f1c6a3c82ba8918734a348b27788cf24a17b2809cdb671",
+  "notes": [
+    "No runtime errors. A low-quality ANGLE/FXAA compiler warning is retained in the console record; it did not prevent rendering."
+  ]
+}

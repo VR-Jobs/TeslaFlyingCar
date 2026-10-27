@@ -1,0 +1,104 @@
+{
+  "asset": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-local\\models\\roadster-2026\\lod\\driving\\roadster-exterior.blend",
+  "sha256": "fb033ea975ba9b7e009d09ef26520a48f5a5241f170cdb12463b91c954531865",
+  "exteriorObjects": 227,
+  "workingDimensions": [
+    2.0967822074890137,
+    4.621783256530762,
+    1.2203187942504883
+  ],
+  "maximumWingMountGap": 1.1920928955078125e-07,
+  "poses": [
+    {
+      "frame": 1,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 1,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 11,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 11,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 21,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 21,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 31,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 31,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 41,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 41,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 51,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 51,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 61,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 61,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 71,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 71,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 81,
+      "side": -1,
+      "gap": 1.1920928955078125e-07
+    },
+    {
+      "frame": 81,
+      "side": 1,
+      "gap": 1.1920928955078125e-07
+    }
+  ],
+  "scope": "Independent saved Blender source inspection. Units are inferred game-scale metres, not measured OEM specifications."
+}

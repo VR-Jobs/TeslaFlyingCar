@@ -1,0 +1,42 @@
+{
+  "views": {
+    "front": [
+      [
+        7.5,
+        3.0,
+        -9.2
+      ],
+      65
+    ],
+    "side": [
+      [
+        10.2,
+        1.2,
+        0
+      ],
+      63
+    ],
+    "rear": [
+      [
+        7.4,
+        3.0,
+        9.0
+      ],
+      65
+    ],
+    "wing": [
+      [
+        7.0,
+        3.8,
+        9.3
+      ],
+      62
+    ]
+  },
+  "target": [
+    0,
+    0.63,
+    0
+  ],
+  "precision": "Fixed review cameras; qualitative photo comparison, not a solved OEM calibration"
+}

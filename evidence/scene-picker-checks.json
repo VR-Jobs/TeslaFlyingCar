@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "name": "choose-without-starting",
+      "pass": true,
+      "detail": {
+        "coastInitialized": false,
+        "screen": "menu",
+        "selected": "space",
+        "staged": "coast"
+      }
+    },
+    {
+      "name": "cancel-retains-four-button-home",
+      "pass": true,
+      "detail": {
+        "buttons": 4,
+        "open": false
+      }
+    },
+    {
+      "name": "space-key-opens-picker",
+      "pass": true
+    },
+    {
+      "name": "escape-cancels-picker",
+      "pass": true
+    },
+    {
+      "name": "enter-key-opens-picker",
+      "pass": true
+    },
+    {
+      "name": "coast-confirm-starts-run",
+      "pass": true,
+      "detail": {
+        "screen": "game",
+        "state": "intro",
+        "scenery": {
+          "initialized": true,
+          "palms": 54,
+          "selected": "coast",
+          "travel": 0,
+          "waveTime": 0.1
+        }
+      }
+    },
+    {
+      "name": "remembers-last-confirmed-coast",
+      "pass": true,
+      "detail": {
+        "screen": "menu",
+        "selected": "coast"
+      }
+    },
+    {
+      "name": "space-confirm-starts-run",
+      "pass": true,
+      "detail": {
+        "screen": "game",
+        "state": "intro",
+        "selected": "space",
+        "terrestrialVisible": 0
+      }
+    }
+  ],
+  "passed": 8,
+  "failed": 0,
+  "renderErrors": [],
+  "options": [
+    "space",
+    "coast"
+  ]
+}

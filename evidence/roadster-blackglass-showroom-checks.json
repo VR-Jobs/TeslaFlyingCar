@@ -1,0 +1,126 @@
+{
+  "model": {
+    "asset": "roadster-blender-exterior-v1",
+    "revision": "20261026-blackglass-photo-exterior",
+    "glassColor": "05070a",
+    "groups": 37,
+    "triangles": 145384,
+    "extension": 0,
+    "maximumAttachmentGap": 1.1102230246251565e-16
+  },
+  "checks": {
+    "status": "PASS",
+    "cases": [
+      {
+        "kind": "frontflip",
+        "dir": 1,
+        "minimumY": 0.05299999999999999,
+        "plane": 0.045,
+        "maximumHeight": 2.6499999999999995,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 27241710,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03332615061609096,
+        "suspensionMax": 0.0069244055209554305,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.2020619032679303,
+        "dustExpired": true,
+        "maximumHeightStep": 0.07481474620474082,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 1.6499999999999997,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 25166142,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03314884709644317,
+        "suspensionMax": 0.00694525712994993,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1469592290026736,
+        "dustExpired": true,
+        "maximumHeightStep": 0.050460564592711865,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": -1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 1.6499999999999997,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 25166142,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03314884709644317,
+        "suspensionMax": 0.00694525712994993,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1469592290026736,
+        "dustExpired": true,
+        "maximumHeightStep": 0.050460564592711865,
+        "status": "PASS"
+      },
+      {
+        "kind": "hover",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 0.95,
+        "peakRotation": 0,
+        "landed": true,
+        "verticesChecked": 24128358,
+        "phases": [
+          "preload",
+          "takeoff",
+          "hover",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.033028070250402046,
+        "suspensionMax": 0.006947934804186156,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1078601118211457,
+        "dustExpired": true,
+        "maximumHeightStep": 0.03032086292283631,
+        "status": "PASS"
+      }
+    ]
+  },
+  "entry": {
+    "requestedDelay": 1,
+    "firstDemoDelay": 1.0167
+  },
+  "errors": [],
+  "testIsolationFix": "Sample each action starting at its own t=0 pose; exclude the unrelated previously running demo from the first height delta."
+}

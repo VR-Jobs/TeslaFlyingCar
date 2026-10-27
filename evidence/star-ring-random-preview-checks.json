@@ -1,0 +1,35 @@
+{
+  "differentSeed": true,
+  "differentGeometry": true,
+  "a": {
+    "seed": 11,
+    "section": 1,
+    "layout": "11:0",
+    "kinds": [
+      "turn",
+      "loop",
+      "twist",
+      "loop",
+      "wave"
+    ],
+    "gaps": 3,
+    "rows": 20,
+    "previewReady": true
+  },
+  "b": {
+    "seed": 27,
+    "section": 1,
+    "layout": "27:0",
+    "kinds": [
+      "wave",
+      "twist",
+      "twist",
+      "loop",
+      "turn"
+    ],
+    "gaps": 3,
+    "rows": 19,
+    "previewReady": true
+  },
+  "errors": []
+}

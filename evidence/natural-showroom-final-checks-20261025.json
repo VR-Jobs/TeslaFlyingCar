@@ -1,0 +1,287 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "sha256": "aa60ce03c7f4d51509aacf1b73f6863ecf361261dbe01ce37428700efc6689b6",
+  "landing": {
+    "animation": "frontflip",
+    "animationTime": 4.966800000000001,
+    "audio": {
+      "active": false,
+      "hoverGain": 0.0013096386101096869,
+      "landings": 1,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.05565513779619607,
+      "plays": 1,
+      "profile": {
+        "hover": 0,
+        "phase": "settle",
+        "spin": 1.4997597826618576e-32,
+        "thrust": 0
+      },
+      "rms": 0.00010883699611286884,
+      "state": "running",
+      "thrustGain": 0.0002368353307247162
+    },
+    "clearance": {
+      "correction": 0.05300000357627916,
+      "gap": 0.008,
+      "meshes": 50,
+      "minimumY": 0.053
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 9.454300000000012,
+    "height": 0.05300000357627916,
+    "inspecting": false,
+    "jetLevel": 0,
+    "landing": {
+      "active": true,
+      "age": 0.6002000000000007,
+      "emitted": 1,
+      "maximumRadius": 2.827708009241141,
+      "particles": 72
+    },
+    "motion": {
+      "landings": 1,
+      "phase": "settle",
+      "power": 0,
+      "progress": 0.9551538461538464,
+      "suspension": 0.000289794622077714
+    },
+    "nextDemo": 4.5,
+    "pitch": -6.283185307179586,
+    "roll": 0
+  },
+  "liveFlightAudio": {
+    "active": true,
+    "hoverGain": 0.30421754717826843,
+    "landings": 4,
+    "masterGain": 0.800000011920929,
+    "muted": false,
+    "peakRms": 0.0627873781664193,
+    "plays": 5,
+    "profile": {
+      "hover": 0.36202186565635425,
+      "phase": "hover",
+      "spin": 0,
+      "thrust": 0.30564449455961307
+    },
+    "rms": 0.029507000305661196,
+    "state": "running",
+    "thrustGain": 0.16802068054676056
+  },
+  "garage": {
+    "animation": "idle",
+    "animationTime": 0,
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "landings": 4,
+      "masterGain": 0.800000011920929,
+      "muted": false,
+      "peakRms": 0.0692787471508548,
+      "plays": 4,
+      "profile": {
+        "hover": 0,
+        "phase": "idle",
+        "spin": 0,
+        "thrust": 0
+      },
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "clearance": {
+      "correction": 0.05300000357627872,
+      "gap": 0.008,
+      "meshes": 50,
+      "minimumY": 0.053
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 57.708300000000094,
+    "height": 0.05300000357627872,
+    "inspecting": true,
+    "jetLevel": 0,
+    "landing": {
+      "active": false,
+      "age": 3.0330999999999984,
+      "emitted": 4,
+      "maximumRadius": 3.3983739723858313,
+      "particles": 72
+    },
+    "motion": {
+      "landings": 4,
+      "phase": "idle",
+      "power": 0,
+      "progress": 1,
+      "suspension": 0
+    },
+    "nextDemo": 65.6752000000001,
+    "pitch": 0,
+    "roll": 0
+  },
+  "muted": {
+    "animation": "idle",
+    "animationTime": 0,
+    "audio": {
+      "active": false,
+      "hoverGain": 0,
+      "landings": 4,
+      "masterGain": 0,
+      "muted": true,
+      "peakRms": 0.0692787471508548,
+      "plays": 4,
+      "profile": {
+        "hover": 0,
+        "phase": "idle",
+        "spin": 0,
+        "thrust": 0
+      },
+      "rms": 0,
+      "state": "running",
+      "thrustGain": 0
+    },
+    "clearance": {
+      "correction": 0.05300000357627872,
+      "gap": 0.008,
+      "meshes": 50,
+      "minimumY": 0.053
+    },
+    "containersVisible": false,
+    "dragging": false,
+    "elapsed": 129.17469999999935,
+    "height": 0.05300000357627872,
+    "inspecting": false,
+    "jetLevel": 0,
+    "landing": {
+      "active": false,
+      "age": 3.7667,
+      "emitted": 9,
+      "maximumRadius": 3.8113949683718897,
+      "particles": 72
+    },
+    "motion": {
+      "landings": 9,
+      "phase": "idle",
+      "power": 0,
+      "progress": 1,
+      "suspension": 0
+    },
+    "nextDemo": 137.826114158783,
+    "pitch": 0,
+    "roll": 0
+  },
+  "modelRegression": {
+    "status": "PASS",
+    "cases": [
+      {
+        "kind": "frontflip",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 2.6499999999999995,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 12402060,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03332615061609096,
+        "suspensionMax": 0.0069244055209554305,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.2020619032679303,
+        "dustExpired": true,
+        "maximumHeightStep": 0.07481474620474082,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 1.6499999999999997,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 11457132,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03314884709644317,
+        "suspensionMax": 0.00694525712994993,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1469592290026736,
+        "dustExpired": true,
+        "maximumHeightStep": 0.050460564592711865,
+        "status": "PASS"
+      },
+      {
+        "kind": "barrel",
+        "dir": -1,
+        "minimumY": 0.05299999999999999,
+        "plane": 0.045,
+        "maximumHeight": 1.6499999999999997,
+        "peakRotation": 6.283185307179586,
+        "landed": true,
+        "verticesChecked": 11457132,
+        "phases": [
+          "preload",
+          "takeoff",
+          "flip",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.03314884709644317,
+        "suspensionMax": 0.00694525712994993,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1469592290026736,
+        "dustExpired": true,
+        "maximumHeightStep": 0.050460564592711865,
+        "status": "PASS"
+      },
+      {
+        "kind": "hover",
+        "dir": 1,
+        "minimumY": 0.05300000000000005,
+        "plane": 0.045,
+        "maximumHeight": 0.95,
+        "peakRotation": 0,
+        "landed": true,
+        "verticesChecked": 10984668,
+        "phases": [
+          "preload",
+          "takeoff",
+          "hover",
+          "air-brake",
+          "settle",
+          "idle"
+        ],
+        "suspensionMin": -0.033028070250402046,
+        "suspensionMax": 0.006947934804186156,
+        "cushioned": true,
+        "dustBursts": 1,
+        "dustRadius": 3.1078601118211457,
+        "dustExpired": true,
+        "maximumHeightStep": 0.03032086292283631,
+        "status": "PASS"
+      }
+    ]
+  },
+  "console": [],
+  "limitations": "Same standalone HTML rendered over localhost; automated file:// navigation unavailable."
+}

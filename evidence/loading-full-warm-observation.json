@@ -1,0 +1,515 @@
+{
+  "note": "Earlier full-emitter warm run exceeded the former 48-mask QA threshold; the explicit full-emitter budget is now 64. The measured peak was 53, with two windows and bounded geometry.",
+  "report": {
+    "checks": [
+      {
+        "name": "eight-different-random-sections-continue-without-finishing",
+        "pass": true,
+        "laps": 8,
+        "distance": 26055.67436312629,
+        "time": 803.9499999995975,
+        "layouts": [
+          "42:0",
+          "42:1",
+          "42:2",
+          "42:3",
+          "42:4",
+          "42:5",
+          "42:6",
+          "42:7",
+          "42:8"
+        ]
+      },
+      {
+        "name": "random-window-gpu-and-bloom-caches-remain-bounded",
+        "pass": false,
+        "maximumGeometry": 628,
+        "maximumMasks": 53,
+        "maximumLiveWindows": 2,
+        "samples": [
+          {
+            "layout": "42:0",
+            "geometries": 336,
+            "resources": {
+              "objects": 4159,
+              "geometries": 385,
+              "materials": 94
+            },
+            "streaming": {
+              "layout": "42:0",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 3,
+              "retired": 2,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:1",
+            "geometries": 337,
+            "resources": {
+              "objects": 3813,
+              "geometries": 378,
+              "materials": 93
+            },
+            "streaming": {
+              "layout": "42:1",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 4,
+              "retired": 3,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:2",
+            "geometries": 328,
+            "resources": {
+              "objects": 4196,
+              "geometries": 391,
+              "materials": 93
+            },
+            "streaming": {
+              "layout": "42:2",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 5,
+              "retired": 4,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:3",
+            "geometries": 325,
+            "resources": {
+              "objects": 3782,
+              "geometries": 386,
+              "materials": 93
+            },
+            "streaming": {
+              "layout": "42:3",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 6,
+              "retired": 5,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:4",
+            "geometries": 330,
+            "resources": {
+              "objects": 3993,
+              "geometries": 390,
+              "materials": 94
+            },
+            "streaming": {
+              "layout": "42:4",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 7,
+              "retired": 6,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:5",
+            "geometries": 348,
+            "resources": {
+              "objects": 4113,
+              "geometries": 394,
+              "materials": 94
+            },
+            "streaming": {
+              "layout": "42:5",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 8,
+              "retired": 7,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:6",
+            "geometries": 345,
+            "resources": {
+              "objects": 4194,
+              "geometries": 390,
+              "materials": 93
+            },
+            "streaming": {
+              "layout": "42:6",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 9,
+              "retired": 8,
+              "prepared": null
+            }
+          },
+          {
+            "layout": "42:7",
+            "geometries": 330,
+            "resources": {
+              "objects": 3885,
+              "geometries": 388,
+              "materials": 93
+            },
+            "streaming": {
+              "layout": "42:7",
+              "liveWindows": 2,
+              "preload": {
+                "completed": 9,
+                "aborted": 0,
+                "maximumSliceMs": 119.19999999925494,
+                "gpuWarm": {
+                  "meshes": 71,
+                  "batches": 12,
+                  "maximumBatchMs": 0.40000000037252903,
+                  "totalMs": 4.599999999627471
+                }
+              },
+              "created": 10,
+              "retired": 9,
+              "prepared": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "random-generated-routes-require-no-fall-or-bottom-impact",
+        "pass": true,
+        "falls": 0,
+        "trackImpacts": 0
+      },
+      {
+        "name": "random-route-settlement-and-distance-save-once",
+        "pass": true,
+        "reward": 284
+      }
+    ],
+    "challenge": {
+      "mode": "endless",
+      "distance": 26055.67436312629,
+      "laps": 8,
+      "level": 9,
+      "localDistance": 0.5237086714864745,
+      "localLimit": 3147.720288087548
+    },
+    "randomness": {
+      "seed": 42,
+      "section": 9,
+      "layout": "42:8",
+      "kinds": [
+        "turn",
+        "twist",
+        "wave",
+        "twist",
+        "loop"
+      ],
+      "gaps": 3,
+      "rows": 18,
+      "previewReady": false
+    },
+    "view": {
+      "loading": {
+        "initialRouteMs": 0,
+        "lastSwapMs": 3.199999999254942,
+        "lastDisposeMs": 2.799999998882413,
+        "usedPrepared": true,
+        "swapRenderPeakMs": 14.900000000372529,
+        "swapSamples": [
+          {
+            "ms": 14.900000000372529,
+            "before": {
+              "geometries": 336,
+              "programs": 526
+            },
+            "after": {
+              "geometries": 337,
+              "programs": 528
+            },
+            "passes": {
+              "beautyMs": 7.800000000745058,
+              "maskMs": 6.899999998509884,
+              "bloomMs": 0.10000000149011612
+            }
+          }
+        ]
+      },
+      "trackTriangles": 15128,
+      "glass": {
+        "style": "rim-lit-glass",
+        "baseOpacity": 0.06,
+        "gripWarning": 0,
+        "laneCount": 3,
+        "longitudinalEdges": 3,
+        "transverseLines": 0,
+        "sectionAccents": true,
+        "sourceTriangles": 37900,
+        "batches": 123,
+        "depthWrite": false
+      },
+      "pickups": {
+        "types": {
+          "air": "pressure-cylinder",
+          "ring": "navigation-energy-core",
+          "sky": "segmented-jump-gate"
+        },
+        "models": 99,
+        "particles": 20,
+        "activeBursts": 0,
+        "collectedEffects": 0,
+        "burstPool": 8,
+        "openSkyCenter": true,
+        "physicalScale": {
+          "air": 1.8,
+          "core": 1.8,
+          "gateInnerDiameter": 4.2
+        },
+        "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+        "cycle": 8
+      },
+      "traffic": {
+        "style": "blender-roadster-dynamic-convoys",
+        "total": 21,
+        "visible": 0,
+        "draws": 0,
+        "rendering": "shared-geometry-meshes",
+        "batches": 15,
+        "materialCategories": 7,
+        "moving": 0,
+        "signaling": 0,
+        "rollingWheels": true,
+        "turnSignalLead": 1.8,
+        "blackGlass": true,
+        "tailLights": true,
+        "hazardBlinkers": true,
+        "sharedModel": "20261026-blackglass-photo-exterior",
+        "trianglesPerCar": 21515,
+        "collider": {
+          "halfWidth": 1.06,
+          "halfLength": 2.35,
+          "height": 1.25,
+          "rideHeight": 0.035
+        },
+        "impacts": 0,
+        "sparkPool": 32
+      },
+      "escort": {
+        "stars": 2,
+        "waves": 0,
+        "collections": 0,
+        "clearBursts": 0,
+        "streamPool": 6,
+        "burstPool": 8,
+        "sharedGlow": true
+      },
+      "voyage": {
+        "visibleFragments": 6,
+        "totalFragments": 38,
+        "event": "",
+        "supplyVisible": false,
+        "meteors": 0,
+        "eventOutsideRoad": true,
+        "meteorPool": 7
+      },
+      "adventures": {
+        "branches": 1,
+        "gates": 6,
+        "visibleGates": 0,
+        "style": "glass-shortcut-and-three-stage-stunt-gates",
+        "gateSequence": [
+          "jump",
+          "spin",
+          "suction"
+        ],
+        "branchPhysicalLengths": [
+          {
+            "route": "fork-8",
+            "span": 296.05799661830724,
+            "metric": 0.874418923374399
+          }
+        ]
+      },
+      "postprocessing": {
+        "timings": {
+          "beautyMs": 7.800000000745058,
+          "maskMs": 6.899999998509884,
+          "bloomMs": 0.10000000149011612
+        },
+        "type": "selective-hdr-bloom",
+        "enabled": true,
+        "frames": 25249,
+        "crash": 0,
+        "width": 1920,
+        "height": 1080,
+        "mips": 5,
+        "strength": 0.7,
+        "radius": 0.05,
+        "threshold": 0.6,
+        "emitters": 87,
+        "cachedMasks": 30,
+        "selective": true,
+        "occlusion": true
+      },
+      "trackDetail": {
+        "style": "magnetic-modular-chassis",
+        "ribs": 0,
+        "fins": 208,
+        "terminals": 10,
+        "sectionMarkers": 504,
+        "cradles": 0,
+        "beacons": 26,
+        "triangles": 54866,
+        "batches": 96,
+        "clearDrivingWidth": 11.4
+      },
+      "saturn": {
+        "style": "saturn-inspired",
+        "planetRadius": 900,
+        "ringInner": 1116,
+        "ringOuter": 4800,
+        "dustCount": 2200,
+        "ringPlaneBelowStraight": 20
+      },
+      "solidTriangles": 37900,
+      "trackThickness": 0.45,
+      "trackFaces": "separate-front-bottom-walls",
+      "cameraBlocked": false,
+      "carTriangles": 38365,
+      "localCycle": 8,
+      "boundedWindow": [
+        -80,
+        3747.720288087548
+      ],
+      "streaming": {
+        "layout": "42:8",
+        "liveWindows": 1,
+        "preload": {
+          "completed": 9,
+          "aborted": 0,
+          "maximumSliceMs": 119.19999999925494,
+          "gpuWarm": {
+            "meshes": 71,
+            "batches": 12,
+            "maximumBatchMs": 0.40000000037252903,
+            "totalMs": 4.599999999627471
+          }
+        },
+        "created": 11,
+        "retired": 10,
+        "prepared": null
+      },
+      "markerVisible": false,
+      "gapLights": {
+        "active": false,
+        "state": "off",
+        "rows": 3,
+        "layout": "longitudinal-edges-only"
+      },
+      "wingGap": 0,
+      "flightEffects": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0.998778607529898,
+        "jet": 0.0004270149432501368,
+        "boost": 0.10872809157948529,
+        "levels": {
+          "L1": 0.0004270149432501368,
+          "L2": 0.0004270149432501368,
+          "L3": 0.0004270149432501368,
+          "L4": 0.0004270149432501368,
+          "R1": 0.10872809157948529,
+          "R2": 0.10872809157948529,
+          "R3": 0.10872809157948529,
+          "R4": 0.10872809157948529,
+          "S1": 0,
+          "S2": 0
+        },
+        "intakeRibbons": 12,
+        "particles": 272,
+        "particleCapacity": 512
+      },
+      "death": {
+        "active": false,
+        "progress": 0,
+        "gray": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    }
+  }
+}

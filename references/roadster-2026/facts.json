@@ -1,0 +1,49 @@
+{
+  "vehicle": "Tesla Roadster, official October 2026 exterior",
+  "date": "2026-10-25",
+  "verified": [
+    {
+      "id": "identity.current-wedge-roadster",
+      "sources": [
+        "Roadster-02-Pilot-Desktop.jpg",
+        "Roadster-08-End-Desktop.jpg"
+      ],
+      "finding": "Current official wedge-shaped coupe, white body and gold-tinted glazing."
+    },
+    {
+      "id": "wing.visible-hinge-supports",
+      "source": "Roadster-06-Gravity-Desktop.jpg",
+      "finding": "Raised wing has visible supports and mounting hardware."
+    }
+  ],
+  "missing": [
+    {
+      "id": "OEM.length",
+      "reason": "Not published on the reviewed current official page; earlier-generation manuals are not valid dimension evidence."
+    },
+    {
+      "id": "OEM.width",
+      "reason": "Not published on the reviewed current official page; earlier-generation manuals are not valid dimension evidence."
+    },
+    {
+      "id": "OEM.height",
+      "reason": "Not published on the reviewed current official page; earlier-generation manuals are not valid dimension evidence."
+    },
+    {
+      "id": "OEM.wheelbase",
+      "reason": "Not published on the reviewed current official page; earlier-generation manuals are not valid dimension evidence."
+    },
+    {
+      "id": "OEM.wing.actuator.geometry",
+      "reason": "Not published on the reviewed current official page; earlier-generation manuals are not valid dimension evidence."
+    }
+  ],
+  "inferred": {
+    "modelWorkingAxleCentres": [
+      -1.43,
+      1.62
+    ],
+    "modelWorkingWheelRadius": 0.357,
+    "basis": "Photo-guided proportions in the existing game coordinate system; not measured manufacturer values."
+  }
+}

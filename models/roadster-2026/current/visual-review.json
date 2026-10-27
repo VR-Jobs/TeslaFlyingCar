@@ -1,0 +1,39 @@
+{
+  "revision": "20261026-blackglass",
+  "assetSha256": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef",
+  "scope": "Qualitative exterior revision for game use. Fixed studio camera positions/lenses retained from baseline; not calibrated OEM silhouette metrology. No exterior-to-interior release requested.",
+  "reviewerMode": "primary visual inspection plus independent native file readback",
+  "views": {
+    "front": {
+      "finding": "Neutral-black side glazing, reduced front lens size, sculpted nose corner returns and exposed silver aero sectors visible. The studio softbox is still reflected on the windshield.",
+      "status": "reviewed"
+    },
+    "side": {
+      "finding": "Rear glazing ends earlier and the white C-pillar/rear shoulder is broader; wheel centers and overall side shell retained.",
+      "status": "reviewed"
+    },
+    "rear": {
+      "finding": "Black rear glass, wide flush upper aero panel and recessed carbon lower fascia; external fan row removed.",
+      "status": "reviewed"
+    },
+    "wing": {
+      "finding": "Full-width panel rotates about a front hinge, with visible connected struts beneath it; no tall lift-only stanchions.",
+      "status": "reviewed"
+    }
+  },
+  "remainingLimits": [
+    "Photo-guided exterior proportions rather than measured OEM CAD",
+    "Cabin internals and complete self-intersection certification are not included"
+  ],
+  "browserReview": {
+    "report": "evidence/roadster-blackglass-browser-checks.json",
+    "blackGlassAllLOD": true,
+    "scenes": [
+      "space",
+      "coast",
+      "starRing"
+    ],
+    "showroomMotion": "Four actual vertex-sampled actions passed after isolating each case at t=0. Earlier mid-animation initialization failure retained in evidence/roadster-blackglass-showroom-mid-animation-check.json.",
+    "standaloneConsole": "No warnings/errors on independent homepage and star-ring run. Iframe dashboard navigation had a separate MutationObserver null-Node exception, recorded in browser report."
+  }
+}

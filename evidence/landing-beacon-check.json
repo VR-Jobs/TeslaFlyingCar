@@ -1,0 +1,48 @@
+{
+  "airborne": {
+    "state": "playing",
+    "player": {
+      "air": 580,
+      "grounded": false,
+      "hovering": false,
+      "lane": 1,
+      "trick": null,
+      "x": 0,
+      "y": 2.402288708138568
+    },
+    "handling": {
+      "beacon": {
+        "height": 1.65,
+        "position": [
+          0,
+          0.055,
+          -9.849528293650724
+        ],
+        "visible": true
+      },
+      "blocked": null,
+      "buffer": 0,
+      "bufferedJumps": 0,
+      "landingSeconds": 0.4201893331096227,
+      "lastImpact": 0,
+      "markerVisible": true,
+      "rejected": 0
+    },
+    "errors": []
+  },
+  "after": {
+    "beacon": {
+      "height": 1.65,
+      "position": [
+        0,
+        0.055,
+        -0.7285519841746145
+      ],
+      "visible": false
+    },
+    "errors": [],
+    "markerVisible": false,
+    "state": "over"
+  },
+  "renderErrors": []
+}

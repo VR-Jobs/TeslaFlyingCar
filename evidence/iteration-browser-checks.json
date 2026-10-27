@@ -1,0 +1,1275 @@
+{
+  "results": [
+    {
+      "name": "lane-change",
+      "status": "PASS",
+      "detail": {
+        "lane": 0,
+        "x": -3.4
+      }
+    },
+    {
+      "name": "jump-and-land",
+      "status": "PASS",
+      "detail": {
+        "peak": 2.4019262754848447,
+        "grounded": true
+      }
+    },
+    {
+      "name": "flight-consumes-air",
+      "status": "PASS",
+      "detail": {
+        "height": 5.949273545254271,
+        "air": 524
+      }
+    },
+    {
+      "name": "barrel-roll",
+      "status": "PASS",
+      "detail": {
+        "trick": "barrel"
+      }
+    },
+    {
+      "name": "front-flip",
+      "status": "PASS",
+      "detail": {
+        "trick": "kickflip"
+      }
+    },
+    {
+      "name": "boost",
+      "status": "PASS",
+      "detail": {
+        "speed": 34.95359025026037,
+        "air": 560.0000000000023
+      }
+    },
+    {
+      "name": "empty-air-jump",
+      "status": "PASS",
+      "detail": {
+        "height": 0.18942488165887608
+      }
+    },
+    {
+      "name": "fixed-step-repeatability",
+      "status": "PASS",
+      "detail": {
+        "score": 126.49089797229286,
+        "distance": 86.49089797229288,
+        "air": 556.5602059952939,
+        "lane": 2,
+        "y": 0
+      }
+    },
+    {
+      "name": "tap-buffer-rejumps-once",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 1,
+        "rejected": 0,
+        "lastImpact": 0.7047630063208191,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0.7771109118533427,
+        "blocked": null,
+        "y": 0.7110368326173613,
+        "vy": 9.96550210688504
+      }
+    },
+    {
+      "name": "preceding-landing-settled",
+      "status": "PASS",
+      "detail": {
+        "jumps": 1,
+        "laneChanges": 0,
+        "tricks": 0,
+        "barrels": 0,
+        "flips": 0,
+        "landings": 1,
+        "perfectLandings": 0,
+        "airTime": 0.11666666666666665,
+        "hoverTime": 0,
+        "airSpent": 0,
+        "maxHeight": 0.7110368326173613,
+        "collisions": 0,
+        "cleared": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "comboBreak": "none",
+        "distance": 3.333551859845758,
+        "duration": 0.13333333333333333,
+        "maxCombo": 0,
+        "lastLandComplete": false
+      }
+    },
+    {
+      "name": "buffer-does-not-auto-repeat",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 1,
+        "rejected": 0,
+        "lastImpact": 0.8231077502293643,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0,
+        "blocked": null
+      }
+    },
+    {
+      "name": "buffer-held-jump-transitions-to-flight",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 1,
+        "rejected": 0,
+        "lastImpact": 0.7047630063208191,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0.9578252086717901,
+        "blocked": null
+      }
+    },
+    {
+      "name": "blur-release-cancels-buffer",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 0,
+        "rejected": 0,
+        "lastImpact": 0.7047630063208191,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0,
+        "blocked": null
+      }
+    },
+    {
+      "name": "low-rotation-denied-steering-retained",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 0,
+        "rejected": 1,
+        "lastImpact": 0,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0.13704838032068323,
+        "blocked": "height"
+      }
+    },
+    {
+      "name": "normal-jump-still-allows-barrel",
+      "status": "PASS",
+      "detail": {
+        "y": 1.2976160884148376,
+        "type": "barrel"
+      }
+    },
+    {
+      "name": "no-air-rotation-feedback",
+      "status": "PASS",
+      "detail": {
+        "buffer": 0,
+        "bufferedJumps": 0,
+        "rejected": 1,
+        "lastImpact": 0,
+        "markerVisible": false,
+        "beacon": {
+          "visible": false,
+          "layout": "rim",
+          "height": 1.65,
+          "radiusX": 1.17,
+          "radiusZ": 2.145,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "landingSeconds": 0.5469181606780272,
+        "blocked": "air"
+      }
+    },
+    {
+      "name": "impact-body-stays-above-road",
+      "status": "PASS",
+      "detail": {
+        "impact": 1.104825419241477,
+        "compression": -0.012000694368936455
+      }
+    },
+    {
+      "name": "specific-descending-collision-reason",
+      "status": "PASS",
+      "detail": "落地前碰到前车"
+    },
+    {
+      "name": "quick-restart-settles-and-starts-new-run",
+      "status": "PASS",
+      "detail": {
+        "state": "intro",
+        "run": "8da9acf7-f2a8-498e-b3e1-3458630b1c46"
+      }
+    },
+    {
+      "name": "academy-lesson-1",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 1,
+          "laneChanges": 2,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 1,
+          "perfectLandings": 0,
+          "airTime": 0.8166666666666675,
+          "hoverTime": 0,
+          "airSpent": 25.33384444444448,
+          "maxHeight": 2.402288708138568,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 150,
+          "duration": 6.5333333333333155,
+          "maxCombo": 0,
+          "lastLandComplete": false
+        },
+        "reward": 0
+      }
+    },
+    {
+      "name": "academy-1-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-1-next-button",
+      "status": "PASS",
+      "detail": "\n                下一关\n                SPACE\n              "
+    },
+    {
+      "name": "next-button-launches-second-lesson",
+      "status": "PASS",
+      "detail": {
+        "runId": "113b7dc5-7500-49eb-a9ff-1d3acb325843",
+        "seed": 1426605983,
+        "replayVersion": 4,
+        "revivesUsed": 0,
+        "startItems": [],
+        "createdAt": 1793023758811,
+        "mode": "academy",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 1,
+        "ruleset": "driving-v2-f1-t1",
+        "courseDay": null
+      }
+    },
+    {
+      "name": "academy-lesson-2",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 1,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 1,
+          "perfectLandings": 0,
+          "airTime": 2.4833333333333294,
+          "hoverTime": 1.7166666666666655,
+          "airSpent": 226,
+          "maxHeight": 6.3495539547117525,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 200,
+          "duration": 8.700000000000012,
+          "maxCombo": 0,
+          "lastLandComplete": false
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-2-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-2-next-button",
+      "status": "PASS",
+      "detail": "\n                下一关\n                SPACE\n              "
+    },
+    {
+      "name": "academy-lesson-3",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 1,
+          "laneChanges": 0,
+          "tricks": 1,
+          "barrels": 1,
+          "flips": 0,
+          "landings": 1,
+          "perfectLandings": 1,
+          "airTime": 0.8166666666666675,
+          "hoverTime": 0,
+          "airSpent": 60,
+          "maxHeight": 2.402288708138568,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "perfect",
+          "bestActionPoints": 20,
+          "comboBreak": "timeout",
+          "distance": 220,
+          "duration": 9.566666666666721,
+          "maxCombo": 2,
+          "lastLandComplete": true
+        },
+        "reward": 0
+      }
+    },
+    {
+      "name": "academy-3-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-3-next-button",
+      "status": "PASS",
+      "detail": "\n                下一关\n                SPACE\n              "
+    },
+    {
+      "name": "third-lesson-next-starts-item-training",
+      "status": "PASS",
+      "detail": {
+        "runId": "facd6289-13bf-471a-95a7-1df626db2da5",
+        "seed": 1979354879,
+        "replayVersion": 4,
+        "revivesUsed": 0,
+        "startItems": [],
+        "createdAt": 1793023763363,
+        "mode": "academy",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 3,
+        "ruleset": "driving-v2-f1-t1",
+        "courseDay": null
+      }
+    },
+    {
+      "name": "academy-lesson-4",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 347.668059444445,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 120,
+          "duration": 5.23333333333332,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "airCan": 1,
+            "airRestored": 150
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-4-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-5",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 449.668059444445,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 120,
+          "duration": 5.23333333333332,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "overpressure": 1,
+            "airRestored": 449.66807222222224,
+            "fullRefill": true
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-5-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-6",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 170,
+          "duration": 7.399999999999979,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "shield": 1,
+            "airRestored": 0,
+            "shieldSaved": true
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-6-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-7",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "timeout",
+          "distance": 170,
+          "duration": 7.399999999999979,
+          "maxCombo": 1,
+          "demo": {
+            "prepared": true,
+            "shockwave": 1,
+            "airRestored": 0,
+            "shockwaveUsed": true,
+            "shockwaveCleared": true
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-7-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-8",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "timeout",
+          "distance": 220,
+          "duration": 6.404999999999982,
+          "maxCombo": 1,
+          "demo": {
+            "prepared": true,
+            "ludicrous": 1,
+            "airRestored": 0,
+            "ludicrousUsed": true,
+            "powerTime": 4.633333333333322
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-8-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-9",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "timeout",
+          "distance": 220,
+          "duration": 6.413999999999981,
+          "maxCombo": 1,
+          "demo": {
+            "prepared": true,
+            "star": true,
+            "powerTime": 4.799999999999988
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-9-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-10",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 250,
+          "duration": 8.083333333333314,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "airCan": 3,
+            "airRestored": 0,
+            "rocket": true,
+            "powerTime": 4.0666666666666575
+          }
+        },
+        "reward": 15
+      }
+    },
+    {
+      "name": "academy-10-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-11",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 5150,
+          "duration": 16.800000000000328,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "armed": true,
+            "headStart": true,
+            "headStartFinished": true
+          }
+        },
+        "reward": 20
+      }
+    },
+    {
+      "name": "academy-11-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-12",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 1,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 170,
+          "duration": 7.182987619041656,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "armed": true,
+            "autoRevived": true,
+            "waitingRevive": false
+          }
+        },
+        "reward": 20
+      }
+    },
+    {
+      "name": "academy-12-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-13",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 1,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 170,
+          "duration": 7.232987630053369,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "waitingRevive": false,
+            "manualRevived": true
+          }
+        },
+        "reward": 20
+      }
+    },
+    {
+      "name": "academy-13-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "academy-lesson-14",
+      "status": "PASS",
+      "detail": {
+        "mode": "academy",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 200,
+          "duration": 8.700000000000012,
+          "maxCombo": 0,
+          "demo": {
+            "prepared": true,
+            "armed": true,
+            "coinDouble": true
+          }
+        },
+        "reward": 20
+      }
+    },
+    {
+      "name": "academy-14-inventory-preserved",
+      "status": "PASS",
+      "detail": {
+        "revive": 0,
+        "start_revive": 0,
+        "coin_double": 0,
+        "head_start": 0
+      }
+    },
+    {
+      "name": "final-lesson-finish-starts-free-drive",
+      "status": "PASS",
+      "detail": {
+        "runId": "07609824-7658-494a-977b-3d6aee8d7eb1",
+        "seed": 3670040578,
+        "replayVersion": 4,
+        "revivesUsed": 0,
+        "startItems": [],
+        "createdAt": 1793023764490,
+        "mode": "free",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 13,
+        "ruleset": "driving-v2-f1-t1",
+        "courseDay": null
+      }
+    },
+    {
+      "name": "failed-lesson-keeps-retry",
+      "status": "PASS",
+      "detail": "\n                重试\n                SPACE\n              "
+    },
+    {
+      "name": "failed-lesson-does-not-skip",
+      "status": "PASS",
+      "detail": {
+        "mode": "daily",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 13,
+        "ruleset": "driving-v2-f1-t1"
+      }
+    },
+    {
+      "name": "daily-layout-independent-of-boost",
+      "status": "PASS",
+      "detail": [
+        {
+          "seed": 276462977,
+          "cars": [
+            {
+              "type": "sedan",
+              "x": -3.4,
+              "D": 180
+            },
+            {
+              "type": "sedan",
+              "x": 0,
+              "D": 180
+            },
+            {
+              "type": "sedan",
+              "x": -3.4,
+              "D": 258
+            },
+            {
+              "type": "sedan",
+              "x": 0,
+              "D": 336
+            }
+          ]
+        },
+        {
+          "seed": 276462977,
+          "cars": [
+            {
+              "type": "sedan",
+              "x": -3.4,
+              "D": 180
+            },
+            {
+              "type": "sedan",
+              "x": 0,
+              "D": 180
+            },
+            {
+              "type": "sedan",
+              "x": -3.4,
+              "D": 258
+            },
+            {
+              "type": "sedan",
+              "x": 0,
+              "D": 336
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "precision-completion-contract",
+      "status": "PASS",
+      "detail": {
+        "mode": "precision",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 800,
+          "duration": 28.98333333333297,
+          "maxCombo": 0
+        }
+      }
+    },
+    {
+      "name": "stunt-completion-contract",
+      "status": "PASS",
+      "detail": {
+        "mode": "stunt",
+        "metrics": {
+          "jumps": 6,
+          "laneChanges": 0,
+          "tricks": 6,
+          "barrels": 6,
+          "flips": 0,
+          "landings": 5,
+          "perfectLandings": 5,
+          "airTime": 4.7499999999999885,
+          "hoverTime": 0,
+          "airSpent": 360,
+          "maxHeight": 2.402288708138568,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "barrel",
+          "bestActionPoints": 20.000000000000014,
+          "comboBreak": "timeout",
+          "distance": 280,
+          "duration": 10.850000000000119,
+          "maxCombo": 2,
+          "lastLandComplete": true
+        }
+      }
+    },
+    {
+      "name": "escape-completion-contract",
+      "status": "PASS",
+      "detail": {
+        "mode": "escape",
+        "metrics": {
+          "jumps": 0,
+          "laneChanges": 0,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 0,
+          "perfectLandings": 0,
+          "airTime": 0,
+          "hoverTime": 0,
+          "airSpent": 0,
+          "maxHeight": 0,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 1660,
+          "duration": 45.016666666665394,
+          "maxCombo": 0
+        }
+      }
+    },
+    {
+      "name": "original-mode-opt-out",
+      "status": "PASS",
+      "detail": {
+        "options": {
+          "mode": "classic",
+          "features": {
+            "coaching": false,
+            "feedback": false,
+            "fairTraffic": false
+          },
+          "lesson": 13,
+          "ruleset": "original-v1"
+        },
+        "height": 0.18942488165887608
+      }
+    },
+    {
+      "name": "fixed-layout-full-course-audit",
+      "status": "PASS",
+      "detail": {
+        "guardedSpawns": 0,
+        "fixedRows": 3,
+        "sequenceChecks": 123,
+        "deferred": 92,
+        "omitted": 23,
+        "fixedLayoutReachable": true
+      }
+    },
+    {
+      "name": "journey-medal-unlock",
+      "status": "PASS",
+      "detail": {
+        "earned": [
+          "landing",
+          "orbit"
+        ],
+        "paint": "silver"
+      }
+    },
+    {
+      "name": "lazy-coast-first-selection",
+      "status": "PASS",
+      "detail": {
+        "selected": "coast",
+        "palms": 54,
+        "waveTime": 0,
+        "travel": 0.3852777777777778,
+        "initialized": true
+      }
+    },
+    {
+      "name": "space-switch-restores-isolation",
+      "status": "PASS",
+      "detail": {
+        "selected": "space",
+        "stars": 8690,
+        "asteroids": 48,
+        "travel": 2700,
+        "journey": {
+          "chapter": "小行星带",
+          "moon": 1,
+          "belt": 0.9128474830954171,
+          "night": 0,
+          "orbit": 0,
+          "progress": 0.574468085106383,
+          "planetRadius": 185,
+          "planetPosition": [
+            -480,
+            -100,
+            -1030
+          ]
+        },
+        "coast": {
+          "selected": "original",
+          "palms": 54,
+          "waveTime": 0,
+          "travel": 0.3852777777777778,
+          "initialized": true
+        },
+        "moon": true,
+        "steadyStars": true,
+        "roadPreserved": true,
+        "terrestrialVisible": 0
+      }
+    },
+    {
+      "name": "lod-budget",
+      "status": "PASS",
+      "detail": {
+        "level": "medium",
+        "medium": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 38365,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        },
+        "low": {
+          "asset": "roadster-blender-exterior-v1",
+          "revision": "20261026-blackglass-photo-exterior",
+          "glassColor": "05070a",
+          "groups": 37,
+          "triangles": 21515,
+          "extension": 0,
+          "maximumAttachmentGap": 1.1102230246251565e-16
+        }
+      }
+    },
+    {
+      "name": "four-home-buttons",
+      "status": "PASS"
+    },
+    {
+      "name": "three-core-lessons-optional-items",
+      "status": "PASS"
+    },
+    {
+      "name": "persisted-comfort-controls",
+      "status": "PASS",
+      "detail": {
+        "shake": 0.55,
+        "parallax": 1,
+        "blur": 0.6,
+        "musicVolume": 0.8,
+        "effectVolume": 0.85,
+        "keys": {
+          "left": "ArrowLeft",
+          "right": "ArrowRight",
+          "jump": "Space",
+          "down": "ArrowDown",
+          "boost": "ShiftLeft",
+          "item": "KeyZ"
+        }
+      }
+    },
+    {
+      "name": "remapped-input-and-release",
+      "status": "PASS",
+      "detail": [
+        "jumpPress",
+        "jumpRelease"
+      ]
+    }
+  ],
+  "passed": 69,
+  "failed": 0
+}

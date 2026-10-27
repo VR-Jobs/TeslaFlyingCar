@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "unpaired-release-does-not-launch",
+      "pass": true
+    },
+    {
+      "name": "waits-safely-for-first-input",
+      "pass": true
+    },
+    {
+      "name": "unrelated-jump-cannot-skip-absorption",
+      "pass": true
+    },
+    {
+      "name": "short-tap-does-not-count-as-hold",
+      "pass": true
+    },
+    {
+      "name": "real-hold-unlocks-release-step",
+      "pass": true
+    },
+    {
+      "name": "no-timeout-auto-launch",
+      "pass": true
+    },
+    {
+      "name": "release-uses-real-flight",
+      "pass": true
+    },
+    {
+      "name": "passive-touchdown-does-not-pass-recapture",
+      "pass": true
+    },
+    {
+      "name": "fresh-airborne-press-and-touchdown-complete",
+      "pass": true
+    },
+    {
+      "name": "practice-starts-clean-race-at-origin",
+      "pass": true
+    },
+    {
+      "name": "practice-events-cannot-award-beat-points",
+      "pass": true
+    },
+    {
+      "name": "old-save-gets-new-tutorial",
+      "pass": true
+    },
+    {
+      "name": "completion-is-remembered-once",
+      "pass": true
+    },
+    {
+      "name": "manual-replay-overrides-completed-save",
+      "pass": true
+    },
+    {
+      "name": "midair-skip-restores-full-controls-at-origin",
+      "pass": true
+    },
+    {
+      "name": "ordinary-jump-restored-after-skip",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "url": "https://maniengine.com/examples/tesla/",
+  "firstLoad": {
+    "responseEnd": 139,
+    "domReady": 3420.7999999988824,
+    "assets": 14,
+    "assetTransferBytes": 3288311,
+    "cachedAssets": 0,
+    "fontRequests": 12
+  },
+  "cachedReload": {
+    "responseEnd": 133.19999999925494,
+    "domReady": 2194.4000000003725,
+    "assets": 14,
+    "assetTransferBytes": 0,
+    "cachedAssets": 14,
+    "fontRequests": 12
+  },
+  "transition": {
+    "checks": [
+      {
+        "name": "prepared-section-swap",
+        "pass": true
+      }
+    ],
+    "startMs": 799.5,
+    "preload": {
+      "layout": "11:0",
+      "liveWindows": 2,
+      "preload": {
+        "completed": 1,
+        "aborted": 0,
+        "maximumSliceMs": 11.699999999254942,
+        "gpuWarm": {
+          "meshes": 48,
+          "batches": 8,
+          "maximumBatchMs": 0.30000000074505806,
+          "totalMs": 4.5
+        }
+      },
+      "created": 2,
+      "retired": 0,
+      "prepared": "11:1"
+    },
+    "loading": {
+      "initialRouteMs": 0,
+      "lastSwapMs": 3.299999998882413,
+      "lastDisposeMs": 1.799999998882413,
+      "usedPrepared": true,
+      "swapRenderPeakMs": 19.5,
+      "swapSamples": [
+        {
+          "ms": 19.5,
+          "before": {
+            "geometries": 314,
+            "programs": 526
+          },
+          "after": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "passes": {
+            "beautyMs": 10.300000000745058,
+            "maskMs": 9.099999999627471,
+            "bloomMs": 0.09999999962747097
+          }
+        },
+        {
+          "ms": 3.5,
+          "before": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "after": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "passes": {
+            "beautyMs": 1.699999999254942,
+            "maskMs": 1.700000001117587,
+            "bloomMs": 0.09999999962747097
+          }
+        },
+        {
+          "ms": 2.099999999627471,
+          "before": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "after": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "passes": {
+            "beautyMs": 0.900000000372529,
+            "maskMs": 0.900000000372529,
+            "bloomMs": 0.19999999925494194
+          }
+        },
+        {
+          "ms": 2.099999999627471,
+          "before": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "after": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "passes": {
+            "beautyMs": 1.099999999627471,
+            "maskMs": 0.8000000007450581,
+            "bloomMs": 0.19999999925494194
+          }
+        },
+        {
+          "ms": 1.5,
+          "before": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "after": {
+            "geometries": 315,
+            "programs": 528
+          },
+          "passes": {
+            "beautyMs": 0.7000000011175871,
+            "maskMs": 0.7999999988824129,
+            "bloomMs": 0
+          }
+        }
+      ]
+    },
+    "postprocessing": {
+      "maskBudget": 64,
+      "timings": {
+        "beautyMs": 0.7000000011175871,
+        "maskMs": 0.7999999988824129,
+        "bloomMs": 0
+      },
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 11,
+      "crash": 0,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 56,
+      "cachedMasks": 29,
+      "selective": true,
+      "occlusion": true
+    }
+  },
+  "errors": []
+}

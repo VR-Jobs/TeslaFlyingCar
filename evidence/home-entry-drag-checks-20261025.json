@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "firstEntry": {
+    "requestedDelay": 1,
+    "firstDemoDelay": 1.0292999999999994
+  },
+  "reentry": {
+    "requestedDelay": 1,
+    "firstDemoDelay": 1.0000000000000142
+  },
+  "drag": {
+    "beforeYaw": 2.75,
+    "afterYaw": 4.774999999999999,
+    "afterPitch": 0.13050843917314323,
+    "released": true,
+    "animationAfterDrag": "idle"
+  },
+  "errors": [],
+  "consoleErrors": [],
+  "homeButtons": 4
+}

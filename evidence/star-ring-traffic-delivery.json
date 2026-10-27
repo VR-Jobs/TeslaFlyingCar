@@ -1,0 +1,42 @@
+{
+  "builtAtUTC": "2026-10-26T16:10:28.767765+00:00",
+  "entry": "D:\\0.Unity20242024\\Tesla-Car-Game\\RoadsterDash.html",
+  "bytes": 11454766,
+  "sha256": "4e4e161f968fa3445658e011db64912df8b0837d15538eabf062586314860a6a",
+  "vehicleModel": "Existing Blender distant exterior, 21515 triangles, four body paints, seven shared geometry categories",
+  "behavior": "Static stranded cars on actual curved track; open lane and leap buffers; swept vehicle collision, sparks, native crash audio, grayscale and explicit R retry",
+  "checks": {
+    "trafficPhysics": {
+      "passed": 17,
+      "report": "star-ring-traffic-checks.json"
+    },
+    "trafficWebGL": {
+      "passed": 4,
+      "report": "star-ring-traffic-browser-checks.json"
+    },
+    "endlessWebGL": {
+      "passed": 4,
+      "report": "star-ring-traffic-endless-browser.json"
+    },
+    "streaming": {
+      "passed": 3,
+      "report": "star-ring-random-streaming-checks.json"
+    },
+    "cooperativePreload": {
+      "passed": 2,
+      "report": "star-ring-random-async-checks.json"
+    },
+    "randomRoutes": {
+      "passed": 9,
+      "report": "star-ring-random-checks.json"
+    }
+  },
+  "coreChecks": 7,
+  "offline": "Three classic inline scripts parse; no external script, stylesheet, manifest or image dependency. Browser WebGL checks used exact standalone HTML served on loopback.",
+  "screenshots": [
+    "star-ring-traffic-preview.png",
+    "star-ring-traffic-crash.png"
+  ],
+  "browserErrors": 0,
+  "temporaryCFiles": "Copied to D with SHA256 checks and removed."
+}

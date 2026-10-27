@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "name": "prepared-section-swap",
+      "pass": true
+    }
+  ],
+  "startMs": 881.3999999994412,
+  "preload": {
+    "layout": "11:0",
+    "liveWindows": 2,
+    "preload": {
+      "completed": 1,
+      "aborted": 0,
+      "maximumSliceMs": 21
+    },
+    "created": 2,
+    "retired": 0,
+    "prepared": "11:1"
+  },
+  "loading": {
+    "initialRouteMs": 819.7000000001863,
+    "lastSwapMs": 4.3999999994412065,
+    "lastDisposeMs": 2.900000000372529,
+    "usedPrepared": true,
+    "swapRenderPeakMs": 252.3999999994412
+  },
+  "postprocessing": {
+    "type": "selective-hdr-bloom",
+    "enabled": true,
+    "frames": 155,
+    "crash": 0,
+    "width": 1920,
+    "height": 1080,
+    "mips": 5,
+    "strength": 0.7,
+    "radius": 0.05,
+    "threshold": 0.6,
+    "emitters": 173,
+    "cachedMasks": 9,
+    "selective": true,
+    "occlusion": true
+  }
+}

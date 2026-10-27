@@ -1,0 +1,98 @@
+{
+  "pass": true,
+  "challenge": {
+    "mode": "endless",
+    "distance": 2780.068049483895,
+    "laps": 1,
+    "level": 2,
+    "localDistance": 419.183148151577,
+    "localLimit": 2360.884901332318
+  },
+  "view": {
+    "trackTriangles": 11992,
+    "glass": {
+      "style": "rim-lit-glass",
+      "baseOpacity": 0.06,
+      "laneCount": 3,
+      "longitudinalEdges": 3,
+      "transverseLines": 0,
+      "sectionAccents": true,
+      "sourceTriangles": 30044,
+      "batches": 96,
+      "depthWrite": false
+    },
+    "pickups": {
+      "types": {
+        "air": "pressure-cylinder",
+        "ring": "navigation-energy-core",
+        "sky": "segmented-jump-gate"
+      },
+      "models": 41,
+      "particles": 20,
+      "activeBursts": 0,
+      "collectedEffects": 2,
+      "burstPool": 8,
+      "openSkyCenter": true,
+      "physicalScale": {
+        "air": 1.8,
+        "core": 1.8,
+        "gateInnerDiameter": 4.2
+      },
+      "materialStyle": "ceramic-metal-glass-with-machined-fittings",
+      "cycle": 1
+    },
+    "postprocessing": {
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 9891,
+      "width": 1920,
+      "height": 1080,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 118,
+      "selective": true,
+      "occlusion": true
+    },
+    "trackDetail": {
+      "style": "magnetic-modular-chassis",
+      "ribs": 0,
+      "fins": 166,
+      "terminals": 8,
+      "sectionMarkers": 430,
+      "cradles": 0,
+      "beacons": 22,
+      "triangles": 43704,
+      "batches": 77,
+      "clearDrivingWidth": 11.4
+    },
+    "saturn": {
+      "style": "saturn-inspired",
+      "planetRadius": 900,
+      "ringInner": 1116,
+      "ringOuter": 4800,
+      "dustCount": 2200,
+      "ringPlaneBelowStraight": 20
+    },
+    "solidTriangles": 30044,
+    "trackThickness": 0.45,
+    "trackFaces": "separate-front-bottom-walls",
+    "cameraBlocked": false,
+    "carTriangles": 38365,
+    "localCycle": 1,
+    "boundedWindow": [
+      -80,
+      2960.884901332318
+    ],
+    "markerVisible": false,
+    "gapLights": {
+      "active": false,
+      "state": "off",
+      "rows": 3,
+      "layout": "longitudinal-edges-only"
+    },
+    "wingGap": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-10-26T14:13:57.735570+00:00",
+  "html": {
+    "format": "self-contained HTML; classic JavaScript; file://",
+    "file": "RoadsterDash.html",
+    "bytes": 11429732,
+    "sha256": "4be593d5ef2f812e25c61f960715ef940be4d02034e9b00b0e43c1429df42a59",
+    "fontFiles": 118,
+    "esbuild": "0.25.12",
+    "generatedAt": "2026-10-26T14:11:51.128Z"
+  },
+  "source": "D:/0.Unity20242024/Tesla-Car-Game",
+  "checks": {
+    "star-ring-random-checks.json": "df99ada0dc9fc39204d93b4229c359fb13fb30a593d8e616e9d2834a39ddafa4",
+    "star-ring-random-auto-checks.json": "b80fe7bfa94bfe832b3d16a2c5e45774a6062014c2fa8c18b0bd4ddc9f840c08",
+    "star-ring-random-streaming-checks.json": "6c3f42c41b8b5e96fbbcce10e6ab82d5daacf1ab56d93c36639ea7c7606ace94",
+    "star-ring-random-async-checks.json": "752d6dd52f3def6aba9b6726d6916d15f1f15232a1ca695dc382e3ac9a76bbd8",
+    "star-ring-random-browser-checks.json": "b17856eeca7bc411682cb3b8fb0e91e7935c051945d5621354ddf9a1f6057216"
+  },
+  "originalGameRegression": {
+    "passed": 69,
+    "failed": 0
+  },
+  "entry": {
+    "picker": {
+      "homeButtons": 4,
+      "images": [
+        {
+          "complete": true,
+          "height": 540,
+          "inline": true,
+          "width": 960
+        },
+        {
+          "complete": true,
+          "height": 540,
+          "inline": true,
+          "width": 960
+        },
+        {
+          "complete": true,
+          "height": 540,
+          "inline": true,
+          "width": 960
+        }
+      ]
+    },
+    "changesSeedOnRestart": true,
+    "changesGeometryOnRestart": true,
+    "first": {
+      "seed": 434821692,
+      "section": 1,
+      "layout": "434821692:0",
+      "kinds": [
+        "wave",
+        "turn",
+        "loop",
+        "loop",
+        "twist"
+      ],
+      "gaps": 4,
+      "rows": 16,
+      "previewReady": true
+    },
+    "restarted": {
+      "seed": 2293803509,
+      "section": 1,
+      "layout": "2293803509:0",
+      "kinds": [
+        "twist",
+        "wave",
+        "loop",
+        "loop",
+        "turn"
+      ],
+      "gaps": 4,
+      "rows": 16,
+      "previewReady": true
+    },
+    "naturalPreload": {
+      "layout": "434821692:0",
+      "liveWindows": 2,
+      "preload": {
+        "completed": 1,
+        "aborted": 0,
+        "maximumSliceMs": 51.29999999701977
+      },
+      "created": 2,
+      "retired": 0,
+      "prepared": "434821692:1"
+    },
+    "errors": [],
+    "console": []
+  },
+  "images": {
+    "star-ring-random-route-a.png": "ce8a9dde49a93224cc78ce028a70681faf239da786a1e8ff3d9f102e92e8f837",
+    "star-ring-random-route-b.png": "26c874d0c5c0378fb90d0017cea98eace34d40fd66d06a9db82fc9eb1825a3ca",
+    "scene-preview-starRing-source.png": "3748427225a50ac91b7630a4f75262375346facfdec56c4a696e9fa6eecaa457"
+  },
+  "scope": "128 seeded layouts checked structurally; eight seeds driven using real collision and suction, including ten variable-length sections on seed 42. Eight different random sections rendered over QA loopback with bounded GPU/bloom caches. Automatic gaps separately checked at normal speed without held jet or suction. No external assets required; automated file:// navigation not supported by test browser."
+}

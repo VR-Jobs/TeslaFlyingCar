@@ -1,0 +1,18 @@
+{
+  "schema": "carbuilder.cache.2",
+  "kind": "command",
+  "key": "09d85aaa14c586bbd05a93988d76af42e4942ca0f13af072e9c26ada7dd52502",
+  "generatorVersion": "1.1.0",
+  "codeHash": "f2bcad4e9844ae3da8c9ad4a1ad6eeeceacd403894df4b4646dc4eac6311bbce",
+  "fileHashes": {
+    "roadster-exterior.blend": "2a9893586d159906b3e04a6b6d63dbcef00e5caa3f7b7cf3b2a77aa2aa5a6cef",
+    "roadster-exterior.glb": "739cfbb5ff1e325ccca0d84b27914ba6453cbb7d6761f300908dda88de3279b0",
+    "roadster-exterior.json": "f1025bca44a508475ce22bac73e849675474b37f58ac3db44376347680107a26",
+    "geometry-checks.json": "aab63d23b0975fec4aee480847b4960af37f5179051abe3248ff38e4cfe00904",
+    "review-cameras.json": "b15315e7b1a3d0322588f0cc2041d687f4af02a437b809b552f66ebc78fffdbe",
+    "front.png": "2e03e28b3e95064205ba6927a78ce3bb8b6da903b2eca785326337c353785e0f",
+    "side.png": "32d02bb3c9be7fe687676ba0b3071d575a59fbe0d4ba301fc26f0bfbbe256d19",
+    "rear.png": "5f9ac1279330e15510a1ab2c89f7142fddeb60ce276dc72f162a154e538d2dad",
+    "wing.png": "de02443e7cef635f60dacbb145d5191eb572fd6622d6a7d36fec6ce1bc975e69"
+  }
+}

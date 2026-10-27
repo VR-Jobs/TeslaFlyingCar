@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "name": "prepared-section-swap",
+      "pass": true
+    }
+  ],
+  "startMs": 800.1000000014901,
+  "preload": {
+    "layout": "11:0",
+    "liveWindows": 2,
+    "preload": {
+      "completed": 1,
+      "aborted": 0,
+      "maximumSliceMs": 9.400000000372529,
+      "gpuWarm": {
+        "meshes": 48,
+        "batches": 8,
+        "maximumBatchMs": 0.599999999627471,
+        "totalMs": 4.299999998882413
+      }
+    },
+    "created": 2,
+    "retired": 0,
+    "prepared": "11:1"
+  },
+  "loading": {
+    "initialRouteMs": 0,
+    "lastSwapMs": 2.200000001117587,
+    "lastDisposeMs": 1.5,
+    "usedPrepared": true,
+    "swapRenderPeakMs": 13.099999999627471,
+    "swapSamples": [
+      {
+        "ms": 13.099999999627471,
+        "before": {
+          "geometries": 314,
+          "programs": 526
+        },
+        "after": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "passes": {
+          "beautyMs": 6.5,
+          "maskMs": 6.399999998509884,
+          "bloomMs": 0.2000000011175871
+        }
+      },
+      {
+        "ms": 2,
+        "before": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "after": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "passes": {
+          "beautyMs": 1,
+          "maskMs": 0.8000000007450581,
+          "bloomMs": 0
+        }
+      },
+      {
+        "ms": 1.400000000372529,
+        "before": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "after": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "passes": {
+          "beautyMs": 0.6999999992549419,
+          "maskMs": 0.7000000011175871,
+          "bloomMs": 0
+        }
+      },
+      {
+        "ms": 1.5,
+        "before": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "after": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "passes": {
+          "beautyMs": 0.7999999988824129,
+          "maskMs": 0.599999999627471,
+          "bloomMs": 0.10000000149011612
+        }
+      },
+      {
+        "ms": 1.3999999985098839,
+        "before": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "after": {
+          "geometries": 315,
+          "programs": 528
+        },
+        "passes": {
+          "beautyMs": 0.7999999988824129,
+          "maskMs": 0.5,
+          "bloomMs": 0.09999999962747097
+        }
+      }
+    ]
+  },
+  "postprocessing": {
+    "timings": {
+      "beautyMs": 0.7999999988824129,
+      "maskMs": 0.5,
+      "bloomMs": 0.09999999962747097
+    },
+    "type": "selective-hdr-bloom",
+    "enabled": true,
+    "frames": 11,
+    "crash": 0,
+    "width": 1920,
+    "height": 1080,
+    "mips": 5,
+    "strength": 0.7,
+    "radius": 0.05,
+    "threshold": 0.6,
+    "emitters": 56,
+    "cachedMasks": 29,
+    "selective": true,
+    "occlusion": true
+  }
+}

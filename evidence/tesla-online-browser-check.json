@@ -1,0 +1,13 @@
+{
+  "url": "https://maniengine.com/examples/tesla/",
+  "title": "特斯拉音乐跑酷",
+  "starRing": {
+    "active": true,
+    "phase": "running",
+    "paused": true,
+    "trafficCars": 20,
+    "postprocessing": "selective-hdr-bloom"
+  },
+  "gameErrors": [],
+  "console": []
+}

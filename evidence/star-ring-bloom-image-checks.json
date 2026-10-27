@@ -1,0 +1,26 @@
+{
+  "method": "Measured unchanged actual browser screenshots; HUD and QA bar excluded from halo count. No image synthesis.",
+  "size": [
+    1280,
+    720
+  ],
+  "checks": [
+    {
+      "name": "bloom-spreads-outside-previously-dim-track-pixels",
+      "pass": true,
+      "pixels": 173466
+    },
+    {
+      "name": "empty-sky-is-not-lifted-by-global-brightening",
+      "pass": true,
+      "meanChannelDifference": 0.002962962962962963
+    },
+    {
+      "name": "distant-planet-brightness-change-stays-under-one-percent",
+      "pass": true,
+      "meanChannelDifference": 1.7875925925925926,
+      "tolerancePerChannel": 2.55
+    }
+  ],
+  "note": "Selective bloom excludes the planet as an emitter; blur from nearby track edges can still overlap its screen silhouette."
+}

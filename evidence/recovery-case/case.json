@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-24T20:52:30.937276+00:00",
+  "source": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-source-inspection-20261024",
+  "goal": "恢复可本地运行与修改的 Roadster Dash 前端，分析代码结构并验证原版玩法",
+  "anchors": [
+    {
+      "path": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-source-inspection-20261024\\assets\\game-Da4QmlDf.js",
+      "sha256": "c882337b1fbe500f8416f6ee7a2d97cca143d583be5170e8e3492b417b277b53",
+      "size": 1360404
+    },
+    {
+      "path": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-source-inspection-20261024\\assets\\auth-client-BoJN4b5B.js",
+      "sha256": "61448c2313c32f6a60384d4534e3727d26d4e513421dab75a6ffb43eeddbf512",
+      "size": 219868
+    },
+    {
+      "path": "C:\\Users\\jings\\Downloads\\10-October-Chatgpt\\roadsterdash-source-inspection-20261024\\index.html",
+      "sha256": "32ef841d964aeb063bbb5e96a53614928a2f4599bf3b5221b5b80d6110c505d8",
+      "size": 64217
+    }
+  ],
+  "scope": "Only selected anchors are build-bound"
+}

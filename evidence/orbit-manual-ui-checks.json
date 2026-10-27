@@ -1,0 +1,507 @@
+{
+  "testedURL": "http://127.0.0.1:4182/",
+  "scope": "Final self-contained HTML served alone. Direct file:// navigation is prohibited by the automation browser; file-origin operation was not directly observed.",
+  "checks": [
+    "Dark 3D starfield, planet, ring and interactive Roadster cover",
+    "Reordered primary actions, feature dock and secondary controls",
+    "Chinese and English layouts",
+    "Academy-only course picker with 14 lessons",
+    "Garage, inventory, More and local save dialogs remain reachable",
+    "Real keyboard lane changes, jump and landing completed lesson one",
+    "Next lesson is the primary completion action",
+    "Space on the completion screen started lesson two",
+    "Training completion persisted after reload"
+  ],
+  "manualCompletion": {
+    "screen": "over",
+    "state": "over",
+    "score": 150,
+    "distance": 150,
+    "speed": 22.99999999999288,
+    "runId": "12e4e789-99ce-4c09-9123-82baf7e5d70f",
+    "player": {
+      "lane": 1,
+      "x": 0,
+      "y": 0,
+      "air": 600,
+      "grounded": true,
+      "hovering": false,
+      "trick": null
+    },
+    "coins": 24,
+    "savedRuns": 4,
+    "drawCalls": 1,
+    "triangles": 1,
+    "config": {
+      "AIR": {
+        "capacity": 600,
+        "laneShift": 3,
+        "airLaneShift": 15,
+        "jump": 20,
+        "hoverPerSec": 120,
+        "trick": 40,
+        "flipMin": 20,
+        "slam": 20,
+        "boostPerSec": 40,
+        "cell": 15,
+        "can": 150,
+        "kickflipReward": 10,
+        "rollReward": 40,
+        "lowRatio": 0.2
+      },
+      "PHYSICS": {
+        "gravity": 28,
+        "jumpHeight": 2.5,
+        "maxHeight": 6.2,
+        "hoverExtraAccel": 7,
+        "holdDelay": 0.12,
+        "laneShiftTime": 0.15,
+        "laneShiftTimeNoAir": 0.35,
+        "trickTime": 0.55,
+        "flipApex": 5,
+        "flipMinLift": 2.5,
+        "flipGravity": 0.55,
+        "flipTime": 0.7,
+        "slamSpeed": -22
+      },
+      "SPEED_CURVE": [
+        [
+          0,
+          25
+        ],
+        [
+          1000,
+          32
+        ],
+        [
+          3000,
+          42
+        ],
+        [
+          6000,
+          55
+        ],
+        [
+          10000,
+          65
+        ],
+        [
+          20000,
+          77
+        ],
+        [
+          30000,
+          86
+        ],
+        [
+          40000,
+          94
+        ],
+        [
+          50000,
+          100
+        ]
+      ],
+      "REFILL_CURVE": [
+        [
+          0,
+          20
+        ],
+        [
+          1000,
+          18
+        ],
+        [
+          3000,
+          14
+        ],
+        [
+          6000,
+          10
+        ],
+        [
+          10000,
+          8
+        ]
+      ],
+      "TRAFFIC_INTERVAL": [
+        [
+          0,
+          5
+        ],
+        [
+          1000,
+          3.15
+        ],
+        [
+          3000,
+          2.75
+        ],
+        [
+          5200,
+          1.95
+        ],
+        [
+          10000,
+          1.65
+        ],
+        [
+          20000,
+          1.57
+        ],
+        [
+          30000,
+          1.48
+        ]
+      ],
+      "PICKUP_INTERVAL": [
+        [
+          0,
+          2.2
+        ],
+        [
+          3000,
+          1.7
+        ],
+        [
+          10000,
+          1.4
+        ],
+        [
+          30000,
+          1.1
+        ]
+      ],
+      "BOOST": {
+        "mult": 1.4,
+        "powerSpeed": 1.85,
+        "scoreAfter": 3,
+        "scoreEvery": 1,
+        "score": 10
+      },
+      "SCORE": {
+        "nearMiss": 10,
+        "cleared": 20,
+        "clearedSemi": 50,
+        "trick": 20,
+        "perfect": 10,
+        "stuntExtra": 10,
+        "multiPerCar": 30,
+        "rammed": 50,
+        "cell": 5
+      },
+      "ROAD": {
+        "widenStart": 5000,
+        "widenEnd": 5200,
+        "width": 12,
+        "extraWidth": 6.8
+      },
+      "ROCKET": {
+        "duration": 8,
+        "chargeRequired": 1.5,
+        "hover": 0.5,
+        "scoreMult": 3,
+        "speedMult": 1.6,
+        "gain": {
+          "trick": 0.03,
+          "nearMiss": 0.05,
+          "cleared": 0.04,
+          "perfect": 0.02,
+          "cell": 0.015,
+          "can": 0.15
+        }
+      },
+      "STARMAN": {
+        "duration": 8,
+        "speedMult": 1.6,
+        "scoreMult": 2,
+        "firstAt": 1500,
+        "gapMin": 2500,
+        "gapRand": 1000,
+        "smash": 80
+      }
+    },
+    "errors": [],
+    "gameplayChecks": null,
+    "drivingChecks": null,
+    "driving": {
+      "options": {
+        "mode": "academy",
+        "features": {
+          "coaching": true,
+          "feedback": true,
+          "fairTraffic": true
+        },
+        "lesson": 1,
+        "ruleset": "driving-v1-f1-t1"
+      },
+      "metrics": {
+        "jumps": 1,
+        "laneChanges": 2,
+        "tricks": 0,
+        "barrels": 0,
+        "flips": 0,
+        "landings": 1,
+        "perfectLandings": 0,
+        "airTime": 0.8166666666666675,
+        "hoverTime": 0,
+        "airSpent": 25.338035306007328,
+        "maxHeight": 2.402288708138568,
+        "collisions": 0,
+        "cleared": 0,
+        "bestAction": "none",
+        "bestActionPoints": 0,
+        "comboBreak": "none",
+        "distance": 150.0712562755468,
+        "duration": 6.783333333333315,
+        "maxCombo": 0,
+        "lastLandComplete": false
+      },
+      "runId": "12e4e789-99ce-4c09-9123-82baf7e5d70f",
+      "profile": {
+        "lesson": 1,
+        "trainingClaims": [
+          0
+        ],
+        "preferences": {
+          "mode": "academy",
+          "features": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          },
+          "lesson": 1,
+          "ruleset": "driving-v1-f1-t1",
+          "freeFeatures": {
+            "coaching": true,
+            "feedback": true,
+            "fairTraffic": true
+          }
+        }
+      },
+      "traffic": {
+        "guardedSpawns": 0,
+        "fixedRows": 1
+      },
+      "completion": {
+        "success": false,
+        "finished": false,
+        "target": 200,
+        "progress": 0.4351882086803447
+      },
+      "lastReview": {
+        "mode": "academy",
+        "lesson": 0,
+        "nextLesson": 1,
+        "success": true,
+        "metrics": {
+          "jumps": 1,
+          "laneChanges": 2,
+          "tricks": 0,
+          "barrels": 0,
+          "flips": 0,
+          "landings": 1,
+          "perfectLandings": 0,
+          "airTime": 0.8166666666666675,
+          "hoverTime": 0,
+          "airSpent": 25.338035306007328,
+          "maxHeight": 2.402288708138568,
+          "collisions": 0,
+          "cleared": 0,
+          "bestAction": "none",
+          "bestActionPoints": 0,
+          "comboBreak": "none",
+          "distance": 150,
+          "duration": 6.783333333333315,
+          "maxCombo": 0,
+          "lastLandComplete": false
+        },
+        "advice": "tip.trick",
+        "trainingReward": 0
+      }
+    },
+    "scenery": {
+      "selected": "coast",
+      "palms": 58,
+      "waveTime": 28.528100000000183,
+      "travel": 150.0712562755468
+    }
+  },
+  "spaceAdvance": {
+    "lesson": 1,
+    "mode": "academy"
+  },
+  "console": [],
+  "sourceSimulationChecks": [
+    {
+      "name": "academy-lesson-1",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-1-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-1-next-button",
+      "status": "PASS"
+    },
+    {
+      "name": "next-button-launches-second-lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-2",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-2-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-2-next-button",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-3",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-3-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-3-next-button",
+      "status": "PASS"
+    },
+    {
+      "name": "third-lesson-next-starts-item-training",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-4",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-4-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-5",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-5-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-6",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-6-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-7",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-7-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-8",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-8-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-9",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-9-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-10",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-10-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-11",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-11-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-12",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-12-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-13",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-13-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-lesson-14",
+      "status": "PASS"
+    },
+    {
+      "name": "academy-14-inventory-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "final-lesson-finish-starts-free-drive",
+      "status": "PASS"
+    },
+    {
+      "name": "failed-lesson-keeps-retry",
+      "status": "PASS"
+    },
+    {
+      "name": "failed-lesson-does-not-skip",
+      "status": "PASS"
+    },
+    {
+      "name": "daily-layout-independent-of-boost",
+      "status": "PASS"
+    },
+    {
+      "name": "precision-completion-contract",
+      "status": "PASS"
+    },
+    {
+      "name": "stunt-completion-contract",
+      "status": "PASS"
+    },
+    {
+      "name": "escape-completion-contract",
+      "status": "PASS"
+    },
+    {
+      "name": "original-mode-opt-out",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    "/",
+    "/qa-requests"
+  ],
+  "extraAssetRequests": [],
+  "htmlSha256": "1416e73d40b05486facdc20b4f465274bd647765c2b4c9980d7b2c0d74fefdd5"
+}

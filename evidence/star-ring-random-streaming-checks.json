@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "eight-random-window-replacements-dispose-all-retired-geometries",
+      "pass": true,
+      "detail": [
+        {
+          "lap": 0,
+          "layout": "42:1",
+          "disposed": 308,
+          "buildMs": 553.0403,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 1,
+          "layout": "42:2",
+          "disposed": 301,
+          "buildMs": 523.3695,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 2,
+          "layout": "42:3",
+          "disposed": 314,
+          "buildMs": 609.3815000000002,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 3,
+          "layout": "42:4",
+          "disposed": 309,
+          "buildMs": 570.0686000000001,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 4,
+          "layout": "42:5",
+          "disposed": 313,
+          "buildMs": 600.6313,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 5,
+          "layout": "42:6",
+          "disposed": 317,
+          "buildMs": 568.0860000000002,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 6,
+          "layout": "42:7",
+          "disposed": 313,
+          "buildMs": 538.7704000000003,
+          "cachedMasks": 0
+        },
+        {
+          "lap": 7,
+          "layout": "42:8",
+          "disposed": 311,
+          "buildMs": 560.0048999999999,
+          "cachedMasks": 0
+        }
+      ]
+    },
+    {
+      "name": "route-bloom-mask-cache-is-pruned-with-retired-materials",
+      "pass": true,
+      "maximumMasks": 13
+    },
+    {
+      "name": "one-active-window-plus-one-prepared-window-bounds-scene",
+      "pass": true
+    }
+  ],
+  "maximumBuildMs": 609.3815000000002
+}

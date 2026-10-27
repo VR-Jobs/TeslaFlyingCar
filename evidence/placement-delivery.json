@@ -1,0 +1,41 @@
+{
+  "completedUTC": "2026-10-27T21:47:14.219534+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "onlineSHA256": "9c2c1b30948efb67d853d175a4dad886145b1d99cd5409c4e59fdf47a3e745d6",
+  "offlineSHA256": "2a466fb71e8155b23c2949678f65ce5ca83ed75ca87ed5e086744123b20a5d8d",
+  "passedChecks": {
+    "placement-checks.json": 9,
+    "star-ring-random-checks.json": 9,
+    "star-ring-traffic-checks.json": 17,
+    "star-ring-voyage-checks.json": 28,
+    "star-ring-adventure-checks.json": 14,
+    "star-ring-rainbow-checks.json": 24,
+    "experience-checks.json": 27,
+    "loading-performance-checks.json": 9
+  },
+  "seededSections": 768,
+  "actualMotionSnapshots": 128,
+  "localWebGL": 4,
+  "onlineWebGL": 4,
+  "newLayoutVersion": "experience-2-clearance",
+  "backup": "D:\\0.Unity20242024\\Tesla-Car-Game\\revisions\\20261027-placement",
+  "rollback": "/var/www/tesla-deploy/20261027-placement-2a466fb7/previous-index.html",
+  "evidence": {
+    "placement-local-browser.json": {
+      "sha256": "a1f49022b071a181545fa3c6f46ce440febb3f7b8aac9c004670b412effc3848",
+      "bytes": 1641
+    },
+    "placement-online-browser.json": {
+      "sha256": "a1f49022b071a181545fa3c6f46ce440febb3f7b8aac9c004670b412effc3848",
+      "bytes": 1641
+    },
+    "placement-local.png": {
+      "sha256": "178ea0184d60cba16632e1400f85207239712ed4a49aa748af818ae9b0ab8083",
+      "bytes": 89720
+    },
+    "placement-online.png": {
+      "sha256": "bc1e19f309f30624f2c20db1d930f1877258fe0aa2f769e4206f92db38b67641",
+      "bytes": 89682
+    }
+  }
+}

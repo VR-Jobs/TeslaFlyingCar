@@ -1,0 +1,99 @@
+{
+  "checks": [
+    {
+      "name": "first-formal-entry-auto-teaches",
+      "pass": true
+    },
+    {
+      "name": "three-actions-complete-and-persist",
+      "pass": true,
+      "observed": {
+        "active": true,
+        "attached": true,
+        "checkpoint": 0,
+        "falls": 0,
+        "jump": false,
+        "lane": 0,
+        "length": 2360.884901332318,
+        "paused": true,
+        "phase": "running",
+        "pressure": 100,
+        "profile": {
+          "bestScore": 0,
+          "bestTime": null,
+          "completions": 0,
+          "tutorialCompleted": true,
+          "tutorialVersion": 1
+        },
+        "rings": 0,
+        "s": 1.6825299755370404,
+        "score": 0.504758992661112,
+        "stage": "启航平台",
+        "suction": false,
+        "tutorial": {
+          "active": false,
+          "completed": true,
+          "held": 0.5,
+          "recorded": true,
+          "regrip": true,
+          "retries": 0,
+          "skipped": false,
+          "step": 3
+        },
+        "view": {
+          "carTriangles": 33491,
+          "markerVisible": false,
+          "trackTriangles": 9144,
+          "wingGap": 4.440892098500626e-16
+        }
+      }
+    },
+    {
+      "name": "practice-does-not-award-score-or-falls",
+      "pass": true,
+      "observed": {
+        "score": 0.504758992661112,
+        "distance": 1.6825299755370404,
+        "note": "Only ordinary distance points accrue after practice ends."
+      }
+    },
+    {
+      "name": "restart-does-not-repeat-completed-tutorial",
+      "pass": true
+    },
+    {
+      "name": "pause-menu-can-replay",
+      "pass": true
+    },
+    {
+      "name": "skip-immediately-restores-race-ui",
+      "pass": true
+    },
+    {
+      "name": "full-course-and-single-reward-still-pass",
+      "pass": true
+    },
+    {
+      "name": "tutorial-stays-in-small-top-band",
+      "pass": true,
+      "observed": {
+        "bottom": 78.83333587646484,
+        "centralHintHidden": true,
+        "height": 60.83333587646485,
+        "readoutsHidden": true,
+        "top": 18,
+        "viewportHeight": 720
+      }
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "remembered-after-page-reload",
+      "pass": true
+    }
+  ],
+  "transport": "Exact standalone HTML over loopback HTTP; actual tutorial control path, real physics and screenshots."
+}

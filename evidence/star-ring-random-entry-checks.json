@@ -1,0 +1,71 @@
+{
+  "picker": {
+    "homeButtons": 4,
+    "images": [
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "width": 960
+      },
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "width": 960
+      },
+      {
+        "complete": true,
+        "height": 540,
+        "inline": true,
+        "width": 960
+      }
+    ]
+  },
+  "changesSeedOnRestart": true,
+  "changesGeometryOnRestart": true,
+  "first": {
+    "seed": 434821692,
+    "section": 1,
+    "layout": "434821692:0",
+    "kinds": [
+      "wave",
+      "turn",
+      "loop",
+      "loop",
+      "twist"
+    ],
+    "gaps": 4,
+    "rows": 16,
+    "previewReady": true
+  },
+  "restarted": {
+    "seed": 2293803509,
+    "section": 1,
+    "layout": "2293803509:0",
+    "kinds": [
+      "twist",
+      "wave",
+      "loop",
+      "loop",
+      "turn"
+    ],
+    "gaps": 4,
+    "rows": 16,
+    "previewReady": true
+  },
+  "naturalPreload": {
+    "layout": "434821692:0",
+    "liveWindows": 2,
+    "preload": {
+      "completed": 1,
+      "aborted": 0,
+      "maximumSliceMs": 51.29999999701977
+    },
+    "created": 2,
+    "retired": 0,
+    "prepared": "434821692:1"
+  },
+  "errors": [],
+  "console": []
+}

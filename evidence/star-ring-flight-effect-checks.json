@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "name": "held-E-draws-converging-ribbons-and-air-particles",
+      "pass": true,
+      "detail": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0.9996645373720974,
+        "jet": 0,
+        "boost": 0,
+        "levels": {
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0,
+          "R4": 0,
+          "S1": 0,
+          "S2": 0
+        },
+        "intakeRibbons": 12,
+        "particles": 144,
+        "particleCapacity": 512,
+        "pressureResponsive": true,
+        "convergingIntake": true
+      }
+    },
+    {
+      "name": "all-ten-jets-share-the-original-geometry",
+      "pass": true
+    },
+    {
+      "name": "native-shaders-retain-real-noise-layers-and-curved-floor-clipping",
+      "pass": true
+    },
+    {
+      "name": "jet-and-roll-use-lift-and-side-RCS-plumes",
+      "pass": true,
+      "detail": {
+        "style": "original-three-layer-turbulent-cold-gas",
+        "nativePlumes": 10,
+        "sharedNativeGeometry": true,
+        "sharedNativeNoise": true,
+        "curvedSurfaceClip": true,
+        "suction": 0.0001233684047094914,
+        "jet": 0.9999869927023459,
+        "boost": 0,
+        "levels": {
+          "L1": 0.9999869927023459,
+          "L2": 0.9999869927023459,
+          "L3": 0.9999869927023459,
+          "L4": 0.9999869927023459,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0,
+          "R4": 0,
+          "S1": 0.72,
+          "S2": 0.05
+        },
+        "intakeRibbons": 12,
+        "particles": 128,
+        "particleCapacity": 512,
+        "pressureResponsive": true,
+        "convergingIntake": true
+      }
+    },
+    {
+      "name": "fixed-particle-pool-stays-within-capacity",
+      "pass": true
+    },
+    {
+      "name": "gas-and-ribbon-gpu-attributes-remain-finite",
+      "pass": true
+    },
+    {
+      "name": "death-turns-off-valves-and-intake",
+      "pass": true
+    },
+    {
+      "name": "restart-clears-effects-without-allocating-new-plumes",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "checks": [
+    {
+      "name": "128-seeded-sections-have-cars-open-car-width-lanes-and-clear-leap-approaches",
+      "pass": true,
+      "detail": {
+        "cars": 2380,
+        "curved": 1617
+      }
+    },
+    {
+      "name": "front-bumper-collision-starts-space-crash-before-overlapping-the-car",
+      "pass": true,
+      "detail": {
+        "s": 95.27358897912629,
+        "phase": "dying",
+        "reason": "撞到前方车辆"
+      }
+    },
+    {
+      "name": "vehicle-crash-reaches-gray-death-and-R-restores-control",
+      "pass": true
+    },
+    {
+      "name": "traffic-crash-checkpoint-retry-restores-air-and-clears-death",
+      "pass": true
+    },
+    {
+      "name": "full-sized-car-can-be-passed-in-an-adjacent-lane",
+      "pass": true
+    },
+    {
+      "name": "well-timed-jet-hop-clears-car-and-lands",
+      "pass": true,
+      "detail": {
+        "s": 132.03260268497246,
+        "lands": 1,
+        "phase": "running"
+      }
+    },
+    {
+      "name": "swept-car-collision-catches-high-speed-tunneling",
+      "pass": true,
+      "detail": {
+        "index": 0,
+        "time": 0.3543103448275864,
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "car-roof-clearance-is-real-rather-than-lane-only",
+      "pass": true
+    },
+    {
+      "name": "barrel-roll-body-can-hit-a-roof-even-when-wheels-are-high",
+      "pass": true
+    },
+    {
+      "name": "inverted-track-obstacles-use-local-track-normal",
+      "pass": true
+    },
+    {
+      "name": "same-Blender-car-reuses-fifteen-pivoted-batches-and-seven-material-categories",
+      "pass": true,
+      "detail": {
+        "style": "blender-roadster-dynamic-convoys",
+        "total": 18,
+        "visible": 3,
+        "draws": 0,
+        "rendering": "shared-geometry-meshes",
+        "batches": 15,
+        "materialCategories": 7,
+        "moving": 0,
+        "signaling": 0,
+        "rollingWheels": true,
+        "turnSignalLead": 1.8,
+        "blackGlass": true,
+        "tailLights": true,
+        "hazardBlinkers": true,
+        "sharedModel": "20261026-blackglass-photo-exterior",
+        "trianglesPerCar": 21515,
+        "collider": {
+          "halfWidth": 1.06,
+          "halfLength": 2.35,
+          "height": 1.25,
+          "rideHeight": 0.035
+        },
+        "impacts": 0,
+        "sparkPool": 32
+      }
+    },
+    {
+      "name": "GPU-element-indices-use-supported-integer-buffers",
+      "pass": true
+    },
+    {
+      "name": "vehicle-model-fits-the-physical-collider",
+      "pass": true,
+      "detail": {
+        "min": [
+          -1.048336997628212,
+          -0.00456001281738283,
+          -2.339282989501953
+        ],
+        "max": [
+          1.048344001173973,
+          1.2179969549179077,
+          2.2825000286102295
+        ]
+      }
+    },
+    {
+      "name": "reduced-motion-setting-keeps-amber-warning-lights-steady",
+      "pass": true
+    },
+    {
+      "name": "collision-retains-car-obstacle-and-uses-a-fixed-spark-pool",
+      "pass": true
+    },
+    {
+      "name": "driving-does-not-allocate-new-car-geometries",
+      "pass": true
+    },
+    {
+      "name": "retiring-a-route-releases-every-owned-car-batch",
+      "pass": true
+    }
+  ]
+}

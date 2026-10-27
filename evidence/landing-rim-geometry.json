@@ -1,0 +1,16 @@
+{
+  "visible": true,
+  "layout": "rim",
+  "height": 1.65,
+  "radiusX": 1.17,
+  "radiusZ": 2.145,
+  "position": [
+    0,
+    0,
+    0
+  ],
+  "meshCount": 1,
+  "openEnded": true,
+  "ellipseError": 5.768428845698281e-8,
+  "centerGeometry": false
+}

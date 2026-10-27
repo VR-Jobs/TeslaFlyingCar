@@ -1,0 +1,63 @@
+{
+  "builtAtUTC": "2026-10-26T15:33:42.129153+00:00",
+  "entry": "D:\\0.Unity20242024\\Tesla-Car-Game\\RoadsterDash.html",
+  "bytes": 11446632,
+  "sha256": "b564e58a68ed8c85328c65e78090c7e01a864abc6037e359734530d6c2825667",
+  "changes": [
+    "Native shared three-layer gas at ten rotating ports",
+    "Twelve intake ribbons plus fixed particle pool",
+    "Curve grip warning and recoverable drift",
+    "Space tumble camera with original crash grayscale",
+    "Explicit R checkpoint retry with at least 78 percent air",
+    "Frontflip and barrel collision probes"
+  ],
+  "checks": {
+    "flightPhysics": {
+      "passed": 18,
+      "report": "star-ring-flight-physics-checks.json"
+    },
+    "flightEffects": {
+      "passed": 8,
+      "report": "star-ring-flight-effect-checks.json"
+    },
+    "flightWebGL": {
+      "passed": 5,
+      "report": "star-ring-flight-browser-checks.json"
+    },
+    "randomEndlessWebGL": {
+      "passed": 4,
+      "report": "star-ring-flight-endless-browser.json"
+    },
+    "legacyEndless": {
+      "passed": 16,
+      "report": "star-ring-endless-checks.json"
+    },
+    "authoredPhysics": {
+      "passed": 10,
+      "report": "star-ring-physics-checks.json"
+    },
+    "originalGameplayAndTeaching": {
+      "passed": 69,
+      "failed": 0,
+      "report": "star-ring-flight-original-regression.json"
+    }
+  },
+  "randomRouteRegression": {
+    "layouts": 128,
+    "moduleOrders": 80,
+    "drivingSeeds": 8,
+    "longSeed42Sections": 10,
+    "report": "star-ring-random-checks.json"
+  },
+  "browserScope": "Exact standalone HTML served on loopback for WebGL/UI checks; final clean session had zero game errors and zero warning/error console entries. file protocol navigation is not available to this browser tool.",
+  "offlineCheck": "Three classic inline scripts parse; no module or external script, stylesheet, manifest or image dependencies.",
+  "originalCoreChecks": 7,
+  "temporaryFiles": "Screenshots and JSON copied with SHA256 checks to D evidence; this task C temporary directory removed.",
+  "screenshots": [
+    "star-ring-native-jets.png",
+    "star-ring-frontflip-jets.png",
+    "star-ring-intake-flow.png",
+    "star-ring-grip-warning.png",
+    "star-ring-space-death.png"
+  ]
+}

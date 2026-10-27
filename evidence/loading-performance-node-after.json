@@ -1,0 +1,28 @@
+{
+  "samples": [
+    {
+      "seed": 11,
+      "firstMs": 456.3164,
+      "preloadMs": 1781.8734,
+      "maximumSlice": 10.695400000000063,
+      "yields": 135,
+      "disposeMs": 1.6309000000001106
+    },
+    {
+      "seed": 42,
+      "firstMs": 342.2881000000002,
+      "preloadMs": 1666.281,
+      "maximumSlice": 16.409900000000107,
+      "yields": 125,
+      "disposeMs": 1.3972999999996318
+    },
+    {
+      "seed": 27,
+      "firstMs": 319.6352000000006,
+      "preloadMs": 2463.6548999999995,
+      "maximumSlice": 33.001000000000204,
+      "yields": 183,
+      "disposeMs": 1.604500000000371
+    }
+  ]
+}

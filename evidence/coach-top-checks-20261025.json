@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25",
+  "artifact": "RoadsterDash.html",
+  "layout": {
+    "bottom": 52.33333587646485,
+    "height": 44.33333587646485,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "width": 300,
+    "x": 968,
+    "y": 8
+  },
+  "metrics": {
+    "jumps": 1,
+    "laneChanges": 0,
+    "tricks": 1,
+    "barrels": 1,
+    "flips": 0,
+    "landings": 1,
+    "perfectLandings": 1,
+    "airTime": 0.8166666666666675,
+    "hoverTime": 0,
+    "airSpent": 60,
+    "maxHeight": 2.402288708138568,
+    "collisions": 0,
+    "cleared": 0,
+    "bestAction": "perfect",
+    "bestActionPoints": 20,
+    "comboBreak": "none",
+    "distance": 312.60458960887553,
+    "duration": 13.850000000000268,
+    "maxCombo": 2,
+    "lastLandComplete": true,
+    "demo": {}
+  },
+  "errors": [],
+  "consoleErrors": [],
+  "notes": [
+    "Jump and barrel roll exercised through real keyboard input. Screenshots show the full car below the top hint.",
+    "Standalone HTML served exactly for QA; user file tab unchanged."
+  ]
+}

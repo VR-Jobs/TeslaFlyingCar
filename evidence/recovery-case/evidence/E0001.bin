@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-24T21:11:42.443Z",
+  "checks": [
+    {
+      "name": "Original gameplay/rendering functions retained",
+      "status": "PASS",
+      "detail": "15 AST fingerprints match the original after documented symbol renaming"
+    },
+    {
+      "name": "Default rules match original",
+      "status": "PASS",
+      "detail": "16 extracted configuration groups"
+    },
+    {
+      "name": "JavaScript syntax and local imports",
+      "status": "PASS",
+      "detail": "11 modules parsed, all static module imports resolve"
+    },
+    {
+      "name": "Offline presentation assets",
+      "status": "PASS",
+      "detail": "614 font-face references resolve locally; no external script/style bootstrap"
+    },
+    {
+      "name": "Local start, inventory and settlement",
+      "status": "PASS",
+      "detail": "Start items consume once; duplicate submission does not duplicate coins or records"
+    },
+    {
+      "name": "Save persistence, cosmetics and reward claims",
+      "status": "PASS",
+      "detail": "Reload/export/import retain scores, wallet and loadout; reward claims are idempotent"
+    },
+    {
+      "name": "Local store boundary",
+      "status": "PASS",
+      "detail": "Payments disabled; daily visit credit applies once"
+    }
+  ]
+}

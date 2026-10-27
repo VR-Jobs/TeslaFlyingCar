@@ -1,0 +1,80 @@
+{
+  "publisher": "Tesla",
+  "date": "2026-10-25",
+  "page": "https://www.tesla.com/en_gb/roadster",
+  "type": "Official exterior marketing images; dimensional accuracy unverified",
+  "sources": [
+    {
+      "id": "Roadster-01-Hero-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-01-Hero-Desktop.jpg",
+      "bytes": 109289,
+      "sha256": "146fa8e72191775d53c6fa59325a1e4b97958a53621c03dd7b30c6a1a8a8a3eb",
+      "width": 4200,
+      "height": 1698,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-02-Pilot-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-02-Pilot-Desktop.jpg",
+      "bytes": 140028,
+      "sha256": "133de595f3cb7742f5bb2c24d8e9c41aef06dcd1a63507e2daaddc1c4a71c16a",
+      "width": 3440,
+      "height": 1024,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-03-Carousel-Slide-1-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-03-Carousel-Slide-1-Desktop.jpg",
+      "bytes": 66899,
+      "sha256": "ba430d2177eba7f84f8d70d16af95ae758e2323d8c4d22df08ce58c0844aa647",
+      "width": 2200,
+      "height": 1040,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-03-Carousel-Slide-2-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-03-Carousel-Slide-2-Desktop.jpg",
+      "bytes": 123387,
+      "sha256": "b2ab468329d48c98f959a5c8f02cdefe5a6ae784020e767e621b4cc2f2d12603",
+      "width": 2200,
+      "height": 1040,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-03-Carousel-Slide-3-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-03-Carousel-Slide-3-Desktop.jpg",
+      "bytes": 118965,
+      "sha256": "5c764c276ccc528a48292359974c0b9b560e3ee88b02a5cac1703c38b134da45",
+      "width": 2200,
+      "height": 1040,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-06-Gravity-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-06-Gravity-Desktop.jpg",
+      "bytes": 373179,
+      "sha256": "c3299bce3d5c5b9d2dc348456dd18dd7643d821a349b0754dd586f25ec060377",
+      "width": 3456,
+      "height": 3456,
+      "format": "JPEG"
+    },
+    {
+      "id": "Roadster-08-End-Desktop.jpg",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-08-End-Desktop.jpg",
+      "bytes": 180141,
+      "sha256": "342e862f7239479b0d1994d1f842e50d05e926b8fd4c9158c02cc9f011bcc71b",
+      "width": 2800,
+      "height": 2074,
+      "format": "JPEG"
+    }
+  ],
+  "reviewedImages": [
+    "Roadster-01-Hero-Desktop.jpg",
+    "Roadster-02-Pilot-Desktop.jpg",
+    "Roadster-03-Carousel-Slide-1-Desktop.jpg",
+    "Roadster-03-Carousel-Slide-2-Desktop.jpg",
+    "Roadster-03-Carousel-Slide-3-Desktop.jpg",
+    "Roadster-06-Gravity-Desktop.jpg",
+    "Roadster-08-End-Desktop.jpg"
+  ]
+}

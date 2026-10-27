@@ -1,0 +1,192 @@
+{
+  "checks": [
+    {
+      "name": "128-random-layouts-have-real-shortcuts-two-stunt-chains-and-clear-main-launch-zones",
+      "pass": true
+    },
+    {
+      "name": "real-jump-barrel-and-suction-complete-main-three-gate-chain",
+      "pass": true,
+      "detail": {
+        "s": 1257.2853709985416,
+        "score": 869.8026048082819,
+        "pressure": 100
+      }
+    },
+    {
+      "name": "stunt-input-does-not-steer-player-out-of-the-chain",
+      "pass": true
+    },
+    {
+      "name": "frontflip-is-also-accepted-by-the-second-gate",
+      "pass": true,
+      "detail": {
+        "tricks": 1,
+        "phase": "running"
+      }
+    },
+    {
+      "name": "missing-the-stunt-does-not-kill-or-block-main-route",
+      "pass": true
+    },
+    {
+      "name": "optional-shortcut-has-a-working-independent-chain",
+      "pass": true,
+      "detail": {
+        "phase": "running",
+        "s": 344.83247248533456
+      }
+    },
+    {
+      "name": "ten-seeds-support-launch-manual-E-capture-and-return-without-clipping",
+      "pass": true,
+      "detail": [
+        {
+          "seed": 1,
+          "pass": true,
+          "firstCapture": 2495.335232032756,
+          "returnAt": 2718.456880851385,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 2,
+          "pass": true,
+          "firstCapture": 214.96972028396044,
+          "returnAt": 650.0932108527533,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 3,
+          "pass": true,
+          "firstCapture": 2391.371563318115,
+          "returnAt": 2629.004624134058,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 9,
+          "pass": true,
+          "firstCapture": 214.08857547951746,
+          "returnAt": 516.2582373731085,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 11,
+          "pass": true,
+          "firstCapture": 215.10359061718137,
+          "returnAt": 536.1751329044845,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 27,
+          "pass": true,
+          "firstCapture": 2396.7055994837856,
+          "returnAt": 2706.7521956393202,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 42,
+          "pass": true,
+          "firstCapture": 214.08367310126098,
+          "returnAt": 509.8372638701603,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 73,
+          "pass": true,
+          "firstCapture": 1923.261421569014,
+          "returnAt": 2196.2704159261643,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 101,
+          "pass": true,
+          "firstCapture": 1949.610194571927,
+          "returnAt": 2211.9940393362062,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        },
+        {
+          "seed": 2026,
+          "pass": true,
+          "firstCapture": 214.3872006200212,
+          "returnAt": 597.61508217117,
+          "falls": 0,
+          "impacts": 0,
+          "phase": "running"
+        }
+      ]
+    },
+    {
+      "name": "shortcut-glass-top-and-bottom-have-real-solid-collision",
+      "pass": true
+    },
+    {
+      "name": "ordinary-jump-in-wrong-lane-does-not-force-a-route-change",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-repeats-cannot-farm-completion-rewards",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-retry-clears-route-and-transfer-state",
+      "pass": true
+    },
+    {
+      "name": "transfer-to-another-track-requires-explicit-E-suction",
+      "pass": true
+    },
+    {
+      "name": "shortcut-shares-main-glass-materials-instead-of-growing-bloom-variants",
+      "pass": true
+    },
+    {
+      "name": "normal-and-boost-speeds-can-complete-the-chain-with-speed-appropriate-short-jets",
+      "pass": true,
+      "detail": [
+        {
+          "speed": 25,
+          "complete": true,
+          "falls": 0
+        },
+        {
+          "speed": 28,
+          "complete": true,
+          "falls": 0
+        },
+        {
+          "speed": 36,
+          "complete": true,
+          "falls": 0
+        },
+        {
+          "speed": 42,
+          "complete": true,
+          "falls": 0
+        },
+        {
+          "speed": 48,
+          "complete": true,
+          "falls": 0
+        }
+      ]
+    }
+  ]
+}

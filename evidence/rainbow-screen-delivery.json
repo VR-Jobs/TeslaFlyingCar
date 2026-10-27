@@ -1,0 +1,41 @@
+{
+  "completedUTC": "2026-10-27T16:20:07.726839+00:00",
+  "url": "https://maniengine.com/examples/tesla/",
+  "onlineSHA256": "84046be47ddc1373cfb7a876defd275776fb8b475cd5d9ea44329e1f37b1bca7",
+  "offlineSHA256": "319abc358adb97b2e13914a1016189a511946426f006047eee5118b5d69deaff",
+  "passedChecks": {
+    "rainbowGameplay": 24,
+    "offlineBrowserScreen": 7,
+    "onlineBrowserScreen": 7,
+    "originalRulesAndSyntax": 7,
+    "offlineScripts": 3,
+    "onlineBundle": 4
+  },
+  "sharedEffects": [
+    "rotating-conic-rainbow-vignette",
+    "52-percent-transparent-center-mask",
+    "rainbow-score",
+    "acquisition-edge-flash",
+    "rainbow-duration-meter"
+  ],
+  "backup": "D:\\0.Unity20242024\\Tesla-Car-Game\\revisions\\20261027-rainbow-screen",
+  "rollback": "/var/www/tesla-deploy/20261027-rainbow-screen-84046be4/previous-index.html",
+  "evidence": {
+    "rainbow-screen-local-browser.json": {
+      "sha256": "b7a12c8d59c1c0d0d70dc1fb1c05496c193f14a4ff679e5dec3a59687476a46b",
+      "bytes": 1143
+    },
+    "rainbow-screen-online-browser.json": {
+      "sha256": "b7a12c8d59c1c0d0d70dc1fb1c05496c193f14a4ff679e5dec3a59687476a46b",
+      "bytes": 1143
+    },
+    "rainbow-screen-local.png": {
+      "sha256": "5fd6170bea970fb1e1c4b59d271d9de3ff158b612bfe085ed9bc8c2b54cf239a",
+      "bytes": 101151
+    },
+    "rainbow-screen-online.png": {
+      "sha256": "147cde0061de95dee5a14be39ce00653b5f964a119b25b2f9a4cecd68582bcfc",
+      "bytes": 112797
+    }
+  }
+}

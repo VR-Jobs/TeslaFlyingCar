@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-11",
+      "pass": true,
+      "detail": {
+        "yields": 63
+      }
+    },
+    {
+      "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-27",
+      "pass": true,
+      "detail": {
+        "yields": 59
+      }
+    },
+    {
+      "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-42",
+      "pass": true,
+      "detail": {
+        "yields": 57
+      }
+    },
+    {
+      "name": "cancelled-preload-stops-without-publishing-partial-route-1",
+      "pass": true
+    },
+    {
+      "name": "cancelled-preload-stops-without-publishing-partial-route-20",
+      "pass": true
+    },
+    {
+      "name": "cancelled-preload-stops-without-publishing-partial-route-80",
+      "pass": true
+    },
+    {
+      "name": "retiring-a-staged-route-retains-the-view-owned-glow",
+      "pass": true
+    },
+    {
+      "name": "hidden-first-use-effects-are-warmed-without-disposing-shared-buffers",
+      "pass": true
+    },
+    {
+      "name": "public-home-entry-awaits-the-asynchronous-launch",
+      "pass": true
+    }
+  ],
+  "reports": [
+    {
+      "seed": 11,
+      "yields": 63,
+      "disposed": 314
+    },
+    {
+      "seed": 27,
+      "yields": 59,
+      "disposed": 304
+    },
+    {
+      "seed": 42,
+      "yields": 57,
+      "disposed": 311
+    }
+  ]
+}
