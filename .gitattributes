@@ -13,3 +13,8 @@
 *.woff binary
 *.woff2 binary
 *.exe binary
+
+# Preserve downloaded evidence and content-hashed standalone output byte-for-byte
+/original/** -text
+/dist-online/** -text
+/RoadsterDash.html -text
