@@ -1,3 +1,4 @@
+import { installOrbitExperience } from "../space-drive/index.js";
 import { runGameplayChecks } from "./gameplay-checks.js";
 import { installLanguageButton, setGameLanguage } from "./language.js";
 import { installDrivingFeatures } from "../features/index.js";
@@ -27,6 +28,7 @@ export function installDeveloperBridge(context) {
     onWin: () => progress.unlock("starRing"),
     onRestore: () => progress.refresh(),
   });
+  const orbit = installOrbitExperience(context, driving, scenery, handling, comfort);
   installHome(context, driving, scenery, starRing);
   progress = installJourneyProgress(context, driving);
   installIterationChecks(context, driving, handling, scenery, exterior, comfort, progress);
@@ -105,6 +107,7 @@ export function installDeveloperBridge(context) {
     comfort: comfort.status(),
     journeyProgress: progress.status(),
     scenery: scenery.status(),
+    orbit: orbit.status(),
   });
   const save = (data, filename) => {
     const url = URL.createObjectURL(

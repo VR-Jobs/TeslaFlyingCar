@@ -17,7 +17,7 @@ export function installHandling(context, driving) {
   const marker = new Mesh(
     new PlaneGeometry(3, 5.5),
     new ShaderMaterial({
-      uniforms: { uOpacity: { value: 0 }, uBlocked: { value: 0 } },
+      uniforms: { uOpacity: { value: 0 }, uBlocked: { value: 0 }, uHazard: { value: 0 } },
       transparent: true,
       depthWrite: false,
       polygonOffset: true,
@@ -25,12 +25,12 @@ export function installHandling(context, driving) {
       fog: false,
       vertexShader:
         "varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}",
-      fragmentShader: `varying vec2 vUv;uniform float uOpacity,uBlocked;
+      fragmentShader: `varying vec2 vUv;uniform float uOpacity,uBlocked,uHazard;
       void main(){vec2 p=(vUv-.5)*2.;float d=length(p);
       float ring=(1.-smoothstep(.025,.06,abs(d-.78)))*.65;
       float crosshair=(1.-smoothstep(.014,.03,abs(p.x)))*(1.-smoothstep(.1,.26,abs(p.y)));
       float a=max(ring,crosshair)*uOpacity;if(a<.005)discard;
-      gl_FragColor=vec4(mix(vec3(.85,.94,1.),vec3(1.,.18,.16),uBlocked),a);}`,
+      vec3 tint=mix(vec3(.85,.94,1.),vec3(1.,.63,.16),uHazard);gl_FragColor=vec4(mix(tint,vec3(1.,.18,.16),uBlocked),a);}`,
     }),
   );
   marker.rotation.x = -Math.PI / 2;
@@ -215,6 +215,20 @@ export function installHandling(context, driving) {
   };
   return {
     marker,
+    setLandingHazard(value, prediction = null) {
+      marker.material.uniforms.uHazard.value = +value;
+      marker.scale.set(value ? 1.22 : 1, value ? 1.22 : 1, 1);
+      if (value && marker.visible)
+        marker.material.uniforms.uOpacity.value = Math.max(
+          0.6,
+          marker.material.uniforms.uOpacity.value,
+        );
+      if (prediction && marker.visible) {
+        marker.position.x = prediction.x;
+        marker.position.z = -Math.min(250, prediction.speed * prediction.time);
+        beacon.update();
+      }
+    },
     status: () => ({
       buffer,
       bufferedJumps,

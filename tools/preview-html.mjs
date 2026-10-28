@@ -8,6 +8,9 @@ const server = http.createServer(async (req, res) => {
   if (req.url === "/qa-requests") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify(requests));
+  } else if (new URL(req.url, "http://localhost").pathname === "/orbit-viewport.html") {
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+    res.end(await fs.readFile(new URL("./orbit-viewport.html", import.meta.url)));
   } else if (new URL(req.url, "http://localhost").pathname === "/ui-viewport.html") {
     res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     res.end(await fs.readFile(new URL("./ui-viewport.html", import.meta.url)));

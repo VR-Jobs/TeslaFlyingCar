@@ -27,6 +27,9 @@ jobs:
       - name: Check original core and star-ring rules
         run: |
           npm run check
+          npm run check:orbit
+          npm run check:handling
+          npm run check:space
           npm run check:star-ring-rainbow
           npm run check:experience
           npm run check:placement

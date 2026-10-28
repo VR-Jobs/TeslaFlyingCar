@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "name": "192-seeded-patterns-keep-zero-air-ground-route",
+      "pass": true
+    },
+    {
+      "name": "all-five-patterns-appear",
+      "pass": true
+    },
+    {
+      "name": "first-section-offers-optional-air-route",
+      "pass": true
+    },
+    {
+      "name": "recovery-is-guaranteed-every-fifth-section",
+      "pass": true
+    },
+    {
+      "name": "swept-gate-collection-works-at-high-speed",
+      "pass": true
+    },
+    {
+      "name": "ground-route-does-not-collect-air-gates",
+      "pass": true
+    },
+    {
+      "name": "wrong-lane-cannot-collect-gate",
+      "pass": true
+    },
+    {
+      "name": "gate-cannot-be-collected-twice",
+      "pass": true
+    },
+    {
+      "name": "near-miss-starts-chain",
+      "pass": true
+    },
+    {
+      "name": "stationary-input-spam-cannot-build-chain",
+      "pass": true
+    },
+    {
+      "name": "unsafe-landing-does-not-cash-in",
+      "pass": true
+    },
+    {
+      "name": "safe-landing-banks-score-and-air",
+      "pass": true
+    },
+    {
+      "name": "same-chain-cannot-be-cashed-twice",
+      "pass": true
+    },
+    {
+      "name": "expired-chain-cannot-be-cashed",
+      "pass": true
+    },
+    {
+      "name": "rhythm-does-not-invent-beats-without-audio-clock",
+      "pass": true
+    },
+    {
+      "name": "off-beat-jump-still-earns-no-rhythm-penalty",
+      "pass": true
+    },
+    {
+      "name": "real-action-order-builds-musical-phrase",
+      "pass": true
+    },
+    {
+      "name": "same-action-frame-cannot-repeat-beat-reward",
+      "pass": true
+    },
+    {
+      "name": "landing-prediction-includes-relative-traffic-motion",
+      "pass": true
+    },
+    {
+      "name": "different-lane-is-safe",
+      "pass": true
+    },
+    {
+      "name": "lane-changing-vehicle-sweep-is-dangerous",
+      "pass": true
+    },
+    {
+      "name": "first-4700m-remains-compatible",
+      "pass": true
+    },
+    {
+      "name": "journey-keeps-changing-for-long-runs",
+      "pass": true
+    },
+    {
+      "name": "120-input-gates-cannot-exceed-fixed-render-pool",
+      "pass": true
+    },
+    {
+      "name": "other-scenes-hide-all-new-meshes",
+      "pass": true
+    }
+  ]
+}

@@ -25,7 +25,8 @@ export function installSpaceGame(context, coast) {
   let enabled = false,
     selection = "space",
     time = 0,
-    travel = 0;
+    travel = 0,
+    runtimeDetail = null;
   const background = game.scene.background,
     originalEnvironment = game.scene.environment;
   const roadReferences = [
@@ -200,9 +201,11 @@ export function installSpaceGame(context, coast) {
     lighting();
     celestial.position.copy(game.camera.position);
     moon.rotation.y = time * 0.0002;
-    stars.update(renderer.getPixelRatio(), game.detail ?? 2);
-    asteroids.update(distance, time, game.detail ?? 2);
-    journey.update(distance, time, game.mood);
+    const detail =
+      runtimeDetail == null ? (game.detail ?? 2) : Math.min(game.detail ?? 2, runtimeDetail);
+    stars.update(renderer.getPixelRatio(), detail);
+    asteroids.update(distance, time, detail);
+    journey.update(distance, time, game.mood, detail);
     // Stable, low-intensity beat accents on existing edges, never full-sky flashes.
     roadBeat.update(distance, game.mood?.pulse || 0);
     this.road.update(distance, distance);
@@ -251,7 +254,7 @@ export function installSpaceGame(context, coast) {
   label.append(document.createTextNode("游戏场景"), select);
   const hint = document.createElement("p");
   hint.className = "modal-desc";
-  hint.textContent = "仅改变周围环境，跑道、车辆与驾驶规则保持不变。";
+  hint.textContent = "太空普通模式有空中奖励航线与连续超车挑战；教学与原版风景保留原有规则。";
   const card = document.querySelector("#settings .modal-card");
   card.insertBefore(label, card.querySelector(".modal-buttons"));
   label.after(hint);
@@ -279,6 +282,11 @@ export function installSpaceGame(context, coast) {
   choose(selection);
   return {
     select: choose,
+    isSpace: () => enabled,
+    warmObjects: () => journey.warmObjects(),
+    setRuntimeDetail: (value) => {
+      runtimeDetail = value;
+    },
     status: () => ({
       selected: selection,
       stars: stars.count(),

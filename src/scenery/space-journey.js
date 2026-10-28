@@ -1,3 +1,4 @@
+import { createJourneyLandmarks } from "./space-landmarks.js";
 import {
   B as Group,
   R as Mesh,
@@ -15,14 +16,96 @@ export function journeyState(distance) {
     moon = smooth(650, 1600, d),
     belt = smooth(1800, 2900, d),
     night = smooth(3400, 4700, d);
-  return {
+  const base = {
     chapter: d < 1100 ? "近地轨道" : d < 2400 ? "月球附近" : d < 3900 ? "小行星带" : "行星背光",
     moon,
     belt,
     night,
     orbit: 1 - moon,
     progress: Math.min(1, d / 4700),
+    station: 0,
+    comet: 0,
+    rings: 0,
+    sector: 0,
   };
+  if (d < 4700) return base;
+  const anchors = [
+    { chapter: "行星背光", moon: 1, belt: 1, night: 1, orbit: 0, station: 0, comet: 0, rings: 0 },
+    {
+      chapter: "空间站外圈",
+      moon: 0.6,
+      belt: 0.3,
+      night: 0.5,
+      orbit: 0.45,
+      station: 1,
+      comet: 0,
+      rings: 0,
+    },
+    {
+      chapter: "月面远航",
+      moon: 1,
+      belt: 0.6,
+      night: 0.1,
+      orbit: 0,
+      station: 0,
+      comet: 0,
+      rings: 0,
+    },
+    {
+      chapter: "彗星尘尾",
+      moon: 0.25,
+      belt: 0.5,
+      night: 0.25,
+      orbit: 0.4,
+      station: 0,
+      comet: 1,
+      rings: 0,
+    },
+    {
+      chapter: "深空静海",
+      moon: 0.4,
+      belt: 0.1,
+      night: 1,
+      orbit: 0.15,
+      station: 0,
+      comet: 0.2,
+      rings: 0,
+    },
+    {
+      chapter: "行星环远眺",
+      moon: 0.4,
+      belt: 0.6,
+      night: 0.2,
+      orbit: 1,
+      station: 0,
+      comet: 0,
+      rings: 1,
+    },
+    {
+      chapter: "远日轨道",
+      moon: 0.7,
+      belt: 0.9,
+      night: 0.8,
+      orbit: 0.15,
+      station: 0.25,
+      comet: 0,
+      rings: 0,
+    },
+  ];
+  const section = Math.floor((d - 4700) / 1900),
+    local = (d - 4700) % 1900;
+  const a = anchors[section % anchors.length],
+    b = anchors[(section + 1) % anchors.length];
+  const fade = smooth(0, 1000, local);
+  const state = {
+    chapter: fade < 0.5 ? a.chapter : b.chapter,
+    progress: 1,
+    chapterProgress: local / 1900,
+    sector: section + 1,
+  };
+  for (const key of ["moon", "belt", "night", "orbit", "station", "comet", "rings"])
+    state[key] = a[key] + (b[key] - a[key]) * fade;
+  return state;
 }
 export function createSpaceJourney(celestial, moon, asteroids) {
   const group = new Group();
@@ -73,9 +156,11 @@ export function createSpaceJourney(celestial, moon, asteroids) {
   );
   atmosphere.position.copy(planet.position);
   group.add(atmosphere);
+  const landmarks = createJourneyLandmarks(celestial);
   let state = journeyState(0);
   return {
-    update(distance, time, mood) {
+    warmObjects: () => landmarks.objects,
+    update(distance, time, mood, detail = 2) {
       state = journeyState(distance);
       const scale = 1 + state.orbit * 0.14 + state.night * 0.24;
       planet.scale.setScalar(scale);
@@ -86,7 +171,7 @@ export function createSpaceJourney(celestial, moon, asteroids) {
         -1030,
       );
       atmosphere.position.copy(planet.position);
-      planet.rotation.y = 0.25 + Math.min(1, distance / 9000) * 0.2;
+      planet.rotation.y = 0.25 + distance / 45000;
       material.uniforms.uNight.value = state.night;
       const fade = 0.2 + 0.8 * Math.max(state.orbit, state.night);
       material.uniforms.uFade.value = fade;
@@ -96,10 +181,12 @@ export function createSpaceJourney(celestial, moon, asteroids) {
       // Density changes through opacity, not teleporting/reseeding instances.
       asteroids.mesh.material.transparent = true;
       asteroids.mesh.material.opacity = 0.15 + state.belt * 0.8;
+      landmarks.update(state, time, planet, detail);
       // Never pulse astronomical objects; beat accents belong to road edges.
     },
     status: () => ({
       ...state,
+      landmarks: landmarks.status(),
       planetRadius: 185 * planet.scale.x,
       planetPosition: planet.position.toArray(),
     }),
