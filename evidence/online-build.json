@@ -1,11 +1,11 @@
 {
   "format": "online cached scripts and demand-loaded unicode fonts; offline HTML retained",
-  "generatedUTC": "2026-10-28T10:09:12.096Z",
-  "offlineBytes": 11580477,
+  "generatedUTC": "2026-10-28T10:37:51.079Z",
+  "offlineBytes": 11590221,
   "fontFiles": 118,
   "htmlBytes": 370435,
-  "htmlGzipBytes": 162324,
-  "htmlSHA256": "2afbdc7659092e90672e4164585ae1827de50cfc312a310c2a1d46b0f3ae1340",
+  "htmlGzipBytes": 162325,
+  "htmlSHA256": "2b66a874222d4a5bb0e5add579d9f6a27f328034ecfe65f97457fb7f544bdcaa",
   "files": [
     {
       "path": "assets/font-a46b99781170971e.woff2",
@@ -722,10 +722,10 @@
       "gzipBytes": 33208
     },
     {
-      "path": "assets/game-80eb47631e3e74f1.js",
-      "sha256": "80eb47631e3e74f177d6e5bb2be4c5b3dfe25d89e607d61b84b22dd5194c7658",
-      "bytes": 7226262,
-      "gzipBytes": 2986045
+      "path": "assets/game-ceeadbee45cf9291.js",
+      "sha256": "ceeadbee45cf9291eb3d1994f3ac454445582a432693843f11fd51b70dadbb9d",
+      "bytes": 7236006,
+      "gzipBytes": 2990763
     }
   ]
 }

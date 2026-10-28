@@ -283,7 +283,7 @@ export function installSpaceGame(context, coast) {
   return {
     select: choose,
     isSpace: () => enabled,
-    warmObjects: () => journey.warmObjects(),
+    warmObjects: () => [...journey.warmObjects(), roadBeat.mesh],
     setRuntimeDetail: (value) => {
       runtimeDetail = value;
     },

@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "collection-emits-a-small-soft-light-burst",
+      "pass": true
+    },
+    {
+      "name": "burst-stays-at-its-world-location-while-road-scrolls",
+      "pass": true
+    },
+    {
+      "name": "event-spam-cannot-exceed-spark-pool",
+      "pass": true
+    },
+    {
+      "name": "event-spam-cannot-exceed-mist-pool",
+      "pass": true
+    },
+    {
+      "name": "event-spam-cannot-exceed-ripple-pool",
+      "pass": true
+    },
+    {
+      "name": "events-never-replace-geometries",
+      "pass": true
+    },
+    {
+      "name": "all-effect-positions-and-colors-remain-finite",
+      "pass": true
+    },
+    {
+      "name": "vehicle-and-road-occlude-all-transparent-effects",
+      "pass": true
+    },
+    {
+      "name": "all-transients-expire-without-new-events",
+      "pass": true
+    },
+    {
+      "name": "hard-landing-produces-larger-dispersing-mist",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-and-low-quality-lower-particle-count",
+      "pass": true
+    },
+    {
+      "name": "restarting-time-clears-old-world-effects",
+      "pass": true
+    },
+    {
+      "name": "invalid-event-cannot-poison-pool-buffers",
+      "pass": true
+    },
+    {
+      "name": "gate-detail-and-halo-instances-are-bounded",
+      "pass": true
+    },
+    {
+      "name": "metal-ring-keeps-original-collision-aperture-clear",
+      "pass": true
+    },
+    {
+      "name": "low-quality-removes-decorative-outer-arcs",
+      "pass": true
+    },
+    {
+      "name": "run-reset-clears-particle-draw-ranges",
+      "pass": true
+    },
+    {
+      "name": "other-scenes-hide-the-entire-effects-root",
+      "pass": true
+    }
+  ]
+}

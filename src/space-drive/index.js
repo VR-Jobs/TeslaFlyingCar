@@ -12,6 +12,7 @@ import {
 import { reachableRoute, landingTime } from "../features/handling-rules.js";
 import { createAdaptiveQuality } from "../star-ring/adaptive-quality.js";
 import { createOrbitView } from "./view.js";
+import { refineOrbitPlumes } from "./plumes.js";
 import { createOrbitUI } from "./ui.js";
 import { installOrbitQA } from "./qa.js";
 
@@ -21,6 +22,7 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     ui = createOrbitUI(),
     adaptive = createAdaptiveQuality();
   const p = game.player;
+  const plumes = refineOrbitPlumes(p.car);
   let state = createActionState(),
     plans = [],
     nextStart = 170,
@@ -58,11 +60,11 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     const before = p.air;
     p.air = Math.min(600, p.air + air);
     state.airEarned += p.air - before;
-    view.flash(game.time);
     return gained;
   }
   function reset() {
     state = createActionState();
+    view.reset();
     plans = [];
     nextStart = Math.max(170, game.distance + 120);
     nextIndex = 0;
@@ -98,6 +100,7 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     const result = bankChain(state, game.time, safe);
     if (!result) return;
     const earned = award(result.points, result.air);
+    view.bank(game.time, game.distance, p, result.count);
     audio(740, 0.04, 1100);
     say("超车链 ×" + result.count + " · +" + earned + " / 补气");
   }
@@ -239,6 +242,7 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
       (data.impact || 0) < 1.4 &&
       Math.abs(p.roll + p.rollSettle) < 0.4 &&
       Math.abs(p.flip + p.flipSettle) < 0.4;
+    view.land(this.time, this.distance, p, data.impact || 0);
     if (safe) {
       rhythm("land");
       bank(true);
@@ -278,6 +282,7 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
       if (gateCrossing(gate, before, after)) {
         gate.taken = true;
         gate.takenAt = this.time;
+        view.collect(gate, this.time);
         state.gates++;
         const earned = award(25, 22);
         action("gate");
@@ -344,12 +349,16 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     scenery.setRuntimeDetail(
       active && comfort.preferences.autoQuality ? adaptive.status().level : null,
     );
+    plumes.set(active);
     const out = nativeVisual.apply(this, args);
     const live = active && getScreen() === "game" && this.state === "playing";
     const quality = comfort.preferences.autoQuality
       ? adaptive.status().level
       : Math.min(2, this.detail ?? 2);
-    view.update(gates(), this.distance, this.time, p, quality, live);
+    view.update(gates(), this.distance, this.time, p, quality, live, {
+      reduced: matchMedia("(prefers-reduced-motion: reduce)").matches,
+      pixel: renderer.getPixelRatio(),
+    });
     if (active) {
       this.post.samples = Math.min([0, 4, 6, 8][this.detail ?? 2], [0, 4, 6][quality]);
       this.mood.bloom *= quality === 0 ? 0.55 : quality === 1 ? 0.8 : 1;
@@ -424,10 +433,12 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     if (scenery.isSpace() && driving.preferences().mode === "free") {
       ui.preparing(true);
       try {
-        warmPromise ||= view.warm(renderer, game.camera, scenery.warmObjects()).catch((error) => {
-          warmPromise = null;
-          throw error;
-        });
+        warmPromise ||= view
+          .warm(renderer, game.camera, [...scenery.warmObjects(), ...plumes.objects])
+          .catch((error) => {
+            warmPromise = null;
+            throw error;
+          });
         await warmPromise;
       } finally {
         ui.preparing(false);

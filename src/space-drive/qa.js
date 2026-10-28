@@ -71,7 +71,21 @@ export function installOrbitQA(context, driving, scenery, handling, orbit) {
   }
   async function capture(kind) {
     await begin();
-    if (kind === "air") {
+    if (["detail", "collect", "land"].includes(kind)) {
+      const route = orbit.plans().find((p) => p.route).route;
+      if (kind === "land") {
+        pose(220, 0, route.x);
+        game.resolveLand({ impact: 0.95, result: "clean", tricks: 0 });
+      } else {
+        pose(route.gates[0].d - (kind === "collect" ? 0.2 : 12), 5.6, route.x);
+        if (kind === "collect") game.stepSimulation(1 / 60, []);
+      }
+      if (kind === "detail") {
+        game.player.fire(["L1", "L2", "L3", "L4"], 0.8);
+        game.player.applyVisual(1 / 60, game.ctx());
+      }
+      game.time += kind === "land" ? 0.25 : 0.12;
+    } else if (kind === "air") {
       const route = orbit.plans().find((p) => p.route).route;
       pose(route.gates[0].d - 38, 0, route.x);
     } else if (kind === "risk") {
@@ -86,6 +100,9 @@ export function installOrbitQA(context, driving, scenery, handling, orbit) {
     game.updateVisual(1 / 60, 0);
   }
   button("预览空中航线", () => capture("air"));
+  button("预览精细金环", () => capture("detail"));
+  button("预览穿环光尘", () => capture("collect"));
+  button("预览落地光尘", () => capture("land"));
   button("预览落点预警", () => capture("risk"));
   button("预览空间站", () => capture("station"));
   button("预览彗星尘尾", () => capture("comet"));
@@ -192,6 +209,12 @@ export function installOrbitQA(context, driving, scenery, handling, orbit) {
         "landing-warning-clears-when-car-leaves",
         !orbit.status().landingHazard && handling.marker.material.uniforms.uHazard.value === 0,
       );
+      const refined = Object.values(game.player.car.plumes);
+      check(
+        "all-native-nozzles-use-refined-layers",
+        refined.length === 10 &&
+          refined.every((p) => p.mesh.material.uniforms.uOrbitRefinement?.value === 1),
+      );
       scenery.select("coast");
       game.updateVisual(1 / 60, 0);
       const before = orbit.state().bonus;
@@ -199,6 +222,10 @@ export function installOrbitQA(context, driving, scenery, handling, orbit) {
       check(
         "coast-has-no-orbit-rewards-or-pools",
         !orbit.enabled() && orbit.state().bonus === before && !orbit.view.root.visible,
+      );
+      check(
+        "coast-restores-native-plume-appearance",
+        refined.every((p) => p.mesh.material.uniforms.uOrbitRefinement?.value === 0),
       );
       scenery.select("space");
       driving.selectMode("academy");
@@ -208,6 +235,11 @@ export function installOrbitQA(context, driving, scenery, handling, orbit) {
       check("star-ring-is-isolated", !orbit.enabled());
       document.body.classList.remove("star-ring-active");
       check("new-geometry-warmed-before-play", orbit.view.status().warm);
+      check(
+        "refined-fx-use-fixed-pools",
+        orbit.view.status().version === "orbital-fx-2" &&
+          orbit.view.status().effects.capacities.sparks === 144,
+      );
       check(
         "pool-counts-stay-bounded",
         orbit.view.status().gateCapacity === 32 && orbit.plans().length < 4,

@@ -127,7 +127,7 @@ const gates = Array.from({ length: 120 }, (_, i) => ({ x: 0, y: 6.2, d: i * 5 })
 view.update(gates, 0, 0, { x: 0 }, 2);
 check(
   "120-input-gates-cannot-exceed-fixed-render-pool",
-  view.status().visibleGates <= 32 && view.status().drawCalls === 4,
+  view.status().visibleGates <= 32 && view.status().drawCalls === 8,
 );
 view.update(gates, 0, 0, { x: 0 }, 0, false);
 check("other-scenes-hide-all-new-meshes", !view.root.visible);
