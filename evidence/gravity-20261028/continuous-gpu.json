@@ -1,0 +1,120 @@
+{
+  "active": true,
+  "paused": false,
+  "phase": "running",
+  "tutorial": null,
+  "s": 1625.9873930685264,
+  "face": 0,
+  "target": 3,
+  "attached": true,
+  "x": -0.49427228995810624,
+  "y": -7.91,
+  "pressure": 99.90000000000036,
+  "gates": 7,
+  "transfers": 8,
+  "combo": 8,
+  "circuits": 1,
+  "warning": 0,
+  "maxPenetration": 1.3877787807814457e-16,
+  "course": {
+    "seed": 11,
+    "cachedGates": 12,
+    "maxCachedGates": 14
+  },
+  "view": {
+    "renderer": "four-surface-glass-tunnel",
+    "car": {
+      "asset": "roadster-blender-exterior-v1",
+      "revision": "20261026-blackglass-photo-exterior",
+      "glassColor": "05070a",
+      "groups": 37,
+      "triangles": 38365,
+      "extension": 0.08,
+      "maximumAttachmentGap": 1.1102230246251565e-16
+    },
+    "effects": {
+      "style": "original-three-layer-turbulent-cold-gas",
+      "nativePlumes": 10,
+      "sharedNativeGeometry": true,
+      "sharedNativeNoise": true,
+      "curvedSurfaceClip": true,
+      "suction": 0.999972110325343,
+      "jet": 3.4346350485436125e-7,
+      "boost": 0,
+      "levels": {
+        "L1": 3.4346350485436125e-7,
+        "L2": 3.4346350485436125e-7,
+        "L3": 3.4346350485436125e-7,
+        "L4": 3.4346350485436125e-7,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "S1": 0,
+        "S2": 0
+      },
+      "intakeRibbons": 12,
+      "particles": 144,
+      "particleCapacity": 512,
+      "pressureResponsive": true,
+      "convergingIntake": true
+    },
+    "post": {
+      "maskBudget": 64,
+      "timings": {
+        "beautyMs": 0.3999999985098839,
+        "maskMs": 0.30000000447034836,
+        "bloomMs": 0
+      },
+      "type": "selective-hdr-bloom",
+      "enabled": true,
+      "frames": 18501,
+      "effectiveStrength": 0.7,
+      "renderScale": 1,
+      "crash": 0,
+      "width": 1600,
+      "height": 900,
+      "mips": 5,
+      "strength": 0.7,
+      "radius": 0.05,
+      "threshold": 0.6,
+      "emitters": 15,
+      "cachedMasks": 24,
+      "selective": true,
+      "occlusion": true
+    },
+    "planet": {
+      "version": "solar-eight-1",
+      "id": "earth",
+      "name": "地球",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "anchor": 1560,
+    "rebuildMs": 9.900000005960464,
+    "panes": 4,
+    "cameraUp": [
+      -0.014932213599283126,
+      0.9998469629957645,
+      -0.00911480033634895
+    ]
+  },
+  "profile": {
+    "bestScore": 0,
+    "bestDistance": 0,
+    "runs": 0,
+    "tutorialComplete": false
+  }
+}

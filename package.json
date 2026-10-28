@@ -45,7 +45,8 @@
     "check:experience": "node tools/check-experience.mjs",
     "check:placement": "node tools/check-placement.mjs",
     "start:codespaces": "node tools/codespaces-start.mjs",
-    "check:orbit": "node tools/check-orbit.mjs"
+    "check:orbit": "node tools/check-orbit.mjs",
+    "check:gravity-flip": "node tools/check-gravity-flip.mjs"
   },
   "devDependencies": {
     "@babel/generator": "7.28.5",

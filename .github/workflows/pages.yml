@@ -33,6 +33,7 @@ jobs:
           npm run check:space
           node tools/check-star-ring-structures.mjs
           node tools/check-planets.mjs
+          npm run check:gravity-flip
           npm run check:star-ring-rainbow
           npm run check:experience
           npm run check:placement

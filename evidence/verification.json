@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28T13:53:11.599Z",
+  "date": "2026-10-28T22:57:49.293Z",
   "checks": [
     {
       "name": "Original gameplay/rendering functions retained",
@@ -14,7 +14,7 @@
     {
       "name": "JavaScript syntax and local imports",
       "status": "PASS",
-      "detail": "121 modules parsed, all static module imports resolve"
+      "detail": "127 modules parsed, all static module imports resolve"
     },
     {
       "name": "Offline presentation assets",

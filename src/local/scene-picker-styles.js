@@ -2,7 +2,7 @@ export const scenePickerStyles = `
 .scene-picker{box-sizing:border-box;width:min(740px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:30px;border:1px solid #ffffff38;border-radius:16px;background:#0b0b0d;color:#fff;font:14px/1.6 "Noto Sans SC",system-ui,sans-serif;box-shadow:0 24px 100px #0009;touch-action:pan-y}
 .scene-picker::backdrop{background:#000b;backdrop-filter:blur(9px)}
 .scene-picker h2{margin:0;font-size:27px;letter-spacing:.04em}.scene-picker-description{color:#aaa;margin:8px 0 23px}
-.scene-picker{width:min(1000px,calc(100vw - 32px))}.scene-picker-choices{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;min-width:0}
+.scene-picker{width:min(1000px,calc(100vw - 32px))}.scene-picker-choices{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;min-width:0}
 .scene-option-card{height:100%;box-sizing:border-box}.scene-art-starRing::after{content:"新玩法 · E 吸附";position:absolute;bottom:7px;right:7px;background:#080c17cc;color:#bfeef4;border:1px solid #7ca1b855;border-radius:4px;padding:3px 6px;font-size:10px}
 .scene-picker-choices legend{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .scene-option{position:relative;cursor:pointer;min-width:0}.scene-option>input{position:absolute;width:1px;height:1px;opacity:0;left:16px;top:16px}
@@ -19,6 +19,8 @@ export const scenePickerStyles = `
 .scene-picker-actions .scene-picker-launch{background:#e31937;border-color:#e31937;min-width:160px}.scene-picker-actions button:hover{filter:brightness(1.15)}.scene-picker-actions button:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .scene-picker button:disabled,.scene-picker fieldset:disabled{opacity:.55;cursor:wait}.scene-picker-error{color:#ff8b96;font-size:13px;margin:15px 0 0}
 @media(max-width:520px){.scene-picker{padding:22px 18px}.scene-picker h2{font-size:23px}.scene-picker-description{font-size:12px;margin-bottom:18px}.scene-picker-choices{gap:12px}.scene-option-text{padding:12px 10px 14px}.scene-option-text strong{font-size:16px}.scene-option-text>span{font-size:11px;line-height:1.7}.scene-picker-actions{margin-top:20px;gap:10px}.scene-picker-actions button{padding:10px 17px}.scene-picker-actions .scene-picker-launch{flex:1;min-width:0}}
+html[lang=en] .scene-art-starRing::after{content:"E · Attach"}.scene-art-gravityFlip::after{content:"四面接轨";position:absolute;bottom:7px;right:7px;background:#080c17cc;color:#bbffdf;border:1px solid #91c9b255;border-radius:4px;padding:3px 6px;font-size:10px}html[lang=en] .scene-art-gravityFlip::after{content:"4 surfaces"}
+@media(min-width:701px) and (max-width:980px){.scene-picker-choices{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.scene-picker-choices{grid-template-columns:1fr}.scene-option-card{display:grid;grid-template-columns:40% 60%;align-items:center;min-height:95px}.scene-art{height:100%;min-height:95px;aspect-ratio:auto}.scene-option-text{padding:13px}.scene-option-text strong{font-size:17px}.scene-picker{max-width:520px}.scene-art-starRing::after{font-size:8px;padding:2px 3px}.scene-picker-choices{gap:10px}}
 @media(max-height:480px){.scene-picker{padding:18px 22px}.scene-picker-description{margin:5px 0 12px}.scene-option-text{padding:9px 13px}.scene-picker-actions{margin-top:15px}}
 

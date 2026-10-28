@@ -1,3 +1,4 @@
+import { installGravityFlip } from "../gravity-flip/index.js";
 import { installOrbitExperience } from "../space-drive/index.js";
 import { runGameplayChecks } from "./gameplay-checks.js";
 import { installLanguageButton, setGameLanguage } from "./language.js";
@@ -28,8 +29,9 @@ export function installDeveloperBridge(context) {
     onWin: () => progress.unlock("starRing"),
     onRestore: () => progress.refresh(),
   });
+  const gravityFlip = installGravityFlip(context, comfort, starRing);
   const orbit = installOrbitExperience(context, driving, scenery, handling, comfort);
-  installHome(context, driving, scenery, starRing);
+  installHome(context, driving, scenery, starRing, gravityFlip);
   progress = installJourneyProgress(context, driving);
   installIterationChecks(context, driving, handling, scenery, exterior, comfort, progress);
   const { game, input, backend, getScreen, config, renderer } = context;
@@ -76,6 +78,7 @@ export function installDeveloperBridge(context) {
     config: structuredClone(config),
     errors: [...errors],
     starRing: starRing.status(),
+    gravityFlip: gravityFlip.status(),
     showroom: {
       elapsed: context.showroom.t,
       nextDemo: context.showroom.nextDemoT,

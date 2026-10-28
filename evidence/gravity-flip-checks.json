@@ -1,0 +1,57 @@
+{
+  "passed": 13,
+  "checks": [
+    {
+      "name": "course-is-deterministic-and-seed-varies-route",
+      "pass": true
+    },
+    {
+      "name": "every-required-transfer-is-adjacent-and-has-reaction-time",
+      "pass": true
+    },
+    {
+      "name": "four-face-contact-and-complete-circuit",
+      "pass": true
+    },
+    {
+      "name": "tutorial-requires-hold-launch-and-recontact",
+      "pass": true
+    },
+    {
+      "name": "a-missed-tutorial-contact-can-be-retried",
+      "pass": true
+    },
+    {
+      "name": "continuous-routes-remain-completable-including-thirty-gates",
+      "pass": true
+    },
+    {
+      "name": "low-and-high-frame-rates-use-continuous-collision",
+      "pass": true
+    },
+    {
+      "name": "swept-wall-contact-blocks-high-speed-tunnelling",
+      "pass": true
+    },
+    {
+      "name": "gravity-loss-warns-before-detachment-and-crash-turns-terminal",
+      "pass": true
+    },
+    {
+      "name": "missed-broken-face-fails-instead-of-crossing-panel-backs",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-restores-an-existing-safe-face",
+      "pass": true
+    },
+    {
+      "name": "frame-basis-and-floating-origin-remain-finite-at-long-distances",
+      "pass": true
+    },
+    {
+      "name": "energy-and-position-remain-bounded-under-erratic-input",
+      "pass": true
+    }
+  ]
+}

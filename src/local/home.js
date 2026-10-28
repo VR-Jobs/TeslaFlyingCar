@@ -12,13 +12,14 @@ const node = (tag, className, text) => {
   return element;
 };
 
-export function installHome(context, driving, scenery, starRing) {
+export function installHome(context, driving, scenery, starRing, gravityFlip) {
   const presentation = installSpaceMenu(context.showroom, context.renderer, {
     sound: context.sound,
     settings: context.settings,
     isHome: () =>
       context.getScreen() === "menu" &&
       !document.body.classList.contains("star-ring-active") &&
+      !document.body.classList.contains("gravity-flip-active") &&
       !document.querySelector("dialog[open], .modal:not(.hidden), #garage:not(.hidden)"),
   });
   const style = node("style");
@@ -68,6 +69,10 @@ export function installHome(context, driving, scenery, starRing) {
   const scenePicker = createScenePicker(
     scenery,
     async (selected, replayBest = false) => {
+      if (selected === "gravityFlip") {
+        await gravityFlip.launch();
+        return;
+      }
       if (selected === "starRing") {
         await starRing.launch({ replayBest });
         return;

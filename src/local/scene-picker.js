@@ -1,3 +1,4 @@
+import GRAVITY_PREVIEW from "../assets/gravity-preview.js";
 import { localizeText, localizeAria } from "./language.js";
 import { PLANETS, planetChoice, savePlanetChoice } from "../star-ring/planet-rules.js";
 import PREVIEWS from "../assets/scene-preview-data.js";
@@ -25,6 +26,14 @@ const SCENES = [
       "Visit eight planets on banked curves, spirals, branching jumps and an endless challenge.",
     description: "八大行星航行：倾斜长弯、螺旋升降、分岔飞跃与无限挑战。",
   },
+  {
+    id: "gravityFlip",
+    title: "重力翻面",
+    en: "Gravity Flip",
+    description: "地面、侧墙、天花板：喷气换面，吸气接轨，挑战四面接力。",
+    descriptionEn:
+      "Launch between floor, walls and ceiling. Hold E to attach and chain four-surface transfers.",
+  },
 ];
 
 export function createScenePicker(scenery, start, ghostStatus = () => null) {
@@ -42,8 +51,8 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   description.className = "scene-picker-description";
   localizeText(
     description,
-    "自由跑酷，或挑战吸附与飞跃的星环赛道。",
-    "Free-run through a landscape, or master suction and flight on the star-ring track.",
+    "自由跑酷、星环穿梭，或在四面轨道间喷气翻转。",
+    "Choose a landscape, traverse the star rings, or launch between four gravity surfaces.",
   );
   const choices = document.createElement("fieldset");
   choices.className = "scene-picker-choices";
@@ -65,7 +74,8 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     art.className = `scene-art scene-art-${scene.id}`;
     art.setAttribute("aria-hidden", "true");
     const preview = document.createElement("img");
-    const image = PREVIEWS[scene.id] || PREVIEWS.space;
+    const image =
+      (scene.id === "gravityFlip" ? GRAVITY_PREVIEW : PREVIEWS[scene.id]) || PREVIEWS.space;
     preview.src = image.src;
     preview.width = image.width;
     preview.height = image.height;
@@ -108,8 +118,8 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   const planetHint = document.createElement("small");
   localizeText(
     planetHint,
-    "每完成一个区段，继续飞向下一颗行星。",
-    "Finish a section to continue to the next planet.",
+    "航行过程中，继续飞向其他行星。",
+    "Continue your voyage toward other planets.",
   );
   planetOptions.append(planetLabel, planetHint);
   const error = document.createElement("p");
@@ -140,7 +150,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   const syncReplay = () => {
     const chosen = [...inputs].find(([, i]) => i.checked)?.[0];
     replayOption.hidden = chosen !== "starRing" || !ghostStatus()?.available;
-    planetOptions.hidden = chosen !== "starRing";
+    planetOptions.hidden = !["starRing", "gravityFlip"].includes(chosen);
   };
   for (const input of inputs.values()) input.addEventListener("change", syncReplay);
   form.append(title, description, choices, planetOptions, replayOption, error, actions);
@@ -158,7 +168,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
       // Let the preparation state paint before the coast is first constructed.
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       const selected = [...inputs].find(([, input]) => input.checked)?.[0] || "space";
-      if (selected !== "starRing") scenery.select(selected);
+      if (!["starRing", "gravityFlip"].includes(selected)) scenery.select(selected);
       dialog.close();
       await start(selected, selected === "starRing" && replay.checked && !replayOption.hidden);
       try {
@@ -200,8 +210,8 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
       if (dialog.open || starting) return;
       let previous = scenery.status().selected;
       try {
-        if (localStorage.getItem("tesla-music.start-choice.v1") === "starRing")
-          previous = "starRing";
+        const saved = localStorage.getItem("tesla-music.start-choice.v1");
+        if (["starRing", "gravityFlip"].includes(saved)) previous = saved;
       } catch {}
       const selected = inputs.has(previous) ? previous : "space";
       inputs.get(selected).checked = true;
