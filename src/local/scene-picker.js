@@ -1,12 +1,28 @@
+import { localizeText, localizeAria } from "./language.js";
 import { PLANETS, planetChoice, savePlanetChoice } from "../star-ring/planet-rules.js";
 import PREVIEWS from "../assets/scene-preview-data.js";
 
 const SCENES = [
-  { id: "space", title: "黑暗星空", description: "穿过星海，驶向远处的行星。" },
-  { id: "coast", title: "浅蓝海岸", description: "清透海水、金色沙滩与椰林。" },
+  {
+    id: "space",
+    title: "黑暗星空",
+    en: "Dark Space",
+    description: "穿过星海，驶向远处的行星。",
+    descriptionEn: "Race through the stars toward distant planets.",
+  },
+  {
+    id: "coast",
+    title: "浅蓝海岸",
+    en: "Azure Coast",
+    description: "清透海水、金色沙滩与椰林。",
+    descriptionEn: "Clear blue water, golden sand and palm trees.",
+  },
   {
     id: "starRing",
     title: "星环穿梭",
+    en: "Star Ring",
+    descriptionEn:
+      "Visit eight planets on banked curves, spirals, branching jumps and an endless challenge.",
     description: "八大行星航行：倾斜长弯、螺旋升降、分岔飞跃与无限挑战。",
   },
 ];
@@ -20,15 +36,19 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   const form = document.createElement("form");
   const title = document.createElement("h2");
   title.id = "scene-picker-title";
-  title.textContent = "选择场景与玩法";
+  localizeText(title, "选择场景与玩法", "Choose Your Adventure");
   const description = document.createElement("p");
   description.id = "scene-picker-description";
   description.className = "scene-picker-description";
-  description.textContent = "自由跑酷，或挑战吸附与飞跃的星环赛道。";
+  localizeText(
+    description,
+    "自由跑酷，或挑战吸附与飞跃的星环赛道。",
+    "Free-run through a landscape, or master suction and flight on the star-ring track.",
+  );
   const choices = document.createElement("fieldset");
   choices.className = "scene-picker-choices";
   const legend = document.createElement("legend");
-  legend.textContent = "场景与玩法";
+  localizeText(legend, "场景与玩法", "Scenes and modes");
   choices.append(legend);
   const inputs = new Map();
   for (const scene of SCENES) {
@@ -56,9 +76,9 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     const text = document.createElement("span");
     text.className = "scene-option-text";
     const heading = document.createElement("strong");
-    heading.textContent = scene.title;
+    localizeText(heading, scene.title, scene.en);
     const caption = document.createElement("span");
-    caption.textContent = scene.description;
+    localizeText(caption, scene.description, scene.descriptionEn);
     text.append(heading, caption);
     card.append(art, text);
     label.append(input, card);
@@ -69,20 +89,28 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   planetOptions.className = "scene-planet-options";
   const planetLabel = document.createElement("label"),
     planetSelect = document.createElement("select");
-  planetLabel.textContent = "起始行星";
+  planetLabel.append(localizeText(document.createElement("span"), "起始行星", "Starting planet"));
   planetSelect.id = "start-planet";
-  planetSelect.setAttribute("aria-label", "星环起始行星");
+  localizeAria(planetSelect, "星环起始行星", "Starting planet");
   for (const p of [{ id: "random", name: "随机出发" }, ...PLANETS]) {
     const option = document.createElement("option");
     option.value = p.id;
-    option.textContent = p.name;
+    localizeText(
+      option,
+      p.name,
+      p.id === "random" ? "Random departure" : p.id[0].toUpperCase() + p.id.slice(1),
+    );
     planetSelect.append(option);
   }
   planetSelect.value = planetChoice();
   planetSelect.onchange = () => savePlanetChoice(planetSelect.value);
   planetLabel.append(planetSelect);
   const planetHint = document.createElement("small");
-  planetHint.textContent = "每完成一个区段，继续飞向下一颗行星。";
+  localizeText(
+    planetHint,
+    "每完成一个区段，继续飞向下一颗行星。",
+    "Finish a section to continue to the next planet.",
+  );
   planetOptions.append(planetLabel, planetHint);
   const error = document.createElement("p");
   error.className = "scene-picker-error";
@@ -92,20 +120,20 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   actions.className = "scene-picker-actions";
   const back = document.createElement("button");
   back.type = "button";
-  back.textContent = "返回";
+  localizeText(back, "返回", "Back");
   back.onclick = () => dialog.close();
   const launch = document.createElement("button");
   launch.type = "submit";
   launch.className = "scene-picker-launch";
-  launch.textContent = "开始驾驶";
+  localizeText(launch, "开始驾驶", "Start Driving");
   actions.append(back, launch);
   const replayOption = document.createElement("label"),
     replay = document.createElement("input"),
     replayText = document.createElement("span");
   replay.type = "checkbox";
   replay.id = "start-replay-ghost";
-  replay.setAttribute("aria-label", "挑战本地最佳影车");
-  replayText.textContent = "挑战本地最佳影车（相同路线）";
+  localizeAria(replay, "挑战本地最佳影车", "Race your personal best ghost");
+  localizeText(replayText, "挑战本地最佳影车（相同路线）", "Race your best ghost (same route)");
   replayOption.append(replay, replayText);
   replayOption.style.cssText =
     "display:flex;gap:8px;align-items:center;font-size:12px;color:#badce9;margin:10px 0";
@@ -125,7 +153,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     starting = true;
     error.hidden = true;
     choices.disabled = back.disabled = launch.disabled = true;
-    launch.textContent = "正在准备场景…";
+    localizeText(launch, "正在准备场景…", "Preparing scene…");
     try {
       // Let the preparation state paint before the coast is first constructed.
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
@@ -137,14 +165,18 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
         localStorage.setItem("tesla-music.start-choice.v1", selected);
       } catch {}
     } catch (reason) {
-      error.textContent = "场景准备失败，请返回后重试。";
+      localizeText(
+        error,
+        "场景准备失败，请返回后重试。",
+        "Could not prepare the scene. Go back and try again.",
+      );
       error.hidden = false;
       if (!dialog.open) dialog.showModal();
       console.error(reason);
     } finally {
       starting = false;
       choices.disabled = back.disabled = launch.disabled = false;
-      launch.textContent = "开始驾驶";
+      localizeText(launch, "开始驾驶", "Start Driving");
     }
   };
   dialog.addEventListener("cancel", (event) => {

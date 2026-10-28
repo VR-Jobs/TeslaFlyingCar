@@ -1,3 +1,4 @@
+import { localizeText } from "../local/language.js";
 import {
   B as Group,
   Js as Scene,
@@ -246,15 +247,23 @@ export function installSpaceGame(context, coast) {
   ]) {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = label;
+    localizeText(
+      option,
+      label,
+      { space: "Dark Space", coast: "Azure Coast", original: "Original scenery" }[value],
+    );
     select.append(option);
   }
   const label = document.createElement("label");
   label.className = "toggle quality-setting";
-  label.append(document.createTextNode("游戏场景"), select);
+  label.append(localizeText(document.createElement("span"), "游戏场景", "Game scene"), select);
   const hint = document.createElement("p");
   hint.className = "modal-desc";
-  hint.textContent = "太空普通模式有空中奖励航线与连续超车挑战；教学与原版风景保留原有规则。";
+  localizeText(
+    hint,
+    "太空普通模式有空中奖励航线与连续超车挑战；教学与原版风景保留原有规则。",
+    "Dark Space includes aerial bonus routes and consecutive overtaking challenges. Tutorials and the original scenery keep their existing rules.",
+  );
   const card = document.querySelector("#settings .modal-card");
   card.insertBefore(label, card.querySelector(".modal-buttons"));
   label.after(hint);

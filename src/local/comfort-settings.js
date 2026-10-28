@@ -1,3 +1,4 @@
+import { currentLanguage, localizeText, localizeAria } from "./language.js";
 const defaults = {
   shake: 0.55,
   parallax: 1,
@@ -195,8 +196,8 @@ export function installComfortSettings(context) {
   const keySelects = new Map();
   const keyName = (code) =>
     ({
-      Space: "空格",
-      ShiftLeft: "左 Shift",
+      Space: currentLanguage() === "zh" ? "空格" : "Space",
+      ShiftLeft: currentLanguage() === "zh" ? "左 Shift" : "Left Shift",
       ArrowLeft: "←",
       ArrowRight: "→",
       ArrowUp: "↑",
@@ -206,10 +207,10 @@ export function installComfortSettings(context) {
     const k = Object.fromEntries(Object.entries(prefs.keys).map(([a, b]) => [a, keyName(b)]));
     const rowLabels = [
       `${k.left} / ${k.right}`,
-      `${k.jump} 点按`,
-      `${k.jump} 按住`,
-      `${k.jump} 空中再按`,
-      `${k.left} / ${k.right} 空中点按`,
+      `${k.jump} ${currentLanguage() === "zh" ? "点按" : "tap"}`,
+      `${k.jump} ${currentLanguage() === "zh" ? "按住" : "hold"}`,
+      `${k.jump} ${currentLanguage() === "zh" ? "空中再按" : "press again in the air"}`,
+      `${k.left} / ${k.right} ${currentLanguage() === "zh" ? "空中点按" : "tap in the air"}`,
       k.down,
       k.boost,
       k.item,
@@ -374,6 +375,72 @@ export function installComfortSettings(context) {
   document
     .querySelector("#help .modal-card")
     ?.insertBefore(rhythmHelp, document.querySelector("#help .modal-buttons"));
+  const labels = new Map([
+    ["声音与镜头", "Audio and Camera"],
+    ["按键设置", "Key Bindings"],
+    ["音乐音量", "Music volume"],
+    ["音效音量", "Sound effects volume"],
+    ["镜头晃动", "Camera shake"],
+    ["鼠标视差", "Mouse parallax"],
+    ["速度模糊", "Motion blur"],
+    ["彩虹边框强度", "Rainbow border intensity"],
+    ["驾驶光晕强度", "Bloom intensity"],
+    ["速度线强度", "Speed line intensity"],
+    ["影车透明度", "Ghost opacity"],
+    ["显示本地最佳影车", "Show personal best ghost"],
+    ["星环自动调节画质", "Automatic star-ring graphics quality"],
+    ["驾驶时使用精简界面", "Compact driving HUD"],
+    ["节拍时间校准", "Beat timing offset"],
+    ["试听节拍", "Test beat"],
+    ["恢复默认按键", "Reset key bindings"],
+    ["向左", "Steer left"],
+    ["向右", "Steer right"],
+    ["跳跃 / 按住飞行", "Jump / hold to fly"],
+    ["俯冲", "Dive"],
+    ["喷气加速", "Boost"],
+    ["使用道具", "Use item"],
+  ]);
+  for (const area of [field, keys]) {
+    for (const node of area.querySelectorAll("legend, label > span, button")) {
+      const zh = node.textContent,
+        en = labels.get(zh);
+      if (en) localizeText(node, zh, en);
+    }
+    for (const node of area.querySelectorAll("[aria-label]")) {
+      const zh = node.getAttribute("aria-label");
+      const en = labels.get(zh) || (zh.endsWith("按键") && labels.get(zh.slice(0, -2)) + " key");
+      if (en) localizeAria(node, zh, en);
+    }
+  }
+  localizeText(
+    rhythmHelp.querySelector("strong"),
+    "星环：节奏三连与影车",
+    "Star Ring: Rhythm Combos and Ghost Racing",
+  );
+  const rhythmParagraphs = rhythmHelp.querySelectorAll("p");
+  localizeText(
+    rhythmParagraphs[0],
+    rhythmParagraphs[0].textContent,
+    "Hold E to attach and charge on the beat. Release on the beat to launch, then reconnect on the beat for a score bonus and an extra musical layer. Missing a beat will not end your run.",
+  );
+  localizeText(
+    rhythmParagraphs[1],
+    rhythmParagraphs[1].textContent,
+    "The blue main route replenishes air; gold branches offer stunt challenges. Records are stored locally. Select your best ghost before starting, and adjust beat timing, rainbow borders, bloom and speed lines in Settings.",
+  );
+  const updateKeyNames = () => {
+    for (const select of keySelects.values())
+      for (const option of select.options) option.textContent = keyName(option.value);
+    document.documentElement.dataset.jumpKeyLabel = keyName(prefs.keys.jump);
+    document.documentElement.dataset.leftKeyLabel = keyName(prefs.keys.left);
+    document.documentElement.dataset.rightKeyLabel = keyName(prefs.keys.right);
+    syncControlLabels();
+  };
+  new MutationObserver(updateKeyNames).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
+  });
+  updateKeyNames();
   applyAudio();
   return { preferences: prefs, status: () => structuredClone(prefs) };
 }

@@ -1,7 +1,7 @@
 import { homeStyles } from "./home-styles.js";
 import { minimalHomeStyles } from "./minimal-home-styles.js";
 import { installSpaceMenu } from "../scenery/space-menu.js";
-import { setGameLanguage } from "./language.js";
+import { currentLanguage, localizeText, localizeAria } from "./language.js";
 import { createScenePicker } from "./scene-picker.js";
 import { scenePickerStyles } from "./scene-picker-styles.js";
 
@@ -13,8 +13,6 @@ const node = (tag, className, text) => {
 };
 
 export function installHome(context, driving, scenery, starRing) {
-  // This presentation is Chinese; the recovery's other locale data stays intact.
-  setGameLanguage("zh");
   const presentation = installSpaceMenu(context.showroom, context.renderer, {
     sound: context.sound,
     settings: context.settings,
@@ -42,25 +40,29 @@ export function installHome(context, driving, scenery, starRing) {
     panel = node("section", "minimal-panel");
   const title = node("h1", "minimal-title");
   title.id = "game-title";
-  title.append(node("span", "", "特斯拉"), node("strong", "", "音乐跑酷"));
+  title.append(
+    localizeText(node("span"), "特斯拉", "Tesla"),
+    localizeText(node("strong"), "音乐跑酷", "Music Run"),
+  );
   const line = node("p", "minimal-tagline", "随音乐出发，让每次飞跃更尽兴。");
+  localizeText(line, "随音乐出发，让每次飞跃更尽兴。", "Follow the music. Make every leap count.");
   const nav = node("nav", "minimal-actions");
-  nav.setAttribute("aria-label", "主菜单");
+  localizeAria(nav, "主菜单", "Main menu");
   const play = get("play-btn"),
     academy = node("button"),
     help = get("help-btn"),
     settings = get("settings-btn");
   academy.id = "home-academy";
   academy.type = "button";
-  academy.textContent = "教学引导";
+  localizeText(academy, "教学引导", "Tutorial");
   academy.onclick = () => driving.ui.openAcademy();
-  for (const [button, label] of [
-    [play, "开始游戏"],
-    [help, "操作指南"],
-    [settings, "设置"],
+  for (const [button, label, english] of [
+    [play, "开始游戏", "Start Game"],
+    [help, "操作指南", "Controls"],
+    [settings, "设置", "Settings"],
   ]) {
     button.removeAttribute("data-i18n");
-    button.textContent = label;
+    localizeText(button, label, english);
     button.type = "button";
   }
   const scenePicker = createScenePicker(
@@ -80,7 +82,7 @@ export function installHome(context, driving, scenery, starRing) {
   nav.append(play, academy, help, settings);
   panel.append(title, line, nav);
   shell.append(panel);
-  menu.append(shell);
+  menu.append(shell, get("language-toggle"));
   const legacyToast = get("toast");
   new MutationObserver(() => {
     legacyToast.classList.toggle(
@@ -105,11 +107,16 @@ export function installHome(context, driving, scenery, starRing) {
   updateEntry();
   const helpTitle = get("help").querySelector(".modal-title");
   helpTitle.removeAttribute("data-i18n");
-  helpTitle.textContent = "操作指南";
+  localizeText(helpTitle, "操作指南", "Controls");
   const helpHint = node(
     "p",
     "modal-desc",
     "首次点击页面后启用声音；音效、音乐与静音可在设置中调整。点击开始游戏或按空格选择场景，再开始驾驶。左右方向键变道。",
+  );
+  localizeText(
+    helpHint,
+    helpHint.textContent,
+    "Click any menu button to enable sound. Adjust music, effects and mute in Settings. Choose Start Game or press Space to select a scene. Use the arrow keys to change lanes.",
   );
   get("help").querySelector(".modal-card").append(helpHint);
 
@@ -118,6 +125,7 @@ export function installHome(context, driving, scenery, starRing) {
   const infoSlot = node("div", "minimal-info-slot");
   infoSlot.id = "space-save-slot";
   const source = node("button", "", "作品来源与许可");
+  localizeText(source, "作品来源与许可", "Sources and licenses");
   source.type = "button";
   source.onclick = () => get("about-game-btn").click();
   infoSlot.append(source);
@@ -127,6 +135,11 @@ export function installHome(context, driving, scenery, starRing) {
     "p",
     "modal-desc",
     "首次点击任意入口即可启用音效。按 M 键也可切换静音。",
+  );
+  localizeText(
+    settingHint,
+    settingHint.textContent,
+    "Click any menu button to enable sound. Press M to toggle mute.",
   );
   settingsCard.insertBefore(settingHint, infoSlot);
 
@@ -154,7 +167,7 @@ export function installHome(context, driving, scenery, starRing) {
   );
   const refresh = () => {
     document.body.classList.toggle("home-visible", context.getScreen() === "menu");
-    document.title = "特斯拉音乐跑酷";
+    document.title = currentLanguage() === "zh" ? "特斯拉音乐跑酷" : "Tesla Music Run";
   };
   refresh();
   setInterval(refresh, 350);

@@ -1,12 +1,12 @@
 {
   "format": "online cached scripts, demand-loaded fonts and planet maps; offline HTML retained",
-  "generatedUTC": "2026-10-28T12:47:09.625Z",
-  "offlineBytes": 17336424,
+  "generatedUTC": "2026-10-28T13:55:52.734Z",
+  "offlineBytes": 17343275,
   "fontFiles": 118,
   "planetImages": 11,
-  "htmlBytes": 370435,
-  "htmlGzipBytes": 162324,
-  "htmlSHA256": "47df63e86826c38f2e67d56c91936225dc01f978c7a3cec2533fc655bc5c6c31",
+  "htmlBytes": 370540,
+  "htmlGzipBytes": 162358,
+  "htmlSHA256": "34e3f48852734451115aedc84825aa9950f24299b227a0681dd1659e450ba2b8",
   "files": [
     {
       "path": "assets/font-a46b99781170971e.woff2",
@@ -789,10 +789,10 @@
       "gzipBytes": 144144
     },
     {
-      "path": "assets/game-8f5c76430da0f76a.js",
-      "sha256": "8f5c76430da0f76a2ebb51409ced12759d7126d77ea311799588907f0eb37fcf",
-      "bytes": 7255013,
-      "gzipBytes": 2998552
+      "path": "assets/game-f1698016638afc82.js",
+      "sha256": "f1698016638afc82e00009865fdb8166e0e6a6a3ca669d56fdb6096665749db8",
+      "bytes": 7261759,
+      "gzipBytes": 3000727
     }
   ]
 }

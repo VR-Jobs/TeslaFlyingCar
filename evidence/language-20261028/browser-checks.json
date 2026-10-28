@@ -1,0 +1,34 @@
+{
+  "defaultEnglishObserved": true,
+  "chineseClickObserved": true,
+  "englishClickObserved": true,
+  "chineseReloadPersisted": true,
+  "englishReloadPersisted": true,
+  "keyboardToggleObserved": true,
+  "mobile390x844Observed": true,
+  "scenePickerBothLanguagesObserved": true,
+  "settingsEnglishObserved": true,
+  "final": {
+    "language": "en",
+    "menuButtons": [
+      "Start Game",
+      "Tutorial",
+      "Controls",
+      "Settings"
+    ],
+    "planetOptions": [
+      "Random departure",
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars",
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "title": "Tesla Music Run",
+    "toggle": "中文"
+  },
+  "errors": []
+}

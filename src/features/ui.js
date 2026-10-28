@@ -1,3 +1,4 @@
+import { localizeText } from "../local/language.js";
 import { MODES, UTC_DAY, dailySeed } from "./rules.js";
 import { t } from "./messages.js";
 import { LESSONS, LESSON_COUNT, lessonText } from "./lessons.js";
@@ -62,7 +63,15 @@ export function createDrivingUI(api) {
   const itemGrid = el("div", "item-lesson-grid");
   coreLessons.append(...lessonButtons.slice(0, 3));
   itemGrid.append(...lessonButtons.slice(3));
-  advanced.append(el("summary", "", "道具专项训练 · 选学"), itemGrid);
+  localizeText(
+    coreIntro,
+    coreIntro.textContent,
+    "Start with three core lessons, then enjoy free driving.",
+  );
+  advanced.append(
+    localizeText(el("summary"), "道具专项训练 · 选学", "Item training · Optional"),
+    itemGrid,
+  );
   lessonBar.append(coreIntro, coreLessons, advanced);
   const settings = el("fieldset", "drive-settings"),
     legend = el("legend");

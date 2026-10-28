@@ -1,6 +1,10 @@
+import { localizeText } from "../local/language.js";
 const GOALS = [
   {
     id: "starRing",
+    titleEn: "Star-Ring Navigator",
+    descEn: "Complete a star-ring run",
+    paintEn: "Orbital Silver Blue",
     title: "星环领航员",
     desc: "完成一次星环穿梭",
     check: () => false,
@@ -9,6 +13,9 @@ const GOALS = [
   },
   {
     id: "orbit",
+    titleEn: "First Orbit",
+    descEn: "Drive 1,000 m in one run",
+    paintEn: "Red",
     title: "轨道初航",
     desc: "单局行驶 1,000 米",
     check: (m) => m.distance >= 1000,
@@ -17,6 +24,9 @@ const GOALS = [
   },
   {
     id: "landing",
+    titleEn: "Smooth Landing",
+    descEn: "Make 5 perfect landings in one run",
+    paintEn: "Star Blue",
     title: "平稳着陆",
     desc: "单局完成 5 次完美落地",
     check: (m) => m.perfectLandings >= 5,
@@ -25,6 +35,9 @@ const GOALS = [
   },
   {
     id: "stunt",
+    titleEn: "Air Acrobat",
+    descEn: "Complete 10 stunts in one run",
+    paintEn: "Graphite",
     title: "空中特技",
     desc: "单局完成 10 次完整特技",
     check: (m) => m.tricks >= 10,
@@ -33,6 +46,9 @@ const GOALS = [
   },
   {
     id: "voyager",
+    titleEn: "Deep-Space Voyager",
+    descEn: "Drive 4,700 m in one run",
+    paintEn: "Champagne Silver",
     title: "深空旅人",
     desc: "单局行驶 4,700 米",
     check: (m) => m.distance >= 4700,
@@ -53,12 +69,12 @@ export function installJourneyProgress(context, driving) {
   const card = document.createElement("fieldset");
   card.className = "comfort-settings journey-progress";
   const legend = document.createElement("legend");
-  legend.textContent = "旅程记录与涂装";
+  localizeText(legend, "旅程记录与涂装", "Journey Records and Paints");
   const list = document.createElement("div"),
     label = document.createElement("label"),
     caption = document.createElement("span"),
     select = document.createElement("select");
-  caption.textContent = "车身涂装";
+  localizeText(caption, "车身涂装", "Body paint");
   select.id = "journey-paint";
   label.append(caption, select);
   card.append(legend, list, label);
@@ -74,18 +90,26 @@ export function installJourneyProgress(context, driving) {
     select.replaceChildren();
     const silver = document.createElement("option");
     silver.value = "silver";
-    silver.textContent = "冰川银";
+    localizeText(silver, "冰川银", "Glacier Silver");
     select.append(silver);
     for (const goal of GOALS) {
       const earned = profile().earned.includes(goal.id),
         row = document.createElement("p");
-      row.textContent = `${earned ? "✓" : "○"} ${goal.title} · ${goal.desc}`;
+      localizeText(
+        row,
+        `${earned ? "✓" : "○"} ${goal.title} · ${goal.desc}`,
+        `${earned ? "✓" : "○"} ${goal.titleEn} · ${goal.descEn}`,
+      );
       row.className = earned ? "journey-earned" : "drive-muted";
       list.append(row);
       const option = document.createElement("option");
       option.value = goal.id;
       option.disabled = !earned;
-      option.textContent = goal.paint + (earned ? "" : " · 未解锁");
+      localizeText(
+        option,
+        goal.paint + (earned ? "" : " · 未解锁"),
+        goal.paintEn + (earned ? "" : " · Locked"),
+      );
       select.append(option);
     }
     select.value = profile().paint;
