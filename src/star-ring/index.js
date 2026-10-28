@@ -1,4 +1,5 @@
 import { mul } from "./course.js";
+import { PLANETS } from "./planet-rules.js";
 import { layoutConflicts, intersectsTraffic } from "./placement.js";
 import { createGhostRecorder } from "./ghost.js";
 import { stepRhythm, rhythmStatus } from "./rhythm.js";
@@ -598,6 +599,106 @@ export function installStarRing(context, options) {
       qa.append(b);
       return b;
     };
+    const planetPreview = async (id) => {
+      manager.start({ tutorial: false, seed: 11 });
+      run.s = 42;
+      run.pos = course.pose(run.s).p;
+      run.velocity = mul(course.pose(run.s).t, 28);
+      run.speed = 28;
+      run.input.suction = true;
+      run.messageTime = 0;
+      frozen = true;
+      overview = false;
+      await view.previewPlanet(id);
+      for (let i = 0; i < 40; i++) view.update(run, 1 / 60);
+      view.render(1 / 60);
+      ui.update(run, course, false);
+    };
+    for (const p of PLANETS) make("行星：" + p.name, () => planetPreview(p.id));
+    make("验证：八大行星", async () => {
+      const backup = structuredClone(backend.state),
+        checks = [];
+      try {
+        for (const p of PLANETS) {
+          await planetPreview(p.id);
+          const status = view.status().solar;
+          checks.push({
+            name: p.id + "-loads-and-renders-with-bounded-resources",
+            pass:
+              status.id === p.id &&
+              status.ready &&
+              status.textures.resident <= 3 &&
+              status.activeBodies === 1 &&
+              status.errors.length === 0,
+            detail: status,
+          });
+        }
+      } catch (error) {
+        checks.push({ name: "exception", pass: false, error: String(error.stack) });
+      } finally {
+        manager.stop();
+        backend.state = backup;
+        backend.persist();
+        options.onRestore();
+      }
+      output.dataset.report = JSON.stringify({ checks });
+      output.textContent = checks.filter((c) => c.pass).length + " / " + checks.length;
+    });
+    make("验证：行星旅程切换", async () => {
+      const backup = structuredClone(backend.state),
+        checks = [];
+      try {
+        await manager.launch({ tutorial: false, seed: 11 });
+        frozen = true;
+        const first = view.status().solar.id;
+        run.s = course.length - 35;
+        run.pos = course.pose(run.s).p;
+        run.input.suction = true;
+        view.update(run, 1 / 60);
+        view.prepare();
+        const began = performance.now();
+        while (!view.status().streaming.prepared && performance.now() - began < 20000)
+          await new Promise((resolve) => setTimeout(resolve, 16));
+        run.s = course.length - 0.2;
+        run.pos = course.pose(run.s).p;
+        let blended = false,
+          maximumBodies = 0;
+        for (let i = 0; i < 500; i++) {
+          stepRun(run, course, 1 / 60);
+          if (i % 8 === 0) {
+            view.update(run, 1 / 60);
+            view.render(1 / 60);
+            const solar = view.status().solar;
+            blended ||= solar.transition;
+            maximumBodies = Math.max(maximumBodies, solar.activeBodies);
+            await yieldBuild();
+          }
+        }
+        const end = view.status().solar;
+        checks.push({
+          name: "actual-section-advance-loads-a-different-planet",
+          pass: run.laps === 1 && end.id !== first,
+          detail: { first, end },
+        });
+        checks.push({
+          name: "planet-journey-crossfades-with-two-bounded-bodies",
+          pass: blended && maximumBodies === 2 && !end.transition,
+        });
+        checks.push({
+          name: "old-planet-textures-are-released-after-the-transition",
+          pass: end.textures.resident <= 3 && end.textures.disposed > 0 && end.errors.length === 0,
+        });
+      } catch (error) {
+        checks.push({ name: "exception", pass: false, error: String(error.stack) });
+      } finally {
+        manager.stop();
+        backend.state = backup;
+        backend.persist();
+        options.onRestore();
+      }
+      output.dataset.report = JSON.stringify({ checks });
+      output.textContent = checks.filter((c) => c.pass).length + " / " + checks.length;
+    });
     const structurePreview = (kind, wide = false) => {
       manager.start({ tutorial: false, seed: 11 });
       const segment = course.segments.find((s) =>
@@ -1991,6 +2092,12 @@ export function installStarRing(context, options) {
       output.dataset.report = JSON.stringify(result);
       output.textContent = JSON.stringify(result);
     });
+    const planetFixture = new URLSearchParams(location.search).get("planetFixture");
+    if (PLANETS.some((p) => p.id === planetFixture))
+      requestAnimationFrame(async () => {
+        await planetPreview(planetFixture);
+        qa.style.display = "none";
+      });
     const structureFixture = new URLSearchParams(location.search).get("structureFixture");
     const fixtureLabels = {
       left: "新轨道：长左弯",

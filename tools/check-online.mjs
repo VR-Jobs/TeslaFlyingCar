@@ -7,8 +7,9 @@ const root = new URL("../dist-online/", import.meta.url),
 assert.equal(crypto.createHash("sha256").update(html).digest("hex"), manifest.htmlSHA256);
 assert(manifest.htmlGzipBytes < 200000);
 assert(manifest.fontFiles === 118);
+assert(manifest.planetImages === 11);
 for (const f of manifest.files) {
-  assert(/^(assets\/[a-z]+-[a-f0-9]{16}\.(js|css|woff2?))$/.test(f.path));
+  assert(/^(assets\/[a-z]+-[a-f0-9]{16}\.(js|css|woff2?|jpg|png))$/.test(f.path));
   const data = await fs.readFile(new URL(f.path, root));
   assert.equal(crypto.createHash("sha256").update(data).digest("hex"), f.sha256);
 }

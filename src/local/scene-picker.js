@@ -1,3 +1,4 @@
+import { PLANETS, planetChoice, savePlanetChoice } from "../star-ring/planet-rules.js";
 import PREVIEWS from "../assets/scene-preview-data.js";
 
 const SCENES = [
@@ -6,7 +7,7 @@ const SCENES = [
   {
     id: "starRing",
     title: "星环穿梭",
-    description: "随机无限挑战：节奏三连、补气缓冲、分岔特技与本地影车。",
+    description: "八大行星航行：倾斜长弯、螺旋升降、分岔飞跃与无限挑战。",
   },
 ];
 
@@ -64,6 +65,25 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     choices.append(label);
     inputs.set(scene.id, input);
   }
+  const planetOptions = document.createElement("div");
+  planetOptions.className = "scene-planet-options";
+  const planetLabel = document.createElement("label"),
+    planetSelect = document.createElement("select");
+  planetLabel.textContent = "起始行星";
+  planetSelect.id = "start-planet";
+  planetSelect.setAttribute("aria-label", "星环起始行星");
+  for (const p of [{ id: "random", name: "随机出发" }, ...PLANETS]) {
+    const option = document.createElement("option");
+    option.value = p.id;
+    option.textContent = p.name;
+    planetSelect.append(option);
+  }
+  planetSelect.value = planetChoice();
+  planetSelect.onchange = () => savePlanetChoice(planetSelect.value);
+  planetLabel.append(planetSelect);
+  const planetHint = document.createElement("small");
+  planetHint.textContent = "每完成一个区段，继续飞向下一颗行星。";
+  planetOptions.append(planetLabel, planetHint);
   const error = document.createElement("p");
   error.className = "scene-picker-error";
   error.setAttribute("role", "alert");
@@ -92,9 +112,10 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   const syncReplay = () => {
     const chosen = [...inputs].find(([, i]) => i.checked)?.[0];
     replayOption.hidden = chosen !== "starRing" || !ghostStatus()?.available;
+    planetOptions.hidden = chosen !== "starRing";
   };
   for (const input of inputs.values()) input.addEventListener("change", syncReplay);
-  form.append(title, description, choices, replayOption, error, actions);
+  form.append(title, description, choices, planetOptions, replayOption, error, actions);
   dialog.append(form);
   document.body.append(dialog);
   let starting = false;
@@ -152,6 +173,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
       } catch {}
       const selected = inputs.has(previous) ? previous : "space";
       inputs.get(selected).checked = true;
+      planetSelect.value = planetChoice();
       syncReplay();
       error.hidden = true;
       dialog.showModal();

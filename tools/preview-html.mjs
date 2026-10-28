@@ -33,7 +33,7 @@ const server = http.createServer(async (req, res) => {
   } else if (new URL(req.url, "http://localhost").pathname.startsWith("/online/")) {
     const relative =
       decodeURIComponent(new URL(req.url, "http://localhost").pathname.slice(8)) || "index.html";
-    if (!/^(index\.html|assets\/[a-z]+-[a-f0-9]{16}\.(js|css|woff2?))$/.test(relative)) {
+    if (!/^(index\.html|assets\/[a-z]+-[a-f0-9]{16}\.(js|css|woff2?|jpg|png))$/.test(relative)) {
       res.writeHead(404);
       res.end();
       return;
@@ -47,7 +47,11 @@ const server = http.createServer(async (req, res) => {
             ? "font/woff2"
             : relative.endsWith(".woff")
               ? "font/woff"
-              : "text/html; charset=utf-8",
+              : relative.endsWith(".jpg")
+                ? "image/jpeg"
+                : relative.endsWith(".png")
+                  ? "image/png"
+                  : "text/html; charset=utf-8",
     });
     res.end(await fs.readFile(new URL("../dist-online/" + relative, import.meta.url)));
   } else if (new URL(req.url, "http://localhost").pathname === "/") {

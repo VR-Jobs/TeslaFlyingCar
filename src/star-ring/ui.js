@@ -152,22 +152,20 @@ export function createRingUI(actions, preferences = {}) {
       if (get("ring-heading-title").textContent !== heading)
         get("ring-heading-title").textContent = heading;
       root.querySelector("[data-ring=skip]").hidden = !teaching || paused;
+      const destination =
+        (run.planetName ? run.planetName + " · " : "") +
+        (run.routeId ? "外环捷径" : course.frame(run.s).title);
       const stage =
         lesson?.copy ||
         (run.endless
           ? "第 " +
             (run.laps + 1) +
             " 区段 · " +
-            (run.routeId ? "外环捷径" : course.frame(run.s).title) +
+            destination +
             " · " +
             Math.floor(summary.distance).toLocaleString() +
             " m"
-          : (run.routeId ? "外环捷径" : course.frame(run.s).title) +
-            " · " +
-            Math.floor(run.s) +
-            " / " +
-            Math.round(course.length) +
-            " m");
+          : destination + " · " + Math.floor(run.s) + " / " + Math.round(course.length) + " m");
       if (get("ring-stage").textContent !== stage) get("ring-stage").textContent = stage;
       get("ring-progress").value = lesson?.progress ?? run.s / course.length;
       get("ring-progress").setAttribute(

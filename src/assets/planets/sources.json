@@ -1,0 +1,199 @@
+{
+  "source": "NASA official USDZ texture resources; original image bytes retained",
+  "usage": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "records": [
+    {
+      "id": "mercury",
+      "page": "https://science.nasa.gov/resource/mercury-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/m/Mercury_1_4878.usdz",
+      "archiveSHA256": "ab3335f42f66335957e9521321f820372d642e8e6c2265aaa74622f02aae7e66",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "mercury-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 758590,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "a2527a2cb5595935e0c5ef2e7fcf8d9939d8b84152a28764dfc7e2ff84142952"
+        }
+      ]
+    },
+    {
+      "id": "venus",
+      "page": "https://science.nasa.gov/resource/venus-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/v/Venus_1_12103-1.usdz?emrc=6ae1e55ad90ee",
+      "archiveSHA256": "11fe16961a15cc36305fd519c00deead886b2e94658f8e4884b6d00746711ebc",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "venus-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 50527,
+          "size": [
+            1440,
+            720
+          ],
+          "mode": "RGB",
+          "sha256": "a557e7fbebbd9649df37b99d9e00976c4b285aa37ee4dcddd4778bd0c9569092"
+        }
+      ]
+    },
+    {
+      "id": "jupiter",
+      "page": "https://science.nasa.gov/resource/jupiter-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/j/Jupiter_1_142984.usdz",
+      "archiveSHA256": "e553df577daeedab0b3c7df45d332582704496842c2baf8c108c647a33bf547b",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "jupiter-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 1496456,
+          "size": [
+            4096,
+            3072
+          ],
+          "mode": "RGB",
+          "sha256": "cbaa3a55e4b56623174d0a0f8d2ab735100087fac5379de85e9fced263e31b88"
+        }
+      ]
+    },
+    {
+      "id": "saturn",
+      "page": "https://science.nasa.gov/resource/saturn-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/s/Saturn_1_120536.usdz",
+      "archiveSHA256": "fa2cc805206e0ddf0f1f673e46a9a306a2b252dc3015c259b3801909841505a0",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "saturn-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 195914,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "27813626348ae3f718d5e4635387603d3cdc107217977081cb86bdebcde15822"
+        },
+        {
+          "path": "saturn-image1.png",
+          "sourcePath": "0/image1.png",
+          "bytes": 3653,
+          "size": [
+            2048,
+            8
+          ],
+          "mode": "RGBA",
+          "sha256": "86f928304044536b8e3fcec1918e4c7c94dd05181c014ef09e4eb483fc0dc2b7"
+        }
+      ]
+    },
+    {
+      "id": "uranus",
+      "page": "https://science.nasa.gov/resource/uranus-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/u/Uranus_1_51118.usdz",
+      "archiveSHA256": "440b706b6fff8c0337dd7173ee9cd819ae442e765f6ff033a0c860aa5a801a3b",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "uranus-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 18629,
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB",
+          "sha256": "f4ee3119956f4c7eb2ccc1b31966e1e4b268ef7824b8b038f5e95b4a643b683e"
+        }
+      ]
+    },
+    {
+      "id": "neptune",
+      "page": "https://science.nasa.gov/resource/neptune-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/n/Neptune_1_49528.usdz",
+      "archiveSHA256": "4a76c1d9a5f84bec107752589951e123c25386728094aec08405d9b3e5d2178e",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "neptune-image0.jpg",
+          "sourcePath": "0/image0.jpg",
+          "bytes": 49966,
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB",
+          "sha256": "87823cd0f65148d9b9cf845a2838d06ece42fefdb872b28433527b37e2a788ee"
+        }
+      ]
+    },
+    {
+      "id": "earth",
+      "page": "https://science.nasa.gov/resource/earth-with-clouds-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/EarthClouds_1_12756.usdz",
+      "archiveSHA256": "0201bcf1bfcd50ec52844f745361f3570d5508697175edecf78966b0b09cef74",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "earth-image1.jpg",
+          "sourcePath": "0/image1.jpg",
+          "bytes": 654611,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "db65d7c2c26adbb07c2a49e442133dbd0f8992353a73ac7ae6d3ad6474584c1f"
+        },
+        {
+          "path": "earth-image0_norm.jpg",
+          "sourcePath": "0/image0_norm.jpg",
+          "bytes": 254863,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "22c5bdd1bfc371eff7c8b6fbbc5ae2e0dcb0b94fad0b8446567015bbf69320bc"
+        }
+      ]
+    },
+    {
+      "id": "mars",
+      "page": "https://science.nasa.gov/resource/planet-mars-3d-model/",
+      "archive": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/usdz_files/24881_Mars_1_6792.usdz?emrc=6ae1e5afc7ab2",
+      "archiveSHA256": "a13f477dcbaa5b49561d017362535f56fe77bb9f164919fc5bc208579d01ad6c",
+      "credit": "NASA/JPL-Caltech; NASA Visualization Technology Applications and Development (VTAD)",
+      "files": [
+        {
+          "path": "mars-image1.jpg",
+          "sourcePath": "0/image1.jpg",
+          "bytes": 508189,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "8fdd6fd530f03891503ade172e45944fc76314345890fdb615849a26a43a9d51"
+        },
+        {
+          "path": "mars-image0_norm.jpg",
+          "sourcePath": "0/image0_norm.jpg",
+          "bytes": 304092,
+          "size": [
+            2048,
+            1536
+          ],
+          "mode": "RGB",
+          "sha256": "fa159dd4de9edd79650985950ed6af81c8d9ba9969ff0d77e9e25dc9f0abbd31"
+        }
+      ]
+    }
+  ]
+}

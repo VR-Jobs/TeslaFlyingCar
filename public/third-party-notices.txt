@@ -3102,3 +3102,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Planet texture assets: NASA/JPL-Caltech and NASA VTAD, from NASA Science 3D Resources. Original texture bytes and source URLs are recorded in src/assets/planets/sources.json. NASA media usage: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Planetary appearance is an illustrative game rendering, not live weather or a scale simulation.

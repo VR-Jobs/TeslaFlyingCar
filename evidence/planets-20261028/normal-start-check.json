@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "solar": {
+    "version": "solar-eight-1",
+    "id": "jupiter",
+    "name": "木星",
+    "ready": true,
+    "transition": false,
+    "planetCount": 8,
+    "activeBodies": 1,
+    "drawableBudget": 6,
+    "textures": {
+      "resident": 2,
+      "pending": 0,
+      "decoded": 2,
+      "disposed": 0,
+      "peak": 2,
+      "maximumResident": 3
+    },
+    "errors": []
+  },
+  "errors": []
+}

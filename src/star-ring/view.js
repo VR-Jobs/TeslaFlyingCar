@@ -38,7 +38,7 @@ import { createLandingBeacon } from "../scenery/landing-beacon.js";
 import { createGapLights } from "./gap-lights.js";
 import { getTrackSurface } from "./track-surface.js";
 import { createGlassTrack } from "./glass-track.js";
-import { createSaturnScene } from "./saturn-scene.js";
+import { createSolarSystem } from "./solar-system.js";
 import { createTrackDetail } from "./track-detail.js";
 import { createRingPostprocessing } from "./postprocessing.js";
 import { createPickupView } from "./pickups.js";
@@ -91,7 +91,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
   scene.add(route.root);
   let { solid, glass, trackDetail, gapLights, pickups, hazards, traffic, adventures, voyage } =
     route;
-  const saturn = createSaturnScene(scene, course);
+  const saturn = createSolarSystem(scene, course, context.renderer);
   const materials = Object.fromEntries(
     ["body", "wing", "glass", "carbon", "cavity", "headlight", "taillight", "gold"].map((key) => [
       key,
@@ -536,11 +536,13 @@ export function createRingView(context, course, comfort, initialRoute = null) {
     speedLines.update(dt, run.speed, lines, 0);
     stars.update(context.renderer.getPixelRatio(), quality.level);
     saturn.update(camera, run.s, effectTime, context.renderer.getPixelRatio(), quality.level);
+    run.planetName = saturn.status().name;
   }
   return {
     scene,
     camera,
     sharedGlow,
+    previewPlanet: (id) => saturn.preview(id),
     observePerformance(ms) {
       adaptive.sample(ms, comfort.preferences.autoQuality !== false, context.game.detail ?? 2);
     },
@@ -568,6 +570,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       createdWindows++;
     },
     warmEntrance: async (yieldTask) => {
+      await saturn.warm();
       const result = await warmRouteGPU(
         context.renderer,
         scene,
@@ -575,7 +578,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
         route,
         postprocessing,
         yieldTask,
-        [car, smoke, marker, beacon.group, rainbowView.group, ghostView.root],
+        [car, smoke, marker, beacon.group, rainbowView.group, ghostView.root, ...saturn.objects],
       );
       preloadStats.gpuWarm = result;
       return result;
@@ -661,6 +664,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       camera.lookAt(0, 40, -520);
     },
     reset() {
+      saturn.reset();
       syncRoute();
       pickups.reset();
       traffic.reset();
@@ -695,6 +699,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       postprocessing: postprocessing.status(),
       trackDetail: trackDetail.status(),
       saturn: saturn.status(),
+      solar: saturn.status(),
       solidTriangles: solid.triangles.length,
       trackThickness: solid.thickness,
       trackFaces: "separate-front-bottom-walls",

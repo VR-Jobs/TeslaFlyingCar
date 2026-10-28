@@ -1,0 +1,186 @@
+[
+  {
+    "id": "mercury",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "mercury",
+      "name": "水星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "venus",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "venus",
+      "name": "金星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "mars",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "mars",
+      "name": "火星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "jupiter",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "jupiter",
+      "name": "木星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "saturn",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "saturn",
+      "name": "土星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "uranus",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "uranus",
+      "name": "天王星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "neptune",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "neptune",
+      "name": "海王星",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  },
+  {
+    "id": "earth",
+    "solar": {
+      "version": "solar-eight-1",
+      "id": "earth",
+      "name": "地球",
+      "ready": true,
+      "transition": false,
+      "planetCount": 8,
+      "activeBodies": 1,
+      "drawableBudget": 6,
+      "textures": {
+        "resident": 2,
+        "pending": 0,
+        "decoded": 2,
+        "disposed": 0,
+        "peak": 2,
+        "maximumResident": 3
+      },
+      "errors": []
+    },
+    "errors": []
+  }
+]

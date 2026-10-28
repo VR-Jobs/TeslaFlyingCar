@@ -27,8 +27,13 @@ function asset(data, prefix, extension) {
   });
   return name;
 }
+const planetSources = JSON.parse(
+  await fs.readFile(path.join(root, "src/assets/planets/sources.json"), "utf8"),
+);
+const planetHashes = new Set(planetSources.records.flatMap((p) => p.files.map((f) => f.sha256)));
 let index = 0,
-  fontFiles = 0;
+  fontFiles = 0,
+  planetImages = 0;
 const html = offline.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, (tag, attrs, source) => {
   index++;
   if (Buffer.byteLength(source) < 65536) return tag;
@@ -50,17 +55,29 @@ const html = offline.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, (tag, at
     const sheet = asset(css, "fonts", "css");
     return `<link rel="stylesheet" href="./assets/${sheet}">`;
   }
-  const name = asset(source, "game", "js");
+  const script = source.replace(
+    /(["'])data:image\/(jpeg|png);base64,([A-Za-z0-9+/=]+)\1/g,
+    (whole, quote, mime, base64) => {
+      const bytes = Buffer.from(base64, "base64");
+      if (!planetHashes.has(crypto.createHash("sha256").update(bytes).digest("hex"))) return whole;
+      const image = asset(bytes, "planet", mime === "jpeg" ? "jpg" : "png");
+      planetImages++;
+      return quote + "./assets/" + image + quote;
+    },
+  );
+  const name = asset(script, "game", "js");
   return `<script src="./assets/${name}" defer></script>`;
 });
+if (planetImages !== planetHashes.size) throw new Error("Planet map extraction changed");
 if (fontFiles !== 118 || index !== 3) throw new Error("Standalone script contract changed");
 for (const f of files.values()) await fs.writeFile(path.join(out, f.path), f.data);
 await fs.writeFile(path.join(out, "index.html"), html);
 const manifest = {
-  format: "online cached scripts and demand-loaded unicode fonts; offline HTML retained",
+  format: "online cached scripts, demand-loaded fonts and planet maps; offline HTML retained",
   generatedUTC: new Date().toISOString(),
   offlineBytes: Buffer.byteLength(offline),
   fontFiles,
+  planetImages,
   htmlBytes: Buffer.byteLength(html),
   htmlGzipBytes: zlib.gzipSync(html).length,
   htmlSHA256: crypto.createHash("sha256").update(html).digest("hex"),
@@ -76,7 +93,7 @@ for (const f of previous?.files || []) {
   if (
     !files.has(f.path) &&
     path.dirname(target) === assets &&
-    /^[a-z]+-[a-f0-9]{16}\.(js|css|woff2?)$/.test(path.basename(target))
+    /^[a-z]+-[a-f0-9]{16}\.(js|css|woff2?|jpg|png)$/.test(path.basename(target))
   )
     await fs.unlink(target).catch((e) => {
       if (e.code !== "ENOENT") throw e;

@@ -21,4 +21,9 @@ export const scenePickerStyles = `
 @media(max-width:520px){.scene-picker{padding:22px 18px}.scene-picker h2{font-size:23px}.scene-picker-description{font-size:12px;margin-bottom:18px}.scene-picker-choices{gap:12px}.scene-option-text{padding:12px 10px 14px}.scene-option-text strong{font-size:16px}.scene-option-text>span{font-size:11px;line-height:1.7}.scene-picker-actions{margin-top:20px;gap:10px}.scene-picker-actions button{padding:10px 17px}.scene-picker-actions .scene-picker-launch{flex:1;min-width:0}}
 @media(max-width:700px){.scene-picker-choices{grid-template-columns:1fr}.scene-option-card{display:grid;grid-template-columns:40% 60%;align-items:center;min-height:95px}.scene-art{height:100%;min-height:95px;aspect-ratio:auto}.scene-option-text{padding:13px}.scene-option-text strong{font-size:17px}.scene-picker{max-width:520px}.scene-art-starRing::after{font-size:8px;padding:2px 3px}.scene-picker-choices{gap:10px}}
 @media(max-height:480px){.scene-picker{padding:18px 22px}.scene-picker-description{margin:5px 0 12px}.scene-option-text{padding:9px 13px}.scene-picker-actions{margin-top:15px}}
+
+.scene-planet-options{padding:13px 16px;margin:16px 0 4px;background:#ffffff06;border:1px solid #ffffff20;border-radius:8px}
+.scene-planet-options[hidden]{display:none}.scene-planet-options label{display:flex;gap:18px;align-items:center;color:#fff;font-size:13px}
+.scene-planet-options select{flex:1;max-width:260px;padding:8px 12px;border:1px solid #ffffff45;background:#101114;color:#fff;border-radius:4px;font:inherit}
+.scene-planet-options small{display:block;color:#aaa;margin-top:7px;font-size:11px}
 `;

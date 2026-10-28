@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "name": "all-eight-unique-planets-have-original-embedded-maps",
+      "pass": true
+    },
+    {
+      "name": "all-nasa-image-bytes-match-recorded-provenance",
+      "pass": true,
+      "detail": {
+        "bytes": 4295490
+      }
+    },
+    {
+      "name": "each-start-visits-every-planet-before-repeating",
+      "pass": true
+    },
+    {
+      "name": "default-start-is-earth",
+      "pass": true
+    },
+    {
+      "name": "selected-start-persists",
+      "pass": true
+    },
+    {
+      "name": "invalid-preference-never-replaces-valid-choice",
+      "pass": true
+    },
+    {
+      "name": "24-transitions-keep-no-more-than-three-texture-bundles",
+      "pass": true,
+      "detail": {
+        "resident": 3,
+        "pending": 0,
+        "decoded": 26,
+        "disposed": 23,
+        "peak": 3,
+        "maximumResident": 3
+      }
+    },
+    {
+      "name": "all-planet-surfaces-rings-and-atmospheres-are-configured-and-clear-the-road",
+      "pass": true
+    },
+    {
+      "name": "real-section-change-blends-two-globes",
+      "pass": true
+    },
+    {
+      "name": "completed-journey-releases-the-departed-planet",
+      "pass": true
+    },
+    {
+      "name": "scene-shares-two-fixed-globes-and-one-sphere-geometry",
+      "pass": true
+    },
+    {
+      "name": "status-has-no-network-dependency-or-nonfinite-values",
+      "pass": true
+    }
+  ]
+}
