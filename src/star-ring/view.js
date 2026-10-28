@@ -1,3 +1,4 @@
+import { curveCameraUp } from "./steering.js";
 import { createAdaptiveQuality } from "./adaptive-quality.js";
 import { createGhostView } from "./experience-view.js";
 import { createRainbowView } from "./rainbow-view.js";
@@ -290,7 +291,13 @@ export function createRingView(context, course, comfort, initialRoute = null) {
     const quality = adaptive.status();
     const beat = {};
     const pulse = context.sound.beatClock(beat) ? Math.exp(-beat.since * 9) : 0;
-    glass.update(pulse, run.gripWarningLevel || 0, run.s, effectTime);
+    glass.update(
+      pulse,
+      run.gripWarningLevel || 0,
+      run.s,
+      effectTime,
+      matchMedia("(prefers-reduced-motion: reduce)").matches,
+    );
     route.rhythmMarkers.update(
       run,
       effectTime,
@@ -479,6 +486,10 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       camera.fov += (64 - death.progress * 7 * motion - camera.fov) * (1 - Math.exp(-4 * dt));
       cameraBlocked = false;
     } else {
+      const cameraMotion = matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : comfort.preferences.shake;
+      const horizon = curveCameraUp(f, cameraMotion);
       const follow = drivingCourse.pose(Math.min(course.length, run.s + 9), run.lane * 0.3);
       const cameraHeight = !run.attached && near.height < -0.3 ? -2.8 : 5.2;
       desired.fromArray(add(run.pos, add(mul(f.t, -11.7), mul(f.up, cameraHeight))));
@@ -489,7 +500,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       );
       if (!initialized) {
         camera.position.copy(desired);
-        camera.up.fromArray(f.up);
+        camera.up.fromArray(horizon);
         initialized = true;
       }
       camera.position.lerp(desired, 1 - Math.exp(-6 * dt));
@@ -505,7 +516,7 @@ export function createRingView(context, course, comfort, initialRoute = null) {
             : alternative,
         );
       }
-      camera.up.lerp(new Vector3(...f.up), 1 - Math.exp(-5 * dt)).normalize();
+      camera.up.lerp(new Vector3(...horizon), 1 - Math.exp(-5 * dt)).normalize();
       const motion = matchMedia("(prefers-reduced-motion: reduce)").matches
         ? 0
         : comfort.preferences.shake;
@@ -621,7 +632,30 @@ export function createRingView(context, course, comfort, initialRoute = null) {
       }
       postprocessing.suspend();
     },
-    overview() {
+    overview(segment) {
+      if (segment && typeof segment === "object") {
+        const points = Array.from(
+          { length: 25 },
+          (_, i) => course.pose(segment.start + (segment.length * i) / 24).p,
+        );
+        const center = points[0].map(
+          (_, k) => points.reduce((sum, p) => sum + p[k], 0) / points.length,
+        );
+        const radius = Math.max(35, ...points.map((p) => Math.hypot(...sub(p, center))));
+        const basis = course.pose(segment.start);
+        camera.position.fromArray(
+          add(
+            center,
+            add(
+              mul(basis.right, radius * 1.4),
+              add(mul(basis.up, radius * 1.25), mul(basis.t, -radius * 0.9)),
+            ),
+          ),
+        );
+        camera.up.set(0, 1, 0);
+        camera.lookAt(...center);
+        return;
+      }
       camera.position.set(88, 58, -370);
       camera.up.set(0, 1, 0);
       camera.lookAt(0, 40, -520);

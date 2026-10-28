@@ -58,10 +58,15 @@ export function createSection(seed, index) {
     return entry;
   };
   append(180, "straight", "起航补给");
-  const kinds = ["loop", "twist", "turn", "wave", rng() < 0.55 ? "loop" : "twist"];
+  const kinds = ["banked", "helix", "turn", "wave", rng() < 0.55 ? "loop" : "twist"];
   for (let i = kinds.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
     [kinds[i], kinds[j]] = [kinds[j], kinds[i]];
+  }
+  // Introduce a new structure early on a fresh run; later sections shuffle freely.
+  if (index === 0 && !["banked", "helix"].includes(kinds[0])) {
+    const at = kinds.indexOf(rng() < 0.5 ? "banked" : "helix");
+    [kinds[0], kinds[at]] = [kinds[at], kinds[0]];
   }
   const gapSlots = [0, 2, 4];
   if (rng() < 0.45) gapSlots.push(pick([1, 3]));
@@ -70,7 +75,39 @@ export function createSection(seed, index) {
     const kind = kinds[i],
       tone = pick(palettes),
       spin = rng() < 0.5 ? -1 : 1;
-    if (kind === "loop") {
+    if (kind === "banked") {
+      const slalom = index > 0 && rng() < 0.4;
+      const angle = slalom ? range(0.68, 0.88) : range(1.72, 2.02);
+      const radius = range(57, 68),
+        tilt = range(0.72, 1.04);
+      const pattern = slalom ? [1, -2, 1] : [1, -1];
+      for (const part of pattern) {
+        const direction = spin * Math.sign(part),
+          yaw = angle * part * spin;
+        append(
+          Math.abs(yaw) * radius * 1.875,
+          "banked",
+          slalom
+            ? direction < 0
+              ? "左倾波浪弯"
+              : "右倾波浪弯"
+            : direction < 0
+              ? "长左弯 · 侧倾航道"
+              : "长右弯 · 侧倾航道",
+          { yaw, bank: direction * tilt, tone },
+        );
+      }
+    } else if (kind === "helix") {
+      const yaw = spin * Math.PI * 2,
+        radius = range(27, 33);
+      const rise = (rng() < 0.5 ? -1 : 1) * range(28, 38);
+      append(Math.abs(yaw) * radius * 1.875, "helix", rise > 0 ? "螺旋升空" : "螺旋下降", {
+        yaw,
+        bank: spin * range(0.74, 1.02),
+        rise,
+        tone,
+      });
+    } else if (kind === "loop") {
       const radius = range(46, 64);
       append(2 * Math.PI * radius, kind, pick(["流光星环", "引力星环", "极光环路"]), {
         radius,
@@ -114,7 +151,7 @@ export function createSection(seed, index) {
   };
   const safe = (s) => !gaps.some((g) => s > g.start - 10 && s < g.end + 16);
   for (const seg of segments) {
-    if (seg.kind === "loop" || seg.kind === "twist")
+    if (["loop", "twist", "banked", "helix"].includes(seg.kind))
       for (let s = seg.start + 34; s < seg.end - 15; s += range(58, 72))
         put(s, 0, "air", { required: true });
   }
@@ -309,6 +346,7 @@ export function createRandomCourse(initialSeed = newCourseSeed()) {
       gaps: current.gaps.length,
       rows: current.recipe.rows.length,
       previewReady: !!prepared,
+      structures: "banked-helical-1",
     }),
   };
   return new Proxy(control, { get: (target, key) => (key in target ? target[key] : current[key]) });

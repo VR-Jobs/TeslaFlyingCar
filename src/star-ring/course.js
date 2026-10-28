@@ -1,3 +1,5 @@
+import { createSpatialCurve } from "./spatial-curve.js";
+
 export const add = (a, b) => a.map((v, i) => v + b[i]);
 export const sub = (a, b) => a.map((v, i) => v - b[i]);
 export const mul = (a, s) => a.map((v) => v * s);
@@ -23,12 +25,30 @@ export function createCourse({ endless = false, plan = null } = {}) {
   function append(length, kind, title, options = {}) {
     const o = [...origin],
       f = [...forward],
-      right = cross(f, [0, 1, 0]);
+      right = norm(cross(f, [0, 1, 0])),
+      spatial = ["banked", "helix"].includes(kind) ? createSpatialCurve(length, options) : null;
+    const world = (v) => add(mul(right, v[0]), add([0, v[1], 0], mul(f, v[2])));
     const sample = (d) => {
       let p,
         t,
         up = [0, 1, 0],
         curvature = 0;
+      if (spatial) {
+        const v = spatial(d);
+        const tangent = norm(world(v.t)),
+          normal = norm(world(v.up));
+        const r = norm(cross(tangent, normal));
+        return {
+          ...v,
+          p: add(o, world(v.p)),
+          t: tangent,
+          up: norm(cross(r, tangent)),
+          right: r,
+          kind,
+          title,
+          tone: options.tone,
+        };
+      }
       if (kind === "loop") {
         const a = d / options.radius;
         const u = d / length;

@@ -34,7 +34,7 @@ export function beginDeath(run, course, reason = "未能接轨") {
   run.rollProgress = run.flipProgress = 0;
   run.feedback = "";
   run.feedbackTime = run.messageTime = 0;
-  run.input.jump = run.input.boost = run.input.suction = false;
+  run.input.jump = run.input.boost = run.input.suction = run.input.left = run.input.right = false;
   run.events.push({ type: "death", reason });
   return true;
 }

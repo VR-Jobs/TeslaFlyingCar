@@ -16,7 +16,15 @@ export function trackTheme(course, s) {
     const f = course.frame(s);
     return {
       color: f.tone || [0.65, 0.86, 1],
-      style: f.kind === "loop" ? 2 : f.kind === "twist" || f.kind === "turn" ? 1 : 0,
+      style: f.steering
+        ? f.signedCurvature < 0
+          ? 4
+          : 5
+        : f.kind === "loop"
+          ? 2
+          : f.kind === "twist" || f.kind === "turn"
+            ? 1
+            : 0,
     };
   }
   if (course.endless) s = ((s % course.length) + course.length) % course.length;

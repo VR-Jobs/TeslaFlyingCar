@@ -6,14 +6,14 @@
       "detail": {
         "geometry": 128,
         "fields": 128,
-        "orders": 80
+        "orders": 102
       }
     },
     {
       "name": "many-module-orders-rather-than-three-lane-rotations",
       "pass": true,
       "detail": {
-        "orders": 80
+        "orders": 102
       }
     },
     {
@@ -39,82 +39,82 @@
         {
           "seed": 1,
           "laps": 1,
-          "time": 105.94999999999527,
-          "distance": 3139.8122608681306,
+          "time": 113.46666666666151,
+          "distance": 3353.905945118802,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 68.64584938825703,
-          "seamStep": 0.48430007217046667
+          "minimumPressure": 65.20000000000198,
+          "seamStep": 0.48430007171869077
         },
         {
           "seed": 2,
           "laps": 1,
-          "time": 112.74999999999488,
-          "distance": 3251.659406176559,
+          "time": 114.1999999999948,
+          "distance": 3290.6475082869997,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 69.10834072590514,
-          "seamStep": 0.484300072196758
+          "minimumPressure": 63.26666666666868,
+          "seamStep": 0.49110131088805264
         },
         {
           "seed": 3,
           "laps": 1,
-          "time": 104.49999999999535,
-          "distance": 3042.31886388169,
+          "time": 112.53333333332823,
+          "distance": 3267.021926136999,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 47.566206580297646,
-          "seamStep": 0.49110131269777635
+          "minimumPressure": 71.22955384923772,
+          "seamStep": 0.49110131099046545
         },
         {
           "seed": 9,
           "laps": 1,
-          "time": 113.1333333333282,
-          "distance": 3273.4121972717153,
+          "time": 121.53333333332772,
+          "distance": 3519.6813838298444,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 55.73641252256077,
-          "seamStep": 0.4911013108370616
+          "minimumPressure": 68.53333333333603,
+          "seamStep": 0.4911013125119652
         },
         {
           "seed": 27,
           "laps": 1,
-          "time": 108.4166666666618,
-          "distance": 3129.4049883124385,
+          "time": 113.74999999999483,
+          "distance": 3350.5344299277417,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 68.24658366285065,
-          "seamStep": 0.49110131188970907
+          "minimumPressure": 73.40000000000248,
+          "seamStep": 0.484300071511427
         },
         {
           "seed": 42,
           "laps": 10,
-          "time": 968.1666666661148,
-          "distance": 32409.998964195896,
+          "time": 1018.1499999994027,
+          "distance": 33933.559018110864,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 54.60354049248953,
-          "seamStep": 0.6266268175508268
+          "minimumPressure": 61.06666666666902,
+          "seamStep": 0.6266268849997683
         },
         {
           "seed": 101,
           "laps": 1,
-          "time": 110.599999999995,
-          "distance": 3212.8885927945594,
+          "time": 120.53333333332777,
+          "distance": 3485.1916550059564,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 30.208029373237732,
-          "seamStep": 0.48430007196846064
+          "minimumPressure": 58.00000000000266,
+          "seamStep": 0.4911013110254673
         },
         {
           "seed": 2026,
           "laps": 1,
-          "time": 107.38333333332852,
-          "distance": 3192.925051985446,
+          "time": 116.88333333332798,
+          "distance": 3388.5916549666667,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 68.13815473572288,
-          "seamStep": 0.48430007160344873
+          "minimumPressure": 54.00000000000155,
+          "seamStep": 0.4843000729609594
         }
       ]
     },
@@ -124,12 +124,12 @@
       "detail": {
         "seed": 42,
         "laps": 10,
-        "time": 968.1666666661148,
-        "distance": 32409.998964195896,
+        "time": 1018.1499999994027,
+        "distance": 33933.559018110864,
         "falls": 0,
         "trackImpacts": 0,
-        "minimumPressure": 54.60354049248953,
-        "seamStep": 0.6266268175508268
+        "minimumPressure": 61.06666666666902,
+        "seamStep": 0.6266268849997683
       }
     },
     {

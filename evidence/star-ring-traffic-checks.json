@@ -4,8 +4,8 @@
       "name": "128-seeded-sections-have-cars-open-car-width-lanes-and-clear-leap-approaches",
       "pass": true,
       "detail": {
-        "cars": 2380,
-        "curved": 1617
+        "cars": 2477,
+        "curved": 1719
       }
     },
     {
@@ -68,8 +68,8 @@
       "pass": true,
       "detail": {
         "style": "blender-roadster-dynamic-convoys",
-        "total": 18,
-        "visible": 3,
+        "total": 19,
+        "visible": 2,
         "draws": 0,
         "rendering": "shared-geometry-meshes",
         "batches": 15,

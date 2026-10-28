@@ -1,0 +1,13 @@
+{
+  "version": "banked-helical-1",
+  "stage": "长左弯 · 侧倾航道",
+  "steering": {
+    "active": true,
+    "axis": 0,
+    "drift": 0.22533920117894532,
+    "velocity": 0.03259694683739767,
+    "direction": -1,
+    "bank": -0.9000235622376204
+  },
+  "errors": []
+}

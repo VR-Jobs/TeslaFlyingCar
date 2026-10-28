@@ -31,6 +31,7 @@ jobs:
           node tools/check-orbit-fx.mjs
           npm run check:handling
           npm run check:space
+          node tools/check-star-ring-structures.mjs
           npm run check:star-ring-rainbow
           npm run check:experience
           npm run check:placement

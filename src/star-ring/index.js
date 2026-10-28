@@ -1,3 +1,4 @@
+import { mul } from "./course.js";
 import { layoutConflicts, intersectsTraffic } from "./placement.js";
 import { createGhostRecorder } from "./ghost.js";
 import { stepRhythm, rhythmStatus } from "./rhythm.js";
@@ -134,7 +135,7 @@ export function installStarRing(context, options) {
     },
     hold(action, down) {
       if (action === "left" || action === "right") {
-        if (down) control(action);
+        control(action + (down ? "Press" : "Release"));
         return;
       }
       control(action + (down ? "Press" : "Release"));
@@ -440,7 +441,7 @@ export function installStarRing(context, options) {
       if (!paused) view.update(run, dt);
       if (!paused && run.phase === "running" && run.s > 130 && run.s < course.length - 160)
         view.prepare();
-      if (overview) view.overview();
+      if (overview) view.overview(overview);
       ui.update(run, course, paused);
       renderer.setRenderTarget(null);
       renderer.toneMappingExposure = 1;
@@ -486,6 +487,7 @@ export function installStarRing(context, options) {
       suction: run?.input.suction,
       jump: run?.input.jump,
       lane: run?.lane,
+      steering: run?.steering,
       stage: run ? course.frame(run.s).title : "",
       tutorial: run?.tutorial ? { ...run.tutorial } : null,
       gapCue: run?.gapCue || null,
@@ -555,11 +557,11 @@ export function installStarRing(context, options) {
     }
     if (paused || run.phase === "finished") return;
     if (code === "ArrowLeft" || code === "KeyA") {
-      if (down) control("left");
+      control("left" + (down ? "Press" : "Release"));
       return;
     }
     if (code === "ArrowRight" || code === "KeyD") {
-      if (down) control("right");
+      control("right" + (down ? "Press" : "Release"));
       return;
     }
     const action =
@@ -596,6 +598,91 @@ export function installStarRing(context, options) {
       qa.append(b);
       return b;
     };
+    const structurePreview = (kind, wide = false) => {
+      manager.start({ tutorial: false, seed: 11 });
+      const segment = course.segments.find((s) =>
+        kind === "helix"
+          ? s.kind === "helix"
+          : s.kind === "banked" && Math.sign(s.options.yaw) === (kind === "left" ? -1 : 1),
+      );
+      const targetS = segment.start + (wide ? 12 : segment.length * 0.27);
+      run.s = segment.start + 1;
+      run.pos = course.pose(run.s).p;
+      run.velocity = mul(course.pose(run.s).t, 28);
+      run.speed = 28;
+      run.input.suction = true;
+      const pilot = {};
+      for (let i = 0; i < 1000 && run.s < targetS && run.phase === "running"; i++)
+        randomPilotStep(run, course, pilot);
+      frozen = true;
+      overview = wide ? segment : false;
+      for (let i = 0; i < 45; i++) view.update(run, 1 / 60);
+      if (wide) view.overview(segment);
+      view.render(1 / 60);
+      ui.update(run, course, false);
+    };
+    make("新轨道：长左弯", () => structurePreview("left"));
+    make("新轨道：长右弯", () => structurePreview("right"));
+    make("新轨道：螺旋驾驶", () => structurePreview("helix"));
+    make("新轨道：螺旋全景", () => structurePreview("helix", true));
+    make("验证：立体轨道", () => {
+      const backup = structuredClone(backend.state),
+        checks = [];
+      const check = (name, pass, detail) => checks.push({ name, pass: !!pass, detail });
+      try {
+        manager.start({ tutorial: false, seed: 11 });
+        run.input.suction = true;
+        command(run, course, "leftPress");
+        for (let i = 0; i < 24; i++) stepRun(run, course, 1 / 60);
+        check(
+          "keyboard-and-touch-hold-drive-continuous-left-input",
+          run.targetLane < -1 && run.targetLane > -2,
+        );
+        command(run, course, "leftRelease");
+        const lane = run.targetLane;
+        for (let i = 0; i < 24; i++) stepRun(run, course, 1 / 60);
+        check(
+          "release-stops-steering-without-stuck-key",
+          run.targetLane === lane && !run.input.left,
+        );
+        const seg = course.segments.find((s) => s.kind === "banked");
+        run.s = seg.start + seg.length * 0.42;
+        run.lane = run.targetLane = 0;
+        run.pos = course.pose(run.s).p;
+        run.velocity = mul(course.pose(run.s).t, 28);
+        run.speed = 28;
+        for (let i = 0; i < 90; i++) stepRun(run, course, 1 / 60);
+        check(
+          "suction-follows-actual-banked-collision-surface",
+          run.phase === "running" && run.attached && run.trackImpacts === 0,
+          { bank: course.frame(run.s).bank, steering: run.steering },
+        );
+        run.input.suction = false;
+        let warning = false;
+        for (let i = 0; i < 86; i++) {
+          stepRun(run, course, 1 / 60);
+          warning ||= run.events.some((e) => e.type === "gripWarning");
+        }
+        check(
+          "new-bank-warns-before-drifting-off",
+          warning && !run.attached && run.detachCause === "grip",
+        );
+        check(
+          "new-bends-and-helices-use-shared-glass-surface",
+          course.segments.some((s) => s.kind === "helix") &&
+            course.randomStatus().structures === "banked-helical-1",
+        );
+      } catch (error) {
+        check("exception", false, String(error.stack));
+      } finally {
+        manager.stop();
+        backend.state = backup;
+        backend.persist();
+        options.onRestore();
+      }
+      output.dataset.report = JSON.stringify({ checks });
+      output.textContent = checks.filter((c) => c.pass).length + " / " + checks.length;
+    });
     const voyagePreview = (kind) => {
       manager.start({ tutorial: false, seed: 11 });
       if (kind === "stars") {
@@ -1904,6 +1991,20 @@ export function installStarRing(context, options) {
       output.dataset.report = JSON.stringify(result);
       output.textContent = JSON.stringify(result);
     });
+    const structureFixture = new URLSearchParams(location.search).get("structureFixture");
+    const fixtureLabels = {
+      left: "新轨道：长左弯",
+      right: "新轨道：长右弯",
+      helix: "新轨道：螺旋驾驶",
+      overview: "新轨道：螺旋全景",
+    };
+    if (fixtureLabels[structureFixture])
+      requestAnimationFrame(() => {
+        [...qa.querySelectorAll("button")]
+          .find((b) => b.textContent === fixtureLabels[structureFixture])
+          .click();
+        qa.style.display = "none";
+      });
     const uiFixture = new URLSearchParams(location.search).get("uiFixture");
     if (["clear", "endless", "dead", "pause", "rainbow", "check"].includes(uiFixture)) {
       requestAnimationFrame(() => {

@@ -1,3 +1,4 @@
+import { directionCommand, stepSteering } from "./steering.js";
 import { stepDirector } from "./director.js";
 import {
   startRainbow,
@@ -45,6 +46,7 @@ export function createRun(course) {
     speed: 25,
     lane: 0,
     targetLane: 0,
+    steering: null,
     pos: course.pose(0).p,
     velocity: [0, 0, -25],
     attached: true,
@@ -93,7 +95,7 @@ export function createRun(course) {
     feedbackTime: 0,
     events: [],
     pendingEvents: [],
-    input: { suction: false, jump: false, boost: false, brake: false },
+    input: { suction: false, jump: false, boost: false, brake: false, left: false, right: false },
     assist: true,
   };
 }
@@ -112,6 +114,9 @@ export function detach(run, course, impulse = 6, cause = "jump") {
 }
 export function command(run, course, event) {
   if (run.phase !== "running") return;
+  const held = directionCommand(run, event);
+  if (held === true) return;
+  if (held) event = held;
   const before = run.events.length;
   const mainCourse = course;
   if (adventureCommand(run, mainCourse, event, detach)) {
@@ -220,7 +225,8 @@ export function restartCheckpoint(run, course) {
   run.detachCooldown = 0.3;
   run.invuln = 1.5;
   // Inputs are released after recovery; the HUD keeps the help visible.
-  run.input.jump = run.input.boost = false;
+  run.input.jump = run.input.boost = run.input.left = run.input.right = false;
+  run.steering = null;
   run.gripNextTone = run.spinBlocked = 0;
   run.events = [];
   run.pendingEvents = [];
@@ -313,7 +319,7 @@ export function stepRun(run, course, dt) {
       pitch: run.pitch,
       pos: [...run.pos],
     };
-    run.lane += (run.targetLane - run.lane) * (1 - Math.exp(-10 * dt));
+    stepSteering(run, course, previous, dt, input.suction && run.pressure > 0);
     const demand = 8 * (1 - previous.up[1]) + run.speed * run.speed * previous.curvature * 0.3;
     const force =
       input.suction && run.pressure > 0 ? 65 : run.assist ? 22 : Math.max(0, previous.up[1]) * 12;

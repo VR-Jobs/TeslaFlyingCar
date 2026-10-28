@@ -20,7 +20,7 @@ export const GLASS_TRACK = {
 const vertex = `attribute float aRoute,aAcross,aDepth,aHalfWidth,aStyle;attribute vec3 aAccent;varying float vRoute,vAcross,vDepth,vHalfWidth,vStyle;varying vec3 vWorld,vNormal,vAccent;
 void main(){vRoute=aRoute;vAcross=aAcross;vDepth=aDepth;vHalfWidth=aHalfWidth;vStyle=aStyle;vAccent=aAccent;vec4 p=modelMatrix*vec4(position,1.);vWorld=p.xyz;vNormal=normalize(mat3(modelMatrix)*normal);gl_Position=projectionMatrix*viewMatrix*p;}`;
 const fragment = `precision highp float;varying float vRoute,vAcross,vDepth,vHalfWidth,vStyle;varying vec3 vWorld,vNormal,vAccent;
-uniform float uFace,uBeat,uBase,uRim,uHalo,uGrip,uTravel,uTime;
+uniform float uFace,uBeat,uBase,uRim,uHalo,uGrip,uTravel,uTime,uCurveMotion;
 float ink(float d,float width){float aa=max(fwidth(d),.0015);return 1.-smoothstep(width-aa,width+aa,d);}
 void main(){
  float outer=abs(vHalfWidth-abs(vAcross));
@@ -40,7 +40,10 @@ void main(){
  float danger=uGrip*(1.-smoothstep(12.,26.,abs(vRoute-uTravel)));
  edge=mix(edge,vec3(1.8,.46,.045),danger*(.86+.1*sin(uTime*13.)));
  vec3 color=mix(glass,edge,clamp(lit*1.7+glow*.34,0.,1.));
- color*=1.+uBeat*.035*lit;
+ float curve=vStyle>3.5?1.:0.;
+ float flow=pow(max(0.,cos(vRoute*.42-uTime*3.*uCurveMotion)),12.);
+ float guide=curve*flow*(1.-smoothstep(70.,180.,vRoute-uTravel))*smoothstep(-15.,0.,vRoute-uTravel);
+ color*=1.+uBeat*.035*lit+guide*.22*lit;
  gl_FragColor=vec4(color,min(.91,alpha));
  gl_FragColor.rgb=pow(max(gl_FragColor.rgb,vec3(0.)),vec3(2.2));
  #ifdef RING_BLOOM_MASK
@@ -66,6 +69,7 @@ function* buildGlassTrack(scene, course, solid, shared = null) {
     uGrip: { value: 0 },
     uTravel: { value: 0 },
     uTime: { value: 0 },
+    uCurveMotion: { value: 1 },
     uBase: { value: GLASS_TRACK.baseOpacity },
     uRim: { value: GLASS_TRACK.rimWidth },
     uHalo: { value: GLASS_TRACK.haloWidth },
@@ -152,12 +156,13 @@ function* buildGlassTrack(scene, course, solid, shared = null) {
         mesh.visible = hi > travel - 96 && lo < travel + 650;
       }
     },
-    update(beat, grip = 0, travel = 0, time = 0) {
+    update(beat, grip = 0, travel = 0, time = 0, reduced = false) {
       this.setVisibleRange(travel);
       uniforms.uBeat.value = beat;
       uniforms.uGrip.value = grip;
       uniforms.uTravel.value = travel;
       uniforms.uTime.value = time;
+      uniforms.uCurveMotion.value = reduced ? 0 : 1;
     },
     status: () => ({
       style: "rim-lit-glass",

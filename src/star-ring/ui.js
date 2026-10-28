@@ -25,7 +25,7 @@ export function createRingUI(actions, preferences = {}) {
         <span id="ring-gap-cue" aria-live="polite" hidden></span>
         <div class="ring-voyage air-sub"><span id="ring-escort"></span><span id="ring-event"></span></div>
       </div>
-      <div class="ring-keys">弯轨按住 E 吸附 · 直道松 E 弹射 · 空格跳跃 / 喷气 / 高处再按前翻 · ← → 换道 / 桶滚 · Shift 加速</div>
+      <div class="ring-keys">弯轨按住 E 吸附 · 直道松 E 弹射 · 空格跳跃 / 喷气 / 高处再按前翻 · ← → 轻点微调 / 长按转向 / 空中桶滚 · Shift 加速</div>
       <div class="ring-touch"><button type="button" data-hold="left">←</button><button type="button" data-hold="right">→</button><button type="button" data-hold="suction">吸附 E</button><button type="button" data-hold="jump">跳跃 / 喷气</button><button type="button" data-hold="boost">加速</button></div>
     </div>
     <div id="ring-overlay" role="dialog" aria-modal="true" aria-labelledby="ring-overlay-title" aria-describedby="ring-overlay-copy" hidden>
@@ -189,6 +189,8 @@ export function createRingUI(actions, preferences = {}) {
             : run.input.jump
               ? "喷气修正"
               : "离轨飞行";
+      if (run.attached && run.steering?.active && Math.abs(run.steering.direction) > 0)
+        get("ring-state").textContent += run.steering.direction < 0 ? " · 左弯修正" : " · 右弯修正";
       const pressure = Math.max(0, Math.min(100, run.pressure));
       get("ring-air").textContent = Math.ceil(pressure) + "%";
       get("ring-air-fill").style.transform = "scaleX(" + pressure / 100 + ")";

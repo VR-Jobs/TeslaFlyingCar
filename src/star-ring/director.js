@@ -1,5 +1,5 @@
 import { clamp } from "./course.js";
-export const EXPERIENCE_VERSION = "experience-2-clearance";
+export const EXPERIENCE_VERSION = "experience-3-spatial-curves";
 export function installDirector(course, seed, index) {
   const phases = [],
     recoveries = [],

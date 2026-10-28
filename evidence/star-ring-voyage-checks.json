@@ -61,7 +61,7 @@
       "name": "320-sections-keep-the-reserved-lane-clear-during-entire-convoy-movements",
       "pass": true,
       "detail": {
-        "cells": 780,
+        "cells": 640,
         "merges": 320
       }
     },
@@ -135,7 +135,7 @@
       "name": "voyage-window-retirement-disposes-every-owned-geometry",
       "pass": true,
       "detail": {
-        "disposed": 275
+        "disposed": 295
       }
     }
   ]

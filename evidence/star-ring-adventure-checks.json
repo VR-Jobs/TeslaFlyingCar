@@ -8,7 +8,7 @@
       "name": "real-jump-barrel-and-suction-complete-main-three-gate-chain",
       "pass": true,
       "detail": {
-        "s": 1257.2853709985416,
+        "s": 1263.0618288371666,
         "score": 869.8026048082819,
         "pressure": 100
       }
@@ -34,7 +34,7 @@
       "pass": true,
       "detail": {
         "phase": "running",
-        "s": 344.83247248533456
+        "s": 1554.5495993572342
       }
     },
     {
@@ -44,8 +44,8 @@
         {
           "seed": 1,
           "pass": true,
-          "firstCapture": 2495.335232032756,
-          "returnAt": 2718.456880851385,
+          "firstCapture": 2705.080227857135,
+          "returnAt": 2911.181088400627,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -53,8 +53,8 @@
         {
           "seed": 2,
           "pass": true,
-          "firstCapture": 214.96972028396044,
-          "returnAt": 650.0932108527533,
+          "firstCapture": 1554.3090069881248,
+          "returnAt": 1774.039087015202,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -62,8 +62,8 @@
         {
           "seed": 3,
           "pass": true,
-          "firstCapture": 2391.371563318115,
-          "returnAt": 2629.004624134058,
+          "firstCapture": 2549.8752498806753,
+          "returnAt": 2830.968133052618,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -71,8 +71,8 @@
         {
           "seed": 9,
           "pass": true,
-          "firstCapture": 214.08857547951746,
-          "returnAt": 516.2582373731085,
+          "firstCapture": 1414.3357208600428,
+          "returnAt": 1794.927486800207,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -80,8 +80,8 @@
         {
           "seed": 11,
           "pass": true,
-          "firstCapture": 215.10359061718137,
-          "returnAt": 536.1751329044845,
+          "firstCapture": 1425.7177745155489,
+          "returnAt": 1835.4202457318263,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -89,8 +89,8 @@
         {
           "seed": 27,
           "pass": true,
-          "firstCapture": 2396.7055994837856,
-          "returnAt": 2706.7521956393202,
+          "firstCapture": 2584.267943931891,
+          "returnAt": 2901.2483008675554,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -98,8 +98,8 @@
         {
           "seed": 42,
           "pass": true,
-          "firstCapture": 214.08367310126098,
-          "returnAt": 509.8372638701603,
+          "firstCapture": 2079.901921188425,
+          "returnAt": 2472.2838867846267,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -107,8 +107,8 @@
         {
           "seed": 73,
           "pass": true,
-          "firstCapture": 1923.261421569014,
-          "returnAt": 2196.2704159261643,
+          "firstCapture": 2049.7572435673856,
+          "returnAt": 2304.634037984463,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -116,8 +116,8 @@
         {
           "seed": 101,
           "pass": true,
-          "firstCapture": 1949.610194571927,
-          "returnAt": 2211.9940393362062,
+          "firstCapture": 2090.725922223194,
+          "returnAt": 2459.351580970028,
           "falls": 0,
           "impacts": 0,
           "phase": "running"
@@ -125,8 +125,8 @@
         {
           "seed": 2026,
           "pass": true,
-          "firstCapture": 214.3872006200212,
-          "returnAt": 597.61508217117,
+          "firstCapture": 973.883801984904,
+          "returnAt": 1257.8616267038576,
           "falls": 0,
           "impacts": 0,
           "phase": "running"

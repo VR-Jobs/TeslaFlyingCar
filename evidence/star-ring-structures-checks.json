@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "name": "spatial-curves-have-unit-speed-orthonormal-frames-and-smooth-flat-ends",
+      "pass": true
+    },
+    {
+      "name": "192-seeds-keep-all-segment-and-section-joins-continuous",
+      "pass": true,
+      "detail": {
+        "joins": 2760,
+        "maximumLength": 3638.6783545581984
+      }
+    },
+    {
+      "name": "both-bend-directions-and-both-helical-grades-appear",
+      "pass": true,
+      "detail": [
+        "长右弯 · 侧倾航道",
+        "长左弯 · 侧倾航道",
+        "螺旋下降",
+        "左倾波浪弯",
+        "右倾波浪弯",
+        "螺旋升空"
+      ]
+    },
+    {
+      "name": "held-left-is-continuous-and-not-a-three-meter-step",
+      "pass": true
+    },
+    {
+      "name": "releasing-direction-stops-target-motion",
+      "pass": true
+    },
+    {
+      "name": "right-hold-reverses-the-steering-direction",
+      "pass": true
+    },
+    {
+      "name": "opposite-held-directions-cancel",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-clears-held-directions",
+      "pass": true
+    },
+    {
+      "name": "suction-strongly-reduces-outward-slip",
+      "pass": true
+    },
+    {
+      "name": "camera-motion-setting-reduces-banking-independently",
+      "pass": true
+    },
+    {
+      "name": "missing-suction-warns-before-losing-contact-on-new-curves",
+      "pass": true
+    },
+    {
+      "name": "all-three-lanes-have-matching-visible-top-collisions-without-foreign-faces",
+      "pass": true,
+      "detail": {
+        "swept": 1449
+      }
+    },
+    {
+      "name": "translated-next-section-keeps-position-and-road-side",
+      "pass": true
+    },
+    {
+      "name": "old-route-ghosts-never-play-through-the-new-geometry",
+      "pass": true
+    }
+  ]
+}
