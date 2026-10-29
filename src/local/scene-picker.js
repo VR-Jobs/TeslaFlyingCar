@@ -154,7 +154,10 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     planetSelect.append(option);
   }
   planetSelect.value = planetChoice();
-  planetSelect.onchange = () => savePlanetChoice(planetSelect.value);
+  planetSelect.onchange = () => {
+    savePlanetChoice(planetSelect.value);
+    syncReplay();
+  };
   planetLabel.append(planetSelect);
   const planetHint = document.createElement("small");
   localizeText(
@@ -192,6 +195,26 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     const chosen = [...inputs].find(([, i]) => i.checked)?.[0];
     replayOption.hidden = chosen !== "starRing" || !ghostStatus()?.available;
     planetOptions.hidden = !["starRing", "gravityFlip", ...EXPEDITION_IDS].includes(chosen);
+    for (const option of planetSelect.options) {
+      const p = PLANETS.find((p) => p.id === option.value);
+      const en = p ? p.id[0].toUpperCase() + p.id.slice(1) : "Random departure";
+      const suffix =
+        chosen === "starRing" && p
+          ? ["uranus", "neptune"].includes(p.id)
+            ? [" · 困难", " · Hard"]
+            : [" · 简单", " · Easy"]
+          : ["", ""];
+      localizeText(option, (p?.name || "随机出发") + suffix[0], en + suffix[1]);
+    }
+    localizeText(
+      planetHint,
+      chosen === "starRing"
+        ? "水星至土星：简单，每按一次整条换道。天王星、海王星：困难，连续转向。随当前行星切换。"
+        : "航行过程中，继续飞向其他行星。",
+      chosen === "starRing"
+        ? "Mercury–Saturn: easy, one press switches a full lane. Uranus/Neptune: hard, continuous steering. Changes with each destination."
+        : "Continue your voyage toward other planets.",
+    );
   };
   for (const input of inputs.values()) input.addEventListener("change", syncReplay);
   function switchGroup(group, choose = true) {

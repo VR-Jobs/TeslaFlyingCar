@@ -99,7 +99,10 @@ for (const seed of [1, 2, 3, 9, 27, 42, 101, 2026]) {
   let seamStep = 0,
     last = [...r.pos],
     lastOrigin = [...r.worldOrigin],
-    lastLap = 0;
+    lastLap = 0,
+    lastLane = r.lane,
+    lastMode = r.controlMode,
+    steeringSnap = 0;
   const target = seed === 42 ? 10 : 1;
   for (let i = 0; i < 60 * 220 * target && r.laps < target; i++) {
     randomPilotStep(r, c, state);
@@ -107,11 +110,26 @@ for (const seed of [1, 2, 3, 9, 27, 42, 101, 2026]) {
     if (r.laps !== lastLap) {
       const a = add(r.pos, r.worldOrigin),
         b = add(last, lastOrigin);
-      seamStep = Math.max(seamStep, Math.hypot(...sub(a, b)));
+      let delta = sub(a, b);
+      if (lastMode === "continuous" && r.controlMode === "fixed") {
+        const shift = r.lane - lastLane;
+        assert(
+          Math.abs(shift) <= (c.laneStep || 3.2) / 2 + 0.05,
+          "nearest fixed lane on difficulty change",
+        );
+        steeringSnap = Math.max(steeringSnap, Math.abs(shift));
+        delta = sub(
+          delta,
+          c.frame(r.s).right.map((v) => v * shift),
+        );
+      }
+      seamStep = Math.max(seamStep, Math.hypot(...delta));
       lastLap = r.laps;
     }
     last = [...r.pos];
     lastOrigin = [...r.worldOrigin];
+    lastLane = r.lane;
+    lastMode = r.controlMode;
     assert(r.pos.every(Number.isFinite) && Number.isFinite(r.score));
   }
   reports.push({
@@ -123,6 +141,7 @@ for (const seed of [1, 2, 3, 9, 27, 42, 101, 2026]) {
     trackImpacts: r.trackImpacts,
     minimumPressure,
     seamStep,
+    steeringSnap,
   });
   assert(
     r.laps === target,

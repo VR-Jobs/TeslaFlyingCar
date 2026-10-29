@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "name": "mercury-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "venus-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "earth-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "mars-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "jupiter-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "saturn-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "uranus-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "neptune-matches-difficulty",
+      "pass": true
+    },
+    {
+      "name": "a-new-press-switches-one-lane-without-repeat-or-overshoot",
+      "pass": true
+    },
+    {
+      "name": "fixed-lanes-do-not-slip-on-banked-curves",
+      "pass": true
+    },
+    {
+      "name": "hard-worlds-preserve-suction-dependent-curvature-slip",
+      "pass": true
+    },
+    {
+      "name": "airborne-fixed-switch-preserves-height-forward-speed-and-barrel-roll",
+      "pass": true
+    },
+    {
+      "name": "easy-landing-snaps-to-a-lane-without-residual-horizontal-glide",
+      "pass": true
+    },
+    {
+      "name": "all-starts-follow-the-current-planet-across-an-eight-world-cycle",
+      "pass": true
+    },
+    {
+      "name": "hard-to-easy-section-change-snaps-and-releases-old-held-input",
+      "pass": true
+    },
+    {
+      "name": "easy-to-hard-change-activates-continuous-input-without-a-free-lane-jump",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-keeps-world-difficulty-and-clears-held-controls",
+      "pass": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { mul } from "./course.js";
-import { PLANETS } from "./planet-rules.js";
+import { PLANETS, planetChoice } from "./planet-rules.js";
 import { layoutConflicts, intersectsTraffic } from "./placement.js";
 import { createGhostRecorder } from "./ghost.js";
 import { stepRhythm, rhythmStatus } from "./rhythm.js";
@@ -334,7 +334,7 @@ export function installStarRing(context, options) {
         manager.launching = false;
       }
     },
-    start({ tutorial, endless = true, seed, reuseCourse = false } = {}) {
+    start({ tutorial, endless = true, seed, reuseCourse = false, planet = planetChoice() } = {}) {
       if (!active) {
         context.menu();
         oldTone = renderer.toneMapping;
@@ -346,7 +346,7 @@ export function installStarRing(context, options) {
       if (!reuseCourse) course.reseed(seed ?? (qaSeed !== null ? Number(qaSeed) : newCourseSeed()));
       view ||= createRingView(context, course, options.comfort);
       view.reset();
-      run = createRun(course);
+      run = createRun(course, { planet });
       run.endless = endless;
       ghostRecorder.start(course.randomStatus().seed, !isQA);
       run.ghostMatching = ghostRecorder.status().matching;
@@ -488,6 +488,9 @@ export function installStarRing(context, options) {
       suction: run?.input.suction,
       jump: run?.input.jump,
       lane: run?.lane,
+      targetLane: run?.targetLane,
+      controlMode: run?.controlMode,
+      controlPlanet: run?.controlPlanet,
       steering: run?.steering,
       stage: run ? course.frame(run.s).title : "",
       tutorial: run?.tutorial ? { ...run.tutorial } : null,
@@ -731,7 +734,7 @@ export function installStarRing(context, options) {
         checks = [];
       const check = (name, pass, detail) => checks.push({ name, pass: !!pass, detail });
       try {
-        manager.start({ tutorial: false, seed: 11 });
+        manager.start({ tutorial: false, seed: 11, planet: "uranus" });
         run.input.suction = true;
         command(run, course, "leftPress");
         for (let i = 0; i < 24; i++) stepRun(run, course, 1 / 60);

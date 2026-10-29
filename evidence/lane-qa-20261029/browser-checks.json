@@ -1,0 +1,56 @@
+[
+  {
+    "name": "earth-left-held",
+    "lane": -3.2,
+    "mode": "fixed",
+    "paused": true,
+    "phase": "running",
+    "planet": "earth",
+    "steering": {
+      "active": false,
+      "axis": 0,
+      "bank": 0,
+      "direction": 0,
+      "drift": 0,
+      "mode": "fixed",
+      "velocity": 0
+    },
+    "target": -3.2
+  },
+  {
+    "name": "earth-right-held-once",
+    "lane": 0,
+    "mode": "fixed",
+    "paused": true,
+    "phase": "running",
+    "planet": "earth",
+    "target": 0
+  },
+  {
+    "name": "uranus-right-held",
+    "lane": 0.7984508893138644,
+    "mode": "continuous",
+    "paused": true,
+    "phase": "running",
+    "planet": "uranus",
+    "steering": {
+      "active": false,
+      "axis": 0,
+      "bank": 0,
+      "direction": 0,
+      "drift": 0,
+      "mode": "continuous",
+      "velocity": 3.027439694786447
+    },
+    "target": 1.0766666666666669
+  },
+  {
+    "name": "neptune-left-held",
+    "lane": -0.6883852709381109,
+    "mode": "continuous",
+    "paused": true,
+    "phase": "running",
+    "planet": "neptune",
+    "target": -1.0133333333333334
+  }
+]

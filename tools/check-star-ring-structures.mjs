@@ -76,7 +76,7 @@ check(
 const c = createSection(11, 0),
   bend = c.segments.find((s) => s.kind === "banked");
 const frame = c.pose(bend.start + bend.length / 2);
-const r = createRun(c);
+const r = createRun(c, { planet: "uranus" });
 r.s = bend.start + bend.length / 2;
 r.pos = frame.p;
 command(r, c, "leftPress");
@@ -99,7 +99,7 @@ check("opposite-held-directions-cancel", r.targetLane === simultaneous);
 restartCheckpoint(r, c);
 check("checkpoint-clears-held-directions", !r.input.left && !r.input.right && r.steering === null);
 const drift = (suction) => {
-  const run = createRun(c);
+  const run = createRun(c, { planet: "uranus" });
   run.speed = 40;
   for (let i = 0; i < 120; i++) stepSteering(run, c, frame, 1 / 60, suction);
   return Math.abs(run.lane);

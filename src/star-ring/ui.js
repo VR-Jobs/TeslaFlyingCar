@@ -1,3 +1,4 @@
+import { currentLanguage } from "../local/language.js";
 import { RING_UI_STYLES } from "./ui-styles.js";
 import { drivingCue } from "./director.js";
 import { rhythmStatus } from "./rhythm.js";
@@ -123,6 +124,13 @@ export function createRingUI(actions, preferences = {}) {
     update(run, course, paused) {
       rainbowScreen.update(run, paused);
       const teaching = !!run.tutorial?.active;
+      const fixedLanes = run.controlMode !== "continuous";
+      const keys =
+        currentLanguage() === "zh"
+          ? `弯轨按住 E 吸附 · 直道松 E 弹射 · 空格跳跃 / 喷气 / 高处再按前翻 · ← → ${fixedLanes ? "每按一次整条换道" : "轻点微调 / 长按转向"} / 空中桶滚 · Shift 加速`
+          : `Hold E to grip · Release E on straights to launch · Space jump / jet / flip · ← → ${fixedLanes ? "one press, one lane" : "tap to adjust / hold to steer"} / airborne roll · Shift boost`;
+      const keysNode = root.querySelector(".ring-keys");
+      if (keysNode.textContent !== keys) keysNode.textContent = keys;
       root.classList.toggle(
         "ring-compact",
         !teaching && preferences.compactHUD !== false && run.time > 8,
@@ -152,8 +160,18 @@ export function createRingUI(actions, preferences = {}) {
       if (get("ring-heading-title").textContent !== heading)
         get("ring-heading-title").textContent = heading;
       root.querySelector("[data-ring=skip]").hidden = !teaching || paused;
+      const difficulty =
+        currentLanguage() === "zh"
+          ? fixedLanes
+            ? "简单 · 固定换道"
+            : "困难 · 连续转向"
+          : fixedLanes
+            ? "Easy · Fixed lanes"
+            : "Hard · Continuous steering";
       const destination =
         (run.planetName ? run.planetName + " · " : "") +
+        difficulty +
+        " · " +
         (run.routeId ? "外环捷径" : course.frame(run.s).title);
       const stage =
         lesson?.copy ||

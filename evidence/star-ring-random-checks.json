@@ -44,7 +44,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 65.20000000000198,
-          "seamStep": 0.48430007171869077
+          "seamStep": 0.466666667006848,
+          "steeringSnap": 0
         },
         {
           "seed": 2,
@@ -54,7 +55,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 63.26666666666868,
-          "seamStep": 0.49110131088805264
+          "seamStep": 0.4666666668194921,
+          "steeringSnap": 0
         },
         {
           "seed": 3,
@@ -64,7 +66,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 71.22955384923772,
-          "seamStep": 0.49110131099046545
+          "seamStep": 0.4666666669272672,
+          "steeringSnap": 0
         },
         {
           "seed": 9,
@@ -74,7 +77,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 68.53333333333603,
-          "seamStep": 0.4911013125119652
+          "seamStep": 0.46666666852843264,
+          "steeringSnap": 0
         },
         {
           "seed": 27,
@@ -83,8 +87,9 @@
           "distance": 3350.5344299277417,
           "falls": 0,
           "trackImpacts": 0,
-          "minimumPressure": 73.40000000000248,
-          "seamStep": 0.484300071511427
+          "minimumPressure": 73.33333333333582,
+          "seamStep": 0.4666666667917525,
+          "steeringSnap": 0
         },
         {
           "seed": 42,
@@ -94,7 +99,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 61.06666666666902,
-          "seamStep": 0.6266268849997683
+          "seamStep": 0.6000001055836037,
+          "steeringSnap": 1.1772142117486146
         },
         {
           "seed": 101,
@@ -104,7 +110,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 58.00000000000266,
-          "seamStep": 0.4911013110254673
+          "seamStep": 0.46666666696410175,
+          "steeringSnap": 0
         },
         {
           "seed": 2026,
@@ -114,7 +121,8 @@
           "falls": 0,
           "trackImpacts": 0,
           "minimumPressure": 54.00000000000155,
-          "seamStep": 0.4843000729609594
+          "seamStep": 0.46666666829605674,
+          "steeringSnap": 0
         }
       ]
     },
@@ -129,7 +137,8 @@
         "falls": 0,
         "trackImpacts": 0,
         "minimumPressure": 61.06666666666902,
-        "seamStep": 0.6266268849997683
+        "seamStep": 0.6000001055836037,
+        "steeringSnap": 1.1772142117486146
       }
     },
     {

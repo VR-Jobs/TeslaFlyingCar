@@ -1,4 +1,4 @@
-import { directionCommand, stepSteering } from "./steering.js";
+import { directionCommand, stepSteering, syncSteeringProfile, snapToLane } from "./steering.js";
 import { stepDirector } from "./director.js";
 import {
   startRainbow,
@@ -26,8 +26,10 @@ import {
   adventureBeforeStep,
   adventureAfterStep,
 } from "./adventure-rules.js";
-export function createRun(course) {
-  return {
+export function createRun(course, { planet = "earth" } = {}) {
+  const run = {
+    startPlanet: planet,
+    controlMode: null,
     s: 0,
     routeId: null,
     adventure: null,
@@ -98,6 +100,8 @@ export function createRun(course) {
     input: { suction: false, jump: false, boost: false, brake: false, left: false, right: false },
     assist: true,
   };
+  syncSteeringProfile(run, course);
+  return run;
 }
 export function detach(run, course, impulse = 6, cause = "jump") {
   if (!run.attached) return;
@@ -114,7 +118,7 @@ export function detach(run, course, impulse = 6, cause = "jump") {
 }
 export function command(run, course, event) {
   if (run.phase !== "running") return;
-  const held = directionCommand(run, event);
+  const held = directionCommand(run, course, event);
   if (held === true) return;
   if (held) event = held;
   const before = run.events.length;
@@ -126,12 +130,15 @@ export function command(run, course, event) {
   course = routeCourse(mainCourse, run);
   if (event === "left" || event === "right") {
     const dir = event === "left" ? -1 : 1;
-    if (run.attached || !run.adventure?.attempt)
+    if (run.attached || !run.adventure?.attempt) {
       run.targetLane = clamp(
         run.targetLane + dir * (course.laneStep || 3.2),
         -(course.laneLimit ?? 3.2),
         course.laneLimit ?? 3.2,
       );
+      if (run.controlMode === "fixed" && !(run.adventure?.transfer && !run.attached))
+        snapToLane(run, course);
+    }
     if (
       !run.attached &&
       run.airTime > 0.09 &&
@@ -250,6 +257,7 @@ function attachToSurface(run, course, surface) {
     Math.min(4.4, course.width / 2 - 1.03),
   );
   run.targetLane = clamp(Math.round(run.lane / step) * step, -limit, limit);
+  if (syncSteeringProfile(run, course).mode === "fixed") run.lane = run.targetLane;
   run.attached = true;
   run.speed = clamp(dot(run.velocity, surface.t), 20, 45);
   run.pos = course.pose(run.s, run.lane).p;
@@ -280,6 +288,7 @@ export function stepRun(run, course, dt) {
     return;
   }
   const mainCourse = course;
+  syncSteeringProfile(run, mainCourse);
   stepTraffic(run, mainCourse, dt);
   stepVoyage(run, mainCourse, dt);
   adventureBeforeStep(run, mainCourse, dt, detach);
@@ -635,4 +644,5 @@ export function stepRun(run, course, dt) {
   if (rainbowActive(run)) run.pressure = 100;
   stepDirector(run, mainCourse, wasS);
   advanceEndless(run, course);
+  syncSteeringProfile(run, mainCourse);
 }

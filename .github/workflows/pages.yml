@@ -32,6 +32,7 @@ jobs:
           npm run check:handling
           npm run check:space
           node tools/check-star-ring-structures.mjs
+          npm run check:star-ring-lanes
           node tools/check-planets.mjs
           npm run check:gravity-flip
           npm run check:expeditions
