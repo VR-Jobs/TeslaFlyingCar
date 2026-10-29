@@ -1,3 +1,4 @@
+import { installExpeditions } from "../expeditions/index.js";
 import { installGravityFlip } from "../gravity-flip/index.js";
 import { installOrbitExperience } from "../space-drive/index.js";
 import { runGameplayChecks } from "./gameplay-checks.js";
@@ -30,8 +31,9 @@ export function installDeveloperBridge(context) {
     onRestore: () => progress.refresh(),
   });
   const gravityFlip = installGravityFlip(context, comfort, starRing);
+  const expeditions = installExpeditions(context, comfort, starRing, gravityFlip);
   const orbit = installOrbitExperience(context, driving, scenery, handling, comfort);
-  installHome(context, driving, scenery, starRing, gravityFlip);
+  installHome(context, driving, scenery, starRing, gravityFlip, expeditions);
   progress = installJourneyProgress(context, driving);
   installIterationChecks(context, driving, handling, scenery, exterior, comfort, progress);
   const { game, input, backend, getScreen, config, renderer } = context;
@@ -79,6 +81,7 @@ export function installDeveloperBridge(context) {
     errors: [...errors],
     starRing: starRing.status(),
     gravityFlip: gravityFlip.status(),
+    expeditions: expeditions.status(),
     showroom: {
       elapsed: context.showroom.t,
       nextDemo: context.showroom.nextDemoT,

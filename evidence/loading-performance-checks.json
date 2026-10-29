@@ -4,21 +4,21 @@
       "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-11",
       "pass": true,
       "detail": {
-        "yields": 69
+        "yields": 99
       }
     },
     {
       "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-27",
       "pass": true,
       "detail": {
-        "yields": 61
+        "yields": 67
       }
     },
     {
       "name": "synchronous-and-interruptible-builds-preserve-all-rendered-geometry-42",
       "pass": true,
       "detail": {
-        "yields": 66
+        "yields": 75
       }
     },
     {
@@ -49,17 +49,17 @@
   "reports": [
     {
       "seed": 11,
-      "yields": 69,
+      "yields": 99,
       "disposed": 331
     },
     {
       "seed": 27,
-      "yields": 61,
+      "yields": 67,
       "disposed": 324
     },
     {
       "seed": 42,
-      "yields": 66,
+      "yields": 75,
       "disposed": 334
     }
   ]

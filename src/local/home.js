@@ -1,3 +1,4 @@
+import { EXPEDITION_IDS } from "../expeditions/catalog.js";
 import { homeStyles } from "./home-styles.js";
 import { minimalHomeStyles } from "./minimal-home-styles.js";
 import { installSpaceMenu } from "../scenery/space-menu.js";
@@ -12,7 +13,7 @@ const node = (tag, className, text) => {
   return element;
 };
 
-export function installHome(context, driving, scenery, starRing, gravityFlip) {
+export function installHome(context, driving, scenery, starRing, gravityFlip, expeditions) {
   const presentation = installSpaceMenu(context.showroom, context.renderer, {
     sound: context.sound,
     settings: context.settings,
@@ -20,6 +21,7 @@ export function installHome(context, driving, scenery, starRing, gravityFlip) {
       context.getScreen() === "menu" &&
       !document.body.classList.contains("star-ring-active") &&
       !document.body.classList.contains("gravity-flip-active") &&
+      !document.body.classList.contains("expedition-active") &&
       !document.querySelector("dialog[open], .modal:not(.hidden), #garage:not(.hidden)"),
   });
   const style = node("style");
@@ -69,6 +71,10 @@ export function installHome(context, driving, scenery, starRing, gravityFlip) {
   const scenePicker = createScenePicker(
     scenery,
     async (selected, replayBest = false) => {
+      if (EXPEDITION_IDS.includes(selected)) {
+        await expeditions.launch(selected);
+        return;
+      }
       if (selected === "gravityFlip") {
         await gravityFlip.launch();
         return;

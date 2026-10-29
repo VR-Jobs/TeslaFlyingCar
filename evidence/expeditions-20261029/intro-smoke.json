@@ -1,0 +1,27 @@
+[
+  {
+    "id": "slingshot",
+    "intro": true,
+    "steps": 3
+  },
+  {
+    "id": "salvage",
+    "intro": true,
+    "steps": 3
+  },
+  {
+    "id": "beatRoad",
+    "intro": true,
+    "steps": 3
+  },
+  {
+    "id": "timeEcho",
+    "intro": true,
+    "steps": 3
+  },
+  {
+    "id": "leviathanEscape",
+    "intro": true,
+    "steps": 3
+  }
+]

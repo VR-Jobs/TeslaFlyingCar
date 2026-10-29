@@ -44,7 +44,8 @@ export function installOrbitExperience(context, driving, scenery, handling, comf
     driving.options().mode === "free" &&
     !driving.suspended &&
     !document.body.classList.contains("star-ring-active") &&
-    !document.body.classList.contains("gravity-flip-active");
+    !document.body.classList.contains("gravity-flip-active") &&
+    !document.body.classList.contains("expedition-active");
   const gates = () => plans.flatMap((plan) => plan.route?.gates || []);
   const clock = {};
   function audio(freq, gain = 0.025, end = freq * 1.3) {

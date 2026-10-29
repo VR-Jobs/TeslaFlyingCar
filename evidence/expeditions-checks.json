@@ -1,0 +1,418 @@
+{
+  "passed": 28,
+  "routes": 48,
+  "maxima": {
+    "rock": 6,
+    "ring": 63,
+    "core": 23,
+    "ringMetal": 23,
+    "solid": 100,
+    "light": 446,
+    "beam": 54,
+    "glass": 201
+  },
+  "checks": [
+    {
+      "name": "six-distinct-rules-and-goals",
+      "pass": true
+    },
+    {
+      "name": "slingshot-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "salvage-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "beatRoad-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "timeEcho-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "twinResonance-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "leviathanEscape-eight-seeds-are-completable",
+      "pass": true
+    },
+    {
+      "name": "frame-rates-and-endless-continuation",
+      "pass": true
+    },
+    {
+      "name": "ending-early-does-not-count-as-a-win",
+      "pass": true
+    },
+    {
+      "name": "orbital-window-releases-into-continuous-flight",
+      "pass": true
+    },
+    {
+      "name": "planet-collision-and-lost-orbit-have-explicit-failures",
+      "pass": true
+    },
+    {
+      "name": "salvage-collection-is-unique-and-does-not-equal-delivery",
+      "pass": true
+    },
+    {
+      "name": "salvage-unloads-only-near-ship-with-suction",
+      "pass": true
+    },
+    {
+      "name": "elastic-cargo-can-break-and-nearby-cargo-can-be-recovered",
+      "pass": true
+    },
+    {
+      "name": "rhythm-judges-timing-and-lane-and-rejects-held-key-spam",
+      "pass": true
+    },
+    {
+      "name": "rhythm-chart-randomness-preserves-reachable-lane-transitions",
+      "pass": true
+    },
+    {
+      "name": "rhythm-missed-beats-cannot-silently-build-road",
+      "pass": true
+    },
+    {
+      "name": "echo-uses-the-recorded-position-height-and-orientation",
+      "pass": true
+    },
+    {
+      "name": "echo-missed-recording-and-wrong-live-switch-fail",
+      "pass": true
+    },
+    {
+      "name": "echo-seeds-change-switches-without-changing-replay-mechanics",
+      "pass": true
+    },
+    {
+      "name": "twin-springs-compress-expand-and-preserve-pair-center",
+      "pass": true
+    },
+    {
+      "name": "twin-gate-requires-both-cars-and-failure-costs-shields",
+      "pass": true
+    },
+    {
+      "name": "escape-collision-agrees-with-drawn-broken-surfaces",
+      "pass": true
+    },
+    {
+      "name": "drifting-fragment-requires-suction-and-failure-is-explained",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-preserves-an-endless-voyage",
+      "pass": true
+    },
+    {
+      "name": "checkpoint-clones-are-independent-and-serializable",
+      "pass": true
+    },
+    {
+      "name": "no-input-runs-eventually-fail-without-awarding-a-win",
+      "pass": true
+    },
+    {
+      "name": "erratic-inputs-remain-finite-and-resource-bounded",
+      "pass": true
+    }
+  ],
+  "routeChecks": [
+    {
+      "id": "slingshot",
+      "seed": 1,
+      "time": 23.4,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 2,
+      "time": 23.2,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 3,
+      "time": 23.4,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 11,
+      "time": 23.4,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 42,
+      "time": 23.2,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 123,
+      "time": 23.4,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 913,
+      "time": 23.9,
+      "metric": 6
+    },
+    {
+      "id": "slingshot",
+      "seed": 4294967295,
+      "time": 24,
+      "metric": 6
+    },
+    {
+      "id": "salvage",
+      "seed": 1,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 2,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 3,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 11,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 42,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 123,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 913,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "salvage",
+      "seed": 4294967295,
+      "time": 31,
+      "metric": 12
+    },
+    {
+      "id": "beatRoad",
+      "seed": 1,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 2,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 3,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 11,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 42,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 123,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 913,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "beatRoad",
+      "seed": 4294967295,
+      "time": 25,
+      "metric": 48
+    },
+    {
+      "id": "timeEcho",
+      "seed": 1,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 2,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 3,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 11,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 42,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 123,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 913,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "timeEcho",
+      "seed": 4294967295,
+      "time": 98.2,
+      "metric": 3
+    },
+    {
+      "id": "twinResonance",
+      "seed": 1,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 2,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 3,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 11,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 42,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 123,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 913,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "twinResonance",
+      "seed": 4294967295,
+      "time": 86.9,
+      "metric": 12
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 1,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 2,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 3,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 11,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 42,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 123,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 913,
+      "time": 85.4,
+      "metric": 2200
+    },
+    {
+      "id": "leviathanEscape",
+      "seed": 4294967295,
+      "time": 85.4,
+      "metric": 2200
+    }
+  ]
+}

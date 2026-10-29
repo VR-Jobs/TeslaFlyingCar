@@ -1,3 +1,5 @@
+import { EXPEDITIONS, EXPEDITION_IDS } from "../expeditions/catalog.js";
+import EXPEDITION_PREVIEWS from "../assets/expedition-previews.js";
 import GRAVITY_PREVIEW from "../assets/gravity-preview.js";
 import { localizeText, localizeAria } from "./language.js";
 import { PLANETS, planetChoice, savePlanetChoice } from "../star-ring/planet-rules.js";
@@ -34,6 +36,14 @@ const SCENES = [
     descriptionEn:
       "Launch between floor, walls and ceiling. Hold E to attach and chain four-surface transfers.",
   },
+  ...EXPEDITIONS.map((mode) => ({
+    id: mode.id,
+    title: mode.zh,
+    en: mode.en,
+    description: mode.description[0],
+    descriptionEn: mode.description[1],
+    group: "special",
+  })),
 ];
 
 export function createScenePicker(scenery, start, ghostStatus = () => null) {
@@ -51,10 +61,38 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   description.className = "scene-picker-description";
   localizeText(
     description,
-    "自由跑酷、星环穿梭，或在四面轨道间喷气翻转。",
-    "Choose a landscape, traverse the star rings, or launch between four gravity surfaces.",
+    "选择驾驶场景，或进入六种奇趣挑战。",
+    "Choose a driving scene or one of six special challenges.",
   );
+  const tabs = document.createElement("div");
+  tabs.className = "scene-mode-tabs";
+  tabs.setAttribute("role", "tablist");
+  const tabButtons = new Map();
+  for (const [id, zh, en] of [
+    ["drive", "驾驶与场景 · 4", "Drive & Scenes · 4"],
+    ["special", "奇趣挑战 · 6", "Special Modes · 6"],
+  ]) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.id = "scene-tab-" + id;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-controls", "scene-mode-options");
+    localizeText(button, zh, en);
+    button.onclick = () => switchGroup(id);
+    button.onkeydown = (event) => {
+      if (["ArrowLeft", "ArrowRight"].includes(event.code)) {
+        event.preventDefault();
+        event.stopPropagation();
+        const target = id === "drive" ? "special" : "drive";
+        switchGroup(target);
+        tabButtons.get(target).focus();
+      }
+    };
+    tabs.append(button);
+    tabButtons.set(id, button);
+  }
   const choices = document.createElement("fieldset");
+  choices.id = "scene-mode-options";
   choices.className = "scene-picker-choices";
   const legend = document.createElement("legend");
   localizeText(legend, "场景与玩法", "Scenes and modes");
@@ -63,6 +101,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   for (const scene of SCENES) {
     const label = document.createElement("label");
     label.className = "scene-option";
+    label.dataset.group = scene.group || "drive";
     const input = document.createElement("input");
     input.type = "radio";
     input.name = "driving-scene";
@@ -75,7 +114,9 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     art.setAttribute("aria-hidden", "true");
     const preview = document.createElement("img");
     const image =
-      (scene.id === "gravityFlip" ? GRAVITY_PREVIEW : PREVIEWS[scene.id]) || PREVIEWS.space;
+      EXPEDITION_PREVIEWS[scene.id] ||
+      (scene.id === "gravityFlip" ? GRAVITY_PREVIEW : PREVIEWS[scene.id]) ||
+      PREVIEWS.space;
     preview.src = image.src;
     preview.width = image.width;
     preview.height = image.height;
@@ -150,10 +191,28 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
   const syncReplay = () => {
     const chosen = [...inputs].find(([, i]) => i.checked)?.[0];
     replayOption.hidden = chosen !== "starRing" || !ghostStatus()?.available;
-    planetOptions.hidden = !["starRing", "gravityFlip"].includes(chosen);
+    planetOptions.hidden = !["starRing", "gravityFlip", ...EXPEDITION_IDS].includes(chosen);
   };
   for (const input of inputs.values()) input.addEventListener("change", syncReplay);
-  form.append(title, description, choices, planetOptions, replayOption, error, actions);
+  function switchGroup(group, choose = true) {
+    for (const [id, tab] of tabButtons) {
+      tab.setAttribute("aria-selected", String(id === group));
+      tab.tabIndex = id === group ? 0 : -1;
+    }
+    for (const label of choices.querySelectorAll(".scene-option"))
+      label.hidden = label.dataset.group !== group;
+    choices.classList.toggle("special", group === "special");
+    choices.setAttribute("aria-labelledby", "scene-tab-" + group);
+    if (choose) {
+      const selected = [...inputs].find(([, input]) => input.checked)?.[0];
+      const scene = SCENES.find((s) => s.id === selected);
+      if ((scene?.group || "drive") !== group)
+        inputs.get(SCENES.find((s) => (s.group || "drive") === group).id).checked = true;
+      syncReplay();
+    }
+  }
+  switchGroup("drive", false);
+  form.append(title, description, tabs, choices, planetOptions, replayOption, error, actions);
   dialog.append(form);
   document.body.append(dialog);
   let starting = false;
@@ -163,12 +222,14 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     starting = true;
     error.hidden = true;
     choices.disabled = back.disabled = launch.disabled = true;
+    for (const tab of tabButtons.values()) tab.disabled = true;
     localizeText(launch, "正在准备场景…", "Preparing scene…");
     try {
       // Let the preparation state paint before the coast is first constructed.
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       const selected = [...inputs].find(([, input]) => input.checked)?.[0] || "space";
-      if (!["starRing", "gravityFlip"].includes(selected)) scenery.select(selected);
+      if (!["starRing", "gravityFlip", ...EXPEDITION_IDS].includes(selected))
+        scenery.select(selected);
       dialog.close();
       await start(selected, selected === "starRing" && replay.checked && !replayOption.hidden);
       try {
@@ -186,6 +247,7 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
     } finally {
       starting = false;
       choices.disabled = back.disabled = launch.disabled = false;
+      for (const tab of tabButtons.values()) tab.disabled = false;
       localizeText(launch, "开始驾驶", "Start Driving");
     }
   };
@@ -211,9 +273,10 @@ export function createScenePicker(scenery, start, ghostStatus = () => null) {
       let previous = scenery.status().selected;
       try {
         const saved = localStorage.getItem("tesla-music.start-choice.v1");
-        if (["starRing", "gravityFlip"].includes(saved)) previous = saved;
+        if (["starRing", "gravityFlip", ...EXPEDITION_IDS].includes(saved)) previous = saved;
       } catch {}
       const selected = inputs.has(previous) ? previous : "space";
+      switchGroup(EXPEDITION_IDS.includes(selected) ? "special" : "drive", false);
       inputs.get(selected).checked = true;
       planetSelect.value = planetChoice();
       syncReplay();
